@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+*.orig.*
+
+# Native
+mobile/ios/
+mobile/android/
+
+# Env / secrets
+.env
+.env.local
+*.local
+mobile/.env
+
+# Supabase
+supabase/.branches
+supabase/.temp
+
+# Logs
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp

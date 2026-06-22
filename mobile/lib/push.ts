@@ -1,0 +1,26 @@
+import * as Notifications from "expo-notifications";
+import { supabase } from "./supabase";
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: true,
+    shouldSetBadge: false,
+  }),
+});
+
+// Requests permission, fetches the Expo push token, and stores it in
+// profiles_private. Safe to call on app start / after login.
+export async function registerForPush(userId: string): Promise<void> {
+  const { status: existing } = await Notifications.getPermissionsAsync();
+  let status = existing;
+  if (existing !== "granted") {
+    status = (await Notifications.requestPermissionsAsync()).status;
+  }
+  if (status !== "granted") return;
+
+  const token = (await Notifications.getExpoPushTokenAsync()).data;
+  await supabase
+    .from("profiles_private")
+    .upsert({ id: userId, push_token: token, updated_at: new Date().toISOString() });
+}
