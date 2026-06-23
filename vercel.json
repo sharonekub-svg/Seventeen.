@@ -1,0 +1,7 @@
+{
+  "installCommand": "echo skip-root-install",
+  "buildCommand": "cd mobile && npm install && EXPO_PUBLIC_SUPABASE_URL=https://fncdajjqdvuxmgxpxmdl.supabase.co EXPO_PUBLIC_SUPABASE_ANON_KEY=sb_publishable_6g9-OPNyjnJC7DE110M1UA_iH1DPd6n npx expo export --platform web",
+  "outputDirectory": "mobile/dist",
+  "framework": null,
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+}
