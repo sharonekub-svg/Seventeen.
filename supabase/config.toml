@@ -15,7 +15,7 @@ major_version = 15
 
 [auth]
 enabled = true
-site_url = "myapp://"
+site_url = "aptitude://"
 # Email/password sign-in for the MVP.
 [auth.email]
 enable_signup = true
