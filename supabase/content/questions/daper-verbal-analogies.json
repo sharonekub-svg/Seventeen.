@@ -57,7 +57,7 @@
   {
     "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 2, "difficulty": 3,
     "body": "מטרייה : גשם — כמו משקפי שמש : ___",
-    "explanation": "הקשר הוא 'אמצעי והגורם שמפניו הוא מגן'. מטרייה מגינה מפני גשם, משקפי שמש מגינים מפני השמש (אור חזק).",
+    "explanation": "הקשר הוא 'אמצעי והגורם שמפניו הוא מגן'. מטרייה מגינה מפני גשם, משקפי שמש מפני אור השמש.",
     "options": [
       { "label": "1", "body": "שמש", "is_correct": true, "position": 0 },
       { "label": "2", "body": "גשם", "is_correct": false, "position": 1 },
@@ -68,7 +68,7 @@
   {
     "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 2, "difficulty": 3,
     "body": "פסל : אבן — כמו חייט : ___",
-    "explanation": "הקשר הוא 'בעל מלאכה וחומר הגלם שלו'. הפסל עובד עם אבן, החייט עובד עם בד.",
+    "explanation": "הקשר הוא 'בעל מלאכה וחומר הגלם שלו'. הפסל עובד עם אבן, החייט עם בד.",
     "options": [
       { "label": "1", "body": "בד", "is_correct": true, "position": 0 },
       { "label": "2", "body": "מחט", "is_correct": false, "position": 1 },
@@ -79,7 +79,7 @@
   {
     "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 2, "difficulty": 4,
     "body": "טפטוף : מבול — כמו רוח קלה : ___",
-    "explanation": "הקשר הוא 'עוצמה חלשה מול עוצמה חזקה של אותה תופעה'. טפטוף הוא גשם חלש מול מבול; רוח קלה היא רוח חלשה מול סופה.",
+    "explanation": "הקשר הוא 'עוצמה חלשה מול חזקה של אותה תופעה'. טפטוף מול מבול, רוח קלה מול סופה.",
     "options": [
       { "label": "1", "body": "סופה", "is_correct": true, "position": 0 },
       { "label": "2", "body": "נשיבה", "is_correct": false, "position": 1 },
@@ -107,6 +107,413 @@
       { "label": "2", "body": "ספרים", "is_correct": false, "position": 1 },
       { "label": "3", "body": "מדינות", "is_correct": false, "position": 2 },
       { "label": "4", "body": "גלובוס", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 3, "difficulty": 3,
+    "body": "פטיש : מסמר — כמו מברג : ___",
+    "explanation": "הקשר הוא 'כלי והאביזר שעליו הוא פועל'. פטיש פועל על מסמר, מברג פועל על בורג.",
+    "options": [
+      { "label": "1", "body": "בורג", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "עץ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מסמר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "יד", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 3, "difficulty": 3,
+    "body": "סבון : ניקיון — כמו תרופה : ___",
+    "explanation": "הקשר הוא 'אמצעי והמטרה שהוא משרת'. סבון משמש לניקיון, תרופה משמשת לריפוי.",
+    "options": [
+      { "label": "1", "body": "ריפוי", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מחלה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רופא", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 3, "difficulty": 3,
+    "body": "מנורה : אור — כמו רמקול : ___",
+    "explanation": "הקשר הוא 'מכשיר והדבר שהוא מפיק'. מנורה מפיקה אור, רמקול מפיק קול.",
+    "options": [
+      { "label": "1", "body": "קול", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חושך", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חשמל", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "שקט", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 3, "difficulty": 3,
+    "body": "מברשת : צביעה — כמו מסרק : ___",
+    "explanation": "הקשר הוא 'כלי והפעולה שעושים בעזרתו'. מברשת לצביעה, מסרק לסירוק.",
+    "options": [
+      { "label": "1", "body": "סירוק", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שיער", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ניקוי", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "גזירה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 3, "difficulty": 3,
+    "body": "מקרר : קירור — כמו תנור : ___",
+    "explanation": "הקשר הוא 'מכשיר והתפקוד שלו'. המקרר מקרר, התנור מחמם.",
+    "options": [
+      { "label": "1", "body": "חימום", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "קירור", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הקפאה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "שטיפה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 4, "difficulty": 3,
+    "body": "ענף : עץ — כמו זרוע : ___",
+    "explanation": "הקשר הוא 'חלק והשלם שהוא יוצא ממנו'. ענף יוצא מן העץ, זרוע יוצאת מן הגוף.",
+    "options": [
+      { "label": "1", "body": "גוף", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "יד", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אצבע", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "רגל", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 4, "difficulty": 3,
+    "body": "חוליה : שרשרת — כמו קרון : ___",
+    "explanation": "הקשר הוא 'יחידה והשלם המורכב מיחידות כאלה'. חוליה מרכיבה שרשרת, קרון מרכיב רכבת.",
+    "options": [
+      { "label": "1", "body": "רכבת", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מסילה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "נהג", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "גלגל", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 4, "difficulty": 3,
+    "body": "גג : בית — כמו מכסה : ___",
+    "explanation": "הקשר הוא 'חלק עליון מכסה והשלם שעליו הוא יושב'. גג מכסה בית, מכסה מכסה סיר.",
+    "options": [
+      { "label": "1", "body": "סיר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מים", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "בישול", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כף", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 4, "difficulty": 4,
+    "body": "הגה : מכונית — כמו כידון : ___",
+    "explanation": "הקשר הוא 'אמצעי היגוי וכלי התחבורה שלו'. הגה מנווט מכונית, כידון מנווט אופניים.",
+    "options": [
+      { "label": "1", "body": "אופניים", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "נהג", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "כביש", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "גלגל", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 4, "difficulty": 4,
+    "body": "מקש : מקלדת — כמו נורה : ___",
+    "explanation": "הקשר הוא 'רכיב והמערכת שהוא חלק ממנה'. מקש הוא חלק ממקלדת, נורה היא חלק ממנורה.",
+    "options": [
+      { "label": "1", "body": "מנורה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "אור", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חשמל", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חדר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 5, "difficulty": 4,
+    "body": "תפוח : פרי — כמו גזר : ___",
+    "explanation": "הקשר הוא 'פרט וקבוצת המאכלים שאליה הוא שייך'. תפוח הוא פרי, גזר הוא ירק.",
+    "options": [
+      { "label": "1", "body": "ירק", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "פרי", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "עץ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "אדמה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 5, "difficulty": 4,
+    "body": "כינור : כלי נגינה — כמו פטיש : ___",
+    "explanation": "הקשר הוא 'פרט והקטגוריה שלו'. כינור הוא כלי נגינה, פטיש הוא כלי עבודה.",
+    "options": [
+      { "label": "1", "body": "כלי עבודה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מסמר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "נגר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מתכת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 5, "difficulty": 4,
+    "body": "אדום : צבע — כמו ריבוע : ___",
+    "explanation": "הקשר הוא 'פרט והקטגוריה הכללית'. אדום הוא צבע, ריבוע הוא צורה.",
+    "options": [
+      { "label": "1", "body": "צורה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "קו", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אדום", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "גודל", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 5, "difficulty": 4,
+    "body": "כעס : רגש — כמו כחול : ___",
+    "explanation": "הקשר הוא 'פרט והקטגוריה שלו'. כעס הוא רגש, כחול הוא צבע.",
+    "options": [
+      { "label": "1", "body": "צבע", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רגש", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ים", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "שמיים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 6, "difficulty": 4,
+    "body": "יום : לילה — כמו קיץ : ___",
+    "explanation": "הקשר הוא ניגוד מחזורי. יום מול לילה, קיץ מול חורף.",
+    "options": [
+      { "label": "1", "body": "חורף", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "אביב", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שמש", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חום", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 6, "difficulty": 4,
+    "body": "עלייה : ירידה — כמו רווח : ___",
+    "explanation": "הקשר הוא ניגוד. עלייה מול ירידה, רווח מול הפסד.",
+    "options": [
+      { "label": "1", "body": "הפסד", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כסף", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מסחר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "עסק", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 6, "difficulty": 4,
+    "body": "ידיד : אויב — כמו שלום : ___",
+    "explanation": "הקשר הוא ניגוד. ידיד מול אויב, שלום מול מלחמה.",
+    "options": [
+      { "label": "1", "body": "מלחמה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שקט", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הסכם", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "צבא", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 6, "difficulty": 4,
+    "body": "קשה : רך — כמו חד : ___",
+    "explanation": "הקשר הוא ניגוד בין תכונות. קשה מול רך, חד מול קהה.",
+    "options": [
+      { "label": "1", "body": "קהה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חלק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ישר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חזק", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 6, "difficulty": 5,
+    "body": "לבנות : להרוס — כמו לחבר : ___",
+    "explanation": "הקשר הוא ניגוד בין פעולות. לבנות מול להרוס, לחבר מול להפריד.",
+    "options": [
+      { "label": "1", "body": "להפריד", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "לתקן", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "לצבוע", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לקשור", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 7, "difficulty": 4,
+    "body": "מאמץ : הצלחה — כמו עצלות : ___",
+    "explanation": "הקשר הוא 'התנהגות ותוצאתה'. מאמץ מוביל להצלחה, עצלות מובילה לכישלון.",
+    "options": [
+      { "label": "1", "body": "כישלון", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מנוחה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שינה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "הצלחה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 7, "difficulty": 4,
+    "body": "חום : הזעה — כמו קור : ___",
+    "explanation": "הקשר הוא 'גורם ותגובת הגוף'. חום גורם להזעה, קור גורם לרעד.",
+    "options": [
+      { "label": "1", "body": "רעד", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שמש", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מעיל", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חורף", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 7, "difficulty": 5,
+    "body": "חיסון : חסינות — כמו אימון : ___",
+    "explanation": "הקשר הוא 'פעולה ותוצאתה המיטיבה'. חיסון מקנה חסינות, אימון מקנה כושר.",
+    "options": [
+      { "label": "1", "body": "כושר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "עייפות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מאמן", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מגרש", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 7, "difficulty": 5,
+    "body": "בצורת : רעב — כמו מגפה : ___",
+    "explanation": "הקשר הוא 'אסון והתוצאה הקשה שלו'. בצורת גורמת לרעב, מגפה גורמת לתמותה.",
+    "options": [
+      { "label": "1", "body": "תמותה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "בריאות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חיסון", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 7, "difficulty": 4,
+    "body": "אש : עשן — כמו גשם : ___",
+    "explanation": "הקשר הוא 'תופעה והתוצר/הסימן הנלווה לה'. אש מלווה בעשן, גשם מותיר שלוליות.",
+    "options": [
+      { "label": "1", "body": "שלולית", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ענן", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רעם", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "קור", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 8, "difficulty": 5,
+    "body": "חיבה : אהבה — כמו מורת רוח : ___",
+    "explanation": "הקשר הוא 'רגש מתון ודרגתו העזה'. חיבה מתעצמת לאהבה, מורת רוח מתעצמת לזעם.",
+    "options": [
+      { "label": "1", "body": "זעם", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שמחה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אדישות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "פחד", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 8, "difficulty": 5,
+    "body": "טוב : מושלם — כמו גדול : ___",
+    "explanation": "הקשר הוא 'תכונה ודרגתה הקיצונית'. מושלם הוא טוב ברמה עליונה, ענק הוא גדול ברמה עליונה.",
+    "options": [
+      { "label": "1", "body": "ענק", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "קטן", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "בינוני", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "רחב", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 8, "difficulty": 5,
+    "body": "דאגה : חרדה — כמו מבוכה : ___",
+    "explanation": "הקשר הוא 'רגש ודרגתו החזקה'. דאגה מתעצמת לחרדה, מבוכה מתעצמת לבושה.",
+    "options": [
+      { "label": "1", "body": "בושה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רוגע", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שמחה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "תקווה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 8, "difficulty": 5,
+    "body": "חמים : לוהט — כמו קריר : ___",
+    "explanation": "הקשר הוא 'דרגת חום מתונה מול קיצונית'. חמים מתחזק ללוהט, קריר מתחזק לקפוא.",
+    "options": [
+      { "label": "1", "body": "קפוא", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "פושר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חם", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "נעים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 8, "difficulty": 5,
+    "body": "טפטוף : מבול — כמו לחישה : ___",
+    "explanation": "הקשר הוא 'עוצמה חלשה מול עזה'. טפטוף מול מבול, לחישה מול צעקה.",
+    "options": [
+      { "label": "1", "body": "צעקה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שתיקה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שיר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "דיבור", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 9, "difficulty": 5,
+    "body": "פסנתרן : פסנתר — כמו כנר : ___",
+    "explanation": "הקשר הוא 'נגן וכלי הנגינה שלו'. פסנתרן מנגן בפסנתר, כנר מנגן בכינור.",
+    "options": [
+      { "label": "1", "body": "כינור", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מיתר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "קשת", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "תווים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 9, "difficulty": 5,
+    "body": "שען : שעון — כמו סנדלר : ___",
+    "explanation": "הקשר הוא 'בעל מקצוע והחפץ שהוא מתקן/מייצר'. השען עוסק בשעונים, הסנדלר בנעליים.",
+    "options": [
+      { "label": "1", "body": "נעל", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "עור", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רגל", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חנות", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 9, "difficulty": 5,
+    "body": "כבאי : שריפה — כמו רופא : ___",
+    "explanation": "הקשר הוא 'בעל מקצוע והדבר שנגדו הוא נלחם'. הכבאי נלחם בשריפה, הרופא נלחם במחלה.",
+    "options": [
+      { "label": "1", "body": "מחלה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חולה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "תרופה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "בית חולים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 9, "difficulty": 5,
+    "body": "גנן : גינה — כמו ימאי : ___",
+    "explanation": "הקשר הוא 'בעל מקצוע ומקום/כלי פעולתו'. הגנן עובד בגינה, הימאי עובד באונייה.",
+    "options": [
+      { "label": "1", "body": "אונייה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ים", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דג", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "רשת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 10, "difficulty": 5,
+    "body": "שאלה : תשובה — כמו בעיה : ___",
+    "explanation": "הקשר הוא 'אתגר והמענה לו'. לשאלה יש תשובה, לבעיה יש פתרון.",
+    "options": [
+      { "label": "1", "body": "פתרון", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "קושי", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חידה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מבחן", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 10, "difficulty": 5,
+    "body": "צמא : מים — כמו סקרנות : ___",
+    "explanation": "הקשר הוא 'מצב נפשי/גופני והדבר שמספק אותו'. מים מרווים צמא, ידע מרווה סקרנות.",
+    "options": [
+      { "label": "1", "body": "ידע", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שאלה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מורה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ספר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 10, "difficulty": 5,
+    "body": "שורש : עץ — כמו יסוד : ___",
+    "explanation": "הקשר הוא 'בסיס תומך והמבנה שנשען עליו'. השורש מבסס את העץ, היסוד מבסס את הבניין.",
+    "options": [
+      { "label": "1", "body": "בניין", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "קומה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "גג", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חלון", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "אנלוגיות מילוליות", "level_position": 10, "difficulty": 5,
+    "body": "זרע : פרי — כמו רעיון : ___",
+    "explanation": "הקשר הוא 'נקודת התחלה והתוצר שמתפתח ממנה'. מזרע צומח פרי, מרעיון נולדת המצאה.",
+    "options": [
+      { "label": "1", "body": "המצאה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מחשבה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מוח", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חלום", "is_correct": false, "position": 3 }
     ]
   }
 ]
