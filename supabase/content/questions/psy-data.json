@@ -1,0 +1,112 @@
+[
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 2,
+    "body": "בטבלת מכירות: יום א' = 10, יום ב' = 15, יום ג' = 20. מהו סך המכירות בשלושת הימים?",
+    "explanation": "10 + 15 + 20 = 45.",
+    "options": [
+      { "label": "1", "body": "45", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "35", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "50", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "40", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 2,
+    "body": "בכיתה 25 תלמידים, ו-20% מהם נעדרו. כמה תלמידים נעדרו?",
+    "explanation": "20% מתוך 25 = 0.20 × 25 = 5 תלמידים.",
+    "options": [
+      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "20", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "10", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "4", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 2,
+    "body": "בגרף עמודות מספר התלמידים בחוגים: כדורגל 12, כדורסל 8, שחייה 5. בכמה תלמידים יותר יש בכדורגל מאשר בשחייה?",
+    "explanation": "12 − 5 = 7 תלמידים.",
+    "options": [
+      { "label": "1", "body": "7", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "4", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "5", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 1,
+    "body": "מהו הממוצע של הציונים 70, 80, 90?",
+    "explanation": "(70 + 80 + 90) ÷ 3 = 240 ÷ 3 = 80.",
+    "options": [
+      { "label": "1", "body": "80", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "75", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "85", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "240", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 2,
+    "body": "אם 3/4 מתוך 40 תלמידים אוהבים מתמטיקה, כמה תלמידים זה?",
+    "explanation": "3/4 מתוך 40 = (40 ÷ 4) × 3 = 10 × 3 = 30 תלמידים.",
+    "options": [
+      { "label": "1", "body": "30", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "10", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "34", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "20", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 3,
+    "body": "חברה הרוויחה 200 ₪ בינואר ו-260 ₪ בפברואר. בכמה אחוזים עלה הרווח?",
+    "explanation": "העלייה היא 60 ₪. ביחס לבסיס: 60 ÷ 200 = 0.30, כלומר 30%.",
+    "options": [
+      { "label": "1", "body": "30%", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "60%", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "23%", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "26%", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 3,
+    "body": "בסקר השתתפו 200 אנשים. 45% העדיפו תה, והשאר קפה. כמה אנשים העדיפו קפה?",
+    "explanation": "קפה הועדף על ידי 55% מהמשתתפים: 0.55 × 200 = 110.",
+    "options": [
+      { "label": "1", "body": "110", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "90", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "55", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "145", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 3,
+    "body": "לפי טבלה, מחיר מוצר עלה מ-50 ₪ ל-65 ₪. מהו שיעור העלייה באחוזים?",
+    "explanation": "העלייה 15 ₪. ביחס לבסיס: 15 ÷ 50 = 0.30, כלומר 30%.",
+    "options": [
+      { "label": "1", "body": "30%", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "15%", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "23%", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "65%", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 2,
+    "body": "הממוצע של 4 מספרים הוא 25. מהו סכומם?",
+    "explanation": "סכום = ממוצע × מספר האיברים = 25 × 4 = 100.",
+    "options": [
+      { "label": "1", "body": "100", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "29", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "50", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "75", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 5,
+    "body": "ממוצע 5 מבחנים של תלמיד הוא 80. איזה ציון הוא צריך לקבל במבחן השישי כדי שהממוצע יעלה ל-82?",
+    "explanation": "סכום 5 המבחנים: 5 × 80 = 400. כדי שממוצע 6 מבחנים יהיה 82 דרוש סכום 6 × 82 = 492. הציון הדרוש: 492 − 400 = 92.",
+    "options": [
+      { "label": "1", "body": "92", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "82", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "84", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "90", "is_correct": false, "position": 3 }
+    ]
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2,
+    "body": "יד : כפפה — כמו רגל : ___",
+    "explanation": "הקשר הוא 'איבר ופריט הלבוש המכסה אותו'. כפפה מכסה את היד, נעל מכסה את הרגל.",
+    "options": [
+      { "label": "1", "body": "נעל", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "יד", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ראש", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כובע", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 1,
+    "body": "מורה : בית ספר — כמו רופא : ___",
+    "explanation": "הקשר הוא 'בעל מקצוע ומקום עבודתו'. המורה עובד בבית הספר, הרופא בבית החולים.",
+    "options": [
+      { "label": "1", "body": "בית חולים", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "תרופה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חולה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מורה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2,
+    "body": "צייר : מכחול — כמו סופר : ___",
+    "explanation": "הקשר הוא 'יוצר וכלי העבודה שלו'. הצייר יוצר במכחול, הסופר כותב בעט.",
+    "options": [
+      { "label": "1", "body": "עט", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ספר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "נייר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מילים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2,
+    "body": "קר : קפוא — כמו חם : ___",
+    "explanation": "הקשר הוא 'תכונה ודרגתה הקיצונית'. קפוא הוא קר במידה קיצונית, רותח הוא חם במידה קיצונית.",
+    "options": [
+      { "label": "1", "body": "רותח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "פושר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "קריר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "שמש", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 3,
+    "body": "אריה : טרף — כמו דבורה : ___",
+    "explanation": "הקשר הוא 'בעל החיים ומה שהוא אוסף/צד למזונו'. האריה צד טרף, הדבורה אוספת צוף.",
+    "options": [
+      { "label": "1", "body": "צוף", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "דבש", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "פרח", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כוורת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 3,
+    "body": "מנצח : תזמורת — כמו מאמן : ___",
+    "explanation": "הקשר הוא 'המנהיג והקבוצה שאותה הוא מוביל'. המנצח מוביל תזמורת, המאמן מוביל קבוצה.",
+    "options": [
+      { "label": "1", "body": "קבוצה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שחקן", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מגרש", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כדור", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 3,
+    "body": "רעב : אוכל — כמו עייפות : ___",
+    "explanation": "הקשר הוא 'מצב גופני והדבר שמפיג אותו'. אוכל מפיג רעב, שינה מפיגה עייפות.",
+    "options": [
+      { "label": "1", "body": "שינה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מיטה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חלום", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לילה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 4,
+    "body": "טיפה : אוקיינוס — כמו גרגר : ___",
+    "explanation": "הקשר הוא 'יחידה זעירה והשלם העצום הבנוי ממנה'. טיפה היא יחידת מים זעירה באוקיינוס, גרגר הוא יחידת חול זעירה במדבר.",
+    "options": [
+      { "label": "1", "body": "מדבר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חוף", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אבן", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 3,
+    "body": "אומן : יצירה — כמו אדריכל : ___",
+    "explanation": "הקשר הוא 'יוצר ותוצר עבודתו'. האומן יוצר יצירה, האדריכל מתכנן בניין.",
+    "options": [
+      { "label": "1", "body": "בניין", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מכחול", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אבן", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "תוכנית", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 4,
+    "body": "פסימי : אופטימי — כמו קמצן : ___",
+    "explanation": "הקשר הוא ניגוד בין תכונות. פסימי הפוך מאופטימי; קמצן הפוך מנדיב.",
+    "options": [
+      { "label": "1", "body": "נדיב", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "עשיר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חסכן", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "שמח", "is_correct": false, "position": 3 }
+    ]
+  }
+]

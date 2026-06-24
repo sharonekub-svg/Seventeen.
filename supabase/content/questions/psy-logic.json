@@ -1,0 +1,112 @@
+[
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2,
+    "body": "כל הכלבים נובחים. רקס הוא כלב. מה נכון בהכרח?",
+    "explanation": "אם כל הכלבים נובחים ורקס כלב, אז רקס נובח.",
+    "options": [
+      { "label": "1", "body": "רקס נובח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רקס אינו נובח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רקס הוא חתול", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 3,
+    "body": "אם יורד גשם — הכביש רטוב. הכביש יבש. מה נכון בהכרח?",
+    "explanation": "אם הכביש היה רטוב בכל פעם שיורד גשם, ועכשיו הוא יבש, אז בהכרח לא ירד גשם (היסק על דרך השלילה).",
+    "options": [
+      { "label": "1", "body": "לא ירד גשם", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ירד גשם", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הכביש רטוב", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "תמיד יבש", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2,
+    "body": "דנה גבוהה מרון. רון גבוה מתום. מי הנמוך מבין השלושה?",
+    "explanation": "הסדר מהגבוה לנמוך: דנה, רון, תום. הנמוך ביותר הוא תום.",
+    "options": [
+      { "label": "1", "body": "תום", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "דנה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רון", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כולם שווים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 3,
+    "body": "אם כל A הם B, וכל B הם C, מה נכון בהכרח?",
+    "explanation": "טרנזיטיביות: אם כל A הם B וכל B הם C, אז כל A הם C.",
+    "options": [
+      { "label": "1", "body": "כל A הם C", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כל C הם A", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אף A אינו C", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 3,
+    "body": "כל הציפורים מטילות ביצים. תרנגולת מטילה ביצים. האם נובע מכך בהכרח שתרנגולת היא ציפור?",
+    "explanation": "לא. העובדה שמשהו מטיל ביצים אינה הופכת אותו לציפור (כשל לוגי של 'אישוש המסקנה'). מההנחות לבדן לא ניתן להסיק זאת בהכרח.",
+    "options": [
+      { "label": "1", "body": "לא ניתן להסיק זאת בהכרח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כן, בהכרח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "תרנגולת אינה ציפור", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ביצים אינן של ציפורים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 3,
+    "body": "במרוץ הגיע יוסי לפני דני אך אחרי מאיה. מי ניצח במרוץ?",
+    "explanation": "מאיה לפני יוסי, ויוסי לפני דני. הסדר: מאיה, יוסי, דני — מאיה ניצחה.",
+    "options": [
+      { "label": "1", "body": "מאיה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "יוסי", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דני", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "תיקו", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 5,
+    "body": "נתון שהמשפט 'כל הפרחים זקוקים למים' נכון. איזה משפט בהכרח נכון גם הוא?",
+    "explanation": "זהו ניסוח שקול הפוך (קונטרה-פוזיטיב): אם משהו אינו זקוק למים, הוא בהכרח אינו פרח.",
+    "options": [
+      { "label": "1", "body": "דבר שאינו זקוק למים אינו פרח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כל הזקוק למים הוא פרח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "יש פרחים שאינם זקוקים למים", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מים הם פרחים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 3,
+    "body": "חמישה חברים עומדים בתור. גיל עומד אחרי דנה, דנה עומדת אחרי נועה, ונועה ראשונה בתור. מי עומד שני בתור?",
+    "explanation": "נועה ראשונה, אחריה דנה, אחריה גיל. השני בתור הוא דנה.",
+    "options": [
+      { "label": "1", "body": "דנה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "גיל", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "נועה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 5,
+    "body": "בעולם שבו אביר אומר תמיד אמת ונוכל אומר תמיד שקר, אדם מצהיר: 'אני נוכל'. מה הבעיה בהצהרה?",
+    "explanation": "אם הוא אביר, הוא דובר אמת — אך אז 'אני נוכל' שקר, סתירה. אם הוא נוכל, הוא משקר — אך אז 'אני נוכל' אמת, שוב סתירה. ההצהרה יוצרת סתירה לוגית.",
+    "options": [
+      { "label": "1", "body": "ההצהרה יוצרת סתירה לוגית", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "הוא בוודאי אביר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הוא בוודאי נוכל", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "אין כל בעיה בהצהרה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 3,
+    "body": "כל התלמידים בכיתה עברו את המבחן. מה נכון בהכרח?",
+    "explanation": "אם כולם עברו, אז אין אף תלמיד בכיתה שנכשל. שאר הטענות אינן נובעות בהכרח.",
+    "options": [
+      { "label": "1", "body": "אין תלמיד בכיתה שנכשל", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כולם קיבלו 100", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חלקם נכשלו", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "המבחן היה קל", "is_correct": false, "position": 3 }
+    ]
+  }
+]

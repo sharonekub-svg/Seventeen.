@@ -1,0 +1,112 @@
+[
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 1,
+    "body": "מהו שטחו של ריבוע שאורך צלעו 5 ס\"מ?",
+    "explanation": "שטח ריבוע = צלע בריבוע = 5 × 5 = 25 סמ\"ר.",
+    "options": [
+      { "label": "1", "body": "25 סמ\"ר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "20 סמ\"ר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "10 סמ\"ר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "5 סמ\"ר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 1,
+    "body": "מהו סכום הזוויות במשולש?",
+    "explanation": "סכום הזוויות בכל משולש הוא 180°.",
+    "options": [
+      { "label": "1", "body": "180°", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "90°", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "360°", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "270°", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 1,
+    "body": "מהו שטחו של מלבן שאורכו 8 ס\"מ ורוחבו 3 ס\"מ?",
+    "explanation": "שטח מלבן = אורך × רוחב = 8 × 3 = 24 סמ\"ר.",
+    "options": [
+      { "label": "1", "body": "24 סמ\"ר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "22 סמ\"ר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "11 סמ\"ר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "16 סמ\"ר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 2,
+    "body": "מהו היקפו של מלבן שאורכו 8 ס\"מ ורוחבו 3 ס\"מ?",
+    "explanation": "היקף מלבן = 2 × (אורך + רוחב) = 2 × (8 + 3) = 2 × 11 = 22 ס\"מ.",
+    "options": [
+      { "label": "1", "body": "22 ס\"מ", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "24 ס\"מ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "11 ס\"מ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "14 ס\"מ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 2,
+    "body": "במשולש ישר-זווית אחת הזוויות היא 90°. אם זווית נוספת היא 30°, מהי הזווית השלישית?",
+    "explanation": "סכום הזוויות 180°. 180 − 90 − 30 = 60°.",
+    "options": [
+      { "label": "1", "body": "60°", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "70°", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "90°", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "45°", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 3,
+    "body": "מהו שטחו המקורב של עיגול שרדיוסו 3 ס\"מ? (נשתמש ב-π ≈ 3.14)",
+    "explanation": "שטח עיגול = π × r² = 3.14 × 9 ≈ 28.3 סמ\"ר.",
+    "options": [
+      { "label": "1", "body": "כ-28.3 סמ\"ר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כ-18.8 סמ\"ר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "כ-9.4 סמ\"ר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כ-6 סמ\"ר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 3,
+    "body": "שטחו של ריבוע הוא 49 סמ\"ר. מהו היקפו?",
+    "explanation": "אורך הצלע = שורש 49 = 7 ס\"מ. היקף = 4 × 7 = 28 ס\"מ.",
+    "options": [
+      { "label": "1", "body": "28 ס\"מ", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "49 ס\"מ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "14 ס\"מ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "196 ס\"מ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 3,
+    "body": "במשולש שווה-שוקיים זווית הראש היא 40°. מהי כל אחת מזוויות הבסיס?",
+    "explanation": "זוויות הבסיס שוות. (180 − 40) ÷ 2 = 140 ÷ 2 = 70°.",
+    "options": [
+      { "label": "1", "body": "70°", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "40°", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "140°", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "100°", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 2,
+    "body": "מהו נפחה של קובייה שאורך מקצועה 4 ס\"מ?",
+    "explanation": "נפח קובייה = מקצוע בשלישית = 4 × 4 × 4 = 64 סמ\"ק.",
+    "options": [
+      { "label": "1", "body": "64 סמ\"ק", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "16 סמ\"ק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "12 סמ\"ק", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "48 סמ\"ק", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 4,
+    "body": "אם מכפילים את אורך צלע הריבוע פי 2, פי כמה גדל שטחו?",
+    "explanation": "השטח תלוי בצלע בריבוע. אם הצלע גדלה פי 2, השטח גדל פי 2² = 4.",
+    "options": [
+      { "label": "1", "body": "פי 4", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "פי 2", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "פי 8", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "פי 16", "is_correct": false, "position": 3 }
+    ]
+  }
+]

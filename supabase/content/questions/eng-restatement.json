@@ -1,0 +1,112 @@
+[
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 1, "difficulty": 2,
+    "body": "Choose the sentence closest in meaning to: \"She rarely eats meat.\"\n\n(A) She never eats meat.  (B) She seldom eats meat.  (C) She often eats meat.  (D) She always eats meat.",
+    "explanation": "'Rarely' פירושו 'לעיתים נדירות', והמילה הקרובה ביותר היא 'seldom' (לעיתים רחוקות).",
+    "options": [
+      { "label": "A", "body": "She never eats meat.", "is_correct": false, "position": 0 },
+      { "label": "B", "body": "She seldom eats meat.", "is_correct": true, "position": 1 },
+      { "label": "C", "body": "She often eats meat.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "She always eats meat.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 1, "difficulty": 2,
+    "body": "Choose the sentence closest in meaning to: \"The store is open every day except Sunday.\"\n\n(A) The store is closed on Sundays.  (B) The store is open only on Sundays.  (C) The store is always closed.  (D) The store is never open.",
+    "explanation": "'Open every day except Sunday' פירושו שביום ראשון החנות סגורה.",
+    "options": [
+      { "label": "A", "body": "The store is closed on Sundays.", "is_correct": true, "position": 0 },
+      { "label": "B", "body": "The store is open only on Sundays.", "is_correct": false, "position": 1 },
+      { "label": "C", "body": "The store is always closed.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "The store is never open.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 1, "difficulty": 2,
+    "body": "Choose the sentence closest in meaning to: \"He finished the work before lunch.\"\n\n(A) He finished after lunch.  (B) He had finished by lunchtime.  (C) He never finished the work.  (D) He ate lunch before working.",
+    "explanation": "'Before lunch' פירושו שהעבודה הסתיימה עד שעת הצהריים.",
+    "options": [
+      { "label": "A", "body": "He finished after lunch.", "is_correct": false, "position": 0 },
+      { "label": "B", "body": "He had finished by lunchtime.", "is_correct": true, "position": 1 },
+      { "label": "C", "body": "He never finished the work.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "He ate lunch before working.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 1, "difficulty": 2,
+    "body": "Choose the sentence closest in meaning to: \"Few students passed the exam.\"\n\n(A) Most students passed.  (B) Not many students passed.  (C) All students passed.  (D) No exam was held.",
+    "explanation": "'Few' (ללא 'a') משמעו 'מעטים', כלומר לא רבים עברו את המבחן.",
+    "options": [
+      { "label": "A", "body": "Most students passed.", "is_correct": false, "position": 0 },
+      { "label": "B", "body": "Not many students passed.", "is_correct": true, "position": 1 },
+      { "label": "C", "body": "All students passed.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "No exam was held.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 1, "difficulty": 1,
+    "body": "Choose the sentence closest in meaning to: \"You must submit the form by Friday.\"\n\n(A) The form is due no later than Friday.  (B) The form is due after Friday.  (C) You may skip the form.  (D) Submitting on Friday is optional.",
+    "explanation": "'By Friday' פירושו לא יאוחר מיום שישי.",
+    "options": [
+      { "label": "A", "body": "The form is due no later than Friday.", "is_correct": true, "position": 0 },
+      { "label": "B", "body": "The form is due after Friday.", "is_correct": false, "position": 1 },
+      { "label": "C", "body": "You may skip the form.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "Submitting on Friday is optional.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 2, "difficulty": 4,
+    "body": "Choose the sentence closest in meaning to: \"Had she known about the traffic, she would have left earlier.\"\n\n(A) She knew about the traffic and left early.  (B) She did not know about the traffic, so she left late.  (C) She always leaves early.  (D) There was no traffic that day.",
+    "explanation": "זהו תנאי בלתי-מציאותי בעבר: היא לא ידעה על הפקקים, ולכן לא יצאה מוקדם יותר.",
+    "options": [
+      { "label": "A", "body": "She knew about the traffic and left early.", "is_correct": false, "position": 0 },
+      { "label": "B", "body": "She did not know about the traffic, so she left late.", "is_correct": true, "position": 1 },
+      { "label": "C", "body": "She always leaves early.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "There was no traffic that day.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 2, "difficulty": 3,
+    "body": "Choose the sentence closest in meaning to: \"The project succeeded not because of luck but through careful planning.\"\n\n(A) Luck was the main reason for the success.  (B) Careful planning, rather than luck, led to the success.  (C) The project failed despite planning.  (D) Planning was unnecessary for success.",
+    "explanation": "'not because of luck but through careful planning' מדגיש שהתכנון, ולא המזל, הביא להצלחה.",
+    "options": [
+      { "label": "A", "body": "Luck was the main reason for the success.", "is_correct": false, "position": 0 },
+      { "label": "B", "body": "Careful planning, rather than luck, led to the success.", "is_correct": true, "position": 1 },
+      { "label": "C", "body": "The project failed despite planning.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "Planning was unnecessary for success.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 2, "difficulty": 5,
+    "body": "Choose the sentence closest in meaning to: \"Hardly had the game begun when it started to rain.\"\n\n(A) It had rained long before the game began.  (B) The game began just before the rain started.  (C) The game was canceled because of rain.  (D) It never rained during the game.",
+    "explanation": "'Hardly had X happened when Y' מציין ש-Y קרה מיד אחרי X: המשחק התחיל וכמעט מיד התחיל לרדת גשם.",
+    "options": [
+      { "label": "A", "body": "It had rained long before the game began.", "is_correct": false, "position": 0 },
+      { "label": "B", "body": "The game began just before the rain started.", "is_correct": true, "position": 1 },
+      { "label": "C", "body": "The game was canceled because of rain.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "It never rained during the game.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 2, "difficulty": 4,
+    "body": "Choose the sentence closest in meaning to: \"Contrary to popular belief, the diet had little effect.\"\n\n(A) As most people think, the diet worked very well.  (B) Unlike what many believe, the diet barely worked.  (C) The diet was extremely effective.  (D) No one believed in the diet at all.",
+    "explanation": "'Contrary to popular belief ... had little effect' פירושו שבניגוד למה שרבים חושבים, לדיאטה כמעט לא הייתה השפעה.",
+    "options": [
+      { "label": "A", "body": "As most people think, the diet worked very well.", "is_correct": false, "position": 0 },
+      { "label": "B", "body": "Unlike what many believe, the diet barely worked.", "is_correct": true, "position": 1 },
+      { "label": "C", "body": "The diet was extremely effective.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "No one believed in the diet at all.", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "אנגלית – Restatement", "level_position": 2, "difficulty": 3,
+    "body": "Choose the sentence closest in meaning to: \"The more he practiced, the better he performed.\"\n\n(A) Practice did not change his performance.  (B) His performance improved as he practiced more.  (C) He performed worse the more he practiced.  (D) He stopped practicing to perform better.",
+    "explanation": "מבנה 'The more ... the better' מציין קשר ישר: ככל שתרגל יותר, ביצועיו השתפרו.",
+    "options": [
+      { "label": "A", "body": "Practice did not change his performance.", "is_correct": false, "position": 0 },
+      { "label": "B", "body": "His performance improved as he practiced more.", "is_correct": true, "position": 1 },
+      { "label": "C", "body": "He performed worse the more he practiced.", "is_correct": false, "position": 2 },
+      { "label": "D", "body": "He stopped practicing to perform better.", "is_correct": false, "position": 3 }
+    ]
+  }
+]
