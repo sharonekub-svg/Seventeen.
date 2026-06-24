@@ -1,0 +1,18 @@
+[
+  {
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 1,
+    "type": "multiple_choice",
+    "difficulty": 2,
+    "body": "אם 3x + 4 = 19, מה ערכו של x?",
+    "explanation": "מחסירים 4 משני האגפים: 3x = 15. מחלקים ב-3: x = 5.",
+    "source": "original",
+    "options": [
+      { "label": "1", "body": "3", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "5", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "7", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "15", "is_correct": false, "position": 3 }
+    ]
+  }
+]
