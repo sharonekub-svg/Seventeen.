@@ -504,5 +504,49 @@
       { "label": "3", "body": "12 ס\"מ", "is_correct": false, "position": 2 },
       { "label": "4", "body": "16 ס\"מ", "is_correct": false, "position": 3 }
     ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 5, "difficulty": 4,
+    "body": "מהו היקפו של ריבוע ששטחו 36 סמ\"ר?",
+    "explanation": "אורך הצלע = שורש 36 = 6 ס\"מ. היקף = 4 × 6 = 24 ס\"מ.",
+    "options": [
+      { "label": "1", "body": "24 ס\"מ", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "36 ס\"מ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "18 ס\"מ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "12 ס\"מ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 8, "difficulty": 5,
+    "body": "שטח פאה אחת של קובייה הוא 9 סמ\"ר. מהו נפח הקובייה?",
+    "explanation": "אורך המקצוע = שורש 9 = 3 ס\"מ. נפח = 3³ = 27 סמ\"ק.",
+    "options": [
+      { "label": "1", "body": "27 סמ\"ק", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "9 סמ\"ק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "54 סמ\"ק", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "18 סמ\"ק", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 9, "difficulty": 5,
+    "body": "במעוין כל הצלעות שוות באורכן. אם אורך הצלע 5 ס\"מ, מהו היקפו?",
+    "explanation": "למעוין 4 צלעות שוות, ולכן ההיקף = 4 × 5 = 20 ס\"מ.",
+    "options": [
+      { "label": "1", "body": "20 ס\"מ", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "25 ס\"מ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "10 ס\"מ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "15 ס\"מ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 10, "difficulty": 5,
+    "body": "פי כמה גדל שטחו של עיגול אם מכפילים את רדיוסו פי 3?",
+    "explanation": "השטח פרופורציוני לריבוע הרדיוס. אם הרדיוס גדל פי 3, השטח גדל פי 3² = 9.",
+    "options": [
+      { "label": "1", "body": "פי 9", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "פי 3", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "פי 6", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "פי 27", "is_correct": false, "position": 3 }
+    ]
   }
 ]

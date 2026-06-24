@@ -515,5 +515,38 @@
       { "label": "3", "body": "28", "is_correct": false, "position": 2 },
       { "label": "4", "body": "26", "is_correct": false, "position": 3 }
     ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 5, "difficulty": 4,
+    "body": "ממוצע של 6 ושל מספר נוסף הוא 9. מהו המספר הנוסף?",
+    "explanation": "אם הממוצע של שני מספרים הוא 9, סכומם 18. המספר הנוסף = 18 − 6 = 12.",
+    "options": [
+      { "label": "1", "body": "12", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "9", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "3", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "15", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 9, "difficulty": 5,
+    "body": "מטילים קובייה הוגנת. מה ההסתברות לקבל מספר הגדול מ-4?",
+    "explanation": "המספרים הגדולים מ-4 הם 5 ו-6 — שניים מתוך שישה. ההסתברות: 2/6 = 1/3.",
+    "options": [
+      { "label": "1", "body": "1/3", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "1/2", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "1/6", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "2/3", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 10, "difficulty": 5,
+    "body": "אם 3 ק\"ג תפוחים עולים 18 ₪, כמה יעלו 5 ק\"ג באותו מחיר לק\"ג?",
+    "explanation": "ק\"ג אחד עולה 18 ÷ 3 = 6 ₪. חמישה ק\"ג: 5 × 6 = 30 ₪.",
+    "options": [
+      { "label": "1", "body": "30 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "36 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "24 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "45 ₪", "is_correct": false, "position": 3 }
+    ]
   }
 ]
