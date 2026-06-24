@@ -2319,3 +2319,356 @@ select seed_q('psychometric', 9, 10, 5, 'Choose the best restatement: "The concl
 select seed_q('psychometric', 9, 10, 5, 'Choose the best restatement: "The verdict was met with mixed reactions."',
   'People reacted to the verdict in different ways.',
   '[{"b":"People reacted to the verdict in different ways.","c":true},{"b":"Everyone reacted the same way."},{"b":"No one reacted at all."},{"b":"The verdict pleased everyone."}]');
+
+-- ============================================================================
+-- PSYCHOMETRIC · Unit 10 · אנגלית – Reading
+-- Each item embeds a short original English passage and a question.
+-- ============================================================================
+
+-- Level 1
+select seed_q('psychometric', 10, 1, 1, 'Read: "The library is open on weekdays from 9 to 5. It is closed on weekends." When is the library closed?',
+  'The passage states the library is closed on weekends.',
+  '[{"b":"On weekdays"},{"b":"On weekends","c":true},{"b":"At noon"},{"b":"Never"}]');
+select seed_q('psychometric', 10, 1, 1, 'Read: "Maria has a small garden where she grows tomatoes, carrots, and herbs." What does Maria grow?',
+  'The passage lists tomatoes, carrots, and herbs as what she grows.',
+  '[{"b":"Flowers only"},{"b":"Tomatoes, carrots, and herbs","c":true},{"b":"Nothing"},{"b":"Trees"}]');
+select seed_q('psychometric', 10, 1, 1, 'Read: "The train leaves at 8 and arrives at 10, so the trip takes two hours." How long is the trip?',
+  'From 8 to 10 is two hours, as the passage states.',
+  '[{"b":"One hour"},{"b":"Two hours","c":true},{"b":"Three hours"},{"b":"Ten hours"}]');
+select seed_q('psychometric', 10, 1, 1, 'Read: "Dogs need exercise every day. A short daily walk keeps them healthy." What keeps dogs healthy?',
+  'The passage says a short daily walk keeps dogs healthy.',
+  '[{"b":"A daily walk","c":true},{"b":"Sleeping all day"},{"b":"Eating sweets"},{"b":"Staying indoors"}]');
+select seed_q('psychometric', 10, 1, 1, 'Read: "It was very cold outside, so Ben put on a heavy coat." Why did Ben put on a coat?',
+  'The passage states he put on a coat because it was cold.',
+  '[{"b":"Because it was cold","c":true},{"b":"Because it was hot"},{"b":"Because it was raining"},{"b":"Because he was late"}]');
+
+-- Level 2
+select seed_q('psychometric', 10, 2, 2, 'Read: "Recycling reduces waste, saves raw materials, and lowers pollution. For these reasons, many cities encourage it." What is the main idea?',
+  'The passage lists benefits of recycling and concludes it is encouraged, so the main idea is that recycling is beneficial.',
+  '[{"b":"Recycling is beneficial","c":true},{"b":"Cities are crowded"},{"b":"Pollution is harmless"},{"b":"Waste cannot be reduced"}]');
+select seed_q('psychometric', 10, 2, 2, 'Read: "Although the medicine is expensive to buy, it lasts for months, making it cheaper over time." What is the advantage of the medicine?',
+  'The passage contrasts the high price with long-lasting use, so the advantage is being cheaper over time.',
+  '[{"b":"It is cheaper over time","c":true},{"b":"It is unpleasant"},{"b":"It works instantly"},{"b":"It is free"}]');
+select seed_q('psychometric', 10, 2, 2, 'Read: "Penguins are birds, but they cannot fly. Instead, they are excellent swimmers." What can penguins do well?',
+  'The passage states penguins are excellent swimmers.',
+  '[{"b":"Fly"},{"b":"Swim","c":true},{"b":"Climb trees"},{"b":"Run fast"}]');
+select seed_q('psychometric', 10, 2, 2, 'Read: "Because of the storm, the flight was delayed for three hours." Why was the flight delayed?',
+  'The passage attributes the delay to the storm.',
+  '[{"b":"Because of the storm","c":true},{"b":"Because of a holiday"},{"b":"Because of the pilot"},{"b":"Because it was full"}]');
+select seed_q('psychometric', 10, 2, 3, 'Read: "After the heavy rain, the river rose and flooded the nearby fields." What happened to the fields?',
+  'The passage states the river flooded the nearby fields, so they were flooded.',
+  '[{"b":"They were flooded","c":true},{"b":"They dried up"},{"b":"They were harvested"},{"b":"They froze"}]');
+
+-- Level 3
+select seed_q('psychometric', 10, 3, 3, 'Read: "Bees do more than make honey. As they gather nectar, they carry pollen between flowers, enabling plants to reproduce." What additional role do bees play?',
+  'The passage explains that bees carry pollen and enable plants to reproduce.',
+  '[{"b":"Pollinating plants","c":true},{"b":"Making wax candles"},{"b":"Killing pests"},{"b":"Producing milk"}]');
+select seed_q('psychometric', 10, 3, 3, 'Read: "The moon produces no light of its own; it merely reflects the sunlight that strikes it." Why can we see the moon?',
+  'The passage explains we see the moon because it reflects sunlight.',
+  '[{"b":"It reflects sunlight","c":true},{"b":"It produces its own light"},{"b":"It is on fire"},{"b":"It is very large"}]');
+select seed_q('psychometric', 10, 3, 3, 'Read: "As you climb higher, the air becomes thinner and colder. Mountain climbers therefore carry oxygen equipment." Why do climbers carry oxygen?',
+  'Because the air is thinner at high altitude, climbers carry oxygen to compensate.',
+  '[{"b":"Because the air is thinner up high","c":true},{"b":"To reduce their weight"},{"b":"For cooking"},{"b":"For decoration"}]');
+select seed_q('psychometric', 10, 3, 4, 'Read: "The carnivorous plant grows in soil poor in nitrogen, so it traps insects as an alternative source of this vital nutrient." Why does the plant trap insects?',
+  'The passage states the plant traps insects to obtain nitrogen, which the soil lacks.',
+  '[{"b":"To obtain nitrogen","c":true},{"b":"To defend itself"},{"b":"To attract bees"},{"b":"To get sunlight"}]');
+select seed_q('psychometric', 10, 3, 4, 'Read: "Unlike the common belief that bats are blind, most see quite well; they simply also use echolocation to hunt in the dark." What does the passage correct?',
+  'The passage corrects the mistaken belief that bats are blind.',
+  '[{"b":"The belief that bats are blind","c":true},{"b":"The claim that bats fly"},{"b":"The idea that bats eat insects"},{"b":"The notion that bats are birds"}]');
+
+-- Level 4
+select seed_q('psychometric', 10, 4, 4, 'Read: "Researchers once assumed language was unique to humans, but studies show that bees, through a dance, convey precise information about food location." How does the passage change the earlier view?',
+  'The passage moves from the assumption that language is uniquely human to recognizing that bees also convey information.',
+  '[{"b":"It shows animals also convey information","c":true},{"b":"It proves only humans communicate"},{"b":"It denies that bees communicate"},{"b":"It shows the dance is meaningless"}]');
+select seed_q('psychometric', 10, 4, 4, 'Read: "The author notes that while social networks connect distant people, they may push apart those sitting in the same room." What is the author attitude toward social networks?',
+  'The author points to a benefit and a drawback, expressing a balanced, qualified attitude.',
+  '[{"b":"Balanced and qualified","c":true},{"b":"Wholly enthusiastic"},{"b":"Completely dismissive"},{"b":"Entirely indifferent"}]');
+select seed_q('psychometric', 10, 4, 4, 'Read: "Instead of describing the emotions directly, the writer depicted small gestures: the trembling hands, the lowered gaze." How does the writer convey emotion?',
+  'The writer hints at emotion through physical details rather than naming it, an indirect style.',
+  '[{"b":"Indirectly, through small details","c":true},{"b":"By stating feelings outright"},{"b":"By ignoring the character"},{"b":"By describing only landscapes"}]');
+select seed_q('psychometric', 10, 4, 5, 'Read: "Though the new theory explained phenomena the old one could not, it required complex assumptions many found hard to accept." What can be inferred about the theory acceptance?',
+  'Its explanatory power alongside its complex assumptions implies that its acceptance was not straightforward.',
+  '[{"b":"Its acceptance was not straightforward","c":true},{"b":"It was rejected immediately"},{"b":"Everyone accepted it easily"},{"b":"It explained nothing"}]');
+select seed_q('psychometric', 10, 4, 4, 'Read: "The first printing presses were slow and costly, yet they spread ideas faster than any method before them." What does the passage emphasize about early presses?',
+  'Despite being slow and costly, the presses spread ideas faster than earlier methods, which the passage emphasizes.',
+  '[{"b":"They spread ideas faster than before","c":true},{"b":"They were useless"},{"b":"They were cheap and fast"},{"b":"They stopped the spread of ideas"}]');
+
+-- Level 5
+select seed_q('psychometric', 10, 5, 5, 'Read: "The phenomenon in which people recall events that never happened is called false memory; studies show such memories can be planted through leading questions." What is the conclusion of the studies?',
+  'The passage concludes that leading questions can plant false memories.',
+  '[{"b":"Leading questions can create false memories","c":true},{"b":"Human memory is always accurate"},{"b":"False memory is impossible"},{"b":"Memory cannot be influenced"}]');
+select seed_q('psychometric', 10, 5, 5, 'Read: "The author argues that education is not the accumulation of facts but the development of the ability to think critically and ask questions." According to the author, what is the essence of education?',
+  'The author contrasts fact-gathering with critical thinking and locates the essence of education in the latter.',
+  '[{"b":"Developing critical thinking","c":true},{"b":"Memorizing many facts"},{"b":"Passing examinations"},{"b":"Reading many books"}]');
+select seed_q('psychometric', 10, 5, 5, 'Read: "Though the desert appears lifeless by day, at night it teems with creatures that emerge once the heat fades." What apparent contradiction does the passage resolve?',
+  'The passage reconciles the lifeless daytime appearance with the lively nocturnal activity of the desert.',
+  '[{"b":"Lifeless by day yet lively by night","c":true},{"b":"Hot yet dry"},{"b":"Day versus night across seasons"},{"b":"Plants versus animals"}]');
+select seed_q('psychometric', 10, 5, 5, 'Read: "The word robot comes from a Czech play of 1920, in which artificial workers labor for humans." What is the origin of the word robot, according to the passage?',
+  'The passage states the word comes from a Czech play of 1920.',
+  '[{"b":"A Czech play from 1920","c":true},{"b":"An ancient Greek myth"},{"b":"A modern science textbook"},{"b":"A Latin proverb"}]');
+select seed_q('psychometric', 10, 5, 5, 'Read: "Critics praised the films stunning visuals while lamenting its thin plot, calling it a feast for the eyes but not the mind." What is the critics overall view?',
+  'The critics admire the visuals but fault the plot, expressing a mixed view.',
+  '[{"b":"Mixed: strong visuals, weak plot","c":true},{"b":"Entirely negative"},{"b":"Entirely positive"},{"b":"Indifferent"}]');
+
+-- Level 6
+select seed_q('psychometric', 10, 6, 5, 'Read: "The historian warns that reading the past through present values can distort our understanding, for people of other eras acted by a logic of their own." What is the historian warning?',
+  'The historian warns against judging the past by present values, which distorts understanding.',
+  '[{"b":"Do not judge the past by present values","c":true},{"b":"Never read old sources"},{"b":"The present is superior to the past"},{"b":"All eras are identical"}]');
+select seed_q('psychometric', 10, 6, 5, 'Read: "The article distinguishes price, the sum one pays, from value, the benefit one gains, noting that the two need not coincide." What distinction does the article draw?',
+  'The article distinguishes price (what is paid) from value (the benefit gained) and notes they may differ.',
+  '[{"b":"Price and value need not be the same","c":true},{"b":"Price always equals value"},{"b":"Value is measured only in money"},{"b":"Price matters more than value"}]');
+select seed_q('psychometric', 10, 6, 5, 'Read: "At first the drug was hailed as a breakthrough, but later its effectiveness proved no greater than that of cheaper existing drugs." How does the portrayal of the drug change?',
+  'The passage shifts from enthusiastic praise to a critical reassessment once its effectiveness proved unremarkable.',
+  '[{"b":"From enthusiasm to reservation","c":true},{"b":"From doubt to full approval"},{"b":"From indifference to excitement"},{"b":"It does not change"}]');
+select seed_q('psychometric', 10, 6, 5, 'Read: "The phrase tip of the iceberg describes a situation in which the visible part of a problem is far smaller than the hidden part." What does the phrase mean, per the passage?',
+  'The passage explains the phrase means the visible part is only a small portion of a larger hidden problem.',
+  '[{"b":"The visible part is a small part of a larger problem","c":true},{"b":"The whole problem is visible"},{"b":"There is no problem"},{"b":"The problem is trivial"}]');
+select seed_q('psychometric', 10, 6, 5, 'Read: "Although machines replaced humans in many tasks, they also created new professions that had not existed before." What does the author emphasize?',
+  'The author balances job loss by noting that machines also create new professions.',
+  '[{"b":"New jobs arise alongside lost ones","c":true},{"b":"Machines eliminate all jobs"},{"b":"Machines have no effect on work"},{"b":"Old jobs are always better"}]');
+
+-- Level 7
+select seed_q('psychometric', 10, 7, 5, 'Read: "The paradox of choice: as the number of options grows, so do regret and difficulty in deciding, until abundant choice becomes a burden." What is the central claim?',
+  'The passage claims that too many options can make deciding harder and become a burden.',
+  '[{"b":"Too many options can burden decision-making","c":true},{"b":"More options are always better"},{"b":"People dislike choosing anything"},{"b":"Regret is unrelated to choice"}]');
+select seed_q('psychometric', 10, 7, 5, 'Read: "The difference between a scientist and a charlatan is not that the scientist never errs, but that the scientist is willing to examine and correct errors." What marks the scientist, per the passage?',
+  'The passage locates the mark of the scientist in the willingness to examine and correct errors.',
+  '[{"b":"Willingness to examine and correct errors","c":true},{"b":"Never making any error"},{"b":"High self-confidence"},{"b":"Rejecting all criticism"}]');
+select seed_q('psychometric', 10, 7, 5, 'Read: "The writer distinguishes loneliness, a painful sense of disconnection, from solitude, a chosen withdrawal that can enrich the self." On what does the distinction rest?',
+  'The key distinction is voluntary choice: solitude is chosen, whereas loneliness is not.',
+  '[{"b":"On whether it is chosen","c":true},{"b":"On its duration"},{"b":"On the number of people nearby"},{"b":"On the location"}]');
+select seed_q('psychometric', 10, 7, 5, 'Read: "Had the author merely presented the facts, the book would have been useful; but he added sweeping interpretations unsupported by evidence." What is the writers criticism?',
+  'The writer faults the sweeping interpretations that are not supported by evidence.',
+  '[{"b":"The interpretations are unsupported by evidence","c":true},{"b":"The facts are wrong"},{"b":"The book is too short"},{"b":"There are no facts"}]');
+select seed_q('psychometric', 10, 7, 5, 'Read: "The critic argues that the novel, despite its thin plot, excels through rich language and complex characters that more than compensate." What is the critic overall judgment?',
+  'The critic notes a weak plot but concludes that the strengths compensate, yielding a positive overall judgment.',
+  '[{"b":"Positive, despite a weak plot","c":true},{"b":"Wholly negative"},{"b":"Indifferent"},{"b":"Positive only about the plot"}]');
+
+-- Level 8
+select seed_q('psychometric', 10, 8, 5, 'Read: "Confirmation bias is the tendency to seek information that supports our views and ignore information that contradicts them, making it hard to change our minds even in the face of evidence." What is the effect of confirmation bias?',
+  'The passage explains that confirmation bias makes it hard to change ones mind despite contrary evidence.',
+  '[{"b":"Difficulty changing views despite evidence","c":true},{"b":"Greater openness to new ideas"},{"b":"Improved memory"},{"b":"Faster, better decisions"}]');
+select seed_q('psychometric', 10, 8, 5, 'Read: "The economist cautions that a correlation between two phenomena does not prove that one causes the other; a third factor may influence both." What is the economist point?',
+  'The economist clarifies that correlation does not prove causation, since a third factor may be at work.',
+  '[{"b":"Correlation does not prove causation","c":true},{"b":"Correlation always proves causation"},{"b":"Phenomena are never related"},{"b":"Data are unreliable"}]');
+select seed_q('psychometric', 10, 8, 5, 'Read: "The argument rests on the hidden assumption that whatever was common in the past ought to be preserved in the present, an assumption that is far from self-evident." What weakness does the passage identify?',
+  'The passage identifies reliance on a hidden, unjustified assumption as the weakness of the argument.',
+  '[{"b":"It relies on an unjustified hidden assumption","c":true},{"b":"It uses too much evidence"},{"b":"It is too short"},{"b":"It avoids the past"}]');
+select seed_q('psychometric', 10, 8, 5, 'Read: "The essay separates sympathy, identifying with anothers suffering from the outside, from empathy, the capacity to feel that experience from within." What is the central distinction?',
+  'The distinction is between outside identification (sympathy) and feeling the experience from within (empathy).',
+  '[{"b":"Outside identification versus feeling from within","c":true},{"b":"Emotion versus reason"},{"b":"Past versus present"},{"b":"There is no difference"}]');
+select seed_q('psychometric', 10, 8, 5, 'Read: "The poet does not describe the sea itself but its reflection in the eye of the beholder, turning the outer landscape into a mirror of an inner world." What technique does the passage describe?',
+  'The passage describes using the outer landscape as a mirror of an inner emotional world.',
+  '[{"b":"The landscape mirrors an inner world","c":true},{"b":"A precise realistic description of the sea"},{"b":"The absence of any imagery"},{"b":"A scientific account of waves"}]');
+
+-- Level 9
+select seed_q('psychometric', 10, 9, 5, 'Read: "The philosopher holds that freedom is not the absence of all constraint, but rather the ability to act according to rules one has imposed upon oneself." How does the philosopher define freedom?',
+  'The philosopher defines freedom as acting by self-imposed rules, not the absence of all constraint.',
+  '[{"b":"Acting by rules one chooses for oneself","c":true},{"b":"The total absence of any rule"},{"b":"Obeying external rules by force"},{"b":"Doing whatever one pleases"}]');
+select seed_q('psychometric', 10, 9, 5, 'Read: "Although the study was carefully conducted, its sample included only university students, so one must be cautious in generalizing its findings to the wider population." What is the authors reservation?',
+  'The author cautions that the homogeneous student sample limits generalizing the findings to the wider population.',
+  '[{"b":"A homogeneous sample limits generalization","c":true},{"b":"The study was careless"},{"b":"The findings are false"},{"b":"The sample was too large"}]');
+select seed_q('psychometric', 10, 9, 5, 'Read: "The author writes ironically, praising the wonderful efficiency of the bureaucracy while every example he gives reveals delay and failure." What is the authors real intent?',
+  'The ironic praise, undercut by examples of failure, signals that the author actually means to condemn the bureaucracy.',
+  '[{"b":"To condemn the bureaucracy","c":true},{"b":"To praise it sincerely"},{"b":"To describe an efficient system"},{"b":"To remain neutral"}]');
+select seed_q('psychometric', 10, 9, 5, 'Read: "History, the author argues, is not a list of dates but an ongoing attempt to interpret why things happened, and so it is rewritten in every generation." Why is history rewritten, per the passage?',
+  'Because history is interpretation rather than mere facts, each generation reinterprets and rewrites it.',
+  '[{"b":"Because it is interpretation that changes over generations","c":true},{"b":"Because the dates change"},{"b":"Because documents are lost"},{"b":"Because it has no truth"}]');
+select seed_q('psychometric', 10, 9, 5, 'Read: "The writer builds suspense not by hiding the killers identity, which the reader knows from the start, but through the tense anticipation of when and how it will be revealed." What is distinctive about the suspense?',
+  'Unlike a classic mystery, the suspense rests on anticipating the revelation rather than concealing the identity.',
+  '[{"b":"It rests on anticipating the reveal, not hiding identity","c":true},{"b":"It hides the killers identity"},{"b":"It contains no suspense"},{"b":"It depends on many characters"}]');
+
+-- Level 10
+select seed_q('psychometric', 10, 10, 5, 'Read: "The writer distinguishes passive tolerance, merely agreeing not to interfere with another, from active tolerance, a genuine effort to understand a view one does not share; only the latter, he claims, fosters real dialogue." What is the writers conclusion?',
+  'The writer concludes that only active tolerance, the effort to understand the other, fosters real dialogue.',
+  '[{"b":"Only active tolerance fosters real dialogue","c":true},{"b":"All forms of tolerance are equal"},{"b":"Passive tolerance is better"},{"b":"Tolerance harms dialogue"}]');
+select seed_q('psychometric', 10, 10, 5, 'Read: "Had the regulator settled for a blanket ban, it would have harmed beneficial uses of the technology too; it therefore chose tiered oversight that distinguishes one use from another." Why did the regulator choose tiered oversight?',
+  'A blanket ban would have harmed beneficial uses, so the regulator chose tiered oversight to distinguish among uses.',
+  '[{"b":"To avoid harming beneficial uses","c":true},{"b":"To ban the technology entirely"},{"b":"Because it did not care"},{"b":"To encourage every use"}]');
+select seed_q('psychometric', 10, 10, 5, 'Read: "The essay criticizes the tendency to measure educational success by test scores alone, since such measures ignore curiosity, creativity, and cooperation, qualities that are hard to quantify." What is the essays claim?',
+  'The essay argues that test scores alone miss important qualities such as curiosity and creativity that are hard to quantify.',
+  '[{"b":"Test scores alone do not capture educational success","c":true},{"b":"Test scores are the perfect measure"},{"b":"Creativity is easily quantified"},{"b":"Education should not be measured at all"}]');
+select seed_q('psychometric', 10, 10, 5, 'Read: "The books thesis rests on a chain of inferences, each link of which is plausible, yet whose accumulation leads to an extreme conclusion the author himself hesitates to fully embrace." What problem does the passage identify?',
+  'The passage notes the tension between plausible individual links and the extreme conclusion their accumulation produces.',
+  '[{"b":"Plausible links accumulate into an extreme conclusion","c":true},{"b":"Each link is individually false"},{"b":"The book reaches no conclusion"},{"b":"The conclusion is too modest"}]');
+select seed_q('psychometric', 10, 10, 5, 'Read: "The poet closes the poem with the very line on which it opened, but after all the reader has undergone, the repeated line takes on a meaning opposite to its first." What is the effect of repeating the line?',
+  'In its new context the same line acquires an opposite meaning, an effect of contrast created by repetition.',
+  '[{"b":"The line gains an opposite meaning in the new context","c":true},{"b":"The line repeats with no change in meaning"},{"b":"The poem does not end"},{"b":"The line loses all meaning"}]');
+
+-- ============================================================================
+-- PSYCHOMETRIC · Unit 11 · מטלת כתיבה  (argumentative-writing reasoning)
+-- MCQs about thesis, structure, evidence, transitions, and reasoning flaws.
+-- ============================================================================
+
+-- Level 1
+select seed_q('psychometric', 11, 1, 1, 'מהי "תזה" בחיבור טיעון?',
+  'התזה היא העמדה המרכזית שהכותב מבקש לבסס ולהוכיח לאורך החיבור.',
+  '[{"b":"העמדה המרכזית שהכותב מבקש להוכיח","c":true},{"b":"רשימת המקורות בסוף החיבור"},{"b":"כותרת המשנה"},{"b":"דוגמה אקראית"}]');
+select seed_q('psychometric', 11, 1, 1, 'מה תפקידה של פסקת הפתיחה בחיבור טיעון?',
+  'פסקת הפתיחה מציגה את הנושא ואת עמדת הכותב (התזה) ומכינה את הקורא לטיעונים.',
+  '[{"b":"להציג את הנושא ואת עמדת הכותב","c":true},{"b":"לפרט את כל הראיות"},{"b":"לסכם את החיבור"},{"b":"להציג ביבליוגרפיה"}]');
+select seed_q('psychometric', 11, 1, 1, 'מה תפקידה של פסקת הסיום?',
+  'פסקת הסיום מסכמת את עיקרי הטיעונים ומחזקת מחדש את המסקנה.',
+  '[{"b":"לסכם את הטיעונים ולחזק את המסקנה","c":true},{"b":"להציג טיעון חדש ומפתיע"},{"b":"לפתוח שאלה שלא נדונה"},{"b":"לתאר את הכותב"}]');
+select seed_q('psychometric', 11, 1, 1, 'איזו מילת קישור מתאימה להוספת טיעון נוסף?',
+  '"יתר על כן" מסמנת הוספה של טיעון על הקודם.',
+  '[{"b":"יתר על כן","c":true},{"b":"לעומת זאת"},{"b":"אף על פי כן"},{"b":"בניגוד לכך"}]');
+select seed_q('psychometric', 11, 1, 1, 'איזו מילת קישור מתאימה להבעת ניגוד?',
+  '"לעומת זאת" מסמנת ניגוד בין שני רעיונות.',
+  '[{"b":"בנוסף"},{"b":"לעומת זאת","c":true},{"b":"לכן"},{"b":"כמו כן"}]');
+
+-- Level 2
+select seed_q('psychometric', 11, 2, 2, 'איזו דוגמה תומכת בצורה הטובה ביותר בטענה "פעילות גופנית חשובה לבריאות"?',
+  'ראיה מבוססת-מחקר הקושרת פעילות גופנית להפחתת מחלות תומכת ישירות בטענה.',
+  '[{"b":"מחקרים מראים שפעילות גופנית מפחיתה מחלות לב","c":true},{"b":"חדר הכושר בשכונה שלי גדול"},{"b":"אני אוהב לרוץ בבוקר"},{"b":"ספורט הומצא לפני שנים רבות"}]');
+select seed_q('psychometric', 11, 2, 2, 'איזה מהמשפטים הוא טענה (עמדה) ולא עובדה?',
+  '"יש להאריך את חופשת הקיץ" מביעה עמדה הניתנת לוויכוח, ולכן זו טענה ולא עובדה.',
+  '[{"b":"יש להאריך את חופשת הקיץ","c":true},{"b":"חופשת הקיץ נמשכת חודשיים"},{"b":"בית הספר נפתח בספטמבר"},{"b":"בכיתה שלושים תלמידים"}]');
+select seed_q('psychometric', 11, 2, 2, 'מהו מבנה תקין של חיבור טיעון?',
+  'המבנה המקובל הוא פתיחה (הצגת התזה), גוף (טיעונים וראיות) וסיום (סיכום ומסקנה).',
+  '[{"b":"פתיחה, גוף הטיעונים, וסיום","c":true},{"b":"סיום, פתיחה, גוף"},{"b":"רק רשימת עובדות"},{"b":"גוף בלבד ללא פתיחה וסיום"}]');
+select seed_q('psychometric', 11, 2, 2, 'איזו מילת קישור מתאימה להסקת מסקנה?',
+  '"לפיכך" מציינת מסקנה הנובעת מהנאמר לפניה.',
+  '[{"b":"לפיכך","c":true},{"b":"למשל"},{"b":"בנוסף"},{"b":"למרות זאת"}]');
+select seed_q('psychometric', 11, 2, 2, 'כיצד כדאי לפתוח פסקת גוף בחיבור?',
+  'מומלץ לפתוח במשפט נושא המציג את הרעיון המרכזי של הפסקה.',
+  '[{"b":"במשפט נושא המציג את רעיון הפסקה","c":true},{"b":"במסקנה הסופית של החיבור"},{"b":"בציטוט ללא הקשר"},{"b":"בשאלה שאינה קשורה"}]');
+
+-- Level 3
+select seed_q('psychometric', 11, 3, 3, 'בפסקה: "יש להגביל זמן מסך לילדים. חשיפה ממושכת פוגעת בשינה ובריכוז, וגוזלת זמן מפעילות גופנית". מהו משפט הנושא?',
+  'משפט הנושא הוא הראשון, המציג את עמדת הפסקה — הצורך להגביל זמן מסך.',
+  '[{"b":"יש להגביל זמן מסך לילדים","c":true},{"b":"חשיפה ממושכת פוגעת בשינה"},{"b":"זמן נגזל מפעילות גופנית"},{"b":"לפסקה אין משפט נושא"}]');
+select seed_q('psychometric', 11, 3, 3, 'איזה טיעון משכנע יותר בעד מִחזור?',
+  'נתון כמותי על חיסכון משאבים משכנע יותר מאמירה כללית או טעם אישי.',
+  '[{"b":"מִחזור טון נייר חוסך כ-17 עצים","c":true},{"b":"מִחזור הוא רעיון נחמד"},{"b":"חבריי אוהבים למחזר"},{"b":"פחי המִחזור צבעוניים"}]');
+select seed_q('psychometric', 11, 3, 3, 'איזו מהאפשרויות מנוסחת בלשון מדויקת ולא כללית מדי?',
+  '"כשליש מהמשיבים התנגדו להצעה" מדויקת ומכמתת, בניגוד לניסוחים מעורפלים.',
+  '[{"b":"כשליש מהמשיבים התנגדו להצעה","c":true},{"b":"המון אנשים התנגדו"},{"b":"כולם פחות או יותר התנגדו"},{"b":"היו כאלה שהתנגדו"}]');
+select seed_q('psychometric', 11, 3, 3, 'מתי ראוי להשתמש בביטוי "למשל"?',
+  '"למשל" מתאים להצגת דוגמה ממחישה לרעיון שהוצג.',
+  '[{"b":"כשמביאים דוגמה ממחישה","c":true},{"b":"כשמסכמים את החיבור"},{"b":"כשמביעים ניגוד"},{"b":"כשפותחים את החיבור"}]');
+select seed_q('psychometric', 11, 3, 4, 'איזו טענה אינה נתמכת בראיה בפסקה הבאה: "יש לאסור פלסטיק חד-פעמי. הוא מזהם, מסוכן לבעלי חיים, והוא הדבר הגרוע ביותר שקרה לעולם"?',
+  'הקביעה שזה "הדבר הגרוע ביותר שקרה לעולם" היא הגזמה גורפת שאינה נתמכת בראיה.',
+  '[{"b":"הוא הדבר הגרוע ביותר שקרה לעולם","c":true},{"b":"הוא מזהם"},{"b":"הוא מסוכן לבעלי חיים"},{"b":"יש לאסור פלסטיק חד-פעמי"}]');
+
+-- Level 4
+select seed_q('psychometric', 11, 4, 4, 'מהו הכשל הלוגי במשפט: "פגשתי שני נהגים גסי רוח מהעיר X, ולכן כל תושבי X גסי רוח"?',
+  'הסקת מסקנה גורפת על כלל התושבים משתי דוגמאות בלבד היא הכללה נמהרת.',
+  '[{"b":"הכללה נמהרת","c":true},{"b":"היקש תקף לחלוטין"},{"b":"דוגמה רלוונטית"},{"b":"הגדרה מדויקת"}]');
+select seed_q('psychometric', 11, 4, 4, 'מדוע חשוב לכלול נגד-טיעון (טענת-נגד) ולהתמודד עמו בחיבור טיעון?',
+  'התמודדות עם טענת-נגד מחזקת את אמינות הכותב ומראה שעמדתו עומדת גם מול התנגדויות.',
+  '[{"b":"כדי לחזק את אמינות הטיעון ולהראות התמודדות","c":true},{"b":"כדי להאריך את החיבור בלבד"},{"b":"כדי לבלבל את הקורא"},{"b":"אין כל צורך בכך"}]');
+select seed_q('psychometric', 11, 4, 4, 'לתמיכה בטענה "יש להוסיף שיעורי בישול בבית הספר", איזו ראיה רלוונטית ביותר?',
+  'נתון על השפעת תוכניות בישול על הרגלי אכילה בריאים תומך ישירות בטענה.',
+  '[{"b":"מחקר שמצא כי תוכניות בישול שיפרו תזונה של תלמידים","c":true},{"b":"בישול הוא תחביב פופולרי"},{"b":"יש מסעדות רבות בעיר"},{"b":"לכותב יש מתכון אהוב"}]');
+select seed_q('psychometric', 11, 4, 4, 'מהו הסדר ההגיוני של פסקאות בחיבור טיעון?',
+  'הסדר ההגיוני: פתיחה ובה התזה, פסקאות גוף עם טיעונים, ולבסוף סיכום.',
+  '[{"b":"פתיחה עם תזה, גוף עם טיעונים, סיכום","c":true},{"b":"סיכום, גוף, פתיחה"},{"b":"טיעונים אקראיים ללא סדר"},{"b":"פתיחה ואז מיד סיכום"}]');
+select seed_q('psychometric', 11, 4, 4, 'איזה משפט משמש מעבר טוב בין פסקה על "יתרונות" לפסקה על "חסרונות"?',
+  'משפט מעבר המסמן ניגוד, כגון "אולם לצד היתרונות קיימים גם חסרונות", מחבר בין שתי הפסקאות.',
+  '[{"b":"אולם, לצד היתרונות, קיימים גם חסרונות בולטים","c":true},{"b":"כפי שכבר אמרתי קודם"},{"b":"בנוסף ליתרון הזה יש עוד יתרון"},{"b":"לסיכום, היתרונות רבים"}]');
+
+-- Level 5
+select seed_q('psychometric', 11, 5, 5, 'איזו תגובה מהווה כשל של "תקיפה אישית" (אד הומינם)?',
+  'תקיפה אישית מתעלמת מהטיעון ותוקפת את המתווכח עצמו, כפי שבאפשרות הנבחרת.',
+  '[{"b":"אין לקבל את דבריו, שהרי הוא אדם לא נעים","c":true},{"b":"דבריו שגויים משום שהנתונים סותרים אותם"},{"b":"טיעונו מתעלם ממחקרים עדכניים"},{"b":"המסקנה אינה נובעת מההנחות"}]');
+select seed_q('psychometric', 11, 5, 5, 'מהו כשל "איש הקש" (סטרו מן)?',
+  'כשל איש הקש מציג גרסה מעוותת וחלשה של טענת היריב כדי להפריכה בקלות.',
+  '[{"b":"הצגת גרסה מעוותת של טענת היריב כדי להפריכה בקלות","c":true},{"b":"הבאת ראיה חזקה לטענה"},{"b":"ציטוט מדויק של היריב"},{"b":"הצגת שני צדדים בהגינות"}]');
+select seed_q('psychometric', 11, 5, 5, 'מהי "דילמה כוזבת" (דיכוטומיה שגויה)?',
+  'דילמה כוזבת מציגה שתי אפשרויות בלבד כאילו אין שלישית, אף שקיימות אפשרויות נוספות.',
+  '[{"b":"הצגת שתי אפשרויות בלבד כאשר קיימות נוספות","c":true},{"b":"הצגת כל האפשרויות הקיימות"},{"b":"הבאת דוגמה אחת בלבד"},{"b":"שימוש במונח מדויק"}]');
+select seed_q('psychometric', 11, 5, 5, 'איזה משפט מסתמך על רגש במקום על טיעון עובדתי?',
+  'פנייה לרחמים ("חשבו על הילדים המסכנים") נשענת על רגש ולא על נתון או היגיון.',
+  '[{"b":"איך תוכלו לישון בלילה אם תדחו את ההצעה הזו?","c":true},{"b":"הנתונים מראים ירידה של 20% בעוני"},{"b":"שלושה מחקרים תומכים בהצעה"},{"b":"העלות מול התועלת מצדיקה את הצעד"}]');
+select seed_q('psychometric', 11, 5, 5, 'מהי "הכללה נמהרת"?',
+  'הכללה נמהרת מסיקה מסקנה רחבה ממדגם קטן ולא מייצג.',
+  '[{"b":"הסקת מסקנה כללית ממספר מקרים מועט","c":true},{"b":"הסתמכות על מדגם גדול ומייצג"},{"b":"הצגת נתון מדויק"},{"b":"הגדרת מונח בבירור"}]');
+
+-- Level 6
+select seed_q('psychometric', 11, 6, 5, 'מהו "טיעון מעגלי"?',
+  'בטיעון מעגלי המסקנה כבר מונחת בתוך ההנחה, כך שהוא מוכיח את עצמו בעצמו.',
+  '[{"b":"טיעון שבו המסקנה מונחת כבר בהנחה","c":true},{"b":"טיעון הנשען על ראיות חיצוניות"},{"b":"טיעון עם שתי הנחות נפרדות"},{"b":"טיעון המביא דוגמאות רבות"}]');
+select seed_q('psychometric', 11, 6, 5, 'מהי הדרך הטובה ביותר להפריך נגד-טיעון בחיבור?',
+  'הפרכה משכנעת מציגה ראיה או נימוק המראים מדוע הנגד-טיעון שגוי או חלש, ולא מתעלמת ממנו.',
+  '[{"b":"להציג ראיה או נימוק המראים את חולשת הנגד-טיעון","c":true},{"b":"להתעלם ממנו לחלוטין"},{"b":"ללעוג למי שמעלה אותו"},{"b":"לחזור על התזה בקול רם"}]');
+select seed_q('psychometric', 11, 6, 5, 'איזה סוג ראיה נחשב חזק יותר בחיבור אקדמי?',
+  'נתונים ממחקר שיטתי נחשבים ראיה חזקה יותר מאשר אנקדוטה אישית.',
+  '[{"b":"נתונים ממחקר שיטתי","c":true},{"b":"סיפור אישי בודד"},{"b":"שמועה נפוצה"},{"b":"תחושת בטן"}]');
+select seed_q('psychometric', 11, 6, 5, 'איזו נימה (טון) מתאימה לחיבור טיעון אקדמי?',
+  'חיבור אקדמי מצריך נימה עניינית ומאופקת, ולא לשון בוטה או רגשנית.',
+  '[{"b":"עניינית ומאופקת","c":true},{"b":"לעגנית ותוקפנית"},{"b":"רגשנית ומליצית"},{"b":"מתחנחנת"}]');
+select seed_q('psychometric', 11, 6, 5, 'מה תפקידן של מילות הסתייגות כמו "ייתכן ש" או "במקרים רבים"?',
+  'מילות הסתייגות ממתנות את הטענה ומונעות הכללת-יתר, ובכך מחזקות את אמינותה.',
+  '[{"b":"למתן את הטענה ולהימנע מהכללת-יתר","c":true},{"b":"להפוך את הטענה לוודאית מוחלטת"},{"b":"להאריך את המשפט ללא צורך"},{"b":"לבלבל את הקורא"}]');
+
+-- Level 7
+select seed_q('psychometric', 11, 7, 5, 'איזו תזה מתאימה לחיבור טיעון (כלומר ניתנת לוויכוח)?',
+  'תזה טובה לחיבור טיעון מביעה עמדה שנויה במחלוקת הניתנת לביסוס, ולא עובדה מוסכמת.',
+  '[{"b":"יש לחייב שירות לאומי לכל בוגרי התיכון","c":true},{"b":"מים רותחים בטמפרטורה של 100 מעלות"},{"b":"השנה מורכבת מ-12 חודשים"},{"b":"ירושלים היא בירת ישראל"}]');
+select seed_q('psychometric', 11, 7, 5, 'מהו כשל "פנייה לסמכות" שאינו תקף?',
+  'פנייה לסמכות נכשלת כשמסתמכים על דמות מפורסמת שאינה מומחית בתחום הנדון.',
+  '[{"b":"הסתמכות על דעת מפורסם שאינו מומחה בתחום","c":true},{"b":"ציטוט מחקר של מומחה מוכר בתחום"},{"b":"הבאת נתונים סטטיסטיים"},{"b":"הצגת היגיון פנימי עקבי"}]');
+select seed_q('psychometric', 11, 7, 5, 'מתי "אנלוגיה" (היקש מהשוואה) חלשה כראיה?',
+  'אנלוגיה חלשה כשהדמיון בין המקרים שטחי ואינו נוגע לנקודה המהותית הנדונה.',
+  '[{"b":"כאשר הדמיון בין המקרים שטחי ולא מהותי","c":true},{"b":"כאשר המקרים דומים בנקודה המהותית"},{"b":"כאשר מובאים נתונים תומכים"},{"b":"כאשר ההשוואה ברורה ומדויקת"}]');
+select seed_q('psychometric', 11, 7, 5, 'מהי "הודאה חלקית" (קונצסיה) בחיבור טיעון?',
+  'קונצסיה היא הכרה בחלק מטענת היריב לפני שמפריכים את עיקרה — מהלך המחזק את הכותב.',
+  '[{"b":"הכרה בנקודה נכונה אצל היריב לפני הפרכת עיקר טענתו","c":true},{"b":"ויתור על כל הטיעון"},{"b":"התעלמות מטענת היריב"},{"b":"חזרה על התזה"}]');
+select seed_q('psychometric', 11, 7, 5, 'איזה משפט מנוסח באופן שמרני ומדויק יותר?',
+  'ניסוח שמרני נמנע מהכללה גורפת ומשתמש בלשון מסויגת ("עשוי", "במקרים רבים").',
+  '[{"b":"מדיניות זו עשויה לצמצם פערים במקרים רבים","c":true},{"b":"מדיניות זו תפתור את כל הפערים מיד"},{"b":"מדיניות זו תמיד מצליחה תמיד"},{"b":"מדיניות זו לעולם אינה נכשלת"}]');
+
+-- Level 8
+select seed_q('psychometric', 11, 8, 5, 'בטיעון: "מאז שהותקנו המצלמות ירדה הפשיעה, ולכן המצלמות הורידו את הפשיעה". מהי החולשה?',
+  'הסקת סיבתיות מעצם הסמיכות בזמן מתעלמת מגורמים אחרים אפשריים — בלבול בין מתאם לסיבתיות.',
+  '[{"b":"הסקת סיבתיות מסמיכות בזמן בלבד","c":true},{"b":"שימוש בנתון מספרי"},{"b":"הצגת נגד-טיעון"},{"b":"הגדרה מדויקת של פשיעה"}]');
+select seed_q('psychometric', 11, 8, 5, 'מהי "הנחה סמויה" בטיעון?',
+  'הנחה סמויה היא הנחת יסוד שאינה נאמרת במפורש אך הטיעון נשען עליה.',
+  '[{"b":"הנחה שאינה נאמרת אך הטיעון מסתמך עליה","c":true},{"b":"המסקנה המפורשת של הטיעון"},{"b":"הראיה הגלויה שמובאת"},{"b":"כותרת הפסקה"}]');
+select seed_q('psychometric', 11, 8, 5, 'איזו מהאפשרויות היא הפרכה עניינית (ולא כשל) של טענה?',
+  'הפרכה עניינית מצביעה על ראיה הסותרת את הטענה, ולא תוקפת את הטוען.',
+  '[{"b":"נתוני האומות המאוחדות סותרים את הטענה שהעוני גדל","c":true},{"b":"הטוען בכלל לא סיים את לימודיו"},{"b":"רק טיפש יחשוב כך"},{"b":"כך אומרים כולם"}]');
+select seed_q('psychometric', 11, 8, 5, 'מהו תפקיד "משפט הגישור" (טרנזיציה) בין שתי פסקאות?',
+  'משפט הגישור מקשר בין רעיון הפסקה הקודמת לרעיון הפסקה הבאה ומבהיר את הזיקה ביניהם.',
+  '[{"b":"לקשר בין רעיון הפסקה הקודמת לבאה","c":true},{"b":"להציג מקור ביבליוגרפי"},{"b":"לחזור על המבוא במלואו"},{"b":"להוסיף עובדה לא קשורה"}]');
+select seed_q('psychometric', 11, 8, 5, 'איזה ניסוח של תזה ברור וממוקד יותר?',
+  'תזה ממוקדת מציינת עמדה ספציפית ואת הנימוק המרכזי, ולא אמירה כללית ומעורפלת.',
+  '[{"b":"יש לקצר את שבוע העבודה לארבעה ימים כדי לשפר פרודוקטיביות ורווחה","c":true},{"b":"עבודה היא נושא חשוב מאוד"},{"b":"יש דברים טובים ורעים בעבודה"},{"b":"אנשים עובדים הרבה"}]');
+
+-- Level 9
+select seed_q('psychometric', 11, 9, 5, 'בטיעון: "אם נתיר זאת היום, מחר יתירו הכול, ובסוף תשרור אנרכיה מוחלטת". מהו הכשל?',
+  'זהו כשל "המדרון החלקלק", המניח בלי ביסוס ששרשרת בלתי נמנעת של תוצאות קיצוניות תתרחש.',
+  '[{"b":"מדרון חלקלק","c":true},{"b":"היקש סטטיסטי תקף"},{"b":"קונצסיה הוגנת"},{"b":"הגדרה מדויקת"}]');
+select seed_q('psychometric', 11, 9, 5, 'מהי הדרך הנכונה לשלב ציטוט של מקור בחיבור?',
+  'ציטוט משולב כראוי מובא בהקשר, עם ייחוס למקור והסבר כיצד הוא תומך בטיעון.',
+  '[{"b":"להביאו בהקשר, לייחסו למקור ולהסביר את תרומתו לטיעון","c":true},{"b":"להעתיק פסקה שלמה בלי ייחוס"},{"b":"לפזר ציטוטים ללא קשר לטיעון"},{"b":"לצטט רק כדי להאריך"}]');
+select seed_q('psychometric', 11, 9, 5, 'מתי טיעון נחשב "תקף" (ולידי) מבחינה לוגית?',
+  'טיעון תקף הוא כזה שבו המסקנה נובעת בהכרח מההנחות, אם ההנחות נכונות.',
+  '[{"b":"כאשר המסקנה נובעת בהכרח מההנחות","c":true},{"b":"כאשר המסקנה מעניינת"},{"b":"כאשר ההנחות ארוכות"},{"b":"כאשר הכותב משוכנע בו"}]');
+select seed_q('psychometric', 11, 9, 5, 'איזו מהאפשרויות משפרת את הלכידות (קוהרנטיות) של חיבור?',
+  'שמירה על רצף הגיוני בין הפסקאות ושימוש במילות קישור מתאימות מחזקים את הלכידות.',
+  '[{"b":"רצף הגיוני בין הפסקאות ומילות קישור מתאימות","c":true},{"b":"קפיצה בין נושאים ללא קשר"},{"b":"חזרה מילולית על אותו משפט"},{"b":"שימוש במונחים סותרים"}]');
+select seed_q('psychometric', 11, 9, 5, 'בחיבור נכתב: "ברור לכול שזו האמת היחידה ואין צורך להוכיחה". מדוע ניסוח זה בעייתי?',
+  'הניסוח מניח את המבוקש ופוטר את עצמו מהוכחה, ובכך נמנע מנשיאה בנטל ההוכחה.',
+  '[{"b":"הוא מתחמק מנטל ההוכחה ומניח את המבוקש","c":true},{"b":"הוא מביא יותר מדי ראיות"},{"b":"הוא מסויג ומדויק מדי"},{"b":"הוא מציג נגד-טיעון"}]');
+
+-- Level 10
+select seed_q('psychometric', 11, 10, 5, 'איזו פסקת סיכום היא החזקה ביותר?',
+  'סיכום חזק קושר את הטיעונים שהוצגו למסקנה אחת ומבליט את המשמעות הרחבה, בלי להכניס טיעון חדש.',
+  '[{"b":"סיכום הקושר את הטיעונים למסקנה ומבליט את משמעותם","c":true},{"b":"סיכום המעלה טיעון חדש לגמרי"},{"b":"סיכום החוזר מילה במילה על הפתיחה"},{"b":"סיכום המתנצל על איכות החיבור"}]');
+select seed_q('psychometric', 11, 10, 5, 'מהי הביקורת המוצדקת על טיעון הנשען כולו על דוגמה יחידה?',
+  'דוגמה יחידה אינה מספיקה לביסוס מסקנה כללית, שכן ייתכן שהיא חריגה ולא מייצגת.',
+  '[{"b":"דוגמה יחידה אינה מבססת מסקנה כללית","c":true},{"b":"דוגמאות תמיד מחלישות טיעון"},{"b":"אין כל בעיה בדוגמה יחידה"},{"b":"יש להימנע מדוגמאות לחלוטין"}]');
+select seed_q('psychometric', 11, 10, 5, 'כיצד נכון להתמודד עם נתון שסותר את עמדת הכותב?',
+  'התמודדות הוגנת מציגה את הנתון הסותר ומסבירה מדוע הוא אינו מבטל את התזה, ולא מסתירה אותו.',
+  '[{"b":"להציגו בהגינות ולהסביר מדוע אינו מבטל את התזה","c":true},{"b":"להסתיר אותו מהקורא"},{"b":"לטעון שכל הנתונים שקריים"},{"b":"להתעלם ולעבור לנושא אחר"}]');
+select seed_q('psychometric', 11, 10, 5, 'מהו ההבדל בין "טענה" לבין "ראיה" בחיבור טיעון?',
+  'הטענה היא מה שמבקשים להוכיח, ואילו הראיה היא הנתון או העדות התומכים בטענה.',
+  '[{"b":"הטענה היא מה שמוכיחים, והראיה היא מה שתומך בה","c":true},{"b":"הן אותו דבר בדיוק"},{"b":"הראיה היא העמדה, והטענה היא הנתון"},{"b":"שתיהן רק כותרות"}]');
+select seed_q('psychometric', 11, 10, 5, 'איזה שיקול חשוב בבחירת מבנה החיבור — "כל היתרונות ואז כל החסרונות" מול "נושא-נושא"?',
+  'הבחירה צריכה לשרת את בהירות הטיעון: יש לבחור במבנה שמאפשר לקורא לעקוב אחר ההשוואה בצורה הברורה ביותר.',
+  '[{"b":"לבחור במבנה שמשרת בצורה הברורה ביותר את מעקב הקורא","c":true},{"b":"לבחור תמיד את המבנה הארוך יותר"},{"b":"לערבב את שני המבנים באקראי"},{"b":"להימנע מכל מבנה קבוע"}]');
+
+-- Clean up the helper once seeding is done.
+drop function seed_q(exam_track, int, int, int, text, text, jsonb);
