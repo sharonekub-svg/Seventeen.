@@ -1969,3 +1969,353 @@ select seed_q('psychometric', 7, 10, 5, 'קרא: "התזה של הספר נשע�
 select seed_q('psychometric', 7, 10, 5, 'קרא: "המשורר חותם את השיר באותה שורה שבה פתח, אך לאחר כל שעבר הקורא, מקבלת השורה החוזרת משמעות הפוכה לזו שהייתה לה בתחילה". מהו האפקט של חזרת השורה?',
   'אותה שורה, בהקשר החדש שנוצר לאורך השיר, מקבלת משמעות הפוכה — חזרה היוצרת ניגוד ושינוי משמעות.',
   '[{"b":"השורה מקבלת משמעות הפוכה בהקשר החדש","c":true},{"b":"השורה חוזרת ללא כל שינוי במשמעות"},{"b":"השיר אינו מסתיים"},{"b":"השורה מאבדת כל משמעות"}]');
+
+-- ============================================================================
+-- PSYCHOMETRIC · Unit 8 · אנגלית – Sentence Completion
+-- (English text avoids apostrophes to keep SQL literals valid.)
+-- ============================================================================
+
+-- Level 1
+select seed_q('psychometric', 8, 1, 1, 'Complete: "The sun gives us light and ____."',
+  'The sun is a source of both light and heat.',
+  '[{"b":"cold"},{"b":"heat","c":true},{"b":"rain"},{"b":"dark"}]');
+select seed_q('psychometric', 8, 1, 1, 'Complete: "She was tired, so she went to ____."',
+  'A tired person goes to sleep; the logical completion is "sleep".',
+  '[{"b":"sleep","c":true},{"b":"run"},{"b":"eat"},{"b":"sing"}]');
+select seed_q('psychometric', 8, 1, 1, 'Complete: "A doctor usually works in a ____."',
+  'The typical workplace of a doctor is a hospital.',
+  '[{"b":"kitchen"},{"b":"hospital","c":true},{"b":"garage"},{"b":"library"}]');
+select seed_q('psychometric', 8, 1, 1, 'Complete: "When water becomes very cold, it turns into ____."',
+  'Very cold water freezes and turns into ice.',
+  '[{"b":"steam"},{"b":"ice","c":true},{"b":"rain"},{"b":"mud"}]');
+select seed_q('psychometric', 8, 1, 1, 'Complete: "Birds can ____ in the sky."',
+  'Birds are able to fly in the sky.',
+  '[{"b":"swim"},{"b":"fly","c":true},{"b":"dig"},{"b":"read"}]');
+
+-- Level 2
+select seed_q('psychometric', 8, 2, 2, 'Complete: "He studied hard, ____ he passed the exam."',
+  'There is a cause-and-effect link, so the connector "so" fits.',
+  '[{"b":"but"},{"b":"so","c":true},{"b":"or"},{"b":"although"}]');
+select seed_q('psychometric', 8, 2, 2, 'Complete: "____ it was raining, we went outside."',
+  'There is a contrast between the rain and going outside, so "Although" fits.',
+  '[{"b":"Because"},{"b":"Although","c":true},{"b":"So"},{"b":"Since"}]');
+select seed_q('psychometric', 8, 2, 2, 'Complete: "The opposite of happy is ____."',
+  'The antonym of "happy" is "sad".',
+  '[{"b":"glad"},{"b":"sad","c":true},{"b":"tired"},{"b":"calm"}]');
+select seed_q('psychometric', 8, 2, 2, 'Complete: "Please be ____ when crossing the street."',
+  'Crossing a street safely requires being careful.',
+  '[{"b":"careful","c":true},{"b":"fast"},{"b":"loud"},{"b":"happy"}]');
+select seed_q('psychometric', 8, 2, 2, 'Complete: "She is very ____; she always helps others."',
+  'Someone who always helps others is kind.',
+  '[{"b":"rude"},{"b":"kind","c":true},{"b":"lazy"},{"b":"shy"}]');
+
+-- Level 3
+select seed_q('psychometric', 8, 3, 3, 'Complete: "The book was so ____ that I could not put it down."',
+  'A book you cannot put down is interesting.',
+  '[{"b":"boring"},{"b":"interesting","c":true},{"b":"short"},{"b":"heavy"}]');
+select seed_q('psychometric', 8, 3, 3, 'Complete: "He apologized ____ his mistake."',
+  'The correct preposition after "apologize" here is "for".',
+  '[{"b":"for","c":true},{"b":"on"},{"b":"at"},{"b":"to"}]');
+select seed_q('psychometric', 8, 3, 3, 'Complete: "The weather was cold, ____ we stayed inside."',
+  'A cause-and-effect relation calls for the connector "so".',
+  '[{"b":"but"},{"b":"so","c":true},{"b":"although"},{"b":"or"}]');
+select seed_q('psychometric', 8, 3, 3, 'Complete: "They were ____ by the surprising news."',
+  'Surprising news leaves people shocked.',
+  '[{"b":"bored"},{"b":"shocked","c":true},{"b":"relaxed"},{"b":"pleased"}]');
+select seed_q('psychometric', 8, 3, 3, 'Complete: "A person who is honest always tells the ____."',
+  'An honest person always tells the truth.',
+  '[{"b":"lie"},{"b":"truth","c":true},{"b":"story"},{"b":"secret"}]');
+
+-- Level 4
+select seed_q('psychometric', 8, 4, 4, 'Complete: "Despite his ____, he managed to finish the race."',
+  'The contrast word "despite" calls for an obstacle such as exhaustion.',
+  '[{"b":"strength"},{"b":"exhaustion","c":true},{"b":"speed"},{"b":"victory"}]');
+select seed_q('psychometric', 8, 4, 4, 'Complete: "The scientist made an important ____ that changed the field."',
+  'Something a scientist makes that changes a field is a discovery.',
+  '[{"b":"mistake"},{"b":"discovery","c":true},{"b":"promise"},{"b":"meal"}]');
+select seed_q('psychometric', 8, 4, 4, 'Complete: "Her argument was ____; everyone agreed with her."',
+  'If everyone agreed, the argument was convincing.',
+  '[{"b":"weak"},{"b":"convincing","c":true},{"b":"confusing"},{"b":"false"}]');
+select seed_q('psychometric', 8, 4, 4, 'Complete: "The instructions were ____, so nobody understood them."',
+  'Instructions nobody understands are confusing.',
+  '[{"b":"clear"},{"b":"confusing","c":true},{"b":"short"},{"b":"useful"}]');
+select seed_q('psychometric', 8, 4, 4, 'Complete: "He is known for his ____; he never gives up."',
+  'Never giving up is a mark of persistence.',
+  '[{"b":"persistence","c":true},{"b":"laziness"},{"b":"fear"},{"b":"doubt"}]');
+
+-- Level 5
+select seed_q('psychometric', 8, 5, 4, 'Complete: "____ the bad weather, the event was a great success."',
+  'The contrast calls for "Despite".',
+  '[{"b":"Because of"},{"b":"Despite","c":true},{"b":"Due to"},{"b":"Thanks to"}]');
+select seed_q('psychometric', 8, 5, 5, 'Complete: "The new policy was met with widespread ____, and many people protested."',
+  'Protests indicate opposition to the policy.',
+  '[{"b":"approval"},{"b":"opposition","c":true},{"b":"joy"},{"b":"silence"}]');
+select seed_q('psychometric', 8, 5, 4, 'Complete: "The evidence was ____ enough to convince the jury."',
+  'Evidence that convinces a jury is compelling.',
+  '[{"b":"weak"},{"b":"compelling","c":true},{"b":"missing"},{"b":"false"}]');
+select seed_q('psychometric', 8, 5, 4, 'Complete: "She remained ____ even under great pressure."',
+  'Staying composed under pressure means remaining calm.',
+  '[{"b":"calm","c":true},{"b":"panicked"},{"b":"angry"},{"b":"confused"}]');
+select seed_q('psychometric', 8, 5, 4, 'Complete: "His explanation was ____ and left no room for doubt."',
+  'An explanation that leaves no doubt is clear.',
+  '[{"b":"vague"},{"b":"clear","c":true},{"b":"long"},{"b":"strange"}]');
+
+-- Level 6
+select seed_q('psychometric', 8, 6, 5, 'Complete: "The lecture by the professor was so ____ that students struggled to stay awake."',
+  'A lecture that makes students sleepy is tedious.',
+  '[{"b":"engaging"},{"b":"tedious","c":true},{"b":"brief"},{"b":"lively"}]');
+select seed_q('psychometric', 8, 6, 4, 'Complete: "____ his great wealth, he lived a modest life."',
+  'Wealth contrasts with a modest life, so "Despite" fits.',
+  '[{"b":"Because of"},{"b":"Despite","c":true},{"b":"Thanks to"},{"b":"Due to"}]');
+select seed_q('psychometric', 8, 6, 4, 'Complete: "The two countries finally reached an ____ after years of conflict."',
+  'Ending a conflict by mutual decision is reaching an agreement.',
+  '[{"b":"argument"},{"b":"agreement","c":true},{"b":"accident"},{"b":"excuse"}]');
+select seed_q('psychometric', 8, 6, 5, 'Complete: "Her ____ to detail made her an excellent editor."',
+  'A good editor is marked by careful attention to detail.',
+  '[{"b":"attention","c":true},{"b":"blindness"},{"b":"objection"},{"b":"distance"}]');
+select seed_q('psychometric', 8, 6, 4, 'Complete: "The witness gave a ____ account, mentioning every small fact."',
+  'Mentioning every small fact makes the account detailed.',
+  '[{"b":"vague"},{"b":"detailed","c":true},{"b":"false"},{"b":"short"}]');
+
+-- Level 7
+select seed_q('psychometric', 8, 7, 5, 'Complete: "The report was ____, full of jargon that few could understand."',
+  'A report full of impenetrable jargon is obscure.',
+  '[{"b":"clear"},{"b":"obscure","c":true},{"b":"brief"},{"b":"honest"}]');
+select seed_q('psychometric', 8, 7, 5, 'Complete: "He accepted the harsh criticism with ____, showing real maturity."',
+  'Accepting criticism maturely shows grace.',
+  '[{"b":"grace","c":true},{"b":"anger"},{"b":"fear"},{"b":"pride"}]');
+select seed_q('psychometric', 8, 7, 5, 'Complete: "____ the overwhelming evidence, he refused to change his mind."',
+  'Refusing to change despite strong evidence calls for "Despite".',
+  '[{"b":"Because of"},{"b":"Despite","c":true},{"b":"Thanks to"},{"b":"Owing to"}]');
+select seed_q('psychometric', 8, 7, 5, 'Complete: "The negotiations collapsed due to a fundamental ____ between the parties."',
+  'A collapse from a basic clash of positions is a disagreement.',
+  '[{"b":"agreement"},{"b":"disagreement","c":true},{"b":"friendship"},{"b":"promise"}]');
+select seed_q('psychometric', 8, 7, 5, 'Complete: "Her performance was ____, earning a standing ovation."',
+  'A performance worthy of a standing ovation is flawless.',
+  '[{"b":"flawless","c":true},{"b":"mediocre"},{"b":"clumsy"},{"b":"dull"}]');
+
+-- Level 8
+select seed_q('psychometric', 8, 8, 5, 'Complete: "The argument was ____; the speaker contradicted himself repeatedly."',
+  'Contradicting oneself repeatedly makes an argument inconsistent.',
+  '[{"b":"coherent"},{"b":"inconsistent","c":true},{"b":"persuasive"},{"b":"precise"}]');
+select seed_q('psychometric', 8, 8, 5, 'Complete: "His ____ remarks offended several people in the audience."',
+  'Remarks that offend others are tactless.',
+  '[{"b":"tactful"},{"b":"tactless","c":true},{"b":"kind"},{"b":"quiet"}]');
+select seed_q('psychometric', 8, 8, 5, 'Complete: "The medicine ____ the symptoms but did not cure the disease."',
+  'The contrast "but did not cure" shows the medicine merely eased the symptoms.',
+  '[{"b":"worsened"},{"b":"alleviated","c":true},{"b":"caused"},{"b":"ignored"}]');
+select seed_q('psychometric', 8, 8, 5, 'Complete: "She is remarkably ____, rarely revealing her true feelings."',
+  'Someone who rarely reveals feelings is reserved.',
+  '[{"b":"reserved","c":true},{"b":"talkative"},{"b":"emotional"},{"b":"loud"}]');
+select seed_q('psychometric', 8, 8, 5, 'Complete: "The crisis proved far more ____ than economists had predicted."',
+  'A crisis worse than predicted is more severe.',
+  '[{"b":"mild"},{"b":"severe","c":true},{"b":"minor"},{"b":"brief"}]');
+
+-- Level 9
+select seed_q('psychometric', 8, 9, 5, 'Complete: "Though ____ generous, his offer was designed to serve his own interests."',
+  'The contrast with his real motive shows the generosity was only apparent, so "seemingly" fits.',
+  '[{"b":"truly"},{"b":"seemingly","c":true},{"b":"never"},{"b":"always"}]');
+select seed_q('psychometric', 8, 9, 5, 'Complete: "The prose of the author is so ____ that readers feel they are there themselves."',
+  'Writing that makes readers feel present is vivid.',
+  '[{"b":"dull"},{"b":"vivid","c":true},{"b":"vague"},{"b":"brief"}]');
+select seed_q('psychometric', 8, 9, 5, 'Complete: "He adopted a ____ approach, weighing every option before deciding."',
+  'Carefully weighing every option is a methodical approach.',
+  '[{"b":"reckless"},{"b":"methodical","c":true},{"b":"random"},{"b":"hasty"}]');
+select seed_q('psychometric', 8, 9, 5, 'Complete: "The debate grew increasingly ____, with each side refusing to listen."',
+  'Sides entrenched and refusing to listen describe a polarized debate.',
+  '[{"b":"united"},{"b":"polarized","c":true},{"b":"calm"},{"b":"productive"}]');
+select seed_q('psychometric', 8, 9, 5, 'Complete: "Her ____ tone suggested she did not take the accusation seriously."',
+  'Not taking something seriously is conveyed by a dismissive tone.',
+  '[{"b":"anxious"},{"b":"dismissive","c":true},{"b":"earnest"},{"b":"fearful"}]');
+
+-- Level 10
+select seed_q('psychometric', 8, 10, 5, 'Complete: "The critic claimed the work ____ originality, dismissing it as mere imitation."',
+  'Calling a work mere imitation means it lacked originality.',
+  '[{"b":"overflowed with"},{"b":"lacked","c":true},{"b":"radiated"},{"b":"embodied"}]');
+select seed_q('psychometric', 8, 10, 5, 'Complete: "____ the enormous effort invested, the results were deeply disappointing."',
+  'A gap between great effort and a poor result calls for "Despite".',
+  '[{"b":"Because of"},{"b":"Despite","c":true},{"b":"Owing to"},{"b":"Thanks to"}]');
+select seed_q('psychometric', 8, 10, 5, 'Complete: "His ____ style, full of hints and half-statements, obscured his true meaning."',
+  'A style of hints and half-statements is elusive.',
+  '[{"b":"direct"},{"b":"elusive","c":true},{"b":"plain"},{"b":"blunt"}]');
+select seed_q('psychometric', 8, 10, 5, 'Complete: "The ____ assumptions of the theory made many scholars hesitant to embrace it."',
+  'Assumptions that make scholars hesitant are dubious (doubtful).',
+  '[{"b":"sound"},{"b":"dubious","c":true},{"b":"proven"},{"b":"obvious"}]');
+select seed_q('psychometric', 8, 10, 5, 'Complete: "The explanation was ____ enough to reconcile the apparent contradiction."',
+  'An explanation that successfully reconciles a contradiction is adequate.',
+  '[{"b":"insufficient"},{"b":"adequate","c":true},{"b":"confusing"},{"b":"irrelevant"}]');
+
+-- ============================================================================
+-- PSYCHOMETRIC · Unit 9 · אנגלית – Restatement
+-- Choose the option that best preserves the meaning of the given sentence.
+-- ============================================================================
+
+-- Level 1
+select seed_q('psychometric', 9, 1, 1, 'Choose the best restatement: "Tom is taller than Sam."',
+  'If Tom is taller than Sam, then Sam is shorter than Tom.',
+  '[{"b":"Sam is shorter than Tom.","c":true},{"b":"Sam is taller than Tom."},{"b":"Tom and Sam are the same height."},{"b":"Tom is the tallest."}]');
+select seed_q('psychometric', 9, 1, 1, 'Choose the best restatement: "She bought a red car."',
+  'The car she bought is red.',
+  '[{"b":"The car she bought is red.","c":true},{"b":"She sold a red car."},{"b":"She wanted a red car."},{"b":"Her car is blue."}]');
+select seed_q('psychometric', 9, 1, 1, 'Choose the best restatement: "It is raining, so we stayed home."',
+  'We stayed home because of the rain.',
+  '[{"b":"We stayed home because of the rain.","c":true},{"b":"We went out in the rain."},{"b":"It stopped raining at home."},{"b":"We like the rain."}]');
+select seed_q('psychometric', 9, 1, 1, 'Choose the best restatement: "All cats are animals."',
+  'Every cat is an animal.',
+  '[{"b":"Every cat is an animal.","c":true},{"b":"Every animal is a cat."},{"b":"Some cats are not animals."},{"b":"No cat is an animal."}]');
+select seed_q('psychometric', 9, 1, 1, 'Choose the best restatement: "He did not come to the party."',
+  'He was absent from the party.',
+  '[{"b":"He was absent from the party.","c":true},{"b":"He enjoyed the party."},{"b":"He arrived late to the party."},{"b":"He hosted the party."}]');
+
+-- Level 2
+select seed_q('psychometric', 9, 2, 2, 'Choose the best restatement: "The store opens at 9 and closes at 5."',
+  'The store is open from 9 to 5.',
+  '[{"b":"The store is open from 9 to 5.","c":true},{"b":"The store is closed all day."},{"b":"The store opens at 5."},{"b":"The store never closes."}]');
+select seed_q('psychometric', 9, 2, 2, 'Choose the best restatement: "She is not only smart but also kind."',
+  'She is both smart and kind.',
+  '[{"b":"She is both smart and kind.","c":true},{"b":"She is smart but unkind."},{"b":"She is neither smart nor kind."},{"b":"She is kind but not smart."}]');
+select seed_q('psychometric', 9, 2, 2, 'Choose the best restatement: "Nobody knew the answer."',
+  'No one knew the answer.',
+  '[{"b":"No one knew the answer.","c":true},{"b":"Everyone knew the answer."},{"b":"Only one person knew."},{"b":"The answer was easy."}]');
+select seed_q('psychometric', 9, 2, 2, 'Choose the best restatement: "He runs faster than anyone else in his class."',
+  'He is the fastest runner in his class.',
+  '[{"b":"He is the fastest runner in his class.","c":true},{"b":"He is the slowest in his class."},{"b":"Everyone runs faster than him."},{"b":"He cannot run."}]');
+select seed_q('psychometric', 9, 2, 2, 'Choose the best restatement: "If you study, you will pass."',
+  'Studying leads to passing.',
+  '[{"b":"Studying leads to passing.","c":true},{"b":"You will pass without studying."},{"b":"Studying causes failure."},{"b":"Passing requires no effort."}]');
+
+-- Level 3
+select seed_q('psychometric', 9, 3, 3, 'Choose the best restatement: "Despite the rain, they played the match."',
+  'They played even though it rained.',
+  '[{"b":"They played even though it rained.","c":true},{"b":"They cancelled the match due to rain."},{"b":"They played because it rained."},{"b":"It did not rain during the match."}]');
+select seed_q('psychometric', 9, 3, 3, 'Choose the best restatement: "She rarely eats meat."',
+  'She seldom eats meat.',
+  '[{"b":"She seldom eats meat.","c":true},{"b":"She often eats meat."},{"b":"She never eats vegetables."},{"b":"She always eats meat."}]');
+select seed_q('psychometric', 9, 3, 3, 'Choose the best restatement: "The plan failed because of poor planning."',
+  'Poor planning caused the plan to fail.',
+  '[{"b":"Poor planning caused the plan to fail.","c":true},{"b":"The plan succeeded despite poor planning."},{"b":"Good planning made the plan fail."},{"b":"The plan had no planning issues."}]');
+select seed_q('psychometric', 9, 3, 3, 'Choose the best restatement: "Only members are allowed to enter."',
+  'Entry is restricted to members.',
+  '[{"b":"Entry is restricted to members.","c":true},{"b":"Anyone may enter."},{"b":"Members are not allowed in."},{"b":"Entry is free for all."}]');
+select seed_q('psychometric', 9, 3, 3, 'Choose the best restatement: "The more he practiced, the better he became."',
+  'Practice improved his performance.',
+  '[{"b":"Practice improved his performance.","c":true},{"b":"Practice made him worse."},{"b":"He never practiced."},{"b":"Practice had no effect."}]');
+
+-- Level 4
+select seed_q('psychometric', 9, 4, 4, 'Choose the best restatement: "He postponed the meeting."',
+  'He delayed the meeting to a later time.',
+  '[{"b":"He delayed the meeting to a later time.","c":true},{"b":"He cancelled the meeting forever."},{"b":"He started the meeting early."},{"b":"He attended the meeting."}]');
+select seed_q('psychometric', 9, 4, 4, 'Choose the best restatement: "The results were inconclusive."',
+  'The results did not lead to a clear conclusion.',
+  '[{"b":"The results did not lead to a clear conclusion.","c":true},{"b":"The results proved the theory."},{"b":"The results were very clear."},{"b":"There were no results."}]');
+select seed_q('psychometric', 9, 4, 4, 'Choose the best restatement: "Her success was due to hard work."',
+  'She succeeded because she worked hard.',
+  '[{"b":"She succeeded because she worked hard.","c":true},{"b":"She succeeded by luck alone."},{"b":"Hard work led to her failure."},{"b":"She did not work hard."}]');
+select seed_q('psychometric', 9, 4, 4, 'Choose the best restatement: "They could not agree on the price."',
+  'They failed to reach agreement on the price.',
+  '[{"b":"They failed to reach agreement on the price.","c":true},{"b":"They agreed on the price quickly."},{"b":"They set the price together."},{"b":"The price was not discussed."}]');
+select seed_q('psychometric', 9, 4, 4, 'Choose the best restatement: "He is indifferent to criticism."',
+  'Criticism does not affect him.',
+  '[{"b":"Criticism does not affect him.","c":true},{"b":"He is hurt by criticism."},{"b":"He loves to be criticized."},{"b":"He criticizes others often."}]');
+
+-- Level 5
+select seed_q('psychometric', 9, 5, 4, 'Choose the best restatement: "The new method is more efficient than the old one."',
+  'The old method is less efficient than the new one.',
+  '[{"b":"The old method is less efficient than the new one.","c":true},{"b":"The old method is more efficient."},{"b":"Both methods are equally efficient."},{"b":"Neither method is efficient."}]');
+select seed_q('psychometric', 9, 5, 4, 'Choose the best restatement: "His claims lacked evidence."',
+  'There was no evidence to support his claims.',
+  '[{"b":"There was no evidence to support his claims.","c":true},{"b":"His claims were well supported."},{"b":"He provided strong evidence."},{"b":"His claims were proven true."}]');
+select seed_q('psychometric', 9, 5, 4, 'Choose the best restatement: "The book is far from boring."',
+  'The book is quite interesting.',
+  '[{"b":"The book is quite interesting.","c":true},{"b":"The book is very boring."},{"b":"The book is somewhat dull."},{"b":"The book is too long."}]');
+select seed_q('psychometric', 9, 5, 4, 'Choose the best restatement: "Few people attended the lecture."',
+  'Not many people came to the lecture.',
+  '[{"b":"Not many people came to the lecture.","c":true},{"b":"The lecture was crowded."},{"b":"Everyone attended the lecture."},{"b":"No lecture took place."}]');
+select seed_q('psychometric', 9, 5, 5, 'Choose the best restatement: "She managed to finish despite the obstacles."',
+  'Even though there were obstacles, she finished.',
+  '[{"b":"Even though there were obstacles, she finished.","c":true},{"b":"The obstacles stopped her."},{"b":"There were no obstacles."},{"b":"She did not finish."}]');
+
+-- Level 6
+select seed_q('psychometric', 9, 6, 5, 'Choose the best restatement: "The proposal was rejected unanimously."',
+  'Everyone voted against the proposal.',
+  '[{"b":"Everyone voted against the proposal.","c":true},{"b":"Everyone approved the proposal."},{"b":"Most people supported it."},{"b":"The vote was tied."}]');
+select seed_q('psychometric', 9, 6, 5, 'Choose the best restatement: "He spoke as if he were an expert."',
+  'He talked like an expert, though he may not be one.',
+  '[{"b":"He talked like an expert, though he may not be one.","c":true},{"b":"He is definitely an expert."},{"b":"He refused to speak."},{"b":"He knew nothing and admitted it."}]');
+select seed_q('psychometric', 9, 6, 5, 'Choose the best restatement: "This phenomenon is not unique to humans."',
+  'Humans are not the only ones that show this phenomenon.',
+  '[{"b":"Humans are not the only ones that show this phenomenon.","c":true},{"b":"Only humans show this phenomenon."},{"b":"No species shows this phenomenon."},{"b":"Humans never show it."}]');
+select seed_q('psychometric', 9, 6, 5, 'Choose the best restatement: "She downplayed the significance of the event."',
+  'She made the event seem less important than it was.',
+  '[{"b":"She made the event seem less important than it was.","c":true},{"b":"She exaggerated the event."},{"b":"She ignored the event entirely."},{"b":"She praised the event highly."}]');
+select seed_q('psychometric', 9, 6, 5, 'Choose the best restatement: "It is by no means certain that he will come."',
+  'It is not at all certain that he will come.',
+  '[{"b":"It is not at all certain that he will come.","c":true},{"b":"He will definitely come."},{"b":"He will certainly not come."},{"b":"He has already arrived."}]');
+
+-- Level 7
+select seed_q('psychometric', 9, 7, 5, 'Choose the best restatement: "The reforms, though well-intentioned, had harmful effects."',
+  'Despite good intentions, the reforms caused harm.',
+  '[{"b":"Despite good intentions, the reforms caused harm.","c":true},{"b":"The reforms were both intended and designed to harm."},{"b":"The reforms were harmless and helpful."},{"b":"The reforms had no effect at all."}]');
+select seed_q('psychometric', 9, 7, 5, 'Choose the best restatement: "His success is attributable to persistence rather than talent."',
+  'He succeeded more because of persistence than because of talent.',
+  '[{"b":"He succeeded more because of persistence than talent.","c":true},{"b":"His talent alone made him succeed."},{"b":"Neither persistence nor talent helped him."},{"b":"He failed despite persistence."}]');
+select seed_q('psychometric', 9, 7, 5, 'Choose the best restatement: "Critics were quick to dismiss the findings."',
+  'Critics rejected the findings without delay.',
+  '[{"b":"Critics rejected the findings without delay.","c":true},{"b":"Critics slowly accepted the findings."},{"b":"Critics praised the findings."},{"b":"Critics ignored the study for years."}]');
+select seed_q('psychometric', 9, 7, 5, 'Choose the best restatement: "The risk is negligible."',
+  'The risk is so small that it can be ignored.',
+  '[{"b":"The risk is so small that it can be ignored.","c":true},{"b":"The risk is extremely large."},{"b":"The risk cannot be measured."},{"b":"The risk is unavoidable."}]');
+select seed_q('psychometric', 9, 7, 5, 'Choose the best restatement: "She is anything but naive."',
+  'She is far from naive.',
+  '[{"b":"She is far from naive.","c":true},{"b":"She is very naive."},{"b":"She is somewhat naive."},{"b":"She is occasionally naive."}]');
+
+-- Level 8
+select seed_q('psychometric', 9, 8, 5, 'Choose the best restatement: "The treaty was signed notwithstanding deep disagreements."',
+  'The treaty was signed despite deep disagreements.',
+  '[{"b":"The treaty was signed despite deep disagreements.","c":true},{"b":"The treaty was not signed because of disagreements."},{"b":"There were no disagreements about the treaty."},{"b":"The disagreements prevented the treaty."}]');
+select seed_q('psychometric', 9, 8, 5, 'Choose the best restatement: "His argument rests on a questionable premise."',
+  'His argument depends on an assumption that is doubtful.',
+  '[{"b":"His argument depends on a doubtful assumption.","c":true},{"b":"His argument is based on solid facts."},{"b":"His argument has no assumptions."},{"b":"His premise is certainly true."}]');
+select seed_q('psychometric', 9, 8, 5, 'Choose the best restatement: "Correlation does not imply causation."',
+  'The fact that two things occur together does not prove that one causes the other.',
+  '[{"b":"Two things occurring together does not prove one causes the other.","c":true},{"b":"If two things correlate, one must cause the other."},{"b":"Causes can never be found."},{"b":"Correlation always means causation."}]');
+select seed_q('psychometric', 9, 8, 5, 'Choose the best restatement: "The author refrains from explicit judgment."',
+  'The author avoids stating an outright judgment.',
+  '[{"b":"The author avoids stating an outright judgment.","c":true},{"b":"The author judges harshly and openly."},{"b":"The author has no opinions at all."},{"b":"The author demands a verdict."}]');
+select seed_q('psychometric', 9, 8, 5, 'Choose the best restatement: "Such behavior is far from acceptable."',
+  'Such behavior is not at all acceptable.',
+  '[{"b":"Such behavior is not at all acceptable.","c":true},{"b":"Such behavior is perfectly fine."},{"b":"Such behavior is mostly acceptable."},{"b":"Such behavior is rare."}]');
+
+-- Level 9
+select seed_q('psychometric', 9, 9, 5, 'Choose the best restatement: "The policy, ostensibly fair, favored the wealthy."',
+  'The policy appeared fair but actually benefited the rich.',
+  '[{"b":"The policy appeared fair but actually benefited the rich.","c":true},{"b":"The policy was genuinely fair to all."},{"b":"The policy openly punished the rich."},{"b":"The policy had no effect on anyone."}]');
+select seed_q('psychometric', 9, 9, 5, 'Choose the best restatement: "Her contribution cannot be overstated."',
+  'Her contribution was extremely important.',
+  '[{"b":"Her contribution was extremely important.","c":true},{"b":"Her contribution was insignificant."},{"b":"Her contribution was exaggerated."},{"b":"She did not contribute."}]');
+select seed_q('psychometric', 9, 9, 5, 'Choose the best restatement: "He is no stranger to hardship."',
+  'He has experienced hardship before.',
+  '[{"b":"He has experienced hardship before.","c":true},{"b":"He has never faced hardship."},{"b":"He avoids all hardship."},{"b":"Hardship is unknown to him."}]');
+select seed_q('psychometric', 9, 9, 5, 'Choose the best restatement: "The evidence, while suggestive, is not conclusive."',
+  'The evidence hints at something but does not prove it.',
+  '[{"b":"The evidence hints at something but does not prove it.","c":true},{"b":"The evidence proves the case completely."},{"b":"There is no evidence at all."},{"b":"The evidence is entirely irrelevant."}]');
+select seed_q('psychometric', 9, 9, 5, 'Choose the best restatement: "They were reluctant to commit."',
+  'They were unwilling to fully commit.',
+  '[{"b":"They were unwilling to fully commit.","c":true},{"b":"They eagerly committed at once."},{"b":"They had already committed."},{"b":"They were forced to commit."}]');
+
+-- Level 10
+select seed_q('psychometric', 9, 10, 5, 'Choose the best restatement: "His theory, for all its elegance, fails to account for the data."',
+  'Despite being elegant, his theory does not explain the data.',
+  '[{"b":"Despite being elegant, his theory does not explain the data.","c":true},{"b":"His elegant theory explains all the data."},{"b":"His theory is neither elegant nor useful."},{"b":"The data support his theory fully."}]');
+select seed_q('psychometric', 9, 10, 5, 'Choose the best restatement: "The decision is irreversible."',
+  'The decision cannot be undone.',
+  '[{"b":"The decision cannot be undone.","c":true},{"b":"The decision can be easily changed."},{"b":"The decision was never made."},{"b":"The decision is temporary."}]');
+select seed_q('psychometric', 9, 10, 5, 'Choose the best restatement: "She is seldom, if ever, mistaken."',
+  'She is almost never wrong.',
+  '[{"b":"She is almost never wrong.","c":true},{"b":"She is frequently wrong."},{"b":"She is always wrong."},{"b":"She is sometimes right."}]');
+select seed_q('psychometric', 9, 10, 5, 'Choose the best restatement: "The conclusion does not necessarily follow from the premises."',
+  'The premises do not guarantee the conclusion.',
+  '[{"b":"The premises do not guarantee the conclusion.","c":true},{"b":"The conclusion must follow from the premises."},{"b":"The premises are false."},{"b":"The conclusion is certainly true."}]');
+select seed_q('psychometric', 9, 10, 5, 'Choose the best restatement: "The verdict was met with mixed reactions."',
+  'People reacted to the verdict in different ways.',
+  '[{"b":"People reacted to the verdict in different ways.","c":true},{"b":"Everyone reacted the same way."},{"b":"No one reacted at all."},{"b":"The verdict pleased everyone."}]');
