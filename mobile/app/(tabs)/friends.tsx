@@ -1,21 +1,24 @@
 import { useCallback, useState } from "react";
-import {
-  View,
-  Text,
-  TextInput,
-  FlatList,
-  Pressable,
-  StyleSheet,
-} from "react-native";
+import { View, Text, TextInput, FlatList, Pressable, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFocusEffect } from "expo-router";
-import { UserPlus, Check, X } from "lucide-react-native";
+import { Search, UserPlus, Check, X } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
-import { colors, spacing, radius } from "@/lib/theme";
+import { colors, fonts, radius, spacing } from "@/lib/theme";
+import { avatarColors } from "@/lib/avatar";
 
 type Profile = { id: string; username: string; display_name: string };
 type Request = { id: number; requester: string; profiles: Profile };
+
+function Avatar({ name }: { name?: string }) {
+  const ac = avatarColors(name);
+  return (
+    <View style={[styles.avatar, { backgroundColor: ac.bg }]}>
+      <Text style={[styles.avatarText, { color: ac.color }]}>{name?.[0] ?? "?"}</Text>
+    </View>
+  );
+}
 
 export default function Friends() {
   const { session } = useAuth();
@@ -52,18 +55,13 @@ export default function Friends() {
 
   async function sendRequest(addressee: string) {
     if (!session) return;
-    await supabase
-      .from("friendships")
-      .insert({ requester: session.user.id, addressee, status: "pending" });
+    await supabase.from("friendships").insert({ requester: session.user.id, addressee, status: "pending" });
     setResults((r) => r.filter((p) => p.id !== addressee));
   }
 
   async function respond(id: number, accept: boolean) {
-    if (accept) {
-      await supabase.from("friendships").update({ status: "accepted" }).eq("id", id);
-    } else {
-      await supabase.from("friendships").delete().eq("id", id);
-    }
+    if (accept) await supabase.from("friendships").update({ status: "accepted" }).eq("id", id);
+    else await supabase.from("friendships").delete().eq("id", id);
     loadPending();
   }
 
@@ -72,58 +70,67 @@ export default function Friends() {
       <Text style={styles.title}>חברים</Text>
 
       <View style={styles.searchRow}>
+        <Search color={colors.textFaint} size={20} />
         <TextInput
           style={styles.input}
           placeholder="חיפוש לפי שם משתמש"
-          placeholderTextColor={colors.textMuted}
+          placeholderTextColor={colors.textFaint}
           autoCapitalize="none"
           value={query}
           onChangeText={setQuery}
           onSubmitEditing={search}
+          returnKeyType="search"
         />
-        <Pressable style={styles.searchBtn} onPress={search}>
-          <Text style={styles.searchBtnText}>חפש</Text>
-        </Pressable>
       </View>
-
-      {pending.length > 0 && (
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>בקשות חברות</Text>
-          {pending.map((req) => (
-            <View key={req.id} style={styles.row}>
-              <View style={{ flex: 1 }}>
-                <Text style={styles.name}>{req.profiles?.display_name}</Text>
-                <Text style={styles.handle}>@{req.profiles?.username}</Text>
-              </View>
-              <Pressable style={styles.iconBtn} onPress={() => respond(req.id, true)}>
-                <Check color={colors.success} size={20} />
-              </Pressable>
-              <Pressable style={styles.iconBtn} onPress={() => respond(req.id, false)}>
-                <X color={colors.danger} size={20} />
-              </Pressable>
-            </View>
-          ))}
-        </View>
-      )}
 
       <FlatList
         data={results}
         keyExtractor={(item) => item.id}
-        contentContainerStyle={{ padding: spacing.md }}
+        contentContainerStyle={{ padding: spacing.md, paddingTop: spacing.sm }}
         ListHeaderComponent={
-          results.length ? <Text style={styles.sectionTitle}>תוצאות</Text> : null
+          <View>
+            {pending.length > 0 && (
+              <View style={styles.section}>
+                <Text style={styles.sectionTitle}>בקשות חברות</Text>
+                {pending.map((req) => (
+                  <View key={req.id} style={styles.row}>
+                    <Avatar name={req.profiles?.display_name} />
+                    <View style={{ flex: 1 }}>
+                      <Text style={styles.name}>{req.profiles?.display_name}</Text>
+                      <Text style={styles.handle}>@{req.profiles?.username}</Text>
+                    </View>
+                    <Pressable style={[styles.miniBtn, { backgroundColor: colors.primary }]} onPress={() => respond(req.id, true)}>
+                      <Check color="#fff" size={20} strokeWidth={3} />
+                    </Pressable>
+                    <Pressable style={[styles.miniBtn, styles.miniGhost]} onPress={() => respond(req.id, false)}>
+                      <X color={colors.textSoft} size={20} strokeWidth={3} />
+                    </Pressable>
+                  </View>
+                ))}
+              </View>
+            )}
+            {results.length > 0 && <Text style={styles.sectionTitle}>תוצאות חיפוש</Text>}
+          </View>
         }
         renderItem={({ item }) => (
           <View style={styles.row}>
+            <Avatar name={item.display_name} />
             <View style={{ flex: 1 }}>
               <Text style={styles.name}>{item.display_name}</Text>
               <Text style={styles.handle}>@{item.username}</Text>
             </View>
-            <Pressable style={styles.iconBtn} onPress={() => sendRequest(item.id)}>
-              <UserPlus color={colors.primary} size={20} />
+            <Pressable style={[styles.miniBtn, { backgroundColor: colors.primary }]} onPress={() => sendRequest(item.id)}>
+              <UserPlus color="#fff" size={20} strokeWidth={2.6} />
             </Pressable>
           </View>
         )}
+        ListEmptyComponent={
+          pending.length === 0 ? (
+            <View style={styles.emptyWrap}>
+              <Text style={styles.empty}>חפשו חברים לפי שם המשתמש שלהם והוסיפו אותם כדי להתחרות יחד.</Text>
+            </View>
+          ) : null
+        }
       />
     </SafeAreaView>
   );
@@ -131,43 +138,38 @@ export default function Friends() {
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.bg },
-  title: { color: colors.text, fontSize: 22, fontWeight: "700", padding: spacing.md, textAlign: "right" },
-  searchRow: { flexDirection: "row", gap: spacing.sm, paddingHorizontal: spacing.md },
-  input: {
-    flex: 1,
-    backgroundColor: colors.surface,
-    borderColor: colors.border,
-    borderWidth: 1,
-    borderRadius: radius.md,
-    color: colors.text,
-    padding: spacing.md,
-    textAlign: "right",
-  },
-  searchBtn: {
-    backgroundColor: colors.primary,
-    borderRadius: radius.md,
-    paddingHorizontal: spacing.md,
-    justifyContent: "center",
-  },
-  searchBtnText: { color: colors.primaryText, fontWeight: "600" },
-  section: { paddingHorizontal: spacing.md, marginTop: spacing.md },
-  sectionTitle: {
-    color: colors.textMuted,
-    fontSize: 13,
-    fontWeight: "600",
-    marginBottom: spacing.sm,
-    textAlign: "right",
-  },
-  row: {
-    flexDirection: "row",
+  title: { fontFamily: fonts.display, fontSize: 24, color: colors.text, paddingHorizontal: 20, paddingTop: 10, paddingBottom: 12, textAlign: "right" },
+  searchRow: {
+    flexDirection: "row-reverse",
     alignItems: "center",
     gap: spacing.sm,
-    backgroundColor: colors.surface,
+    marginHorizontal: spacing.md,
+    backgroundColor: "#fff",
+    borderColor: colors.border,
+    borderWidth: 2,
     borderRadius: radius.md,
-    padding: spacing.md,
-    marginBottom: spacing.sm,
+    paddingHorizontal: 14,
   },
-  name: { color: colors.text, fontSize: 15, fontWeight: "600", textAlign: "right" },
-  handle: { color: colors.textMuted, fontSize: 12, textAlign: "right" },
-  iconBtn: { padding: spacing.sm },
+  input: { flex: 1, color: colors.text, paddingVertical: 13, fontFamily: fonts.medium, fontSize: 15, textAlign: "right" },
+  section: { marginBottom: spacing.sm },
+  sectionTitle: { fontFamily: fonts.extrabold, fontSize: 13, color: colors.textSoft, marginBottom: spacing.sm, marginTop: spacing.sm, textAlign: "right" },
+  row: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    gap: spacing.sm,
+    backgroundColor: "#fff",
+    borderRadius: radius.lg,
+    padding: 11,
+    marginBottom: 10,
+    borderWidth: 2,
+    borderColor: colors.border,
+  },
+  avatar: { width: 44, height: 44, borderRadius: 22, alignItems: "center", justifyContent: "center" },
+  avatarText: { fontFamily: fonts.display, fontSize: 18 },
+  name: { fontFamily: fonts.extrabold, fontSize: 15, color: colors.textBody, textAlign: "right" },
+  handle: { fontFamily: fonts.medium, fontSize: 12, color: colors.textSoft, textAlign: "right", marginTop: 1 },
+  miniBtn: { width: 40, height: 40, borderRadius: 12, alignItems: "center", justifyContent: "center" },
+  miniGhost: { backgroundColor: "#f0f3f1", borderWidth: 2, borderColor: colors.border },
+  emptyWrap: { paddingHorizontal: spacing.lg, marginTop: spacing.xl },
+  empty: { color: colors.textMuted, fontFamily: fonts.medium, fontSize: 14, textAlign: "center", lineHeight: 22 },
 });

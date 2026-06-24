@@ -1,19 +1,15 @@
 import { useCallback, useEffect, useState } from "react";
-import {
-  View,
-  Text,
-  Pressable,
-  StyleSheet,
-  ScrollView,
-  ActivityIndicator,
-} from "react-native";
+import { View, Text, Pressable, StyleSheet, ScrollView, ActivityIndicator, Animated } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { Check, X, Flame } from "lucide-react-native";
+import { X, Check, Heart } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
 import { getDailyQuestion, submitAnswer, type DailyQuestion } from "@/lib/api";
-import { colors, spacing, radius } from "@/lib/theme";
+import { Mascot } from "@/components/Mascot";
+import { Button3D } from "@/components/Button3D";
+import { Confetti, SheetUp, useShake } from "@/components/anim";
+import { colors, fonts, radius, spacing } from "@/lib/theme";
 
 type Result = {
   isCorrect: boolean;
@@ -36,6 +32,7 @@ export default function QuestionScreen() {
   const [result, setResult] = useState<Result | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [correctInLevel, setCorrectInLevel] = useState(0);
+  const shake = useShake();
 
   const current = queue[index];
 
@@ -67,6 +64,7 @@ export default function QuestionScreen() {
       const r = await submitAnswer(selected);
       setResult(r);
       if (r.isCorrect) setCorrectInLevel((c) => c + 1);
+      else shake.trigger();
     } finally {
       setSubmitting(false);
     }
@@ -79,7 +77,6 @@ export default function QuestionScreen() {
       setResult(null);
       return;
     }
-    // Level finished: record progress + unlock the next level.
     if (isLevel && params.levelId && session) {
       const total = queue.length;
       const stars = correctInLevel === total ? 3 : correctInLevel >= total * 0.8 ? 2 : correctInLevel >= total * 0.5 ? 1 : 0;
@@ -100,12 +97,14 @@ export default function QuestionScreen() {
   }
 
   async function unlockNext(levelId: number, userId: string) {
-    const { data: cur } = await supabase
-      .from("levels").select("unit_id, position").eq("id", levelId).single();
+    const { data: cur } = await supabase.from("levels").select("unit_id, position").eq("id", levelId).single();
     if (!cur) return;
     const { data: nextLevel } = await supabase
-      .from("levels").select("id")
-      .eq("unit_id", cur.unit_id).eq("position", cur.position + 1).maybeSingle();
+      .from("levels")
+      .select("id")
+      .eq("unit_id", cur.unit_id)
+      .eq("position", cur.position + 1)
+      .maybeSingle();
     if (nextLevel) {
       await supabase.from("user_level_progress").upsert(
         { user_id: userId, level_id: nextLevel.id, status: "unlocked" },
@@ -125,94 +124,105 @@ export default function QuestionScreen() {
   if (!current) {
     return (
       <SafeAreaView style={styles.center}>
+        <Mascot size={90} />
         <Text style={styles.empty}>אין שאלות זמינות כרגע.</Text>
-        <Pressable style={styles.primaryBtn} onPress={() => router.back()}>
-          <Text style={styles.primaryBtnText}>חזרה</Text>
-        </Pressable>
+        <Button3D title="חזרה" onPress={() => router.back()} style={{ width: 200 }} />
       </SafeAreaView>
     );
   }
 
+  const options = current.answer_options.slice().sort((a, b) => a.position - b.position);
+  const progress = Math.round(((index + (result ? 1 : 0)) / Math.max(1, queue.length)) * 100);
+
   return (
     <SafeAreaView style={styles.safe}>
-      <View style={styles.progressBar}>
-        <View style={[styles.progressFill, { width: `${((index + 1) / queue.length) * 100}%` }]} />
+      {/* header: close · progress · hearts */}
+      <View style={styles.header}>
+        <Pressable onPress={() => router.back()} hitSlop={10}>
+          <X color={colors.textFaint} size={26} strokeWidth={3} />
+        </Pressable>
+        <View style={styles.progressTrack}>
+          <View style={[styles.progressFill, { width: `${progress}%` }]} />
+        </View>
+        <View style={styles.hearts}>
+          <Heart color={colors.heart} fill={colors.heart} size={17} />
+          <Text style={styles.heartsText}>5</Text>
+        </View>
       </View>
 
-      <ScrollView contentContainerStyle={{ padding: spacing.lg }}>
-        <Text style={styles.counter}>
-          שאלה {index + 1} מתוך {queue.length}
-        </Text>
-        <Text style={styles.body}>{current.body}</Text>
+      <ScrollView contentContainerStyle={{ padding: 22, paddingBottom: 8 }}>
+        <Text style={styles.prompt}>בחרו את התשובה הנכונה</Text>
 
-        <View style={{ marginTop: spacing.lg, gap: spacing.sm }}>
-          {current.answer_options
-            .slice()
-            .sort((a, b) => a.position - b.position)
-            .map((opt) => {
-              const isSelected = selected === opt.id;
-              const showCorrect = result && result.correctOptionId === opt.id;
-              const showWrong = result && isSelected && !result.isCorrect;
-              return (
-                <Pressable
-                  key={opt.id}
-                  disabled={!!result}
-                  onPress={() => setSelected(opt.id)}
-                  style={[
-                    styles.option,
-                    isSelected && !result && styles.optionSelected,
-                    showCorrect && styles.optionCorrect,
-                    showWrong && styles.optionWrong,
-                  ]}
-                >
-                  <Text style={styles.optionLabel}>{opt.label}</Text>
-                  <Text style={styles.optionBody}>{opt.body}</Text>
-                  {showCorrect && <Check color={colors.success} size={18} />}
-                  {showWrong && <X color={colors.danger} size={18} />}
-                </Pressable>
-              );
-            })}
-        </View>
-
-        {result && (
-          <View style={styles.explanation}>
-            <View style={styles.resultHeader}>
-              <Text style={[styles.resultText, { color: result.isCorrect ? colors.success : colors.danger }]}>
-                {result.isCorrect ? "תשובה נכונה" : "תשובה שגויה"}
-              </Text>
-              {result.isCorrect && (
-                <View style={styles.streakWrap}>
-                  <Flame color={colors.streak} size={16} />
-                  <Text style={styles.streakText}>{result.streak} · +{result.xpGain} XP</Text>
-                </View>
-              )}
-            </View>
-            <Text style={styles.explanationText}>{result.explanation}</Text>
+        <Animated.View style={shake.style}>
+          <View style={styles.qCard}>
+            <Mascot size={58} bob={false} />
+            <Text style={styles.qBody}>{current.body}</Text>
           </View>
-        )}
+        </Animated.View>
+
+        <View style={{ gap: 12, marginTop: 22 }}>
+          {options.map((opt) => {
+            const isSel = selected === opt.id;
+            const showCorrect = result && result.correctOptionId === opt.id;
+            const showWrong = result && isSel && !result.isCorrect;
+
+            let bg = "#fff", border = colors.borderInput, step = "#e3e8e4", txt = colors.textMid;
+            if (!result && isSel) {
+              bg = "#e7f6ef"; border = colors.primary; step = "#9fdcc0"; txt = colors.primary;
+            } else if (showCorrect) {
+              bg = "#d7f5e4"; border = colors.done; step = colors.doneDark; txt = "#157a52";
+            } else if (showWrong) {
+              bg = "#ffe3e3"; border = "#ff6a72"; step = "#e05a5a"; txt = "#cc3b3b";
+            }
+
+            return (
+              <Pressable key={opt.id} disabled={!!result} onPress={() => setSelected(opt.id)}>
+                <View style={{ backgroundColor: step, borderRadius: radius.md, paddingBottom: 4 }}>
+                  <View style={[styles.option, { backgroundColor: bg, borderColor: border }]}>
+                    <Text style={[styles.optLabel, { color: txt }]}>{opt.label}</Text>
+                    <Text style={[styles.optBody, { color: txt }]}>{opt.body}</Text>
+                  </View>
+                </View>
+              </Pressable>
+            );
+          })}
+        </View>
       </ScrollView>
 
-      <View style={styles.footer}>
-        {!result ? (
-          <Pressable
-            style={[styles.primaryBtn, (selected == null || submitting) && { opacity: 0.5 }]}
-            onPress={check}
-            disabled={selected == null || submitting}
-          >
-            {submitting ? (
-              <ActivityIndicator color={colors.primaryText} />
-            ) : (
-              <Text style={styles.primaryBtnText}>בדיקה</Text>
-            )}
-          </Pressable>
-        ) : (
-          <Pressable style={styles.primaryBtn} onPress={next}>
-            <Text style={styles.primaryBtnText}>
-              {index + 1 < queue.length ? "השאלה הבאה" : "סיום"}
-            </Text>
-          </Pressable>
-        )}
-      </View>
+      {!result ? (
+        <View style={styles.footer}>
+          <Button3D title="בדיקה" onPress={check} loading={submitting} disabled={selected == null} />
+        </View>
+      ) : null}
+
+      {/* confetti on correct */}
+      {result?.isCorrect ? (
+        <View pointerEvents="none" style={StyleSheet.absoluteFill}>
+          <Confetti />
+        </View>
+      ) : null}
+
+      {/* explanation sheet */}
+      {result ? (
+        <View style={styles.sheetWrap} pointerEvents="box-none">
+          <SheetUp style={[styles.sheet, { backgroundColor: result.isCorrect ? "#eafaf1" : "#fdecec" }]}>
+            <View style={styles.sheetHead}>
+              <View style={[styles.sheetIcon, { backgroundColor: result.isCorrect ? colors.done : colors.danger }]}>
+                {result.isCorrect ? <Check color="#fff" size={24} strokeWidth={3} /> : <X color="#fff" size={24} strokeWidth={3} />}
+              </View>
+              <Text style={[styles.sheetTitle, { color: result.isCorrect ? colors.primary : colors.dangerDark }]}>
+                {result.isCorrect ? `מצוין! +${result.xpGain} XP` : "לא בדיוק..."}
+              </Text>
+            </View>
+            <Text style={styles.sheetExpl}>{result.explanation}</Text>
+            <Button3D
+              title={index + 1 < queue.length ? "המשך" : "סיום"}
+              tone={result.isCorrect ? "primary" : "danger"}
+              onPress={next}
+            />
+          </SheetUp>
+        </View>
+      ) : null}
     </SafeAreaView>
   );
 }
@@ -220,38 +230,45 @@ export default function QuestionScreen() {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.bg },
   center: { flex: 1, backgroundColor: colors.bg, alignItems: "center", justifyContent: "center", gap: spacing.md },
-  empty: { color: colors.textMuted, fontSize: 16 },
-  progressBar: { height: 6, backgroundColor: colors.surfaceAlt },
-  progressFill: { height: 6, backgroundColor: colors.primary },
-  counter: { color: colors.textMuted, fontSize: 13, textAlign: "right" },
-  body: { color: colors.text, fontSize: 19, fontWeight: "600", textAlign: "right", marginTop: spacing.sm, lineHeight: 28 },
+  empty: { color: colors.textMuted, fontFamily: fonts.bold, fontSize: 16 },
+  header: { flexDirection: "row", alignItems: "center", gap: 13, paddingHorizontal: 18, paddingTop: 8, paddingBottom: 12 },
+  progressTrack: { flex: 1, height: 14, backgroundColor: "#e6ece8", borderRadius: 8, overflow: "hidden" },
+  progressFill: { height: "100%", backgroundColor: colors.done, borderRadius: 8 },
+  hearts: { flexDirection: "row", alignItems: "center", gap: 4 },
+  heartsText: { fontFamily: fonts.display, fontSize: 16, color: colors.heart },
+  prompt: { fontFamily: fonts.display, fontSize: 21, color: colors.text, marginBottom: 18, textAlign: "right" },
+  qCard: {
+    backgroundColor: "#fff",
+    borderWidth: 2,
+    borderColor: colors.border,
+    borderRadius: radius.xl,
+    padding: 26,
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    gap: 16,
+    shadowColor: colors.borderShadow,
+    shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 1,
+    shadowRadius: 0,
+    elevation: 3,
+  },
+  qBody: { flex: 1, fontFamily: fonts.bold, fontSize: 22, color: "#2c3530", textAlign: "right", lineHeight: 30 },
   option: {
     flexDirection: "row-reverse",
     alignItems: "center",
     gap: spacing.sm,
-    backgroundColor: colors.surface,
-    borderColor: colors.border,
-    borderWidth: 1,
+    borderWidth: 2,
     borderRadius: radius.md,
-    padding: spacing.md,
+    paddingVertical: 16,
+    paddingHorizontal: 16,
   },
-  optionSelected: { borderColor: colors.primary },
-  optionCorrect: { borderColor: colors.success, backgroundColor: "#14271C" },
-  optionWrong: { borderColor: colors.danger, backgroundColor: "#2A1718" },
-  optionLabel: { color: colors.textMuted, fontWeight: "700", width: 22, textAlign: "center" },
-  optionBody: { color: colors.text, fontSize: 16, flex: 1, textAlign: "right" },
-  explanation: {
-    backgroundColor: colors.surface,
-    borderRadius: radius.md,
-    padding: spacing.md,
-    marginTop: spacing.lg,
-  },
-  resultHeader: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", marginBottom: spacing.sm },
-  resultText: { fontSize: 16, fontWeight: "700" },
-  streakWrap: { flexDirection: "row", alignItems: "center", gap: 4 },
-  streakText: { color: colors.text, fontWeight: "600", fontSize: 13 },
-  explanationText: { color: colors.text, fontSize: 15, lineHeight: 24, textAlign: "right" },
-  footer: { padding: spacing.md, borderTopColor: colors.border, borderTopWidth: 1 },
-  primaryBtn: { backgroundColor: colors.primary, borderRadius: radius.md, padding: spacing.md, alignItems: "center" },
-  primaryBtnText: { color: colors.primaryText, fontSize: 16, fontWeight: "700" },
+  optLabel: { fontFamily: fonts.extrabold, fontSize: 15, width: 22, textAlign: "center" },
+  optBody: { flex: 1, fontFamily: fonts.bold, fontSize: 18, textAlign: "right" },
+  footer: { padding: spacing.md, paddingBottom: 24 },
+  sheetWrap: { ...StyleSheet.absoluteFillObject, justifyContent: "flex-end", zIndex: 70 },
+  sheet: { borderTopLeftRadius: 26, borderTopRightRadius: 26, padding: 22, paddingBottom: 28 },
+  sheetHead: { flexDirection: "row-reverse", alignItems: "center", gap: 12, marginBottom: 12 },
+  sheetIcon: { width: 44, height: 44, borderRadius: 22, alignItems: "center", justifyContent: "center" },
+  sheetTitle: { fontFamily: fonts.display, fontSize: 22 },
+  sheetExpl: { fontFamily: fonts.medium, fontSize: 14, color: colors.textMid, lineHeight: 22, marginBottom: 16, textAlign: "right" },
 });
