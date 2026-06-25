@@ -119,6 +119,25 @@ GitHub Actions (`.github/workflows/ci.yml`) runs the Deno tests + a `deno check`
 on the shared modules, and typechecks the Expo app (`npm ci` + `tsc --noEmit`)
 on every push and PR.
 
+## Section tests (end-of-subject exam)
+
+The final level of every unit is a **10-minute timed test** (`levels.kind =
+'section_test'`) that draws a random sample of questions from across the whole
+unit via the `section_test(unit_id, limit)` RPC. It runs against a countdown
+with no per-question feedback and shows a single score + stars at the end —
+modelled on a real psychometric section (the official test uses 20-minute,
+20–23-question sections). It unlocks only once every practice level in the unit
+is completed.
+
+## Analytics & monitoring
+
+- **PostHog** (`mobile/lib/analytics.ts`) — initialised from
+  `EXPO_PUBLIC_POSTHOG_KEY`; identifies the signed-in user and captures
+  `level_completed`, `section_test_completed`, etc. No-ops when unset.
+- **Error capture** (`mobile/lib/monitoring.ts`) — `captureError()` routes caught
+  errors to PostHog as `app_error` events. A `EXPO_PUBLIC_SENTRY_DSN` seam is in
+  place for a dedicated Sentry project once one is provisioned.
+
 ## 3. Content (questions)
 
 Questions are **not** scraped from prep institutes (מכון נועם etc.) — that is a

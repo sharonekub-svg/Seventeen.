@@ -9,13 +9,19 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFocusEffect, useRouter } from "expo-router";
-import { Flame, Star, Lock, Check } from "lucide-react-native";
+import { Flame, Star, Lock, Check, Trophy } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
 import { unitIcon } from "@/lib/icons";
 import { colors, spacing, radius } from "@/lib/theme";
 
-type Level = { id: number; position: number; title: string | null };
+type Level = {
+  id: number;
+  position: number;
+  title: string | null;
+  kind: "practice" | "section_test";
+  time_limit_seconds: number | null;
+};
 type Unit = {
   id: number;
   name: string;
@@ -48,7 +54,7 @@ export default function PathScreen() {
 
     const { data: u } = await supabase
       .from("units")
-      .select("id, name, description, icon, position, levels(id, position, title)")
+      .select("id, name, description, icon, position, levels(id, position, title, kind, time_limit_seconds)")
       .eq("track", activeTrack)
       .order("position")
       .order("position", { foreignTable: "levels" });
@@ -79,6 +85,12 @@ export default function PathScreen() {
     const p = progress[level.id];
     if (p?.status === "completed") return "completed";
     if (p?.status === "unlocked") return "unlocked";
+    // The end-of-subject test unlocks only once every practice level is done.
+    if (level.kind === "section_test") {
+      const practice = unit.levels.filter((l) => l.kind !== "section_test");
+      const allDone = practice.length > 0 && practice.every((l) => progress[l.id]?.status === "completed");
+      return allDone ? "unlocked" : "locked";
+    }
     // First level of each unit is open by default.
     if (level.position === 1) return "unlocked";
     return "locked";
@@ -122,18 +134,30 @@ export default function PathScreen() {
                   const locked = state === "locked";
                   const completed = state === "completed";
                   const stars = progress[level.id]?.stars ?? 0;
+                  const isTest = level.kind === "section_test";
                   return (
                     <Pressable
                       key={level.id}
                       disabled={locked}
                       onPress={() =>
-                        router.push({
-                          pathname: "/question/[mode]",
-                          params: { mode: "level", unitId: String(unit.id), levelId: String(level.id) },
-                        })
+                        isTest
+                          ? router.push({
+                              pathname: "/test/[unitId]",
+                              params: {
+                                unitId: String(unit.id),
+                                levelId: String(level.id),
+                                timeLimit: String(level.time_limit_seconds ?? 600),
+                                unitName: unit.name,
+                              },
+                            })
+                          : router.push({
+                              pathname: "/question/[mode]",
+                              params: { mode: "level", unitId: String(unit.id), levelId: String(level.id) },
+                            })
                       }
                       style={[
                         styles.level,
+                        isTest && styles.levelTest,
                         completed && styles.levelDone,
                         locked && styles.levelLocked,
                       ]}
@@ -142,6 +166,8 @@ export default function PathScreen() {
                         <Lock color={colors.textMuted} size={16} />
                       ) : completed ? (
                         <Check color={colors.primaryText} size={18} />
+                      ) : isTest ? (
+                        <Trophy color={colors.primaryText} size={18} />
                       ) : (
                         <Text style={styles.levelNum}>{level.position}</Text>
                       )}
@@ -217,6 +243,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  levelTest: { backgroundColor: colors.streak },
   levelDone: { backgroundColor: colors.success },
   levelLocked: { backgroundColor: colors.locked },
   levelNum: { color: colors.primaryText, fontWeight: "700", fontSize: 15 },

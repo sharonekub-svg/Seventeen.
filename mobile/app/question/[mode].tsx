@@ -14,6 +14,7 @@ import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
 import { getDailyQuestion, submitAnswer, type DailyQuestion } from "@/lib/api";
 import { starsFor } from "@/lib/scoring";
+import { capture } from "@/lib/analytics";
 import { colors, spacing, radius } from "@/lib/theme";
 
 type Result = {
@@ -96,6 +97,7 @@ export default function QuestionScreen() {
         { onConflict: "user_id,level_id" },
       );
       if (stars >= 1) await unlockNext(Number(params.levelId), session.user.id);
+      capture("level_completed", { level_id: Number(params.levelId), stars, correct: correctInLevel, total });
     }
     router.back();
   }
