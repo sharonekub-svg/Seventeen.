@@ -1,47 +1,57 @@
-# Question bank — coverage status
+# Question bank — coverage & exam-fidelity status
 
 Target per subject: **10 levels × 5 questions = 50**. Run `node scripts/build-seed.mjs`
 to regenerate `supabase/migrations/0003_questions_seed.sql`. All seeded with
 `is_active = false`; flip to `true` after QA (`source = 'original'`).
 
-Current total: **590** active-ready questions.
+Current total: **670** active-ready questions. **13 of 15 subjects complete.**
 
-## Complete (50/50) — 11 subjects
+## Content & sourcing policy
 
-| Track | Subject | Source files |
-|-------|---------|--------------|
-| daper | חשיבה כמותית | `daper-quantitative.json` |
-| daper | אנלוגיות מילוליות | `daper-verbal-analogies.json` + `-topoff` |
-| daper | הבנת הוראות | `daper-instructions.json` (lv 1–2) + `-gen` (lv 3–10, generated & verified) |
-| psychometric | כמותי – אלגברה | `psy-algebra.json` |
-| psychometric | כמותי – גיאומטריה | `psy-geometry.json` |
-| psychometric | כמותי – גרפים וטבלאות | `psy-data.json` |
-| psychometric | מילולי – אנלוגיות | `psy-analogies.json` |
-| psychometric | מילולי – היסק ולוגיקה | `psy-logic.json` + `-topoff` |
-| psychometric | מילולי – השלמת משפטים | `psy-sentence-completion.json` (lv 1–2) + `-3-10` |
-| psychometric | אנגלית – Sentence Completion | `eng-sentence-completion.json` (lv 1–2) + `-3-10` |
-| psychometric | אנגלית – Restatement | `eng-restatement.json` (lv 1–2) + `-3-10` |
+All questions are **original** (written or code-generated here). Nothing is copied
+from prep institutes or exam booklets — see the copyright warning in
+`supabase/content/README.md`. Real exams are used **only as a format/difficulty
+reference**, via NITE's publicly published format pages (see Sources below).
 
-## Partial (10/50) — 4 subjects, blocked on a non-MCQ flow
+## Exam-fidelity decisions (verified against NITE)
 
-These were intentionally **not** auto-expanded because each needs a content type
-the current single-question / 4-option schema and the app's question screen do
-not yet support well. They have starter levels 1–2 only.
+- **All multiple-choice questions have exactly 4 options.** ✔ matches NITE.
+- **Psychometric analogies are pair-to-pair.** A stem word-pair is given and each
+  of the 4 options is itself a *pair*; you choose the pair with the same
+  relationship (official example: `ספר : ספרייה` → `תמונה : גלריה`). Implemented in
+  `scripts/gen-analogies.mjs` (correct-by-construction: distractor pairs come from
+  other relationship categories, so exactly one option matches).
+- **DAPER (psychotechnic / צו-ראשון) analogies are fill-in-the-blank**
+  (`א' : ב' כמו ג' : ___`). That is the authentic format for *that* track, so the
+  DAPER analogy unit is intentionally left in this form.
+- **Reading comprehension** = one passage + several questions; the passage is
+  embedded in each question's `body` (no schema change needed).
+- **Known remaining fidelity gap:** Hebrew/English *sentence completion* on the real
+  exam often has **two blanks** (each option supplies two words separated by `/`).
+  The current sentence-completion items are all single-blank — valid, but a
+  two-blank variant at the harder levels would raise realism. Not yet done.
 
-| Subject | What's missing | Why it needs a different flow |
-|---------|----------------|------------------------------|
-| daper · אנלוגיות צורניות | levels 3–10 | **Figural** — each item is a set of shapes; needs `image_url` diagrams (or an SVG renderer), not text. |
-| psychometric · מילולי – הבנת הנקרא | levels 3–10 | **Reading comprehension** — multiple questions share one long passage. Schema stores one question per row; needs a passage/stimulus grouping. |
-| psychometric · אנגלית – Reading | levels 3–10 | Same passage-grouping issue as Hebrew reading, in English. |
-| psychometric · מטלת כתיבה | levels 3–10 | **Essay** — open writing task graded by rubric, not a multiple-choice answer; needs an open-response + scoring flow. |
+## Complete (50/50) — 13 subjects
 
-### Recommended next steps for the partial subjects
-1. **Passage grouping** (covers both reading subjects): add a `passages` table
-   (or a `stimulus` column + `stimulus_id`) so several questions reference one
-   text. Then a passage + 4–6 questions per level can be authored as JSON.
-2. **Figural items**: decide on image hosting (Supabase Storage) or an inline
-   SVG convention, set `type` + `image_url`, then author shape-analogy sets.
-3. **Writing task**: add an open-response question `type` and a rubric/scoring
-   path (likely an Edge Function), separate from the MCQ grader.
+daper: חשיבה כמותית · אנלוגיות מילוליות · הבנת הוראות
+psychometric: כמותי – אלגברה · כמותי – גיאומטריה · כמותי – גרפים וטבלאות ·
+מילולי – אנלוגיות · מילולי – היסק ולוגיקה · מילולי – השלמת משפטים ·
+מילולי – הבנת הנקרא · אנגלית – Sentence Completion · אנגלית – Restatement ·
+אנגלית – Reading
 
-Until those land, the 11 complete subjects give a full 10-level ladder each.
+## Partial (10/50) — 2 subjects, blocked on a non-MCQ flow
+
+| Subject | Why it needs infrastructure first |
+|---------|-----------------------------------|
+| daper · אנלוגיות צורניות | **Figural** — each item is a set of shapes; needs `image_url` diagrams (Supabase Storage) or an inline-SVG convention, not text. |
+| psychometric · מטלת כתיבה | **Essay** — an open writing task graded by rubric, not a 4-option answer; needs an open-response question type + a scoring path (likely an Edge Function), separate from the MCQ grader. |
+
+### Recommended next steps
+1. **Two-blank sentence completion** for higher levels (realism; no schema change).
+2. **Figural items**: choose image hosting, set `type` + `image_url`, author shape sets.
+3. **Writing task**: add an open-response `type` + rubric scoring (Edge Function).
+
+## Sources (format reference only — no content copied)
+- NITE — Test Format & Components: https://www.nite.org.il/psychometric-entrance-test/format/?lang=en
+- NITE — Practice tests: https://www.nite.org.il/practice-tests/?lang=en
+- Psychometric Entrance Test (overview): https://en.wikipedia.org/wiki/Psychometric_Entrance_Test

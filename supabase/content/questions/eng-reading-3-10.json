@@ -1,0 +1,1402 @@
+[
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "Read the passage and answer the question:\n\n\"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet.\"\n\nWhat is the passage mainly about?\n\n(A) Different kinds of weather  (B) The importance of the Sun to life on Earth  (C) How plants grow flowers  (D) The distance between stars",
+    "explanation": "הקטע כולו עוסק בתפקיד השמש בקיום החיים על כדור הארץ.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Different kinds of weather",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "The importance of the Sun to life on Earth",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "How plants grow flowers",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "The distance between stars",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "Read the passage and answer the question:\n\n\"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet.\"\n\nWhat do plants use sunlight for?\n\n(A) To stay cool  (B) To move around  (C) To make their food  (D) To change color",
+    "explanation": "נכתב: 'Plants use sunlight to make their food'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "To stay cool",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "To move around",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "To make their food",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "To change color",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "Read the passage and answer the question:\n\n\"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet.\"\n\nWhy is the Sun important to living things?\n\n(A) It blocks the wind  (B) It cleans the air  (C) It creates the oceans  (D) It gives light and heat they need to survive",
+    "explanation": "נכתב: 'It gives us light and heat, which living things need to survive'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "It blocks the wind",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "It cleans the air",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "It creates the oceans",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "It gives light and heat they need to survive",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "Read the passage and answer the question:\n\n\"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet.\"\n\nWhat can be inferred from the passage?\n\n(A) Without the Sun, most life on Earth could not survive  (B) Plants do not need light  (C) The Sun is very far and unimportant  (D) Animals make their own food",
+    "explanation": "אם החיים תלויים באור ובחום השמש, בלעדיה רובם לא ישרדו.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Without the Sun, most life on Earth could not survive",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Plants do not need light",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "The Sun is very far and unimportant",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Animals make their own food",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "Read the passage and answer the question:\n\n\"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet.\"\n\nThe word 'survive' means:\n\n(A) to fall asleep  (B) to stay alive  (C) to grow taller  (D) to move fast",
+    "explanation": "survive = להישאר בחיים.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "to fall asleep",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "to stay alive",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "to grow taller",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "to move fast",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town.\"\n\nWhat is the main idea of the passage?\n\n(A) The history of city streets  (B) Why fuel is expensive  (C) The benefits of using bicycles for travel  (D) How to repair a car engine",
+    "explanation": "הקטע מתאר את היתרונות של שימוש באופניים.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "The history of city streets",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Why fuel is expensive",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "The benefits of using bicycles for travel",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "How to repair a car engine",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town.\"\n\nHow are bicycles different from cars, according to the passage?\n\n(A) They are always faster  (B) They cost more to buy  (C) They need special fuel  (D) They do not burn fuel or pollute",
+    "explanation": "נכתב: 'bicycles do not burn fuel or release pollution'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "They are always faster",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "They cost more to buy",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "They need special fuel",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "They do not burn fuel or pollute",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town.\"\n\nWhat have many cities built?\n\n(A) Special lanes for cycling  (B) Larger car parks  (C) New fuel stations  (D) Taller buildings",
+    "explanation": "נכתב: 'Many cities have built special lanes'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Special lanes for cycling",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Larger car parks",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "New fuel stations",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Taller buildings",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town.\"\n\nWhy do more people now choose bikes for short trips?\n\n(A) Because fuel is free  (B) Because cycling has become safer, and it is cheap and healthy  (C) Because cars were banned  (D) Because bikes are faster than trains",
+    "explanation": "השילוב של בטיחות, מחיר נמוך ובריאות מסביר את הבחירה.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Because fuel is free",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Because cycling has become safer, and it is cheap and healthy",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Because cars were banned",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Because bikes are faster than trains",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town.\"\n\nThe word 'pollution' means:\n\n(A) loud noise  (B) bright light  (C) harmful substances released into the air  (D) heavy traffic",
+    "explanation": "pollution = זיהום, חומרים מזיקים באוויר.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "loud noise",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "bright light",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "harmful substances released into the air",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "heavy traffic",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 5,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close.\"\n\nWhat is the passage mainly about?\n\n(A) How to start a website  (B) The history of delivery trucks  (C) How to save money on food  (D) How online shopping has changed buying and affected local shops",
+    "explanation": "הקטע עוסק בהשפעת הקנייה המקוונת על הצרכנים ועל החנויות הקטנות.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "How to start a website",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "The history of delivery trucks",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "How to save money on food",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "How online shopping has changed buying and affected local shops",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 5,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close.\"\n\nWhat is one advantage of online shopping mentioned?\n\n(A) It is convenient and often cheaper  (B) It is always slower  (C) It supports local shops  (D) It requires visiting stores",
+    "explanation": "נכתב: 'This is convenient and often cheaper'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "It is convenient and often cheaper",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "It is always slower",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "It supports local shops",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "It requires visiting stores",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 5,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close.\"\n\nWhat problem has online shopping caused?\n\n(A) People stopped buying anything  (B) It is harder for small local shops to compete  (C) Deliveries became impossible  (D) Products became more expensive everywhere",
+    "explanation": "נכתב: 'harder for small local shops to compete'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "People stopped buying anything",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "It is harder for small local shops to compete",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Deliveries became impossible",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Products became more expensive everywhere",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 5,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close.\"\n\nWhat can be inferred about some towns?\n\n(A) They built many new stores  (B) They have no shops at all  (C) They lost local shops partly because of online competition  (D) They banned online shopping",
+    "explanation": "סגירת חנויות בערים נקשרת לתחרות מצד הקנייה המקוונת.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "They built many new stores",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "They have no shops at all",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "They lost local shops partly because of online competition",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "They banned online shopping",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 5,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close.\"\n\nThe word 'compete' means:\n\n(A) to close down  (B) to deliver goods  (C) to lower prices only  (D) to try to do better than others",
+    "explanation": "compete = להתחרות, לנסות להצליח מול אחרים.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "to close down",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "to deliver goods",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "to lower prices only",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "to try to do better than others",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 6,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks.\"\n\nWhat is the main idea of the passage?\n\n(A) Both the dangers and the benefits of volcanoes  (B) How to climb a mountain  (C) The coldest places on Earth  (D) How rivers are formed",
+    "explanation": "הקטע מציג גם את הסכנות וגם את היתרונות של החיים ליד הרי געש.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Both the dangers and the benefits of volcanoes",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "How to climb a mountain",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "The coldest places on Earth",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "How rivers are formed",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 6,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks.\"\n\nWhat can a volcano release when it erupts?\n\n(A) Sand and dust only  (B) Ash, gas, and lava  (C) Snow and ice  (D) Fresh water only",
+    "explanation": "נכתב: 'release ash, gas, and rivers of lava'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Sand and dust only",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Ash, gas, and lava",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Snow and ice",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Fresh water only",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 6,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks.\"\n\nWhy do many people live near volcanoes?\n\n(A) There is no other land  (B) The weather is always cold  (C) The soil there is often very fertile  (D) Volcanoes are always safe",
+    "explanation": "נכתב: 'the soil around volcanoes is often very fertile'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "There is no other land",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "The weather is always cold",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "The soil there is often very fertile",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Volcanoes are always safe",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 6,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks.\"\n\nWhat does the passage suggest about these people's choice?\n\n(A) They are unaware of any danger  (B) They never farm the land  (C) They dislike farming  (D) They accept the risk in return for fertile soil",
+    "explanation": "הם בוחרים לחיות שם 'despite the risks' בזכות האדמה הפורייה.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "They are unaware of any danger",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "They never farm the land",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "They dislike farming",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "They accept the risk in return for fertile soil",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 6,
+    "difficulty": 3,
+    "body": "Read the passage and answer the question:\n\n\"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks.\"\n\nThe word 'fertile' means:\n\n(A) good for growing plants  (B) very dry  (C) extremely hot  (D) covered in rock",
+    "explanation": "fertile = פורה, טוב לגידול צמחים.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "good for growing plants",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "very dry",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "extremely hot",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "covered in rock",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen.\"\n\nWhat is the main idea of the passage?\n\n(A) The cost of books  (B) The wider benefits of regular reading  (C) Why paper books are better than screens  (D) How to write a novel",
+    "explanation": "הקטע מתאר את היתרונות הרחבים של קריאה קבועה.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "The cost of books",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "The wider benefits of regular reading",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Why paper books are better than screens",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "How to write a novel",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen.\"\n\nWhich benefit is linked specifically to reading fiction?\n\n(A) Better eyesight  (B) A larger income  (C) Improved empathy  (D) Faster typing",
+    "explanation": "נכתב: 'Reading fiction, in particular, may improve empathy'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Better eyesight",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "A larger income",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Improved empathy",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Faster typing",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen.\"\n\nDoes the format (paper or screen) change the benefits, according to the passage?\n\n(A) Yes, only paper helps  (B) Yes, only screens help  (C) The passage does not say  (D) No, the benefits appear either way",
+    "explanation": "נכתב: 'These benefits appear whether one reads on paper or on a screen'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Yes, only paper helps",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Yes, only screens help",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "The passage does not say",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "No, the benefits appear either way",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen.\"\n\nWhy might fiction improve empathy?\n\n(A) Because it makes readers imagine others' thoughts and feelings  (B) Because it is always short  (C) Because it uses simple words  (D) Because it is read quickly",
+    "explanation": "נכתב: 'it asks readers to imagine the thoughts and feelings of others'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Because it makes readers imagine others' thoughts and feelings",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Because it is always short",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Because it uses simple words",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Because it is read quickly",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen.\"\n\nThe word 'empathy' means:\n\n(A) a large vocabulary  (B) the ability to understand others' feelings  (C) the ability to read fast  (D) a kind of memory",
+    "explanation": "empathy = אמפתיה, היכולת להבין את רגשות הזולת.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "a large vocabulary",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "the ability to understand others' feelings",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "the ability to read fast",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "a kind of memory",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth's magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before.\"\n\nWhat is the passage mainly about?\n\n(A) Why some birds cannot fly  (B) How to feed birds in winter  (C) How and why birds migrate  (D) How birds build nests",
+    "explanation": "הקטע עוסק באופן ובסיבות של נדידת הציפורים.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Why some birds cannot fly",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "How to feed birds in winter",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "How and why birds migrate",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "How birds build nests",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth's magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before.\"\n\nWhat do scientists think birds use to navigate?\n\n(A) Road signs  (B) Other animals  (C) Ocean currents  (D) The Sun, the stars, and the Earth's magnetic field",
+    "explanation": "נכתב: 'navigate using the Sun, the stars, and even the Earth's magnetic field'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Road signs",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Other animals",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Ocean currents",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "The Sun, the stars, and the Earth's magnetic field",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth's magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before.\"\n\nWhy do birds migrate despite the dangers?\n\n(A) To find food and suitable weather throughout the year  (B) To avoid flying  (C) To stay in one place  (D) To grow larger wings",
+    "explanation": "נכתב: 'allow birds to find food and suitable weather throughout the year'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "To find food and suitable weather throughout the year",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "To avoid flying",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "To stay in one place",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "To grow larger wings",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth's magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before.\"\n\nWhat does the last sentence suggest about navigation?\n\n(A) It is impossible for young birds  (B) It is partly instinctive, not only learned  (C) It must always be taught by parents  (D) It depends only on maps",
+    "explanation": "אם ציפורים צעירות עפות לבד בלי ניסיון, היכולת חלקית מולדת.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "It is impossible for young birds",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "It is partly instinctive, not only learned",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "It must always be taught by parents",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "It depends only on maps",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "Read the passage and answer the question:\n\n\"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth's magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before.\"\n\nThe word 'exhausting' means:\n\n(A) very short  (B) very safe  (C) very tiring  (D) very easy",
+    "explanation": "exhausting = מתיש, מעייף מאוד.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "very short",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "very safe",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "very tiring",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "very easy",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today's machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives.\"\n\nWhat is the main idea of the passage?\n\n(A) How to build a robot  (B) The history of factories  (C) Why machines always fail  (D) The debate over how automation will affect the future of work",
+    "explanation": "הקטע מציג את הוויכוח על השפעת האוטומציה על עולם העבודה.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "How to build a robot",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "The history of factories",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Why machines always fail",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "The debate over how automation will affect the future of work",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today's machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives.\"\n\nWhat do optimists argue?\n\n(A) Machines will create new jobs as well as destroy some  (B) Machines will destroy all jobs  (C) Machines never replace workers  (D) Automation should be banned",
+    "explanation": "נכתב: 'machines will eliminate some jobs while creating new ones'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Machines will create new jobs as well as destroy some",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Machines will destroy all jobs",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Machines never replace workers",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Automation should be banned",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today's machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives.\"\n\nWhy do pessimists think today's machines are different?\n\n(A) They cannot do manual work  (B) They can perform cognitive tasks, not just manual ones  (C) They are cheaper to build  (D) They work more slowly",
+    "explanation": "נכתב: 'capable of performing not only manual tasks but cognitive ones as well'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "They cannot do manual work",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "They can perform cognitive tasks, not just manual ones",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "They are cheaper to build",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "They work more slowly",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today's machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives.\"\n\nWhat do both sides agree on?\n\n(A) All new jobs are imaginary  (B) Machines will soon stop improving  (C) Workers will need to keep learning new skills  (D) Automation has no effect on work",
+    "explanation": "נכתב: 'both sides agree... workers will need to adapt, learning new skills'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "All new jobs are imaginary",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Machines will soon stop improving",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Workers will need to keep learning new skills",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Automation has no effect on work",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today's machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives.\"\n\nThe word 'adapt' means:\n\n(A) to give up  (B) to repeat the past  (C) to slow down  (D) to adjust to new conditions",
+    "explanation": "adapt = להסתגל, להתאים את עצמך למצב חדש.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "to give up",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "to repeat the past",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "to slow down",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "to adjust to new conditions",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself.\"\n\nWhat is the passage mainly about?\n\n(A) What the placebo effect is and why it matters in research  (B) How to design a hospital  (C) The history of medicine  (D) Why drugs are expensive",
+    "explanation": "הקטע מסביר מהו אפקט הפלצבו ומדוע הוא חשוב למחקר.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "What the placebo effect is and why it matters in research",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "How to design a hospital",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "The history of medicine",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Why drugs are expensive",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself.\"\n\nWhy do some patients improve after a placebo?\n\n(A) Because they exercise more  (B) Because they believe they are being helped  (C) Because the placebo contains a strong drug  (D) Because they are not really ill",
+    "explanation": "נכתב: 'simply because they believe they are being helped'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "Because they exercise more",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Because they believe they are being helped",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Because the placebo contains a strong drug",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Because they are not really ill",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself.\"\n\nWhy must researchers compare new drugs to placebos?\n\n(A) To avoid testing patients  (B) To speed up production  (C) To be sure any benefit comes from the drug itself  (D) To make the study cheaper",
+    "explanation": "נכתב: 'to be sure that any benefit comes from the drug itself'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "To avoid testing patients",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "To speed up production",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "To be sure any benefit comes from the drug itself",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "To make the study cheaper",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself.\"\n\nWhat does the placebo effect reveal, according to the passage?\n\n(A) That medicine never works  (B) That patients always pretend  (C) That drugs are unnecessary  (D) That expectation can strongly influence the body",
+    "explanation": "נכתב: 'reveals how powerfully expectation can influence the body'.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "That medicine never works",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "That patients always pretend",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "That drugs are unnecessary",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "That expectation can strongly influence the body",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "Read the passage and answer the question:\n\n\"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself.\"\n\nThe word 'phenomena' (singular: phenomenon) means:\n\n(A) observed facts or occurrences  (B) mistakes  (C) medicines  (D) doctors",
+    "explanation": "phenomenon = תופעה; phenomena היא צורת הרבים.",
+    "source": "original",
+    "options": [
+      {
+        "label": "A",
+        "body": "observed facts or occurrences",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "mistakes",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "medicines",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "doctors",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  }
+]

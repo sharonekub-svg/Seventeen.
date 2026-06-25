@@ -4655,6 +4655,1406 @@ begin
   join units u on u.id = l.unit_id
   where u.track = 'psychometric'
     and u.name  = 'אנגלית – Reading'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'Read the passage and answer the question:
+
+"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet."
+
+What is the passage mainly about?
+
+(A) Different kinds of weather  (B) The importance of the Sun to life on Earth  (C) How plants grow flowers  (D) The distance between stars', null, 'הקטע כולו עוסק בתפקיד השמש בקיום החיים על כדור הארץ.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Different kinds of weather', false, 0),
+    (v_q, 'B', 'The importance of the Sun to life on Earth', true, 1),
+    (v_q, 'C', 'How plants grow flowers', false, 2),
+    (v_q, 'D', 'The distance between stars', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'Read the passage and answer the question:
+
+"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet."
+
+What do plants use sunlight for?
+
+(A) To stay cool  (B) To move around  (C) To make their food  (D) To change color', null, 'נכתב: ''Plants use sunlight to make their food''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'To stay cool', false, 0),
+    (v_q, 'B', 'To move around', false, 1),
+    (v_q, 'C', 'To make their food', true, 2),
+    (v_q, 'D', 'To change color', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'Read the passage and answer the question:
+
+"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet."
+
+Why is the Sun important to living things?
+
+(A) It blocks the wind  (B) It cleans the air  (C) It creates the oceans  (D) It gives light and heat they need to survive', null, 'נכתב: ''It gives us light and heat, which living things need to survive''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'It blocks the wind', false, 0),
+    (v_q, 'B', 'It cleans the air', false, 1),
+    (v_q, 'C', 'It creates the oceans', false, 2),
+    (v_q, 'D', 'It gives light and heat they need to survive', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'Read the passage and answer the question:
+
+"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet."
+
+What can be inferred from the passage?
+
+(A) Without the Sun, most life on Earth could not survive  (B) Plants do not need light  (C) The Sun is very far and unimportant  (D) Animals make their own food', null, 'אם החיים תלויים באור ובחום השמש, בלעדיה רובם לא ישרדו.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Without the Sun, most life on Earth could not survive', true, 0),
+    (v_q, 'B', 'Plants do not need light', false, 1),
+    (v_q, 'C', 'The Sun is very far and unimportant', false, 2),
+    (v_q, 'D', 'Animals make their own food', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'Read the passage and answer the question:
+
+"The Sun is the closest star to Earth. It gives us light and heat, which living things need to survive. Plants use sunlight to make their food, and this process supports almost all life on the planet."
+
+The word ''survive'' means:
+
+(A) to fall asleep  (B) to stay alive  (C) to grow taller  (D) to move fast', null, 'survive = להישאר בחיים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'to fall asleep', false, 0),
+    (v_q, 'B', 'to stay alive', true, 1),
+    (v_q, 'C', 'to grow taller', false, 2),
+    (v_q, 'D', 'to move fast', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'Read the passage and answer the question:
+
+"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town."
+
+What is the main idea of the passage?
+
+(A) The history of city streets  (B) Why fuel is expensive  (C) The benefits of using bicycles for travel  (D) How to repair a car engine', null, 'הקטע מתאר את היתרונות של שימוש באופניים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The history of city streets', false, 0),
+    (v_q, 'B', 'Why fuel is expensive', false, 1),
+    (v_q, 'C', 'The benefits of using bicycles for travel', true, 2),
+    (v_q, 'D', 'How to repair a car engine', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'Read the passage and answer the question:
+
+"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town."
+
+How are bicycles different from cars, according to the passage?
+
+(A) They are always faster  (B) They cost more to buy  (C) They need special fuel  (D) They do not burn fuel or pollute', null, 'נכתב: ''bicycles do not burn fuel or release pollution''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'They are always faster', false, 0),
+    (v_q, 'B', 'They cost more to buy', false, 1),
+    (v_q, 'C', 'They need special fuel', false, 2),
+    (v_q, 'D', 'They do not burn fuel or pollute', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'Read the passage and answer the question:
+
+"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town."
+
+What have many cities built?
+
+(A) Special lanes for cycling  (B) Larger car parks  (C) New fuel stations  (D) Taller buildings', null, 'נכתב: ''Many cities have built special lanes''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Special lanes for cycling', true, 0),
+    (v_q, 'B', 'Larger car parks', false, 1),
+    (v_q, 'C', 'New fuel stations', false, 2),
+    (v_q, 'D', 'Taller buildings', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'Read the passage and answer the question:
+
+"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town."
+
+Why do more people now choose bikes for short trips?
+
+(A) Because fuel is free  (B) Because cycling has become safer, and it is cheap and healthy  (C) Because cars were banned  (D) Because bikes are faster than trains', null, 'השילוב של בטיחות, מחיר נמוך ובריאות מסביר את הבחירה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Because fuel is free', false, 0),
+    (v_q, 'B', 'Because cycling has become safer, and it is cheap and healthy', true, 1),
+    (v_q, 'C', 'Because cars were banned', false, 2),
+    (v_q, 'D', 'Because bikes are faster than trains', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'Read the passage and answer the question:
+
+"Riding a bicycle is a healthy and cheap way to travel. Unlike cars, bicycles do not burn fuel or release pollution into the air. Many cities have built special lanes to make cycling safer. As a result, more people now choose bikes for short trips around town."
+
+The word ''pollution'' means:
+
+(A) loud noise  (B) bright light  (C) harmful substances released into the air  (D) heavy traffic', null, 'pollution = זיהום, חומרים מזיקים באוויר.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'loud noise', false, 0),
+    (v_q, 'B', 'bright light', false, 1),
+    (v_q, 'C', 'harmful substances released into the air', true, 2),
+    (v_q, 'D', 'heavy traffic', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'Read the passage and answer the question:
+
+"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close."
+
+What is the passage mainly about?
+
+(A) How to start a website  (B) The history of delivery trucks  (C) How to save money on food  (D) How online shopping has changed buying and affected local shops', null, 'הקטע עוסק בהשפעת הקנייה המקוונת על הצרכנים ועל החנויות הקטנות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'How to start a website', false, 0),
+    (v_q, 'B', 'The history of delivery trucks', false, 1),
+    (v_q, 'C', 'How to save money on food', false, 2),
+    (v_q, 'D', 'How online shopping has changed buying and affected local shops', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'Read the passage and answer the question:
+
+"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close."
+
+What is one advantage of online shopping mentioned?
+
+(A) It is convenient and often cheaper  (B) It is always slower  (C) It supports local shops  (D) It requires visiting stores', null, 'נכתב: ''This is convenient and often cheaper''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'It is convenient and often cheaper', true, 0),
+    (v_q, 'B', 'It is always slower', false, 1),
+    (v_q, 'C', 'It supports local shops', false, 2),
+    (v_q, 'D', 'It requires visiting stores', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'Read the passage and answer the question:
+
+"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close."
+
+What problem has online shopping caused?
+
+(A) People stopped buying anything  (B) It is harder for small local shops to compete  (C) Deliveries became impossible  (D) Products became more expensive everywhere', null, 'נכתב: ''harder for small local shops to compete''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'People stopped buying anything', false, 0),
+    (v_q, 'B', 'It is harder for small local shops to compete', true, 1),
+    (v_q, 'C', 'Deliveries became impossible', false, 2),
+    (v_q, 'D', 'Products became more expensive everywhere', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'Read the passage and answer the question:
+
+"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close."
+
+What can be inferred about some towns?
+
+(A) They built many new stores  (B) They have no shops at all  (C) They lost local shops partly because of online competition  (D) They banned online shopping', null, 'סגירת חנויות בערים נקשרת לתחרות מצד הקנייה המקוונת.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'They built many new stores', false, 0),
+    (v_q, 'B', 'They have no shops at all', false, 1),
+    (v_q, 'C', 'They lost local shops partly because of online competition', true, 2),
+    (v_q, 'D', 'They banned online shopping', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'Read the passage and answer the question:
+
+"Online shopping has changed the way people buy goods. Instead of visiting stores, customers can order products from home and have them delivered. This is convenient and often cheaper, but it has also made it harder for small local shops to compete. Some towns have seen many of their stores close."
+
+The word ''compete'' means:
+
+(A) to close down  (B) to deliver goods  (C) to lower prices only  (D) to try to do better than others', null, 'compete = להתחרות, לנסות להצליח מול אחרים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'to close down', false, 0),
+    (v_q, 'B', 'to deliver goods', false, 1),
+    (v_q, 'C', 'to lower prices only', false, 2),
+    (v_q, 'D', 'to try to do better than others', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'Read the passage and answer the question:
+
+"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks."
+
+What is the main idea of the passage?
+
+(A) Both the dangers and the benefits of volcanoes  (B) How to climb a mountain  (C) The coldest places on Earth  (D) How rivers are formed', null, 'הקטע מציג גם את הסכנות וגם את היתרונות של החיים ליד הרי געש.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Both the dangers and the benefits of volcanoes', true, 0),
+    (v_q, 'B', 'How to climb a mountain', false, 1),
+    (v_q, 'C', 'The coldest places on Earth', false, 2),
+    (v_q, 'D', 'How rivers are formed', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'Read the passage and answer the question:
+
+"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks."
+
+What can a volcano release when it erupts?
+
+(A) Sand and dust only  (B) Ash, gas, and lava  (C) Snow and ice  (D) Fresh water only', null, 'נכתב: ''release ash, gas, and rivers of lava''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Sand and dust only', false, 0),
+    (v_q, 'B', 'Ash, gas, and lava', true, 1),
+    (v_q, 'C', 'Snow and ice', false, 2),
+    (v_q, 'D', 'Fresh water only', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'Read the passage and answer the question:
+
+"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks."
+
+Why do many people live near volcanoes?
+
+(A) There is no other land  (B) The weather is always cold  (C) The soil there is often very fertile  (D) Volcanoes are always safe', null, 'נכתב: ''the soil around volcanoes is often very fertile''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'There is no other land', false, 0),
+    (v_q, 'B', 'The weather is always cold', false, 1),
+    (v_q, 'C', 'The soil there is often very fertile', true, 2),
+    (v_q, 'D', 'Volcanoes are always safe', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'Read the passage and answer the question:
+
+"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks."
+
+What does the passage suggest about these people''s choice?
+
+(A) They are unaware of any danger  (B) They never farm the land  (C) They dislike farming  (D) They accept the risk in return for fertile soil', null, 'הם בוחרים לחיות שם ''despite the risks'' בזכות האדמה הפורייה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'They are unaware of any danger', false, 0),
+    (v_q, 'B', 'They never farm the land', false, 1),
+    (v_q, 'C', 'They dislike farming', false, 2),
+    (v_q, 'D', 'They accept the risk in return for fertile soil', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'Read the passage and answer the question:
+
+"Volcanoes form where hot melted rock rises from deep inside the Earth. When a volcano erupts, it can release ash, gas, and rivers of lava. Although eruptions can be dangerous, the soil around volcanoes is often very fertile. For this reason, many people choose to live and farm near them despite the risks."
+
+The word ''fertile'' means:
+
+(A) good for growing plants  (B) very dry  (C) extremely hot  (D) covered in rock', null, 'fertile = פורה, טוב לגידול צמחים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'good for growing plants', true, 0),
+    (v_q, 'B', 'very dry', false, 1),
+    (v_q, 'C', 'extremely hot', false, 2),
+    (v_q, 'D', 'covered in rock', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'Read the passage and answer the question:
+
+"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen."
+
+What is the main idea of the passage?
+
+(A) The cost of books  (B) The wider benefits of regular reading  (C) Why paper books are better than screens  (D) How to write a novel', null, 'הקטע מתאר את היתרונות הרחבים של קריאה קבועה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The cost of books', false, 0),
+    (v_q, 'B', 'The wider benefits of regular reading', true, 1),
+    (v_q, 'C', 'Why paper books are better than screens', false, 2),
+    (v_q, 'D', 'How to write a novel', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'Read the passage and answer the question:
+
+"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen."
+
+Which benefit is linked specifically to reading fiction?
+
+(A) Better eyesight  (B) A larger income  (C) Improved empathy  (D) Faster typing', null, 'נכתב: ''Reading fiction, in particular, may improve empathy''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Better eyesight', false, 0),
+    (v_q, 'B', 'A larger income', false, 1),
+    (v_q, 'C', 'Improved empathy', true, 2),
+    (v_q, 'D', 'Faster typing', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'Read the passage and answer the question:
+
+"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen."
+
+Does the format (paper or screen) change the benefits, according to the passage?
+
+(A) Yes, only paper helps  (B) Yes, only screens help  (C) The passage does not say  (D) No, the benefits appear either way', null, 'נכתב: ''These benefits appear whether one reads on paper or on a screen''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Yes, only paper helps', false, 0),
+    (v_q, 'B', 'Yes, only screens help', false, 1),
+    (v_q, 'C', 'The passage does not say', false, 2),
+    (v_q, 'D', 'No, the benefits appear either way', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'Read the passage and answer the question:
+
+"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen."
+
+Why might fiction improve empathy?
+
+(A) Because it makes readers imagine others'' thoughts and feelings  (B) Because it is always short  (C) Because it uses simple words  (D) Because it is read quickly', null, 'נכתב: ''it asks readers to imagine the thoughts and feelings of others''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Because it makes readers imagine others'' thoughts and feelings', true, 0),
+    (v_q, 'B', 'Because it is always short', false, 1),
+    (v_q, 'C', 'Because it uses simple words', false, 2),
+    (v_q, 'D', 'Because it is read quickly', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'Read the passage and answer the question:
+
+"Reading regularly does more than entertain. Studies suggest that people who read often have larger vocabularies and find it easier to concentrate. Reading fiction, in particular, may improve empathy, since it asks readers to imagine the thoughts and feelings of others. These benefits appear whether one reads on paper or on a screen."
+
+The word ''empathy'' means:
+
+(A) a large vocabulary  (B) the ability to understand others'' feelings  (C) the ability to read fast  (D) a kind of memory', null, 'empathy = אמפתיה, היכולת להבין את רגשות הזולת.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'a large vocabulary', false, 0),
+    (v_q, 'B', 'the ability to understand others'' feelings', true, 1),
+    (v_q, 'C', 'the ability to read fast', false, 2),
+    (v_q, 'D', 'a kind of memory', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'Read the passage and answer the question:
+
+"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth''s magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before."
+
+What is the passage mainly about?
+
+(A) Why some birds cannot fly  (B) How to feed birds in winter  (C) How and why birds migrate  (D) How birds build nests', null, 'הקטע עוסק באופן ובסיבות של נדידת הציפורים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Why some birds cannot fly', false, 0),
+    (v_q, 'B', 'How to feed birds in winter', false, 1),
+    (v_q, 'C', 'How and why birds migrate', true, 2),
+    (v_q, 'D', 'How birds build nests', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'Read the passage and answer the question:
+
+"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth''s magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before."
+
+What do scientists think birds use to navigate?
+
+(A) Road signs  (B) Other animals  (C) Ocean currents  (D) The Sun, the stars, and the Earth''s magnetic field', null, 'נכתב: ''navigate using the Sun, the stars, and even the Earth''s magnetic field''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Road signs', false, 0),
+    (v_q, 'B', 'Other animals', false, 1),
+    (v_q, 'C', 'Ocean currents', false, 2),
+    (v_q, 'D', 'The Sun, the stars, and the Earth''s magnetic field', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'Read the passage and answer the question:
+
+"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth''s magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before."
+
+Why do birds migrate despite the dangers?
+
+(A) To find food and suitable weather throughout the year  (B) To avoid flying  (C) To stay in one place  (D) To grow larger wings', null, 'נכתב: ''allow birds to find food and suitable weather throughout the year''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'To find food and suitable weather throughout the year', true, 0),
+    (v_q, 'B', 'To avoid flying', false, 1),
+    (v_q, 'C', 'To stay in one place', false, 2),
+    (v_q, 'D', 'To grow larger wings', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'Read the passage and answer the question:
+
+"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth''s magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before."
+
+What does the last sentence suggest about navigation?
+
+(A) It is impossible for young birds  (B) It is partly instinctive, not only learned  (C) It must always be taught by parents  (D) It depends only on maps', null, 'אם ציפורים צעירות עפות לבד בלי ניסיון, היכולת חלקית מולדת.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'It is impossible for young birds', false, 0),
+    (v_q, 'B', 'It is partly instinctive, not only learned', true, 1),
+    (v_q, 'C', 'It must always be taught by parents', false, 2),
+    (v_q, 'D', 'It depends only on maps', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'Read the passage and answer the question:
+
+"Each year, millions of birds undertake long migrations, traveling thousands of kilometers between their breeding and wintering grounds. Scientists believe birds navigate using the Sun, the stars, and even the Earth''s magnetic field. These journeys are exhausting and dangerous, yet they allow birds to find food and suitable weather throughout the year. Remarkably, some young birds complete the route alone, without ever having flown it before."
+
+The word ''exhausting'' means:
+
+(A) very short  (B) very safe  (C) very tiring  (D) very easy', null, 'exhausting = מתיש, מעייף מאוד.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'very short', false, 0),
+    (v_q, 'B', 'very safe', false, 1),
+    (v_q, 'C', 'very tiring', true, 2),
+    (v_q, 'D', 'very easy', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'Read the passage and answer the question:
+
+"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today''s machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives."
+
+What is the main idea of the passage?
+
+(A) How to build a robot  (B) The history of factories  (C) Why machines always fail  (D) The debate over how automation will affect the future of work', null, 'הקטע מציג את הוויכוח על השפעת האוטומציה על עולם העבודה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'How to build a robot', false, 0),
+    (v_q, 'B', 'The history of factories', false, 1),
+    (v_q, 'C', 'Why machines always fail', false, 2),
+    (v_q, 'D', 'The debate over how automation will affect the future of work', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'Read the passage and answer the question:
+
+"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today''s machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives."
+
+What do optimists argue?
+
+(A) Machines will create new jobs as well as destroy some  (B) Machines will destroy all jobs  (C) Machines never replace workers  (D) Automation should be banned', null, 'נכתב: ''machines will eliminate some jobs while creating new ones''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Machines will create new jobs as well as destroy some', true, 0),
+    (v_q, 'B', 'Machines will destroy all jobs', false, 1),
+    (v_q, 'C', 'Machines never replace workers', false, 2),
+    (v_q, 'D', 'Automation should be banned', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'Read the passage and answer the question:
+
+"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today''s machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives."
+
+Why do pessimists think today''s machines are different?
+
+(A) They cannot do manual work  (B) They can perform cognitive tasks, not just manual ones  (C) They are cheaper to build  (D) They work more slowly', null, 'נכתב: ''capable of performing not only manual tasks but cognitive ones as well''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'They cannot do manual work', false, 0),
+    (v_q, 'B', 'They can perform cognitive tasks, not just manual ones', true, 1),
+    (v_q, 'C', 'They are cheaper to build', false, 2),
+    (v_q, 'D', 'They work more slowly', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'Read the passage and answer the question:
+
+"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today''s machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives."
+
+What do both sides agree on?
+
+(A) All new jobs are imaginary  (B) Machines will soon stop improving  (C) Workers will need to keep learning new skills  (D) Automation has no effect on work', null, 'נכתב: ''both sides agree... workers will need to adapt, learning new skills''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'All new jobs are imaginary', false, 0),
+    (v_q, 'B', 'Machines will soon stop improving', false, 1),
+    (v_q, 'C', 'Workers will need to keep learning new skills', true, 2),
+    (v_q, 'D', 'Automation has no effect on work', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'Read the passage and answer the question:
+
+"The rise of automation has sparked intense debate about the future of work. Optimists argue that, as in past technological revolutions, machines will eliminate some jobs while creating new ones we cannot yet imagine. Pessimists counter that today''s machines are different, capable of performing not only manual tasks but cognitive ones as well. What both sides agree on is that workers will need to adapt, learning new skills throughout their lives."
+
+The word ''adapt'' means:
+
+(A) to give up  (B) to repeat the past  (C) to slow down  (D) to adjust to new conditions', null, 'adapt = להסתגל, להתאים את עצמך למצב חדש.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'to give up', false, 0),
+    (v_q, 'B', 'to repeat the past', false, 1),
+    (v_q, 'C', 'to slow down', false, 2),
+    (v_q, 'D', 'to adjust to new conditions', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'Read the passage and answer the question:
+
+"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself."
+
+What is the passage mainly about?
+
+(A) What the placebo effect is and why it matters in research  (B) How to design a hospital  (C) The history of medicine  (D) Why drugs are expensive', null, 'הקטע מסביר מהו אפקט הפלצבו ומדוע הוא חשוב למחקר.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'What the placebo effect is and why it matters in research', true, 0),
+    (v_q, 'B', 'How to design a hospital', false, 1),
+    (v_q, 'C', 'The history of medicine', false, 2),
+    (v_q, 'D', 'Why drugs are expensive', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'Read the passage and answer the question:
+
+"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself."
+
+Why do some patients improve after a placebo?
+
+(A) Because they exercise more  (B) Because they believe they are being helped  (C) Because the placebo contains a strong drug  (D) Because they are not really ill', null, 'נכתב: ''simply because they believe they are being helped''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Because they exercise more', false, 0),
+    (v_q, 'B', 'Because they believe they are being helped', true, 1),
+    (v_q, 'C', 'Because the placebo contains a strong drug', false, 2),
+    (v_q, 'D', 'Because they are not really ill', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'Read the passage and answer the question:
+
+"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself."
+
+Why must researchers compare new drugs to placebos?
+
+(A) To avoid testing patients  (B) To speed up production  (C) To be sure any benefit comes from the drug itself  (D) To make the study cheaper', null, 'נכתב: ''to be sure that any benefit comes from the drug itself''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'To avoid testing patients', false, 0),
+    (v_q, 'B', 'To speed up production', false, 1),
+    (v_q, 'C', 'To be sure any benefit comes from the drug itself', true, 2),
+    (v_q, 'D', 'To make the study cheaper', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'Read the passage and answer the question:
+
+"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself."
+
+What does the placebo effect reveal, according to the passage?
+
+(A) That medicine never works  (B) That patients always pretend  (C) That drugs are unnecessary  (D) That expectation can strongly influence the body', null, 'נכתב: ''reveals how powerfully expectation can influence the body''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'That medicine never works', false, 0),
+    (v_q, 'B', 'That patients always pretend', false, 1),
+    (v_q, 'C', 'That drugs are unnecessary', false, 2),
+    (v_q, 'D', 'That expectation can strongly influence the body', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Reading', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'Read the passage and answer the question:
+
+"The placebo effect is one of the most puzzling phenomena in medicine. Patients who receive a treatment with no active ingredient sometimes report real improvement, simply because they believe they are being helped. Far from being a mere trick, the effect reveals how powerfully expectation can influence the body. Because of it, researchers testing new drugs must compare them against placebos to be sure that any benefit comes from the drug itself."
+
+The word ''phenomena'' (singular: phenomenon) means:
+
+(A) observed facts or occurrences  (B) mistakes  (C) medicines  (D) doctors', null, 'phenomenon = תופעה; phenomena היא צורת הרבים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'observed facts or occurrences', true, 0),
+    (v_q, 'B', 'mistakes', false, 1),
+    (v_q, 'C', 'medicines', false, 2),
+    (v_q, 'D', 'doctors', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Reading'
     and l.position = 1;
 
   if v_level is null then
@@ -15432,6 +16832,1326 @@ begin
     (v_q, '2', 'כן, בהכרח רצת מהר', false, 1),
     (v_q, '3', 'בהכרח לא רצת', false, 2),
     (v_q, '4', 'ריצה אינה גורמת להזעה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'קראו את הקטע וענו על השאלה:
+
+"המים חיוניים לכל יצור חי. גוף האדם מורכב ברובו ממים, והם מסייעים לוויסות חום הגוף ולהובלת חומרי מזון לתאים. מומלץ לשתות מים לאורך כל היום, ובמיוחד בימים חמים ובזמן פעילות גופנית."
+
+מהו הנושא המרכזי של הקטע?', null, 'הקטע עוסק כולו בתפקידי המים ובחשיבותם לגוף.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מבנה התא', false, 0),
+    (v_q, '2', 'חשיבות המים לגוף האדם', true, 1),
+    (v_q, '3', 'דרכים לבישול בריא', false, 2),
+    (v_q, '4', 'סוגי פעילות גופנית', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'קראו את הקטע וענו על השאלה:
+
+"המים חיוניים לכל יצור חי. גוף האדם מורכב ברובו ממים, והם מסייעים לוויסות חום הגוף ולהובלת חומרי מזון לתאים. מומלץ לשתות מים לאורך כל היום, ובמיוחד בימים חמים ובזמן פעילות גופנית."
+
+לפי הקטע, מתי חשוב במיוחד לשתות מים?', null, 'נכתב במפורש: ''במיוחד בימים חמים ובזמן פעילות גופנית''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'רק כשמרגישים צמא', false, 0),
+    (v_q, '2', 'רק בחורף', false, 1),
+    (v_q, '3', 'בימים חמים ובזמן פעילות גופנית', true, 2),
+    (v_q, '4', 'רק בבוקר', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'קראו את הקטע וענו על השאלה:
+
+"המים חיוניים לכל יצור חי. גוף האדם מורכב ברובו ממים, והם מסייעים לוויסות חום הגוף ולהובלת חומרי מזון לתאים. מומלץ לשתות מים לאורך כל היום, ובמיוחד בימים חמים ובזמן פעילות גופנית."
+
+כיצד המים מסייעים לגוף לפי הקטע?', null, 'הקטע מציין ויסות חום הגוף והובלת חומרי מזון לתאים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'בחיזוק העצמות בלבד', false, 0),
+    (v_q, '2', 'בשיפור הראייה', false, 1),
+    (v_q, '3', 'בהאצת הצמיחה', false, 2),
+    (v_q, '4', 'בוויסות חום הגוף ובהובלת חומרי מזון', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'קראו את הקטע וענו על השאלה:
+
+"המים חיוניים לכל יצור חי. גוף האדם מורכב ברובו ממים, והם מסייעים לוויסות חום הגוף ולהובלת חומרי מזון לתאים. מומלץ לשתות מים לאורך כל היום, ובמיוחד בימים חמים ובזמן פעילות גופנית."
+
+מה ניתן להסיק מהקטע?', null, 'מכיוון שהמים חיוניים ומבצעים תפקידים מרכזיים, מחסור בהם יפגע בתפקוד.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לגוף האדם קשה לתפקד ללא מים מספקים', true, 0),
+    (v_q, '2', 'שתיית מים מזיקה בקיץ', false, 1),
+    (v_q, '3', 'מים אינם חשובים לילדים', false, 2),
+    (v_q, '4', 'אפשר להחליף מים בכל משקה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'קראו את הקטע וענו על השאלה:
+
+"המים חיוניים לכל יצור חי. גוף האדם מורכב ברובו ממים, והם מסייעים לוויסות חום הגוף ולהובלת חומרי מזון לתאים. מומלץ לשתות מים לאורך כל היום, ובמיוחד בימים חמים ובזמן פעילות גופנית."
+
+המילה ''חיוניים'' בקטע פירושה:', null, '''חיוני'' = הכרחי, שאי אפשר בלעדיו.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'יקרים', false, 0),
+    (v_q, '2', 'הכרחיים מאוד', true, 1),
+    (v_q, '3', 'מיותרים', false, 2),
+    (v_q, '4', 'מזיקים', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'קראו את הקטע וענו על השאלה:
+
+"הספרייה הציבורית היא מוסד הפתוח לכול. בעבר שימשה בעיקר להשאלת ספרים, אך כיום היא מציעה גם מחשבים, סדנאות ומפגשי קריאה לילדים. רבים מגיעים אליה כדי ללמוד בשקט או למצוא מידע אמין. הכניסה לרוב הספריות הציבוריות אינה כרוכה בתשלום."
+
+מהו הנושא המרכזי של הקטע?', null, 'הקטע מתאר כיצד תפקיד הספרייה התרחב מעבר להשאלת ספרים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'תולדות הדפוס', false, 0),
+    (v_q, '2', 'מחירי ספרים', false, 1),
+    (v_q, '3', 'תפקידה המתרחב של הספרייה הציבורית', true, 2),
+    (v_q, '4', 'כיצד מחברים ספרים', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'קראו את הקטע וענו על השאלה:
+
+"הספרייה הציבורית היא מוסד הפתוח לכול. בעבר שימשה בעיקר להשאלת ספרים, אך כיום היא מציעה גם מחשבים, סדנאות ומפגשי קריאה לילדים. רבים מגיעים אליה כדי ללמוד בשקט או למצוא מידע אמין. הכניסה לרוב הספריות הציבוריות אינה כרוכה בתשלום."
+
+אילו שירותים מציעה הספרייה כיום מעבר להשאלת ספרים?', null, 'נכתב: ''מציעה גם מחשבים, סדנאות ומפגשי קריאה לילדים''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מכירת מזון', false, 0),
+    (v_q, '2', 'השכרת רכבים', false, 1),
+    (v_q, '3', 'שיעורי נהיגה', false, 2),
+    (v_q, '4', 'מחשבים, סדנאות ומפגשי קריאה', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'קראו את הקטע וענו על השאלה:
+
+"הספרייה הציבורית היא מוסד הפתוח לכול. בעבר שימשה בעיקר להשאלת ספרים, אך כיום היא מציעה גם מחשבים, סדנאות ומפגשי קריאה לילדים. רבים מגיעים אליה כדי ללמוד בשקט או למצוא מידע אמין. הכניסה לרוב הספריות הציבוריות אינה כרוכה בתשלום."
+
+מהי עלות הכניסה לרוב הספריות הציבוריות?', null, 'נכתב: ''הכניסה... אינה כרוכה בתשלום''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ללא תשלום', true, 0),
+    (v_q, '2', 'תשלום חודשי גבוה', false, 1),
+    (v_q, '3', 'תשלום לפי שעה', false, 2),
+    (v_q, '4', 'תשלום עבור כל ספר', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'קראו את הקטע וענו על השאלה:
+
+"הספרייה הציבורית היא מוסד הפתוח לכול. בעבר שימשה בעיקר להשאלת ספרים, אך כיום היא מציעה גם מחשבים, סדנאות ומפגשי קריאה לילדים. רבים מגיעים אליה כדי ללמוד בשקט או למצוא מידע אמין. הכניסה לרוב הספריות הציבוריות אינה כרוכה בתשלום."
+
+מה ניתן להסיק על הספרייה בעבר לעומת היום?', null, 'בעבר שימשה בעיקר להשאלה, וכיום מציעה שירותים נוספים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'היא יקרה יותר מבעבר', false, 0),
+    (v_q, '2', 'תפקידה התרחב מעבר להשאלת ספרים בלבד', true, 1),
+    (v_q, '3', 'היא הצטמצמה מאוד', false, 2),
+    (v_q, '4', 'היא נסגרה לקהל', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'קראו את הקטע וענו על השאלה:
+
+"הספרייה הציבורית היא מוסד הפתוח לכול. בעבר שימשה בעיקר להשאלת ספרים, אך כיום היא מציעה גם מחשבים, סדנאות ומפגשי קריאה לילדים. רבים מגיעים אליה כדי ללמוד בשקט או למצוא מידע אמין. הכניסה לרוב הספריות הציבוריות אינה כרוכה בתשלום."
+
+לשם מה מגיעים רבים לספרייה לפי הקטע?', null, 'נכתב: ''כדי ללמוד בשקט או למצוא מידע אמין''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לשחק כדורגל', false, 0),
+    (v_q, '2', 'לקנות בגדים', false, 1),
+    (v_q, '3', 'ללמוד בשקט ולמצוא מידע אמין', true, 2),
+    (v_q, '4', 'לצפות בסרטים', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'קראו את הקטע וענו על השאלה:
+
+"המיחזור הוא תהליך שבו חומרים משומשים הופכים לחומרי גלם חדשים. במקום לזרוק בקבוקי פלסטיק ופחיות לפח, אפשר לאסוף אותם ולהמיר אותם למוצרים חדשים. המיחזור חוסך אנרגיה, מפחית את כמות הפסולת ומקטין את הזיהום. עם זאת, הצלחתו תלויה בשיתוף פעולה של התושבים, המפרידים את הפסולת בבתיהם."
+
+מהו הנושא המרכזי של הקטע?', null, 'הקטע מסביר את המיחזור ואת תרומתו לסביבה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'כיצד מייצרים פלסטיק', false, 0),
+    (v_q, '2', 'תולדות פח האשפה', false, 1),
+    (v_q, '3', 'מחירי חומרי גלם', false, 2),
+    (v_q, '4', 'מהו המיחזור וכיצד הוא תורם לסביבה', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'קראו את הקטע וענו על השאלה:
+
+"המיחזור הוא תהליך שבו חומרים משומשים הופכים לחומרי גלם חדשים. במקום לזרוק בקבוקי פלסטיק ופחיות לפח, אפשר לאסוף אותם ולהמיר אותם למוצרים חדשים. המיחזור חוסך אנרגיה, מפחית את כמות הפסולת ומקטין את הזיהום. עם זאת, הצלחתו תלויה בשיתוף פעולה של התושבים, המפרידים את הפסולת בבתיהם."
+
+אילו יתרונות יש למיחזור לפי הקטע?', null, 'נכתב: ''חוסך אנרגיה, מפחית את כמות הפסולת ומקטין את הזיהום''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'חיסכון באנרגיה, הפחתת פסולת והקטנת זיהום', true, 0),
+    (v_q, '2', 'הגדלת הפסולת', false, 1),
+    (v_q, '3', 'ייקור החשמל', false, 2),
+    (v_q, '4', 'זיהום נוסף', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'קראו את הקטע וענו על השאלה:
+
+"המיחזור הוא תהליך שבו חומרים משומשים הופכים לחומרי גלם חדשים. במקום לזרוק בקבוקי פלסטיק ופחיות לפח, אפשר לאסוף אותם ולהמיר אותם למוצרים חדשים. המיחזור חוסך אנרגיה, מפחית את כמות הפסולת ומקטין את הזיהום. עם זאת, הצלחתו תלויה בשיתוף פעולה של התושבים, המפרידים את הפסולת בבתיהם."
+
+במה תלויה הצלחת המיחזור?', null, 'נכתב: ''הצלחתו תלויה בשיתוף פעולה של התושבים''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'בעונות השנה', false, 0),
+    (v_q, '2', 'בשיתוף פעולה של התושבים בהפרדת הפסולת', true, 1),
+    (v_q, '3', 'במזג האוויר', false, 2),
+    (v_q, '4', 'במספר המפעלים בלבד', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'קראו את הקטע וענו על השאלה:
+
+"המיחזור הוא תהליך שבו חומרים משומשים הופכים לחומרי גלם חדשים. במקום לזרוק בקבוקי פלסטיק ופחיות לפח, אפשר לאסוף אותם ולהמיר אותם למוצרים חדשים. המיחזור חוסך אנרגיה, מפחית את כמות הפסולת ומקטין את הזיהום. עם זאת, הצלחתו תלויה בשיתוף פעולה של התושבים, המפרידים את הפסולת בבתיהם."
+
+מה מרמז הקטע על תפקיד הפרט?', null, 'אם ההצלחה תלויה בהפרדה בבתים, הרי שלכל פרט יש תפקיד.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'רק הממשלה אחראית', false, 0),
+    (v_q, '2', 'המיחזור מתבצע מאליו', false, 1),
+    (v_q, '3', 'לכל אדם יש חלק חשוב בהצלחת המיחזור', true, 2),
+    (v_q, '4', 'לפרט אין כל השפעה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'קראו את הקטע וענו על השאלה:
+
+"המיחזור הוא תהליך שבו חומרים משומשים הופכים לחומרי גלם חדשים. במקום לזרוק בקבוקי פלסטיק ופחיות לפח, אפשר לאסוף אותם ולהמיר אותם למוצרים חדשים. המיחזור חוסך אנרגיה, מפחית את כמות הפסולת ומקטין את הזיהום. עם זאת, הצלחתו תלויה בשיתוף פעולה של התושבים, המפרידים את הפסולת בבתיהם."
+
+''חומרי גלם'' בקטע פירושם:', null, 'חומרי גלם הם החומרים הבסיסיים לייצור.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מוצרים מוגמרים', false, 0),
+    (v_q, '2', 'פסולת רעילה', false, 1),
+    (v_q, '3', 'כלי עבודה', false, 2),
+    (v_q, '4', 'חומרים בסיסיים שמהם מייצרים מוצרים', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'קראו את הקטע וענו על השאלה:
+
+"מחקרים מצביעים על קשר הדוק בין שינה לזיכרון. בזמן השינה המוח מעבד את המידע שנצבר במהלך היום ומעביר אותו לזיכרון לטווח ארוך. אנשים שישנים מעט מתקשים לעיתים לזכור פרטים ולהתרכז. לכן, שינה מספקת אינה מותרות אלא צורך חיוני ללמידה יעילה."
+
+מהו הנושא המרכזי של הקטע?', null, 'הקטע עוסק בקשר שבין שינה, זיכרון ולמידה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הקשר בין שינה לזיכרון וללמידה', true, 0),
+    (v_q, '2', 'כמה שעות ביממה', false, 1),
+    (v_q, '3', 'סוגי חלומות', false, 2),
+    (v_q, '4', 'מיטות נוחות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'קראו את הקטע וענו על השאלה:
+
+"מחקרים מצביעים על קשר הדוק בין שינה לזיכרון. בזמן השינה המוח מעבד את המידע שנצבר במהלך היום ומעביר אותו לזיכרון לטווח ארוך. אנשים שישנים מעט מתקשים לעיתים לזכור פרטים ולהתרכז. לכן, שינה מספקת אינה מותרות אלא צורך חיוני ללמידה יעילה."
+
+מה עושה המוח בזמן השינה לפי הקטע?', null, 'נכתב: ''המוח מעבד את המידע... ומעביר אותו לזיכרון לטווח ארוך''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מייצר אנרגיה לשרירים', false, 0),
+    (v_q, '2', 'מעבד מידע ומעביר אותו לזיכרון ארוך טווח', true, 1),
+    (v_q, '3', 'מפסיק לפעול לחלוטין', false, 2),
+    (v_q, '4', 'שוכח את כל היום', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'קראו את הקטע וענו על השאלה:
+
+"מחקרים מצביעים על קשר הדוק בין שינה לזיכרון. בזמן השינה המוח מעבד את המידע שנצבר במהלך היום ומעביר אותו לזיכרון לטווח ארוך. אנשים שישנים מעט מתקשים לעיתים לזכור פרטים ולהתרכז. לכן, שינה מספקת אינה מותרות אלא צורך חיוני ללמידה יעילה."
+
+מה מאפיין אנשים שישנים מעט?', null, 'נכתב: ''מתקשים לעיתים לזכור פרטים ולהתרכז''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ערנות יתרה', false, 0),
+    (v_q, '2', 'אין כל השפעה', false, 1),
+    (v_q, '3', 'קושי לזכור פרטים ולהתרכז', true, 2),
+    (v_q, '4', 'זיכרון משופר', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'קראו את הקטע וענו על השאלה:
+
+"מחקרים מצביעים על קשר הדוק בין שינה לזיכרון. בזמן השינה המוח מעבד את המידע שנצבר במהלך היום ומעביר אותו לזיכרון לטווח ארוך. אנשים שישנים מעט מתקשים לעיתים לזכור פרטים ולהתרכז. לכן, שינה מספקת אינה מותרות אלא צורך חיוני ללמידה יעילה."
+
+מה הכותב מבקש להדגיש במשפט האחרון?', null, 'המשפט מנגיד ''מותרות'' מול ''צורך חיוני'' כדי להדגיש את חשיבות השינה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ששינה היא בזבוז זמן', false, 0),
+    (v_q, '2', 'שאפשר לוותר על שינה', false, 1),
+    (v_q, '3', 'שלמידה אינה חשובה', false, 2),
+    (v_q, '4', 'ששינה היא צורך חיוני ולא מותרות', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'קראו את הקטע וענו על השאלה:
+
+"מחקרים מצביעים על קשר הדוק בין שינה לזיכרון. בזמן השינה המוח מעבד את המידע שנצבר במהלך היום ומעביר אותו לזיכרון לטווח ארוך. אנשים שישנים מעט מתקשים לעיתים לזכור פרטים ולהתרכז. לכן, שינה מספקת אינה מותרות אלא צורך חיוני ללמידה יעילה."
+
+''מותרות'' בהקשר זה פירושו:', null, 'מותרות = מה שנחמד אך אפשר בלעדיו — והכותב טוען שדווקא אי אפשר.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'דבר נעים אך לא הכרחי', true, 0),
+    (v_q, '2', 'צורך בסיסי', false, 1),
+    (v_q, '3', 'מחלה', false, 2),
+    (v_q, '4', 'עונש', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'קראו את הקטע וענו על השאלה:
+
+"המצאת מכונת הדפוס במאה ה-15 חוללה מהפכה בהפצת הידע. עד אז הועתקו ספרים ביד, תהליך איטי ויקר שהותיר את הקריאה נחלתם של מעטים. הדפוס איפשר להפיק ספרים רבים במהירות ובמחיר נמוך יחסית. כתוצאה מכך גברה האוריינות, והרעיונות התפשטו במהירות חסרת תקדים בין מדינות ויבשות."
+
+מהו הנושא המרכזי של הקטע?', null, 'הקטע מתאר כיצד הדפוס שינה את הפצת הידע.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'חיי הסופרים בימי הביניים', false, 0),
+    (v_q, '2', 'השפעת מכונת הדפוס על הפצת הידע', true, 1),
+    (v_q, '3', 'כיצד מתקנים מכונות', false, 2),
+    (v_q, '4', 'תולדות הנייר', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'קראו את הקטע וענו על השאלה:
+
+"המצאת מכונת הדפוס במאה ה-15 חוללה מהפכה בהפצת הידע. עד אז הועתקו ספרים ביד, תהליך איטי ויקר שהותיר את הקריאה נחלתם של מעטים. הדפוס איפשר להפיק ספרים רבים במהירות ובמחיר נמוך יחסית. כתוצאה מכך גברה האוריינות, והרעיונות התפשטו במהירות חסרת תקדים בין מדינות ויבשות."
+
+כיצד הועתקו ספרים לפני המצאת הדפוס?', null, 'נכתב: ''הועתקו ספרים ביד, תהליך איטי ויקר''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לא הועתקו כלל', false, 0),
+    (v_q, '2', 'בעזרת מחשבים', false, 1),
+    (v_q, '3', 'ביד, בתהליך איטי ויקר', true, 2),
+    (v_q, '4', 'במכונה מהירה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'קראו את הקטע וענו על השאלה:
+
+"המצאת מכונת הדפוס במאה ה-15 חוללה מהפכה בהפצת הידע. עד אז הועתקו ספרים ביד, תהליך איטי ויקר שהותיר את הקריאה נחלתם של מעטים. הדפוס איפשר להפיק ספרים רבים במהירות ובמחיר נמוך יחסית. כתוצאה מכך גברה האוריינות, והרעיונות התפשטו במהירות חסרת תקדים בין מדינות ויבשות."
+
+מה הייתה תוצאה של המצאת הדפוס לפי הקטע?', null, 'נכתב: ''גברה האוריינות, והרעיונות התפשטו''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ירידה במספר הקוראים', false, 0),
+    (v_q, '2', 'התייקרות הספרים', false, 1),
+    (v_q, '3', 'היעלמות הספרים', false, 2),
+    (v_q, '4', 'עלייה באוריינות והתפשטות רעיונות', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'קראו את הקטע וענו על השאלה:
+
+"המצאת מכונת הדפוס במאה ה-15 חוללה מהפכה בהפצת הידע. עד אז הועתקו ספרים ביד, תהליך איטי ויקר שהותיר את הקריאה נחלתם של מעטים. הדפוס איפשר להפיק ספרים רבים במהירות ובמחיר נמוך יחסית. כתוצאה מכך גברה האוריינות, והרעיונות התפשטו במהירות חסרת תקדים בין מדינות ויבשות."
+
+מדוע הקריאה הייתה ''נחלתם של מעטים'' לפני הדפוס?', null, 'ההעתקה ביד הפכה ספרים ליקרים ונדירים, ולכן נגישים למעטים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'משום שספרים היו יקרים ונדירים', true, 0),
+    (v_q, '2', 'משום שאנשים לא רצו לקרוא', false, 1),
+    (v_q, '3', 'משום שלא היו שפות', false, 2),
+    (v_q, '4', 'משום שהקריאה נאסרה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'קראו את הקטע וענו על השאלה:
+
+"המצאת מכונת הדפוס במאה ה-15 חוללה מהפכה בהפצת הידע. עד אז הועתקו ספרים ביד, תהליך איטי ויקר שהותיר את הקריאה נחלתם של מעטים. הדפוס איפשר להפיק ספרים רבים במהירות ובמחיר נמוך יחסית. כתוצאה מכך גברה האוריינות, והרעיונות התפשטו במהירות חסרת תקדים בין מדינות ויבשות."
+
+''חסרת תקדים'' בקטע פירושה:', null, '''חסר תקדים'' = שלא היה לו דבר דומה קודם לכן.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'חסרת חשיבות', false, 0),
+    (v_q, '2', 'שלא הייתה כמותה בעבר', true, 1),
+    (v_q, '3', 'איטית מאוד', false, 2),
+    (v_q, '4', 'צפויה מראש', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'קראו את הקטע וענו על השאלה:
+
+"שוניות האלמוגים נחשבות לאחת המערכות האקולוגיות העשירות ביותר בכדור הארץ. אף שהן מכסות שטח קטן מאוד מקרקעית הים, הן מספקות בית לכרבע ממיני הדגים בעולם. האלמוגים רגישים במיוחד לשינויי טמפרטורה, ועלייה קלה בחום המים עלולה לגרום ל''הלבנתם'' ולמותם. שמירה על השוניות חיונית אפוא לא רק ליופיין, אלא לעצם קיומו של מגוון המינים בים."
+
+מהו הנושא המרכזי של הקטע?', null, 'הקטע מדגיש הן את חשיבות השוניות והן את רגישותן.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'דרכי דיג', false, 0),
+    (v_q, '2', 'צבעי הים', false, 1),
+    (v_q, '3', 'חשיבותן ושבריריותן של שוניות האלמוגים', true, 2),
+    (v_q, '4', 'צלילה ספורטיבית', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'קראו את הקטע וענו על השאלה:
+
+"שוניות האלמוגים נחשבות לאחת המערכות האקולוגיות העשירות ביותר בכדור הארץ. אף שהן מכסות שטח קטן מאוד מקרקעית הים, הן מספקות בית לכרבע ממיני הדגים בעולם. האלמוגים רגישים במיוחד לשינויי טמפרטורה, ועלייה קלה בחום המים עלולה לגרום ל''הלבנתם'' ולמותם. שמירה על השוניות חיונית אפוא לא רק ליופיין, אלא לעצם קיומו של מגוון המינים בים."
+
+איזה חלק ממיני הדגים תלוי בשוניות?', null, 'נכתב: ''בית לכרבע ממיני הדגים בעולם''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'כל הדגים', false, 0),
+    (v_q, '2', 'פחות מאחוז', false, 1),
+    (v_q, '3', 'כמחצית', false, 2),
+    (v_q, '4', 'כרבע ממיני הדגים', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'קראו את הקטע וענו על השאלה:
+
+"שוניות האלמוגים נחשבות לאחת המערכות האקולוגיות העשירות ביותר בכדור הארץ. אף שהן מכסות שטח קטן מאוד מקרקעית הים, הן מספקות בית לכרבע ממיני הדגים בעולם. האלמוגים רגישים במיוחד לשינויי טמפרטורה, ועלייה קלה בחום המים עלולה לגרום ל''הלבנתם'' ולמותם. שמירה על השוניות חיונית אפוא לא רק ליופיין, אלא לעצם קיומו של מגוון המינים בים."
+
+מה עלול לגרום ל''הלבנת'' האלמוגים?', null, 'נכתב: ''עלייה קלה בחום המים עלולה לגרום ל\''הלבנתם\''''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'עלייה בטמפרטורת המים', true, 0),
+    (v_q, '2', 'ירידה במליחות בלבד', false, 1),
+    (v_q, '3', 'ריבוי דגים', false, 2),
+    (v_q, '4', 'גלים גבוהים', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'קראו את הקטע וענו על השאלה:
+
+"שוניות האלמוגים נחשבות לאחת המערכות האקולוגיות העשירות ביותר בכדור הארץ. אף שהן מכסות שטח קטן מאוד מקרקעית הים, הן מספקות בית לכרבע ממיני הדגים בעולם. האלמוגים רגישים במיוחד לשינויי טמפרטורה, ועלייה קלה בחום המים עלולה לגרום ל''הלבנתם'' ולמותם. שמירה על השוניות חיונית אפוא לא רק ליופיין, אלא לעצם קיומו של מגוון המינים בים."
+
+מדוע שמירה על השוניות חשובה מעבר ליופיין?', null, 'נכתב שהשמירה חיונית ''לעצם קיומו של מגוון המינים בים''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'משום שהן מונעות גאות', false, 0),
+    (v_q, '2', 'משום שהן חיוניות למגוון המינים בים', true, 1),
+    (v_q, '3', 'משום שהן מקור לזהב', false, 2),
+    (v_q, '4', 'משום שהן מייצרות חמצן יבשתי', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'קראו את הקטע וענו על השאלה:
+
+"שוניות האלמוגים נחשבות לאחת המערכות האקולוגיות העשירות ביותר בכדור הארץ. אף שהן מכסות שטח קטן מאוד מקרקעית הים, הן מספקות בית לכרבע ממיני הדגים בעולם. האלמוגים רגישים במיוחד לשינויי טמפרטורה, ועלייה קלה בחום המים עלולה לגרום ל''הלבנתם'' ולמותם. שמירה על השוניות חיונית אפוא לא רק ליופיין, אלא לעצם קיומו של מגוון המינים בים."
+
+המילה ''אף'' בפתח המשפט השני מציינת:', null, '''אף ש...'' פותח ניגוד: למרות השטח הקטן, התרומה עצומה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'סיבה ותוצאה', false, 0),
+    (v_q, '2', 'דוגמה', false, 1),
+    (v_q, '3', 'ניגוד בין השטח הקטן לתרומה הגדולה', true, 2),
+    (v_q, '4', 'הוספת פרט', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'קראו את הקטע וענו על השאלה:
+
+"כלכלנים הניחו זמן רב כי בני האדם מקבלים החלטות באופן רציונלי, מתוך שקילה קרה של עלויות ותועלות. אולם מחקרים בכלכלה התנהגותית הראו כי החלטותינו מושפעות עמוקות מהטיות, מרגשות ומאופן הצגת המידע. כך למשל, אנשים נוטים לחוש את כאב ההפסד בעוצמה רבה יותר מהנאת הרווח השקול לו. תובנות אלו ערערו על הנחת ה''אדם הרציונלי'' ושינו את האופן שבו אנו מבינים בחירות כלכליות."
+
+מהו הנושא המרכזי של הקטע?', null, 'הקטע מתאר כיצד ממצאי הכלכלה ההתנהגותית ערערו הנחה ותיקה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'כיצד לחסוך כסף', false, 0),
+    (v_q, '2', 'תולדות הבורסה', false, 1),
+    (v_q, '3', 'שערי מטבע', false, 2),
+    (v_q, '4', 'כיצד הכלכלה ההתנהגותית ערערה על הנחת האדם הרציונלי', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'קראו את הקטע וענו על השאלה:
+
+"כלכלנים הניחו זמן רב כי בני האדם מקבלים החלטות באופן רציונלי, מתוך שקילה קרה של עלויות ותועלות. אולם מחקרים בכלכלה התנהגותית הראו כי החלטותינו מושפעות עמוקות מהטיות, מרגשות ומאופן הצגת המידע. כך למשל, אנשים נוטים לחוש את כאב ההפסד בעוצמה רבה יותר מהנאת הרווח השקול לו. תובנות אלו ערערו על הנחת ה''אדם הרציונלי'' ושינו את האופן שבו אנו מבינים בחירות כלכליות."
+
+מה הניחו כלכלנים זמן רב?', null, 'נכתב: ''הניחו... כי בני האדם מקבלים החלטות באופן רציונלי''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'שבני אדם מקבלים החלטות באופן רציונלי', true, 0),
+    (v_q, '2', 'שבני אדם פועלים באקראי', false, 1),
+    (v_q, '3', 'שאי אפשר לחזות החלטות', false, 2),
+    (v_q, '4', 'שרגשות חשובים מהכול', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'קראו את הקטע וענו על השאלה:
+
+"כלכלנים הניחו זמן רב כי בני האדם מקבלים החלטות באופן רציונלי, מתוך שקילה קרה של עלויות ותועלות. אולם מחקרים בכלכלה התנהגותית הראו כי החלטותינו מושפעות עמוקות מהטיות, מרגשות ומאופן הצגת המידע. כך למשל, אנשים נוטים לחוש את כאב ההפסד בעוצמה רבה יותר מהנאת הרווח השקול לו. תובנות אלו ערערו על הנחת ה''אדם הרציונלי'' ושינו את האופן שבו אנו מבינים בחירות כלכליות."
+
+מהי הדוגמה שמביא הקטע להטיה?', null, 'נכתב במפורש על עוצמת כאב ההפסד מול הנאת הרווח.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'רווח גדול אינו משמח', false, 0),
+    (v_q, '2', 'כאב ההפסד נחווה חזק יותר מהנאת רווח שווה לו', true, 1),
+    (v_q, '3', 'אנשים אדישים לכסף', false, 2),
+    (v_q, '4', 'אנשים מעדיפים תמיד סיכון', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'קראו את הקטע וענו על השאלה:
+
+"כלכלנים הניחו זמן רב כי בני האדם מקבלים החלטות באופן רציונלי, מתוך שקילה קרה של עלויות ותועלות. אולם מחקרים בכלכלה התנהגותית הראו כי החלטותינו מושפעות עמוקות מהטיות, מרגשות ומאופן הצגת המידע. כך למשל, אנשים נוטים לחוש את כאב ההפסד בעוצמה רבה יותר מהנאת הרווח השקול לו. תובנות אלו ערערו על הנחת ה''אדם הרציונלי'' ושינו את האופן שבו אנו מבינים בחירות כלכליות."
+
+מה ניתן להסיק מהקטע?', null, 'אם הטיות ורגשות משפיעים, הרי שההחלטות אינן רציונליות בלבד.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'רגשות אינם משפיעים על כסף', false, 0),
+    (v_q, '2', 'כלכלנים צדקו לחלוטין', false, 1),
+    (v_q, '3', 'גורמים לא-רציונליים משפיעים על בחירות כלכליות', true, 2),
+    (v_q, '4', 'החלטות כלכליות תמיד נכונות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'קראו את הקטע וענו על השאלה:
+
+"כלכלנים הניחו זמן רב כי בני האדם מקבלים החלטות באופן רציונלי, מתוך שקילה קרה של עלויות ותועלות. אולם מחקרים בכלכלה התנהגותית הראו כי החלטותינו מושפעות עמוקות מהטיות, מרגשות ומאופן הצגת המידע. כך למשל, אנשים נוטים לחוש את כאב ההפסד בעוצמה רבה יותר מהנאת הרווח השקול לו. תובנות אלו ערערו על הנחת ה''אדם הרציונלי'' ושינו את האופן שבו אנו מבינים בחירות כלכליות."
+
+''אופן הצגת המידע'' (מסגור) בקטע מתייחס ל:', null, 'מסגור = כיצד מוצג המידע, מה שמשפיע על ההחלטה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'כמות המידע בלבד', false, 0),
+    (v_q, '2', 'מקור המידע', false, 1),
+    (v_q, '3', 'אמיתות המידע', false, 2),
+    (v_q, '4', 'הדרך שבה המידע מוצג בפנינו', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'קראו את הקטע וענו על השאלה:
+
+"שאלה עתיקה מעסיקה חוקרים: האם השפה שאנו דוברים מעצבת את אופן חשיבתנו? לפי השערה ידועה, דוברי שפות שונות תופסים את העולם בדרכים שונות במקצת — למשל, באבחנה בין גוונים של צבע או בתפיסת הזמן והמרחב. מבקרי ההשערה טוענים כי ההבדלים מינוריים וכי המחשבה האנושית אוניברסלית בבסיסה. הוויכוח נמשך, אך שני הצדדים מסכימים כי הקשר בין שפה למחשבה מורכב מכפי שנדמה."
+
+מהו הנושא המרכזי של הקטע?', null, 'הקטע מציג מחלוקת על הקשר בין שפה למחשבה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הוויכוח על השפעת השפה על המחשבה', true, 0),
+    (v_q, '2', 'כיצד ללמוד שפה זרה', false, 1),
+    (v_q, '3', 'תולדות הכתב', false, 2),
+    (v_q, '4', 'דקדוק עברי', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'קראו את הקטע וענו על השאלה:
+
+"שאלה עתיקה מעסיקה חוקרים: האם השפה שאנו דוברים מעצבת את אופן חשיבתנו? לפי השערה ידועה, דוברי שפות שונות תופסים את העולם בדרכים שונות במקצת — למשל, באבחנה בין גוונים של צבע או בתפיסת הזמן והמרחב. מבקרי ההשערה טוענים כי ההבדלים מינוריים וכי המחשבה האנושית אוניברסלית בבסיסה. הוויכוח נמשך, אך שני הצדדים מסכימים כי הקשר בין שפה למחשבה מורכב מכפי שנדמה."
+
+מה טוענת ההשערה המוצגת בקטע?', null, 'ההשערה גורסת שדוברי שפות שונות תופסים את העולם בדרכים שונות במקצת.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'אי אפשר לתרגם בין שפות', false, 0),
+    (v_q, '2', 'דוברי שפות שונות תופסים את העולם מעט אחרת', true, 1),
+    (v_q, '3', 'כל השפות זהות', false, 2),
+    (v_q, '4', 'השפה אינה משפיעה כלל', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'קראו את הקטע וענו על השאלה:
+
+"שאלה עתיקה מעסיקה חוקרים: האם השפה שאנו דוברים מעצבת את אופן חשיבתנו? לפי השערה ידועה, דוברי שפות שונות תופסים את העולם בדרכים שונות במקצת — למשל, באבחנה בין גוונים של צבע או בתפיסת הזמן והמרחב. מבקרי ההשערה טוענים כי ההבדלים מינוריים וכי המחשבה האנושית אוניברסלית בבסיסה. הוויכוח נמשך, אך שני הצדדים מסכימים כי הקשר בין שפה למחשבה מורכב מכפי שנדמה."
+
+מה טוענים מבקרי ההשערה?', null, 'נכתב: ''המבקרים טוענים כי ההבדלים מינוריים וכי המחשבה... אוניברסלית''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'אין מחשבה ללא שפה', false, 0),
+    (v_q, '2', 'כל אדם חושב אחרת לגמרי', false, 1),
+    (v_q, '3', 'ההבדלים מינוריים והמחשבה אוניברסלית בבסיסה', true, 2),
+    (v_q, '4', 'השפה קובעת הכול', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'קראו את הקטע וענו על השאלה:
+
+"שאלה עתיקה מעסיקה חוקרים: האם השפה שאנו דוברים מעצבת את אופן חשיבתנו? לפי השערה ידועה, דוברי שפות שונות תופסים את העולם בדרכים שונות במקצת — למשל, באבחנה בין גוונים של צבע או בתפיסת הזמן והמרחב. מבקרי ההשערה טוענים כי ההבדלים מינוריים וכי המחשבה האנושית אוניברסלית בבסיסה. הוויכוח נמשך, אך שני הצדדים מסכימים כי הקשר בין שפה למחשבה מורכב מכפי שנדמה."
+
+על מה מסכימים שני הצדדים בוויכוח?', null, 'נכתב: ''שני הצדדים מסכימים כי הקשר... מורכב מכפי שנדמה''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'שההשערה הוכחה סופית', false, 0),
+    (v_q, '2', 'שאין כל קשר בין שפה למחשבה', false, 1),
+    (v_q, '3', 'שיש להפסיק את המחקר', false, 2),
+    (v_q, '4', 'שהקשר בין שפה למחשבה מורכב', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – הבנת הנקרא'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – הבנת הנקרא', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'קראו את הקטע וענו על השאלה:
+
+"שאלה עתיקה מעסיקה חוקרים: האם השפה שאנו דוברים מעצבת את אופן חשיבתנו? לפי השערה ידועה, דוברי שפות שונות תופסים את העולם בדרכים שונות במקצת — למשל, באבחנה בין גוונים של צבע או בתפיסת הזמן והמרחב. מבקרי ההשערה טוענים כי ההבדלים מינוריים וכי המחשבה האנושית אוניברסלית בבסיסה. הוויכוח נמשך, אך שני הצדדים מסכימים כי הקשר בין שפה למחשבה מורכב מכפי שנדמה."
+
+''אוניברסלית'' בקטע פירושה:', null, 'אוניברסלי = כללי, משותף לכול.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'משותפת לכלל בני האדם', true, 0),
+    (v_q, '2', 'ייחודית לכל אדם', false, 1),
+    (v_q, '3', 'מורכבת מאוד', false, 2),
+    (v_q, '4', 'משתנה בכל יום', false, 3);
 end
 $seed$;
 
