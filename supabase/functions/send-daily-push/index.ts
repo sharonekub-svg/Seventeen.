@@ -1,18 +1,25 @@
 // Sends a daily reminder to keep the streak. Triggered nightly by pg_cron.
-// Protect with a shared secret header so it can't be invoked publicly.
+// Protected by a shared secret header so it can't be invoked publicly. The
+// expected secret is read from public.app_config (seeded by migration 0004 and
+// also used by the cron job, so the two never drift), with a fallback to the
+// CRON_SECRET env var for deployments that prefer Supabase function secrets.
 import { createClient } from "jsr:@supabase/supabase-js@2";
 import { json } from "../_shared/cors.ts";
 
 Deno.serve(async (req) => {
-  const secret = req.headers.get("x-cron-secret");
-  if (secret !== Deno.env.get("CRON_SECRET")) {
-    return json({ error: "Forbidden" }, 403);
-  }
-
   const admin = createClient(
     Deno.env.get("SUPABASE_URL")!,
     Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!,
   );
+
+  const { data: cfg } = await admin
+    .from("app_config").select("value").eq("key", "cron_secret").maybeSingle();
+  const expected = cfg?.value ?? Deno.env.get("CRON_SECRET");
+
+  const secret = req.headers.get("x-cron-secret");
+  if (!expected || secret !== expected) {
+    return json({ error: "Forbidden" }, 403);
+  }
 
   const { data: rows } = await admin
     .from("profiles_private")

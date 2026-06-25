@@ -44,7 +44,11 @@ supabase/    Postgres schema (migrations), RLS, Edge Functions
    supabase functions deploy submit-answer
    supabase functions deploy send-daily-push
    ```
-5. Set the function secret used by the nightly push:
+5. The shared secret used by the nightly push is **provisioned automatically**
+   by migration `0004_cron_secret_store.sql` (a random value stored in the
+   service-role-only `app_config` table), so no manual `supabase secrets set`
+   step is required. The function still falls back to a `CRON_SECRET` env var if
+   you prefer Supabase function secrets:
    ```bash
    supabase secrets set CRON_SECRET=$(openssl rand -hex 16)
    ```
@@ -53,8 +57,9 @@ supabase/    Postgres schema (migrations), RLS, Edge Functions
 
 ### Nightly jobs (run once in the SQL editor)
 
-Enable the extensions and schedule streak processing + the push. Replace
-`<PROJECT_REF>` and `<CRON_SECRET>` with your values.
+Enable the extensions and schedule streak processing + the push. Only
+`<PROJECT_REF>` needs substituting — the secret is read from `app_config`, so the
+cron job and the function can never drift out of sync.
 
 ```sql
 create extension if not exists pg_cron;
@@ -68,7 +73,9 @@ select cron.schedule(
   'daily-push', '0 14 * * *',
   $$ select net.http_post(
        url     := 'https://<PROJECT_REF>.functions.supabase.co/send-daily-push',
-       headers := '{"Content-Type":"application/json","x-cron-secret":"<CRON_SECRET>"}'::jsonb
+       headers := jsonb_build_object(
+         'Content-Type','application/json',
+         'x-cron-secret',(select value from public.app_config where key='cron_secret'))
      ) $$
 );
 ```
@@ -98,6 +105,19 @@ eas submit --platform ios
 
 Start with **TestFlight** before a public release. Note: education / test-prep
 apps need a clear privacy policy in App Store Connect.
+
+## Tests & CI
+
+Backend scoring logic (adaptive Elo, XP, streak transitions) is pure and unit
+tested:
+
+```bash
+deno test supabase/functions/_shared/scoring_test.ts
+```
+
+GitHub Actions (`.github/workflows/ci.yml`) runs the Deno tests + a `deno check`
+on the shared modules, and typechecks the Expo app (`npm ci` + `tsc --noEmit`)
+on every push and PR.
 
 ## 3. Content (questions)
 
