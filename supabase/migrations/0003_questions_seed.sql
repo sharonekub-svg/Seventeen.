@@ -10953,16 +10953,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'גרב : כף רגל
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פריט לבוש והאיבר שעליו לובשים אותו. הזוג "צעיף : צוואר" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+כלב : גור', null, 'הקשר: בעל חיים בוגר והצאצא שלו. כשם ש"כלב" מתקשר ל"גור", כך "סוס" מתקשר ל"סייח".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'פטיש : נגר', false, 0),
-    (v_q, '2', 'צעיף : צוואר', true, 1),
-    (v_q, '3', 'מקש : מקלדת', false, 2),
-    (v_q, '4', 'בוטנאי : צמחים', false, 3);
+    (v_q, '1', 'חתול : כלב', false, 0),
+    (v_q, '2', 'פרה : חלב', false, 1),
+    (v_q, '3', 'עדר : כבש', false, 2),
+    (v_q, '4', 'סוס : סייח', true, 3);
 end
 $seed$;
 
@@ -10984,325 +10984,15 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'חדר : בית
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "מקש : מקלדת" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+יד : אצבע', null, 'הקשר: איבר והחלק הקטן שבקצהו. כשם ש"יד" מתקשר ל"אצבע", כך "רגל" מתקשר ל"בוהן".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אזמל : מנתח', false, 0),
-    (v_q, '2', 'גרב : כף רגל', false, 1),
-    (v_q, '3', 'מקש : מקלדת', true, 2),
-    (v_q, '4', 'אסטרונום : כוכבים', false, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 1;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 1;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'ענף : עץ
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "גלגל : מכונית" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'רוח : סופה', false, 0),
-    (v_q, '2', 'נעל : רגל', false, 1),
-    (v_q, '3', 'גלגל : מכונית', true, 2),
-    (v_q, '4', 'לימוד : ידע', false, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 1;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 1;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'מקש : מקלדת
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "דף : ספר" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'נמר : חיה', false, 0),
-    (v_q, '2', 'קרדיולוג : לב', false, 1),
-    (v_q, '3', 'ספרייה : קריאה', false, 2),
-    (v_q, '4', 'דף : ספר', true, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 1;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 1;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'נעל : רגל
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פריט לבוש והאיבר שעליו לובשים אותו. הזוג "גרב : כף רגל" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מכחול : צייר', false, 0),
-    (v_q, '2', 'גרב : כף רגל', true, 1),
-    (v_q, '3', 'גלגל : מכונית', false, 2),
-    (v_q, '4', 'עצב : ייאוש', false, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 2;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 2;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'חדר : בית
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "דף : ספר" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'יהלום : אבן חן', false, 0),
-    (v_q, '2', 'דף : ספר', true, 1),
-    (v_q, '3', 'דבורה : דבש', false, 2),
-    (v_q, '4', 'נעל : רגל', false, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 2;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 2;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'אזמל : מנתח
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי עבודה ובעל המקצוע המשתמש בו. הזוג "מכחול : צייר" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מכחול : צייר', true, 0),
-    (v_q, '2', 'זהיר : חששן', false, 1),
-    (v_q, '3', 'מסעדה : אכילה', false, 2),
-    (v_q, '4', 'כובע : ראש', false, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 2;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 2;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'גלגל : מכונית
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "חדר : בית" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'חדר : בית', true, 0),
-    (v_q, '2', 'כפפה : יד', false, 1),
-    (v_q, '3', 'נמר : חיה', false, 2),
-    (v_q, '4', 'שמחה : עצב', false, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 2;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 2;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'כבשה : צמר
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: בעל חיים והתוצר שהוא מספק לאדם. הזוג "פרה : חלב" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אמיץ : פזיז', false, 0),
-    (v_q, '2', 'מצלמה : צלם', false, 1),
-    (v_q, '3', 'קרדיולוג : לב', false, 2),
-    (v_q, '4', 'פרה : חלב', true, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 2;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 2;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'מקש : מקלדת
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "ענף : עץ" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'צעיף : צוואר', false, 0),
-    (v_q, '2', 'אסטרונום : כוכבים', false, 1),
-    (v_q, '3', 'ענף : עץ', true, 2),
-    (v_q, '4', 'חום : להט', false, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 3;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 3;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'פטיש : נגר
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי עבודה ובעל המקצוע המשתמש בו. הזוג "מכחול : צייר" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'גשם : מבול', false, 0),
-    (v_q, '2', 'חימום : המסה', false, 1),
-    (v_q, '3', 'מכחול : צייר', true, 2),
-    (v_q, '4', 'עשיר : עני', false, 3);
-end
-$seed$;
-
-do $seed$
-declare
-  v_level bigint;
-  v_q     bigint;
-begin
-  select l.id into v_level
-  from levels l
-  join units u on u.id = l.unit_id
-  where u.track = 'psychometric'
-    and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 3;
-
-  if v_level is null then
-    raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 3;
-  end if;
-
-  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'חדר : בית
-
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "גלגל : מכונית" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
-  returning id into v_q;
-
-  insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מאגר : מידע', false, 0),
-    (v_q, '2', 'גלגל : מכונית', true, 1),
-    (v_q, '3', 'מכחול : צייר', false, 2),
+    (v_q, '1', 'נעל : רגל', false, 0),
+    (v_q, '2', 'שעון : זמן', false, 1),
+    (v_q, '3', 'רגל : בוהן', true, 2),
     (v_q, '4', 'כפפה : יד', false, 3);
 end
 $seed$;
@@ -11317,24 +11007,241 @@ begin
   join units u on u.id = l.unit_id
   where u.track = 'psychometric'
     and u.name  = 'מילולי – אנלוגיות'
-    and l.position = 3;
+    and l.position = 1;
 
   if v_level is null then
     raise exception 'Seed: no level for track=% unit=% position=%',
-      'psychometric', 'מילולי – אנלוגיות', 3;
+      'psychometric', 'מילולי – אנלוגיות', 1;
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'גרב : כף רגל
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פריט לבוש והאיבר שעליו לובשים אותו. הזוג "כפפה : יד" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+חם : קר', null, 'הקשר: תכונה וההפך שלה. כשם ש"חם" מתקשר ל"קר", כך "גבוה" מתקשר ל"נמוך".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'פרה : חלב', false, 0),
-    (v_q, '2', 'אמיץ : פזיז', false, 1),
-    (v_q, '3', 'עצב : ייאוש', false, 2),
-    (v_q, '4', 'כפפה : יד', true, 3);
+    (v_q, '1', 'גדול : ענק', false, 0),
+    (v_q, '2', 'גבוה : נמוך', true, 1),
+    (v_q, '3', 'מתוק : סוכר', false, 2),
+    (v_q, '4', 'יום : בוקר', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 1;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 1;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+דג : מים', null, 'הקשר: בעל חיים והסביבה הטבעית שבה הוא חי. כשם ש"דג" מתקשר ל"מים", כך "ציפור" מתקשר ל"שמיים".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ציפור : שמיים', true, 0),
+    (v_q, '2', 'כלב : עצם', false, 1),
+    (v_q, '3', 'דבורה : דבש', false, 2),
+    (v_q, '4', 'נמר : מהיר', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 1;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 1;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+עיפרון : כתיבה', null, 'הקשר: כלי והפעולה שמבצעים באמצעותו. כשם ש"עיפרון" מתקשר ל"כתיבה", כך "מטאטא" מתקשר ל"טאטוא".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'כיסא : עץ', false, 0),
+    (v_q, '2', 'מורה : כיתה', false, 1),
+    (v_q, '3', 'גשם : מטרייה', false, 2),
+    (v_q, '4', 'מטאטא : טאטוא', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 2;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 2;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+גלגל : מכונית', null, 'הקשר: חלק והשלם שהוא מרכיב. כשם ש"גלגל" מתקשר ל"מכונית", כך "דף" מתקשר ל"ספר".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'נהג : מכונית', false, 0),
+    (v_q, '2', 'כביש : נסיעה', false, 1),
+    (v_q, '3', 'דף : ספר', true, 2),
+    (v_q, '4', 'מנוע : דלק', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 2;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 2;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+רופא : חולה', null, 'הקשר: נותן השירות ומקבל השירות. כשם ש"רופא" מתקשר ל"חולה", כך "מורה" מתקשר ל"תלמיד".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'שוטר : אקדח', false, 0),
+    (v_q, '2', 'מורה : תלמיד', true, 1),
+    (v_q, '3', 'שופט : משפט', false, 2),
+    (v_q, '4', 'טבח : מסעדה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 2;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 2;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+צמא : שתייה', null, 'הקשר: מצב מחסור והפעולה שמספקת אותו. כשם ש"צמא" מתקשר ל"שתייה", כך "רעב" מתקשר ל"אכילה".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'רעב : אכילה', true, 0),
+    (v_q, '2', 'כאב : צעקה', false, 1),
+    (v_q, '3', 'קור : חורף', false, 2),
+    (v_q, '4', 'שמחה : צחוק', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 2;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 2;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+ספר : פרק', null, 'הקשר: שלם והיחידה שמרכיבה אותו. כשם ש"ספר" מתקשר ל"פרק", כך "שנה" מתקשר ל"חודש".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מילה : משפט', false, 0),
+    (v_q, '2', 'ספרייה : ספר', false, 1),
+    (v_q, '3', 'עמוד : מילה', false, 2),
+    (v_q, '4', 'שנה : חודש', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 2;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 2;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+מלך : ממלכה', null, 'הקשר: בעל הסמכות העליונה והתחום שעליו הוא מופקד. כשם ש"מלך" מתקשר ל"ממלכה", כך "קברניט" מתקשר ל"אונייה".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'נוסע : רכבת', false, 0),
+    (v_q, '2', 'שחקן : הצגה', false, 1),
+    (v_q, '3', 'קברניט : אונייה', true, 2),
+    (v_q, '4', 'נגן : תזמורת', false, 3);
 end
 $seed$;
 
@@ -11356,16 +11263,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'ענף : עץ
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "גלגל : מכונית" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+שמש : אור', null, 'הקשר: מקור והדבר שהוא מפיק. כשם ש"שמש" מתקשר ל"אור", כך "תנור" מתקשר ל"חום".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'נמר : חיה', false, 0),
-    (v_q, '2', 'גלגל : מכונית', true, 1),
-    (v_q, '3', 'קרדיולוג : לב', false, 2),
-    (v_q, '4', 'עצב : ייאוש', false, 3);
+    (v_q, '1', 'אש : מים', false, 0),
+    (v_q, '2', 'תנור : חום', true, 1),
+    (v_q, '3', 'ירח : לילה', false, 2),
+    (v_q, '4', 'נר : שעווה', false, 3);
 end
 $seed$;
 
@@ -11387,16 +11294,109 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'כעס : זעם
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: תופעה ועוצמתה הקיצונית. הזוג "רוח : סופה" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+סופר : ספר', null, 'הקשר: יוצר והיצירה שהוא מפיק. כשם ש"סופר" מתקשר ל"ספר", כך "צייר" מתקשר ל"תמונה".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'רוח : סופה', true, 0),
-    (v_q, '2', 'כינור : כלי נגינה', false, 1),
-    (v_q, '3', 'נעל : רגל', false, 2),
-    (v_q, '4', 'תרנגולת : ביצה', false, 3);
+    (v_q, '1', 'צייר : תמונה', true, 0),
+    (v_q, '2', 'קורא : ספר', false, 1),
+    (v_q, '3', 'מסגרת : תמונה', false, 2),
+    (v_q, '4', 'מוזיאון : ציור', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+אש : אפר', null, 'הקשר: תהליך והתוצאה שנותרת אחריו. כשם ש"אש" מתקשר ל"אפר", כך "גשם" מתקשר ל"שלולית".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ענן : גשם', false, 0),
+    (v_q, '2', 'שמש : קיץ', false, 1),
+    (v_q, '3', 'רוח : עץ', false, 2),
+    (v_q, '4', 'גשם : שלולית', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+מנעול : מפתח', null, 'הקשר: דבר הדורש פתרון והאמצעי הפותח אותו. כשם ש"מנעול" מתקשר ל"מפתח", כך "שאלה" מתקשר ל"תשובה".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מנעול : שרשרת', false, 0),
+    (v_q, '2', 'כספת : כסף', false, 1),
+    (v_q, '3', 'שאלה : תשובה', true, 2),
+    (v_q, '4', 'דלת : בית', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – אנלוגיות'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – אנלוגיות', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
+
+כסף : ארנק', null, 'הקשר: חפץ והמכל הייעודי לאחסונו. כשם ש"כסף" מתקשר ל"ארנק", כך "חרב" מתקשר ל"נדן".', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ספר : מדף', false, 0),
+    (v_q, '2', 'חרב : נדן', true, 1),
+    (v_q, '3', 'ארון : בגדים', false, 2),
+    (v_q, '4', 'לחם : מאפייה', false, 3);
 end
 $seed$;
 
@@ -11418,16 +11418,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'דף : ספר
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג "ענף : עץ" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+גדול : ענק', null, 'הקשר: תכונה והדרגה המוקצנת שלה. כשם ש"גדול" מתקשר ל"ענק", כך "חכם" מתקשר ל"גאון".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'ענף : עץ', true, 0),
-    (v_q, '2', 'פרה : חלב', false, 1),
-    (v_q, '3', 'כובע : ראש', false, 2),
-    (v_q, '4', 'מאגר : מידע', false, 3);
+    (v_q, '1', 'חכם : גאון', true, 0),
+    (v_q, '2', 'יפה : מכוער', false, 1),
+    (v_q, '3', 'חם : שמש', false, 2),
+    (v_q, '4', 'מהיר : ריצה', false, 3);
 end
 $seed$;
 
@@ -11449,16 +11449,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'נמר : חיה
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג "אורן : עץ" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+רוח : סופה', null, 'הקשר: תופעת טבע והעוצמה הקיצונית שלה. כשם ש"רוח" מתקשר ל"סופה", כך "גשם" מתקשר ל"מבול".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'ענף : עץ', false, 0),
-    (v_q, '2', 'חסכן : קמצן', false, 1),
-    (v_q, '3', 'אורן : עץ', true, 2),
-    (v_q, '4', 'פרה : חלב', false, 3);
+    (v_q, '1', 'ים : גל', false, 0),
+    (v_q, '2', 'שלג : לבן', false, 1),
+    (v_q, '3', 'ברק : רעם', false, 2),
+    (v_q, '4', 'גשם : מבול', true, 3);
 end
 $seed$;
 
@@ -11480,16 +11480,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'רוח : סופה
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: תופעה ועוצמתה הקיצונית. הזוג "עצב : ייאוש" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+שקט : רעש', null, 'הקשר: מצב והיעדרו. כשם ש"שקט" מתקשר ל"רעש", כך "חושך" מתקשר ל"אור".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'חימום : המסה', false, 0),
-    (v_q, '2', 'מלא : ריק', false, 1),
-    (v_q, '3', 'עצב : ייאוש', true, 2),
-    (v_q, '4', 'יהלום : אבן חן', false, 3);
+    (v_q, '1', 'קול : אוזן', false, 0),
+    (v_q, '2', 'צבע : עיוור', false, 1),
+    (v_q, '3', 'חושך : אור', true, 2),
+    (v_q, '4', 'לילה : כוכבים', false, 3);
 end
 $seed$;
 
@@ -11511,16 +11511,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'ורד : פרח
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג "נמר : חיה" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+זמר : שירה', null, 'הקשר: אדם והפעולה האופיינית לתפקידו. כשם ש"זמר" מתקשר ל"שירה", כך "רקדן" מתקשר ל"ריקוד".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אור : חושך', false, 0),
-    (v_q, '2', 'זריעה : יבול', false, 1),
-    (v_q, '3', 'נמר : חיה', true, 2),
-    (v_q, '4', 'קרדיולוג : לב', false, 3);
+    (v_q, '1', 'במאי : שחקן', false, 0),
+    (v_q, '2', 'רקדן : ריקוד', true, 1),
+    (v_q, '3', 'סופר : ספר', false, 2),
+    (v_q, '4', 'חולה : רופא', false, 3);
 end
 $seed$;
 
@@ -11542,16 +11542,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'מצלמה : צלם
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי עבודה ובעל המקצוע המשתמש בו. הזוג "מספריים : ספר" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+רעל : מוות', null, 'הקשר: גורם והתוצאה שהוא מחולל. כשם ש"רעל" מתקשר ל"מוות", כך "תרופה" מתקשר ל"ריפוי".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'זהיר : חששן', false, 0),
-    (v_q, '2', 'מספריים : ספר', true, 1),
-    (v_q, '3', 'נעל : רגל', false, 2),
-    (v_q, '4', 'דבורה : דבש', false, 3);
+    (v_q, '1', 'תרופה : ריפוי', true, 0),
+    (v_q, '2', 'מחלה : חיידק', false, 1),
+    (v_q, '3', 'רופא : תרופה', false, 2),
+    (v_q, '4', 'מים : צמא', false, 3);
 end
 $seed$;
 
@@ -11573,16 +11573,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'כוס : מים
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג "מחסן : סחורה" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+שמח : עליז', null, 'הקשר: מילים נרדפות. כשם ש"שמח" מתקשר ל"עליז", כך "עצוב" מתקשר ל"נוגה".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מחסן : סחורה', true, 0),
-    (v_q, '2', 'פטיש : נגר', false, 1),
-    (v_q, '3', 'יהלום : אבן חן', false, 2),
-    (v_q, '4', 'כיתה : לימוד', false, 3);
+    (v_q, '1', 'גדול : קטן', false, 0),
+    (v_q, '2', 'יפה : יופי', false, 1),
+    (v_q, '3', 'רץ : עייף', false, 2),
+    (v_q, '4', 'עצוב : נוגה', true, 3);
 end
 $seed$;
 
@@ -11604,16 +11604,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'אורן : עץ
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג "כינור : כלי נגינה" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+ענב : יין', null, 'הקשר: חומר גלם והמוצר המופק ממנו. כשם ש"ענב" מתקשר ל"יין", כך "חלב" מתקשר ל"גבינה".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'כינור : כלי נגינה', true, 0),
-    (v_q, '2', 'אור : חושך', false, 1),
-    (v_q, '3', 'פרה : חלב', false, 2),
-    (v_q, '4', 'היסטוריון : עבר', false, 3);
+    (v_q, '1', 'עץ : יער', false, 0),
+    (v_q, '2', 'פרי : מתוק', false, 1),
+    (v_q, '3', 'חלב : גבינה', true, 2),
+    (v_q, '4', 'יין : בקבוק', false, 3);
 end
 $seed$;
 
@@ -11635,16 +11635,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'כינור : כלי נגינה
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג "אורן : עץ" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+שופט : צדק', null, 'הקשר: בעל תפקיד והערך שעליו הוא מופקד. כשם ש"שופט" מתקשר ל"צדק", כך "רופא" מתקשר ל"בריאות".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'פרה : חלב', false, 0),
-    (v_q, '2', 'אורן : עץ', true, 1),
-    (v_q, '3', 'מסעדה : אכילה', false, 2),
-    (v_q, '4', 'מצלמה : צלם', false, 3);
+    (v_q, '1', 'עורך דין : בית משפט', false, 0),
+    (v_q, '2', 'רופא : בריאות', true, 1),
+    (v_q, '3', 'מורה : כיתה', false, 2),
+    (v_q, '4', 'שוטר : אקדח', false, 3);
 end
 $seed$;
 
@@ -11666,16 +11666,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'מאגר : מידע
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג "מצבר : חשמל" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+מחט : חוט', null, 'הקשר: כלי והחומר שמשתמשים בו יחד איתו. כשם ש"מחט" מתקשר ל"חוט", כך "מברשת" מתקשר ל"צבע".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מצבר : חשמל', true, 0),
-    (v_q, '2', 'גרב : כף רגל', false, 1),
-    (v_q, '3', 'יהלום : אבן חן', false, 2),
-    (v_q, '4', 'אזמל : מנתח', false, 3);
+    (v_q, '1', 'מברשת : צבע', true, 0),
+    (v_q, '2', 'מסרק : שיער', false, 1),
+    (v_q, '3', 'כף : מרק', false, 2),
+    (v_q, '4', 'סכין : לחם', false, 3);
 end
 $seed$;
 
@@ -11697,16 +11697,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'מצבר : חשמל
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג "מאגר : מידע" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+התחלה : סוף', null, 'הקשר: שני הקצוות של תהליך. כשם ש"התחלה" מתקשר ל"סוף", כך "לידה" מתקשר ל"מוות".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'חימום : המסה', false, 0),
-    (v_q, '2', 'קרדיולוג : לב', false, 1),
-    (v_q, '3', 'כבשה : צמר', false, 2),
-    (v_q, '4', 'מאגר : מידע', true, 3);
+    (v_q, '1', 'בוקר : צהריים', false, 0),
+    (v_q, '2', 'ראש : גוף', false, 1),
+    (v_q, '3', 'עבר : זיכרון', false, 2),
+    (v_q, '4', 'לידה : מוות', true, 3);
 end
 $seed$;
 
@@ -11728,16 +11728,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'מצבר : חשמל
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג "מאגר : מידע" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+עשן : אש', null, 'הקשר: סימן והדבר שהוא מעיד על קיומו. כשם ש"עשן" מתקשר ל"אש", כך "חום" מתקשר ל"מחלה".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'גשם : מבול', false, 0),
-    (v_q, '2', 'כובע : ראש', false, 1),
-    (v_q, '3', 'גמיש : חסר עמוד שדרה', false, 2),
-    (v_q, '4', 'מאגר : מידע', true, 3);
+    (v_q, '1', 'ענן : שמיים', false, 0),
+    (v_q, '2', 'ריח : אף', false, 1),
+    (v_q, '3', 'חום : מחלה', true, 2),
+    (v_q, '4', 'אש : חום', false, 3);
 end
 $seed$;
 
@@ -11759,16 +11759,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'מאגר : מידע
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג "ארנק : כסף" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+ספרן : ספרייה', null, 'הקשר: בעל מקצוע ומקום עבודתו. כשם ש"ספרן" מתקשר ל"ספרייה", כך "חקלאי" מתקשר ל"שדה".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'ארנק : כסף', true, 0),
-    (v_q, '2', 'תולעת משי : משי', false, 1),
-    (v_q, '3', 'כפפה : יד', false, 2),
-    (v_q, '4', 'נמר : חיה', false, 3);
+    (v_q, '1', 'נגר : עץ', false, 0),
+    (v_q, '2', 'חקלאי : שדה', true, 1),
+    (v_q, '3', 'מורה : תלמיד', false, 2),
+    (v_q, '4', 'רופא : מחלה', false, 3);
 end
 $seed$;
 
@@ -11790,16 +11790,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'מסעדה : אכילה
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מקום והפעולה האופיינית המתבצעת בו. הזוג "כיתה : לימוד" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+אלבום : תמונות', null, 'הקשר: אוסף מאורגן והפריטים שמרכיבים אותו. כשם ש"אלבום" מתקשר ל"תמונות", כך "מילון" מתקשר ל"מילים".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מאגר : מידע', false, 0),
-    (v_q, '2', 'צעיף : צוואר', false, 1),
-    (v_q, '3', 'כיתה : לימוד', true, 2),
-    (v_q, '4', 'כבשה : צמר', false, 3);
+    (v_q, '1', 'מילון : מילים', true, 0),
+    (v_q, '2', 'סופר : ספר', false, 1),
+    (v_q, '3', 'כיתה : תלמיד', false, 2),
+    (v_q, '4', 'עמוד : שורה', false, 3);
 end
 $seed$;
 
@@ -11821,16 +11821,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'בריכה : שחייה
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מקום והפעולה האופיינית המתבצעת בו. הזוג "תיאטרון : הצגה" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+אמיץ : פחדן', null, 'הקשר: תכונה והתכונה ההפוכה לה. כשם ש"אמיץ" מתקשר ל"פחדן", כך "נדיב" מתקשר ל"קמצן".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'שמחה : עצב', false, 0),
-    (v_q, '2', 'תיאטרון : הצגה', true, 1),
-    (v_q, '3', 'לימוד : ידע', false, 2),
-    (v_q, '4', 'כוס : מים', false, 3);
+    (v_q, '1', 'חכם : חכמה', false, 0),
+    (v_q, '2', 'זריז : מהיר', false, 1),
+    (v_q, '3', 'חרוץ : עבודה', false, 2),
+    (v_q, '4', 'נדיב : קמצן', true, 3);
 end
 $seed$;
 
@@ -11852,16 +11852,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'ארנק : כסף
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג "מצבר : חשמל" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+מאזניים : משקל', null, 'הקשר: מכשיר והגודל שהוא מודד או מציין. כשם ש"מאזניים" מתקשר ל"משקל", כך "מצפן" מתקשר ל"כיוון".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'גאולוג : סלעים', false, 0),
-    (v_q, '2', 'תרנגולת : ביצה', false, 1),
-    (v_q, '3', 'אזמל : מנתח', false, 2),
-    (v_q, '4', 'מצבר : חשמל', true, 3);
+    (v_q, '1', 'טלסקופ : רחוק', false, 0),
+    (v_q, '2', 'משקפת : עיניים', false, 1),
+    (v_q, '3', 'מצפן : כיוון', true, 2),
+    (v_q, '4', 'סרגל : ישר', false, 3);
 end
 $seed$;
 
@@ -11883,16 +11883,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'אור : חושך
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג "חכם : טיפש" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+צחוק : שמחה', null, 'הקשר: ביטוי חיצוני והרגש שהוא מבטא. כשם ש"צחוק" מתקשר ל"שמחה", כך "בכי" מתקשר ל"עצב".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'תרנגולת : ביצה', false, 0),
-    (v_q, '2', 'גאולוג : סלעים', false, 1),
-    (v_q, '3', 'חכם : טיפש', true, 2),
-    (v_q, '4', 'כוס : מים', false, 3);
+    (v_q, '1', 'כעס : צעקה', false, 0),
+    (v_q, '2', 'בכי : עצב', true, 1),
+    (v_q, '3', 'דמעה : עין', false, 2),
+    (v_q, '4', 'חיוך : פה', false, 3);
 end
 $seed$;
 
@@ -11914,16 +11914,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'מלא : ריק
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג "עשיר : עני" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+לחישה : צעקה', null, 'הקשר: פעולה והגרסה העזה שלה. כשם ש"לחישה" מתקשר ל"צעקה", כך "טפטוף" מתקשר ל"מבול".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'גרב : כף רגל', false, 0),
-    (v_q, '2', 'נמר : חיה', false, 1),
-    (v_q, '3', 'מאגר : מידע', false, 2),
-    (v_q, '4', 'עשיר : עני', true, 3);
+    (v_q, '1', 'טפטוף : מבול', true, 0),
+    (v_q, '2', 'דיבור : שתיקה', false, 1),
+    (v_q, '3', 'קול : אוזן', false, 2),
+    (v_q, '4', 'רעש : שקט', false, 3);
 end
 $seed$;
 
@@ -11945,16 +11945,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'היסטוריון : עבר
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מומחה ותחום העיסוק שלו. הזוג "גאולוג : סלעים" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+זהב : יקר', null, 'הקשר: חומר והתכונה הבולטת שלו. כשם ש"זהב" מתקשר ל"יקר", כך "נוצה" מתקשר ל"קל".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'גאולוג : סלעים', true, 0),
-    (v_q, '2', 'מאגר : מידע', false, 1),
-    (v_q, '3', 'תיאטרון : הצגה', false, 2),
-    (v_q, '4', 'זהיר : חששן', false, 3);
+    (v_q, '1', 'ברזל : מסמר', false, 0),
+    (v_q, '2', 'יהלום : טבעת', false, 1),
+    (v_q, '3', 'עץ : יער', false, 2),
+    (v_q, '4', 'נוצה : קל', true, 3);
 end
 $seed$;
 
@@ -11976,16 +11976,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'קרדיולוג : לב
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מומחה ותחום העיסוק שלו. הזוג "אסטרונום : כוכבים" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+סכר : מים', null, 'הקשר: מחסום והדבר שזרימתו נבלמת על ידו. כשם ש"סכר" מתקשר ל"מים", כך "צנזורה" מתקשר ל"מידע".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מכחול : צייר', false, 0),
-    (v_q, '2', 'אסטרונום : כוכבים', true, 1),
-    (v_q, '3', 'גשם : מבול', false, 2),
-    (v_q, '4', 'חימום : המסה', false, 3);
+    (v_q, '1', 'חומה : עיר', false, 0),
+    (v_q, '2', 'מסנן : לכלוך', false, 1),
+    (v_q, '3', 'צנזורה : מידע', true, 2),
+    (v_q, '4', 'גשר : נהר', false, 3);
 end
 $seed$;
 
@@ -12007,16 +12007,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'כעס : זעם
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: תופעה ועוצמתה הקיצונית. הזוג "עצב : ייאוש" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+סופר : כתיבה', null, 'הקשר: בעל מקצוע והפעולה שמגדירה אותו. כשם ש"סופר" מתקשר ל"כתיבה", כך "צייר" מתקשר ל"ציור".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אימון : כושר', false, 0),
-    (v_q, '2', 'עצב : ייאוש', true, 1),
-    (v_q, '3', 'היסטוריון : עבר', false, 2),
-    (v_q, '4', 'עשיר : עני', false, 3);
+    (v_q, '1', 'מורה : כיתה', false, 0),
+    (v_q, '2', 'צייר : ציור', true, 1),
+    (v_q, '3', 'רופא : חולה', false, 2),
+    (v_q, '4', 'נגר : רהיט', false, 3);
 end
 $seed$;
 
@@ -12038,16 +12038,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'שמחה : עצב
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג "אור : חושך" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+טיפה : ים', null, 'הקשר: יחידה זעירה והמסה הגדולה שהיא חלק ממנה. כשם ש"טיפה" מתקשר ל"ים", כך "גרגר" מתקשר ל"ערמה".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מצבר : חשמל', false, 0),
-    (v_q, '2', 'בריכה : שחייה', false, 1),
-    (v_q, '3', 'כבשה : צמר', false, 2),
-    (v_q, '4', 'אור : חושך', true, 3);
+    (v_q, '1', 'גרגר : ערמה', true, 0),
+    (v_q, '2', 'ים : אוקיינוס', false, 1),
+    (v_q, '3', 'חול : מדבר', false, 2),
+    (v_q, '4', 'מים : אגם', false, 3);
 end
 $seed$;
 
@@ -12069,16 +12069,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'כעס : זעם
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: תופעה ועוצמתה הקיצונית. הזוג "רוח : סופה" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+מטרייה : גשם', null, 'הקשר: אמצעי והבעיה שהוא נועד למנוע. כשם ש"מטרייה" מתקשר ל"גשם", כך "חיסון" מתקשר ל"מחלה".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אזמל : מנתח', false, 0),
-    (v_q, '2', 'השקיה : צמיחה', false, 1),
-    (v_q, '3', 'רוח : סופה', true, 2),
-    (v_q, '4', 'צעיף : צוואר', false, 3);
+    (v_q, '1', 'רופא : מחלה', false, 0),
+    (v_q, '2', 'כאב : תרופה', false, 1),
+    (v_q, '3', 'שמש : חום', false, 2),
+    (v_q, '4', 'חיסון : מחלה', true, 3);
 end
 $seed$;
 
@@ -12100,16 +12100,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'אימון : כושר
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פעולה והתוצאה הנובעת ממנה. הזוג "לימוד : ידע" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+אופטימי : פסימי', null, 'הקשר: שתי גישות מנוגדות זו לזו. כשם ש"אופטימי" מתקשר ל"פסימי", כך "פזרן" מתקשר ל"קמצן".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'ורד : פרח', false, 0),
-    (v_q, '2', 'לימוד : ידע', true, 1),
-    (v_q, '3', 'כובע : ראש', false, 2),
-    (v_q, '4', 'תרנגולת : ביצה', false, 3);
+    (v_q, '1', 'חכם : משכיל', false, 0),
+    (v_q, '2', 'פזרן : כסף', false, 1),
+    (v_q, '3', 'פזרן : קמצן', true, 2),
+    (v_q, '4', 'אופטימי : תקווה', false, 3);
 end
 $seed$;
 
@@ -12131,16 +12131,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'עשיר : עני
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג "שמחה : עצב" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+טביעת אצבע : אדם', null, 'הקשר: סימן ייחודי והדבר שהוא מאמת את זהותו. כשם ש"טביעת אצבע" מתקשר ל"אדם", כך "חותם" מתקשר ל"מסמך".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'שמחה : עצב', true, 0),
-    (v_q, '2', 'כעס : זעם', false, 1),
-    (v_q, '3', 'נעל : רגל', false, 2),
-    (v_q, '4', 'בריכה : שחייה', false, 3);
+    (v_q, '1', 'צל : שמש', false, 0),
+    (v_q, '2', 'חותם : מסמך', true, 1),
+    (v_q, '3', 'שם : אדם', false, 2),
+    (v_q, '4', 'קול : אוזן', false, 3);
 end
 $seed$;
 
@@ -12162,16 +12162,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'כינור : כלי נגינה
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג "ורד : פרח" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+פסל : שיש', null, 'הקשר: יצירה והחומר שממנו היא עשויה. כשם ש"פסל" מתקשר ל"שיש", כך "תכשיט" מתקשר ל"זהב".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'כפפה : יד', false, 0),
-    (v_q, '2', 'זריעה : יבול', false, 1),
-    (v_q, '3', 'ורד : פרח', true, 2),
-    (v_q, '4', 'ארנק : כסף', false, 3);
+    (v_q, '1', 'תכשיט : זהב', true, 0),
+    (v_q, '2', 'צייר : צבע', false, 1),
+    (v_q, '3', 'פסל : אמן', false, 2),
+    (v_q, '4', 'שיש : כבד', false, 3);
 end
 $seed$;
 
@@ -12193,16 +12193,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'חסכן : קמצן
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: תכונה והמידה הקיצונית שלה (הגזמה). הזוג "זהיר : חששן" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+מים : צינור', null, 'הקשר: דבר זורם והתעלה שמובילה אותו. כשם ש"מים" מתקשר ל"צינור", כך "חשמל" מתקשר ל"כבל".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אורן : עץ', false, 0),
-    (v_q, '2', 'זהיר : חששן', true, 1),
-    (v_q, '3', 'גלגל : מכונית', false, 2),
-    (v_q, '4', 'ארנק : כסף', false, 3);
+    (v_q, '1', 'דם : לב', false, 0),
+    (v_q, '2', 'אוויר : בלון', false, 1),
+    (v_q, '3', 'נהר : גשר', false, 2),
+    (v_q, '4', 'חשמל : כבל', true, 3);
 end
 $seed$;
 
@@ -12224,16 +12224,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'מלא : ריק
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג "חכם : טיפש" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+עד : שקר', null, 'הקשר: בעל תפקיד והפגם המקצועי שעליו להימנע ממנו. כשם ש"עד" מתקשר ל"שקר", כך "שופט" מתקשר ל"משוא פנים".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אזמל : מנתח', false, 0),
-    (v_q, '2', 'כבשה : צמר', false, 1),
-    (v_q, '3', 'חכם : טיפש', true, 2),
-    (v_q, '4', 'קרדיולוג : לב', false, 3);
+    (v_q, '1', 'מורה : בורות', false, 0),
+    (v_q, '2', 'שחקן : במה', false, 1),
+    (v_q, '3', 'שופט : משוא פנים', true, 2),
+    (v_q, '4', 'רופא : חולה', false, 3);
 end
 $seed$;
 
@@ -12255,16 +12255,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'זהיר : חששן
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: תכונה והמידה הקיצונית שלה (הגזמה). הזוג "אמיץ : פזיז" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+צמא : רוויה', null, 'הקשר: מצב מחסור והמצב המנוגד שמסמן את סיומו. כשם ש"צמא" מתקשר ל"רוויה", כך "עייפות" מתקשר ל"מנוחה".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אמיץ : פזיז', true, 0),
-    (v_q, '2', 'תולעת משי : משי', false, 1),
-    (v_q, '3', 'קרדיולוג : לב', false, 2),
-    (v_q, '4', 'מאגר : מידע', false, 3);
+    (v_q, '1', 'רעב : אוכל', false, 0),
+    (v_q, '2', 'עייפות : מנוחה', true, 1),
+    (v_q, '3', 'כאב : תרופה', false, 2),
+    (v_q, '4', 'קור : אש', false, 3);
 end
 $seed$;
 
@@ -12286,16 +12286,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'חימום : המסה
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פעולה והתוצאה הנובעת ממנה. הזוג "זריעה : יבול" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+ניצוץ : שריפה', null, 'הקשר: ראשית קטנה והתוצאה רחבת ההיקף שצומחת ממנה. כשם ש"ניצוץ" מתקשר ל"שריפה", כך "זרע" מתקשר ל"עץ".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מצלמה : צלם', false, 0),
-    (v_q, '2', 'זריעה : יבול', true, 1),
-    (v_q, '3', 'נעל : רגל', false, 2),
-    (v_q, '4', 'אסטרונום : כוכבים', false, 3);
+    (v_q, '1', 'זרע : עץ', true, 0),
+    (v_q, '2', 'אש : עשן', false, 1),
+    (v_q, '3', 'שמש : אור', false, 2),
+    (v_q, '4', 'גפרור : נר', false, 3);
 end
 $seed$;
 
@@ -12317,16 +12317,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'שמחה : עצב
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג "מלא : ריק" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+בוגד : נאמנות', null, 'הקשר: אדם והערך שהוא מפר. כשם ש"בוגד" מתקשר ל"נאמנות", כך "שקרן" מתקשר ל"אמת".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מלא : ריק', true, 0),
-    (v_q, '2', 'ענף : עץ', false, 1),
-    (v_q, '3', 'גמיש : חסר עמוד שדרה', false, 2),
-    (v_q, '4', 'דבורה : דבש', false, 3);
+    (v_q, '1', 'גנב : חפץ', false, 0),
+    (v_q, '2', 'נאמן : חבר', false, 1),
+    (v_q, '3', 'בוגד : אויב', false, 2),
+    (v_q, '4', 'שקרן : אמת', true, 3);
 end
 $seed$;
 
@@ -12348,16 +12348,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'אור : חושך
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג "שמחה : עצב" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+עריץ : חירות', null, 'הקשר: גורם והערך שהוא שולל מן העולם. כשם ש"עריץ" מתקשר ל"חירות", כך "מגפה" מתקשר ל"בריאות".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'בריכה : שחייה', false, 0),
-    (v_q, '2', 'חדר : בית', false, 1),
-    (v_q, '3', 'שמחה : עצב', true, 2),
-    (v_q, '4', 'פרה : חלב', false, 3);
+    (v_q, '1', 'עריץ : כוח', false, 0),
+    (v_q, '2', 'שלום : מלחמה', false, 1),
+    (v_q, '3', 'מגפה : בריאות', true, 2),
+    (v_q, '4', 'רופא : מחלה', false, 3);
 end
 $seed$;
 
@@ -12379,16 +12379,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'שמחה : עצב
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג "מלא : ריק" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+רהוט : גמגום', null, 'הקשר: מעלה והליקוי המנוגד לה. כשם ש"רהוט" מתקשר ל"גמגום", כך "זריז" מתקשר ל"מגושם".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'מלא : ריק', true, 0),
-    (v_q, '2', 'מקש : מקלדת', false, 1),
-    (v_q, '3', 'נמר : חיה', false, 2),
-    (v_q, '4', 'מכחול : צייר', false, 3);
+    (v_q, '1', 'חכם : לימוד', false, 0),
+    (v_q, '2', 'זריז : מגושם', true, 1),
+    (v_q, '3', 'רהוט : נואם', false, 2),
+    (v_q, '4', 'זריז : ריצה', false, 3);
 end
 $seed$;
 
@@ -12410,16 +12410,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'זריעה : יבול
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: פעולה והתוצאה הנובעת ממנה. הזוג "השקיה : צמיחה" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+תשתית : בניין', null, 'הקשר: מבנה תומך והדבר שכולו נשען עליו. כשם ש"תשתית" מתקשר ל"בניין", כך "שלד" מתקשר ל"גוף".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'גשם : מבול', false, 0),
-    (v_q, '2', 'אור : חושך', false, 1),
-    (v_q, '3', 'השקיה : צמיחה', true, 2),
-    (v_q, '4', 'ענף : עץ', false, 3);
+    (v_q, '1', 'שלד : גוף', true, 0),
+    (v_q, '2', 'קיר : בית', false, 1),
+    (v_q, '3', 'גג : בית', false, 2),
+    (v_q, '4', 'חלון : קיר', false, 3);
 end
 $seed$;
 
@@ -12441,16 +12441,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'בטוח : יהיר
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: תכונה והמידה הקיצונית שלה (הגזמה). הזוג "גמיש : חסר עמוד שדרה" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+אכזר : רחמים', null, 'הקשר: תכונה והרגש שנעדר ממי שניחן בה. כשם ש"אכזר" מתקשר ל"רחמים", כך "קמצן" מתקשר ל"נדיבות".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'דף : ספר', false, 0),
-    (v_q, '2', 'גמיש : חסר עמוד שדרה', true, 1),
-    (v_q, '3', 'כבשה : צמר', false, 2),
-    (v_q, '4', 'השקיה : צמיחה', false, 3);
+    (v_q, '1', 'אדיש : שעמום', false, 0),
+    (v_q, '2', 'אכזר : כוח', false, 1),
+    (v_q, '3', 'רחום : עזרה', false, 2),
+    (v_q, '4', 'קמצן : נדיבות', true, 3);
 end
 $seed$;
 
@@ -12472,16 +12472,16 @@ begin
   end if;
 
   insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
-  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'אסטרונום : כוכבים
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:
 
-בחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.', null, 'הקשר בין שתי המילים שבשאלה: מומחה ותחום העיסוק שלו. הזוג "גאולוג : סלעים" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.', 'original', false)
+ניצחון : מלחמה', null, 'הקשר: תוצאה מכרעת וההתמודדות שבסופה היא מוכרעת. כשם ש"ניצחון" מתקשר ל"מלחמה", כך "פסק דין" מתקשר ל"משפט".', 'original', false)
   returning id into v_q;
 
   insert into answer_options (question_id, label, body, is_correct, position) values
-    (v_q, '1', 'אמיץ : פזיז', false, 0),
-    (v_q, '2', 'ענף : עץ', false, 1),
-    (v_q, '3', 'כבשה : צמר', false, 2),
-    (v_q, '4', 'גאולוג : סלעים', true, 3);
+    (v_q, '1', 'מלחמה : שלום', false, 0),
+    (v_q, '2', 'צבא : חייל', false, 1),
+    (v_q, '3', 'פסק דין : משפט', true, 2),
+    (v_q, '4', 'מדליה : ספורטאי', false, 3);
 end
 $seed$;
 
