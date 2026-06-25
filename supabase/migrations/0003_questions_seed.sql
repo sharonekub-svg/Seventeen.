@@ -4995,6 +4995,1246 @@ begin
   join units u on u.id = l.unit_id
   where u.track = 'psychometric'
     and u.name  = 'אנגלית – Restatement'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'Choose the sentence closest in meaning to: "He finished his homework before dinner."
+
+(A) He finished his homework after dinner.  (B) He completed his homework prior to dinner.  (C) He did not finish his homework.  (D) He ate dinner before doing homework.', null, '''before dinner'' = ''prior to dinner'' (לפני ארוחת הערב). תשובה B שומרת על המשמעות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'He finished his homework after dinner.', false, 0),
+    (v_q, 'B', 'He completed his homework prior to dinner.', true, 1),
+    (v_q, 'C', 'He did not finish his homework.', false, 2),
+    (v_q, 'D', 'He ate dinner before doing homework.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'Choose the sentence closest in meaning to: "The store is open every day except Sunday."
+
+(A) The store is closed on Sundays.  (B) The store is open on Sundays.  (C) The store is closed every day.  (D) The store is open only on Sundays.', null, '''open every day except Sunday'' פירושו שביום ראשון החנות ''סגורה''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The store is closed on Sundays.', true, 0),
+    (v_q, 'B', 'The store is open on Sundays.', false, 1),
+    (v_q, 'C', 'The store is closed every day.', false, 2),
+    (v_q, 'D', 'The store is open only on Sundays.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'Choose the sentence closest in meaning to: "She is the tallest girl in her class."
+
+(A) No girl in her class is taller than she is.  (B) She is the shortest girl in her class.  (C) Some girls are taller than she is.  (D) She is taller than all the boys.', null, '''the tallest'' פירושו שאף אחת אינה גבוהה ממנה — תשובה A.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'No girl in her class is taller than she is.', true, 0),
+    (v_q, 'B', 'She is the shortest girl in her class.', false, 1),
+    (v_q, 'C', 'Some girls are taller than she is.', false, 2),
+    (v_q, 'D', 'She is taller than all the boys.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'Choose the sentence closest in meaning to: "They moved to a new city last year."
+
+(A) They have lived in the city for many years.  (B) They relocated to a different city a year ago.  (C) They will move next year.  (D) They never left their city.', null, '''moved to a new city last year'' = ''relocated... a year ago'' (עברו לעיר אחרת לפני שנה).', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'They have lived in the city for many years.', false, 0),
+    (v_q, 'B', 'They relocated to a different city a year ago.', true, 1),
+    (v_q, 'C', 'They will move next year.', false, 2),
+    (v_q, 'D', 'They never left their city.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'Choose the sentence closest in meaning to: "I can''t afford this car."
+
+(A) This car is too expensive for me.  (B) I don''t like this car.  (C) This car is cheap.  (D) I already bought this car.', null, '''can''t afford'' = אין לי מספיק כסף — המכונית ''יקרה מדי'' עבורי.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'This car is too expensive for me.', true, 0),
+    (v_q, 'B', 'I don''t like this car.', false, 1),
+    (v_q, 'C', 'This car is cheap.', false, 2),
+    (v_q, 'D', 'I already bought this car.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'Choose the sentence closest in meaning to: "He rarely arrives late."
+
+(A) He is almost always on time.  (B) He is often late.  (C) He never arrives.  (D) He is always late.', null, '''rarely arrives late'' = כמעט תמיד מגיע בזמן — תשובה A.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'He is almost always on time.', true, 0),
+    (v_q, 'B', 'He is often late.', false, 1),
+    (v_q, 'C', 'He never arrives.', false, 2),
+    (v_q, 'D', 'He is always late.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'Choose the sentence closest in meaning to: "The test was easier than I expected."
+
+(A) The test was harder than I thought.  (B) The test was exactly as hard as I thought.  (C) I found the test less difficult than anticipated.  (D) I did not take the test.', null, '''easier than I expected'' = פחות קשה ממה שציפיתי — תשובה C.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The test was harder than I thought.', false, 0),
+    (v_q, 'B', 'The test was exactly as hard as I thought.', false, 1),
+    (v_q, 'C', 'I found the test less difficult than anticipated.', true, 2),
+    (v_q, 'D', 'I did not take the test.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'Choose the sentence closest in meaning to: "Unless you hurry, you will miss the bus."
+
+(A) If you don''t hurry, you will miss the bus.  (B) If you hurry, you will miss the bus.  (C) You will catch the bus even if you are slow.  (D) The bus has already left.', null, '''Unless you hurry'' = אם לא תמהר — תשובה A.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'If you don''t hurry, you will miss the bus.', true, 0),
+    (v_q, 'B', 'If you hurry, you will miss the bus.', false, 1),
+    (v_q, 'C', 'You will catch the bus even if you are slow.', false, 2),
+    (v_q, 'D', 'The bus has already left.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'Choose the sentence closest in meaning to: "Both teams played well."
+
+(A) Neither team played well.  (B) Only one team played well.  (C) The two teams each performed well.  (D) The teams refused to play.', null, '''Both teams played well'' = שתי הקבוצות שיחקו טוב — תשובה C.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Neither team played well.', false, 0),
+    (v_q, 'B', 'Only one team played well.', false, 1),
+    (v_q, 'C', 'The two teams each performed well.', true, 2),
+    (v_q, 'D', 'The teams refused to play.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'Choose the sentence closest in meaning to: "She apologized for being late."
+
+(A) She said sorry for her lateness.  (B) She blamed others for being late.  (C) She was proud of arriving late.  (D) She arrived early.', null, '''apologized for being late'' = התנצלה על האיחור — תשובה A.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'She said sorry for her lateness.', true, 0),
+    (v_q, 'B', 'She blamed others for being late.', false, 1),
+    (v_q, 'C', 'She was proud of arriving late.', false, 2),
+    (v_q, 'D', 'She arrived early.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'Choose the sentence closest in meaning to: "The project was completed ahead of schedule."
+
+(A) The project finished earlier than planned.  (B) The project was delayed.  (C) The project was never finished.  (D) The project finished exactly on time.', null, '''ahead of schedule'' = מוקדם מהמתוכנן — תשובה A.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The project finished earlier than planned.', true, 0),
+    (v_q, 'B', 'The project was delayed.', false, 1),
+    (v_q, 'C', 'The project was never finished.', false, 2),
+    (v_q, 'D', 'The project finished exactly on time.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'Choose the sentence closest in meaning to: "He denied taking the money."
+
+(A) He admitted taking the money.  (B) He said he had not taken the money.  (C) He returned the money.  (D) He was given the money.', null, '''denied taking'' = הכחיש שלקח — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'He admitted taking the money.', false, 0),
+    (v_q, 'B', 'He said he had not taken the money.', true, 1),
+    (v_q, 'C', 'He returned the money.', false, 2),
+    (v_q, 'D', 'He was given the money.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'Choose the sentence closest in meaning to: "Few students passed the difficult exam."
+
+(A) Almost all students passed.  (B) Only a small number of students passed.  (C) No student took the exam.  (D) Every student failed.', null, '''Few... passed'' = רק מעטים עברו — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Almost all students passed.', false, 0),
+    (v_q, 'B', 'Only a small number of students passed.', true, 1),
+    (v_q, 'C', 'No student took the exam.', false, 2),
+    (v_q, 'D', 'Every student failed.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'Choose the sentence closest in meaning to: "The meeting was postponed until Friday."
+
+(A) The meeting was canceled.  (B) The meeting was moved to a later date, Friday.  (C) The meeting took place earlier than planned.  (D) The meeting will never happen.', null, '''postponed until Friday'' = נדחתה ליום שישי — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The meeting was canceled.', false, 0),
+    (v_q, 'B', 'The meeting was moved to a later date, Friday.', true, 1),
+    (v_q, 'C', 'The meeting took place earlier than planned.', false, 2),
+    (v_q, 'D', 'The meeting will never happen.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'Choose the sentence closest in meaning to: "She would rather walk than drive."
+
+(A) She prefers walking to driving.  (B) She prefers driving to walking.  (C) She cannot walk.  (D) She never walks.', null, '''would rather walk than drive'' = מעדיפה ללכת ברגל — תשובה A.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'She prefers walking to driving.', true, 0),
+    (v_q, 'B', 'She prefers driving to walking.', false, 1),
+    (v_q, 'C', 'She cannot walk.', false, 2),
+    (v_q, 'D', 'She never walks.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'Choose the sentence closest in meaning to: "His success was due to hard work, not luck."
+
+(A) Luck, not effort, made him successful.  (B) He succeeded because he worked hard, not because he was lucky.  (C) He failed despite working hard.  (D) He was simply lucky.', null, '''due to hard work, not luck'' = הצליח בזכות עבודה קשה ולא מזל — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'Luck, not effort, made him successful.', false, 0),
+    (v_q, 'B', 'He succeeded because he worked hard, not because he was lucky.', true, 1),
+    (v_q, 'C', 'He failed despite working hard.', false, 2),
+    (v_q, 'D', 'He was simply lucky.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'Choose the sentence closest in meaning to: "The instructions were anything but clear."
+
+(A) The instructions were very clear.  (B) The instructions were far from clear.  (C) The instructions were short.  (D) There were no instructions.', null, '''anything but clear'' = ממש לא ברורות — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The instructions were very clear.', false, 0),
+    (v_q, 'B', 'The instructions were far from clear.', true, 1),
+    (v_q, 'C', 'The instructions were short.', false, 2),
+    (v_q, 'D', 'There were no instructions.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'Choose the sentence closest in meaning to: "Not until the rain stopped did they leave."
+
+(A) They left before the rain stopped.  (B) They left only after the rain had stopped.  (C) They left while it was still raining.  (D) They never left.', null, '''Not until the rain stopped did they leave'' = יצאו רק אחרי שהגשם פסק — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'They left before the rain stopped.', false, 0),
+    (v_q, 'B', 'They left only after the rain had stopped.', true, 1),
+    (v_q, 'C', 'They left while it was still raining.', false, 2),
+    (v_q, 'D', 'They never left.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'Choose the sentence closest in meaning to: "The new model is superior to the old one."
+
+(A) The old model is better than the new one.  (B) The two models are equal.  (C) The new model is better than the old one.  (D) The new model is worse than the old one.', null, '''superior to'' = טוב יותר מ — תשובה C.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The old model is better than the new one.', false, 0),
+    (v_q, 'B', 'The two models are equal.', false, 1),
+    (v_q, 'C', 'The new model is better than the old one.', true, 2),
+    (v_q, 'D', 'The new model is worse than the old one.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'Choose the sentence closest in meaning to: "She is too young to drive."
+
+(A) She is old enough to drive.  (B) She is not old enough to drive.  (C) She drives very well.  (D) She refuses to drive.', null, '''too young to drive'' = צעירה מכדי לנהוג, כלומר לא בגיל המתאים — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'She is old enough to drive.', false, 0),
+    (v_q, 'B', 'She is not old enough to drive.', true, 1),
+    (v_q, 'C', 'She drives very well.', false, 2),
+    (v_q, 'D', 'She refuses to drive.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'Choose the sentence closest in meaning to: "Hardly had he sat down when the phone rang."
+
+(A) The phone rang long after he sat down.  (B) The phone rang almost immediately after he sat down.  (C) He sat down after the phone rang.  (D) The phone did not ring.', null, '''Hardly had he sat down when...'' = מיד לאחר שהתיישב — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The phone rang long after he sat down.', false, 0),
+    (v_q, 'B', 'The phone rang almost immediately after he sat down.', true, 1),
+    (v_q, 'C', 'He sat down after the phone rang.', false, 2),
+    (v_q, 'D', 'The phone did not ring.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'Choose the sentence closest in meaning to: "The committee was reluctant to approve the plan."
+
+(A) The committee eagerly approved the plan.  (B) The committee was unwilling to approve the plan.  (C) The committee proposed the plan itself.  (D) The committee had no opinion on the plan.', null, '''reluctant to approve'' = לא ששה לאשר, כלומר לא מוכן ברצון — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The committee eagerly approved the plan.', false, 0),
+    (v_q, 'B', 'The committee was unwilling to approve the plan.', true, 1),
+    (v_q, 'C', 'The committee proposed the plan itself.', false, 2),
+    (v_q, 'D', 'The committee had no opinion on the plan.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'Choose the sentence closest in meaning to: "His explanation only added to the confusion."
+
+(A) His explanation cleared up the confusion.  (B) His explanation made things even more confusing.  (C) He gave no explanation at all.  (D) There was no confusion to begin with.', null, '''added to the confusion'' = הגביר את הבלבול — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'His explanation cleared up the confusion.', false, 0),
+    (v_q, 'B', 'His explanation made things even more confusing.', true, 1),
+    (v_q, 'C', 'He gave no explanation at all.', false, 2),
+    (v_q, 'D', 'There was no confusion to begin with.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'Choose the sentence closest in meaning to: "Contrary to expectations, the film was a success."
+
+(A) As everyone had predicted, the film succeeded.  (B) The film failed, just as expected.  (C) The film succeeded, although people had not expected it to.  (D) No one watched the film.', null, '''Contrary to expectations'' = בניגוד למצופה — הסרט הצליח למרות שלא ציפו לכך — תשובה C.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'As everyone had predicted, the film succeeded.', false, 0),
+    (v_q, 'B', 'The film failed, just as expected.', false, 1),
+    (v_q, 'C', 'The film succeeded, although people had not expected it to.', true, 2),
+    (v_q, 'D', 'No one watched the film.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'Choose the sentence closest in meaning to: "She seldom, if ever, complains."
+
+(A) She complains very often.  (B) She almost never complains.  (C) She always complains.  (D) She never speaks at all.', null, '''seldom, if ever'' = כמעט אף פעם לא — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'She complains very often.', false, 0),
+    (v_q, 'B', 'She almost never complains.', true, 1),
+    (v_q, 'C', 'She always complains.', false, 2),
+    (v_q, 'D', 'She never speaks at all.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'Choose the sentence closest in meaning to: "The results were inconclusive."
+
+(A) The results clearly proved the point.  (B) The results did not lead to a definite conclusion.  (C) The results were never collected.  (D) The results were perfect.', null, '''inconclusive'' = לא חד-משמעי, לא מוביל למסקנה ברורה — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The results clearly proved the point.', false, 0),
+    (v_q, 'B', 'The results did not lead to a definite conclusion.', true, 1),
+    (v_q, 'C', 'The results were never collected.', false, 2),
+    (v_q, 'D', 'The results were perfect.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'Choose the sentence closest in meaning to: "He took the criticism in stride."
+
+(A) He was deeply upset by the criticism.  (B) He handled the criticism calmly.  (C) He ignored the criticism completely.  (D) He criticized others in return.', null, '''took it in stride'' = קיבל זאת בשלווה ובלי להתערער — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'He was deeply upset by the criticism.', false, 0),
+    (v_q, 'B', 'He handled the criticism calmly.', true, 1),
+    (v_q, 'C', 'He ignored the criticism completely.', false, 2),
+    (v_q, 'D', 'He criticized others in return.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'Choose the sentence closest in meaning to: "The proposal was rejected on the grounds that it was too costly."
+
+(A) The proposal was accepted despite its cost.  (B) The proposal was turned down because it was too expensive.  (C) The proposal was very cheap.  (D) The cost was not considered at all.', null, '''rejected on the grounds that it was too costly'' = נדחתה כי הייתה יקרה מדי — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The proposal was accepted despite its cost.', false, 0),
+    (v_q, 'B', 'The proposal was turned down because it was too expensive.', true, 1),
+    (v_q, 'C', 'The proposal was very cheap.', false, 2),
+    (v_q, 'D', 'The cost was not considered at all.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'Choose the sentence closest in meaning to: "No sooner had the sun set than the temperature dropped."
+
+(A) The temperature dropped right after sunset.  (B) The temperature rose after sunset.  (C) The temperature dropped before sunset.  (D) The temperature stayed the same all night.', null, '''No sooner... than'' = מיד לאחר ששקעה השמש — תשובה A.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The temperature dropped right after sunset.', true, 0),
+    (v_q, 'B', 'The temperature rose after sunset.', false, 1),
+    (v_q, 'C', 'The temperature dropped before sunset.', false, 2),
+    (v_q, 'D', 'The temperature stayed the same all night.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'Choose the sentence closest in meaning to: "Her account of events differs from his."
+
+(A) They describe the events in exactly the same way.  (B) Their versions of what happened are not the same.  (C) Only she described the events.  (D) Neither of them described the events.', null, '''differs from his'' = הגרסה שלה שונה משלו — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'They describe the events in exactly the same way.', false, 0),
+    (v_q, 'B', 'Their versions of what happened are not the same.', true, 1),
+    (v_q, 'C', 'Only she described the events.', false, 2),
+    (v_q, 'D', 'Neither of them described the events.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'Choose the sentence closest in meaning to: "The evidence, though compelling, was not decisive."
+
+(A) The evidence was weak and unconvincing.  (B) The evidence was persuasive yet did not settle the matter.  (C) The evidence settled the matter completely.  (D) There was no evidence at all.', null, '''compelling but not decisive'' = משכנע אך לא מכריע — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The evidence was weak and unconvincing.', false, 0),
+    (v_q, 'B', 'The evidence was persuasive yet did not settle the matter.', true, 1),
+    (v_q, 'C', 'The evidence settled the matter completely.', false, 2),
+    (v_q, 'D', 'There was no evidence at all.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'Choose the sentence closest in meaning to: "He is by no means an expert in the field."
+
+(A) He is certainly an expert.  (B) He is not at all an expert.  (C) He is the leading expert.  (D) He is gradually becoming an expert.', null, '''by no means an expert'' = בשום אופן אינו מומחה — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'He is certainly an expert.', false, 0),
+    (v_q, 'B', 'He is not at all an expert.', true, 1),
+    (v_q, 'C', 'He is the leading expert.', false, 2),
+    (v_q, 'D', 'He is gradually becoming an expert.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'Choose the sentence closest in meaning to: "The policy did little to ease the crisis."
+
+(A) The policy solved the crisis entirely.  (B) The policy had hardly any effect on the crisis.  (C) The policy made the crisis far worse.  (D) There was no crisis at all.', null, '''did little to ease'' = כמעט לא הקל על המשבר — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The policy solved the crisis entirely.', false, 0),
+    (v_q, 'B', 'The policy had hardly any effect on the crisis.', true, 1),
+    (v_q, 'C', 'The policy made the crisis far worse.', false, 2),
+    (v_q, 'D', 'There was no crisis at all.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'Choose the sentence closest in meaning to: "Only in retrospect did the warning signs become clear."
+
+(A) The warning signs were obvious from the very start.  (B) The signs became clear only when looking back later.  (C) There were no warning signs.  (D) The signs were ignored on purpose.', null, '''Only in retrospect'' = רק במבט לאחור — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The warning signs were obvious from the very start.', false, 0),
+    (v_q, 'B', 'The signs became clear only when looking back later.', true, 1),
+    (v_q, 'C', 'There were no warning signs.', false, 2),
+    (v_q, 'D', 'The signs were ignored on purpose.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'Choose the sentence closest in meaning to: "Far from discouraging her, the setback strengthened her resolve."
+
+(A) The setback made her give up.  (B) The setback made her even more determined.  (C) The setback had no effect on her.  (D) She managed to avoid the setback.', null, '''Far from discouraging her... strengthened her resolve'' = לא רק שלא ריפתה את ידיה, אלא חיזקה את נחישותה — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The setback made her give up.', false, 0),
+    (v_q, 'B', 'The setback made her even more determined.', true, 1),
+    (v_q, 'C', 'The setback had no effect on her.', false, 2),
+    (v_q, 'D', 'She managed to avoid the setback.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'Choose the sentence closest in meaning to: "The author''s argument, while elegant, rests on a flawed premise."
+
+(A) The argument is both elegant and sound.  (B) Although well-crafted, the argument is based on a faulty assumption.  (C) The argument is clumsy but ultimately correct.  (D) The author made no real argument.', null, '''while elegant, rests on a flawed premise'' = אף שהוא מנוסח יפה, הטיעון נשען על הנחה שגויה — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The argument is both elegant and sound.', false, 0),
+    (v_q, 'B', 'Although well-crafted, the argument is based on a faulty assumption.', true, 1),
+    (v_q, 'C', 'The argument is clumsy but ultimately correct.', false, 2),
+    (v_q, 'D', 'The author made no real argument.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'Choose the sentence closest in meaning to: "His generosity is matched only by his modesty."
+
+(A) He is generous but not at all modest.  (B) He is as modest as he is generous.  (C) He is neither generous nor modest.  (D) He is modest but not generous.', null, '''matched only by'' = נדיבותו וצניעותו שווֹת בעוצמתן — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'He is generous but not at all modest.', false, 0),
+    (v_q, 'B', 'He is as modest as he is generous.', true, 1),
+    (v_q, 'C', 'He is neither generous nor modest.', false, 2),
+    (v_q, 'D', 'He is modest but not generous.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'Choose the sentence closest in meaning to: "The reforms were less sweeping than their advocates had hoped."
+
+(A) The reforms went further than supporters wanted.  (B) The reforms were not as far-reaching as their supporters had wished.  (C) The reforms were exactly what supporters wanted.  (D) There were no reforms at all.', null, '''less sweeping than... hoped'' = פחות מקיפות ממה שתומכיהן קיוו — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The reforms went further than supporters wanted.', false, 0),
+    (v_q, 'B', 'The reforms were not as far-reaching as their supporters had wished.', true, 1),
+    (v_q, 'C', 'The reforms were exactly what supporters wanted.', false, 2),
+    (v_q, 'D', 'There were no reforms at all.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'Choose the sentence closest in meaning to: "She could scarcely conceal her disappointment."
+
+(A) She easily hid her disappointment.  (B) She had great difficulty hiding her disappointment.  (C) She felt no disappointment at all.  (D) She openly celebrated.', null, '''could scarcely conceal'' = בקושי הצליחה להסתיר — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'She easily hid her disappointment.', false, 0),
+    (v_q, 'B', 'She had great difficulty hiding her disappointment.', true, 1),
+    (v_q, 'C', 'She felt no disappointment at all.', false, 2),
+    (v_q, 'D', 'She openly celebrated.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'אנגלית – Restatement', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'Choose the sentence closest in meaning to: "What the plan lacks in detail, it makes up for in ambition."
+
+(A) The plan is both highly detailed and ambitious.  (B) The plan is short on detail but rich in ambition.  (C) The plan is detailed but completely unambitious.  (D) The plan has neither detail nor ambition.', null, '''lacks in detail... makes up for in ambition'' = חסר פירוט אך עשיר בשאפתנות — תשובה B.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, 'A', 'The plan is both highly detailed and ambitious.', false, 0),
+    (v_q, 'B', 'The plan is short on detail but rich in ambition.', true, 1),
+    (v_q, 'C', 'The plan is detailed but completely unambitious.', false, 2),
+    (v_q, 'D', 'The plan has neither detail nor ambition.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'אנגלית – Restatement'
     and l.position = 1;
 
   if v_level is null then
@@ -14402,6 +15642,1166 @@ begin
     (v_q, '2', 'מחיריהם הגבוהים של מוצרים', false, 1),
     (v_q, '3', 'איכותם הירודה של מוצרים', false, 2),
     (v_q, '4', 'מיעוט הפרסומות בשוק', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'החורף הוא העונה ה___ ביותר בשנה.', null, 'החורף מאופיין במזג אוויר ''קר'', ולכן זו העונה הקרה ביותר.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'קרה', true, 0),
+    (v_q, '2', 'חמה', false, 1),
+    (v_q, '3', 'יבשה', false, 2),
+    (v_q, '4', 'ארוכה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'כדי להגיע בזמן לרכבת, עלינו לצאת ___.', null, 'כדי לא לאחר יש לצאת ''מוקדם''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מוקדם', true, 0),
+    (v_q, '2', 'מאוחר', false, 1),
+    (v_q, '3', 'לאט', false, 2),
+    (v_q, '4', 'אתמול', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'הוא היה ___ מאוד ולכן אכל ארוחה גדולה.', null, 'מי שאוכל ארוחה גדולה היה ''רעב''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'רעב', true, 0),
+    (v_q, '2', 'שבע', false, 1),
+    (v_q, '3', 'עייף', false, 2),
+    (v_q, '4', 'שמח', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'הספר היה ___ כל כך שלא יכולתי להפסיק לקרוא בו.', null, 'ספר שאי אפשר להפסיק לקרוא בו הוא ''מעניין''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מעניין', true, 0),
+    (v_q, '2', 'משעמם', false, 1),
+    (v_q, '3', 'קצר', false, 2),
+    (v_q, '4', 'כבד', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'לאחר הריצה הארוכה הוא היה ___ ושתה הרבה מים.', null, 'מי ששותה הרבה מים אחרי ריצה היה ''צמא''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'צמא', true, 0),
+    (v_q, '2', 'מלא', false, 1),
+    (v_q, '3', 'קר', false, 2),
+    (v_q, '4', 'רגוע', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'למרות שהיה חולה, הוא בכל זאת ___ לעבודה.', null, '''למרות'' מציין ניגוד: על אף המחלה הוא ''הגיע'' לעבודה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הגיע', true, 0),
+    (v_q, '2', 'נעדר', false, 1),
+    (v_q, '3', 'ויתר', false, 2),
+    (v_q, '4', 'פחד', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'בעקבות הגשם הכבד, המשחק ___ למועד אחר.', null, '''למועד אחר'' מלמד שהמשחק ''נדחה'' (ולא בוטל).', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'נדחה', true, 0),
+    (v_q, '2', 'בוטל', false, 1),
+    (v_q, '3', 'התחיל', false, 2),
+    (v_q, '4', 'נמשך', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'בזכות הלימוד הקשה, היא קיבלה ציון ___.', null, 'לימוד קשה מוביל בדרך כלל לציון ''גבוה''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'גבוה', true, 0),
+    (v_q, '2', 'נמוך', false, 1),
+    (v_q, '3', 'ממוצע', false, 2),
+    (v_q, '4', 'אחיד', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'הילד ___ מהחושך ולכן הדליק את האור.', null, 'מי שמדליק אור בגלל החושך ''פחד'' ממנו.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'פחד', true, 0),
+    (v_q, '2', 'נהנה', false, 1),
+    (v_q, '3', 'צחק', false, 2),
+    (v_q, '4', 'התעייף', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'השכן החדש ___ מאוד, והוא תמיד מוכן לעזור לכולם.', null, 'מי שתמיד מוכן לעזור הוא אדם ''אדיב''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'אדיב', true, 0),
+    (v_q, '2', 'גס', false, 1),
+    (v_q, '3', 'עצלן', false, 2),
+    (v_q, '4', 'קמצן', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'ההרצאה הייתה ארוכה ו___, והקהל החל להשתעמם.', null, 'הרצאה שגורמת לשעמום היא ''מייגעת''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מייגעת', true, 0),
+    (v_q, '2', 'מרתקת', false, 1),
+    (v_q, '3', 'קצרה', false, 2),
+    (v_q, '4', 'מצחיקה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'אף על פי שהתאמן רבות, הוא ___ בתחרות.', null, '''אף על פי'' מציין ניגוד: למרות האימונים הוא ''הפסיד''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הפסיד', true, 0),
+    (v_q, '2', 'ניצח', false, 1),
+    (v_q, '3', 'השתפר', false, 2),
+    (v_q, '4', 'הצטיין', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'המדריך ביקש מהמטיילים ___ על השביל ולא לסטות ממנו.', null, 'מי שלא סוטה מהשביל ''נשאר'' עליו.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'להישאר', true, 0),
+    (v_q, '2', 'לוותר', false, 1),
+    (v_q, '3', 'למהר', false, 2),
+    (v_q, '4', 'לשיר', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'הדירה הייתה ___ מאוד, ולכן החליטו לצבוע ולשפץ אותה.', null, 'דירה שצריך לשפץ ולצבוע הייתה ''מוזנחת''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מוזנחת', true, 0),
+    (v_q, '2', 'חדשה', false, 1),
+    (v_q, '3', 'מרווחת', false, 2),
+    (v_q, '4', 'יקרה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'בגלל הפקק הכבד, הם ___ לפגישה.', null, 'פקק כבד גורם לכך שמגיעים באיחור — הם ''איחרו''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'איחרו', true, 0),
+    (v_q, '2', 'הקדימו', false, 1),
+    (v_q, '3', 'הגיעו מוקדם', false, 2),
+    (v_q, '4', 'ויתרו', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'דבריו היו ___ כל כך שאיש לא הצליח להפריך אותם.', null, 'דברים שאי אפשר להפריך הם ''משכנעים''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'משכנעים', true, 0),
+    (v_q, '2', 'מבלבלים', false, 1),
+    (v_q, '3', 'חלשים', false, 2),
+    (v_q, '4', 'קצרים', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'למרות הצלחתה הרבה, היא נשארה ___ ולא התגאתה.', null, '''למרות'' מציין ניגוד להתגאות: היא נותרה ''צנועה''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'צנועה', true, 0),
+    (v_q, '2', 'יהירה', false, 1),
+    (v_q, '3', 'עשירה', false, 2),
+    (v_q, '4', 'מפורסמת', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'ההחלטה התקבלה ___, ללא התנגדות של אף אחד מהחברים.', null, 'החלטה ללא כל התנגדות מתקבלת ''פה אחד''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'פה אחד', true, 0),
+    (v_q, '2', 'בקושי', false, 1),
+    (v_q, '3', 'באיחור', false, 2),
+    (v_q, '4', 'בכפייה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'הוראות ההרכבה היו ___, ולכן רבים טעו בהרכבת הרהיט.', null, 'אם רבים טעו, ההוראות היו ''מבלבלות''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מבלבלות', true, 0),
+    (v_q, '2', 'ברורות', false, 1),
+    (v_q, '3', 'קצרות', false, 2),
+    (v_q, '4', 'מועילות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'החברה החליטה ___ את המחירים כדי למשוך לקוחות חדשים.', null, 'כדי למשוך לקוחות נוהגים ''להוזיל'' מחירים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'להוזיל', true, 0),
+    (v_q, '2', 'להעלות', false, 1),
+    (v_q, '3', 'להסתיר', false, 2),
+    (v_q, '4', 'להעלים', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'ממצאי המחקר ___ בתחילה, אך ניסויים מאוחרים יותר אישרו אותם.', null, '''אך אישרו אותם'' מציין ניגוד: בתחילה הממצאים ''הוטלו בספק''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הוטלו בספק', true, 0),
+    (v_q, '2', 'התקבלו', false, 1),
+    (v_q, '3', 'זכו לשבחים', false, 2),
+    (v_q, '4', 'פורסמו', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'הוא ידוע בהערותיו ה___, שלא פעם פוגעות בסובבים אותו.', null, 'הערות שפוגעות באחרים הן ''פוגעניות''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'פוגעניות', true, 0),
+    (v_q, '2', 'עדינות', false, 1),
+    (v_q, '3', 'מנומסות', false, 2),
+    (v_q, '4', 'זהירות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'המשא ומתן הגיע ל___ כאשר אף צד לא היה מוכן להתפשר.', null, 'כשאין נכונות להתפשר מגיעים ל''מבוי סתום''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מבוי סתום', true, 0),
+    (v_q, '2', 'הסכמה', false, 1),
+    (v_q, '3', 'התחלה', false, 2),
+    (v_q, '4', 'חגיגה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'גישתה ה___ גרמה לעמיתים להירתע מלשתף אותה ברעיונות.', null, 'גישה שגורמת להירתעות היא גישה ''מזלזלת''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מזלזלת', true, 0),
+    (v_q, '2', 'מסבירת פנים', false, 1),
+    (v_q, '3', 'סקרנית', false, 2),
+    (v_q, '4', 'עליזה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'כתב היד העתיק היה כה ___ עד שהחוקרים בקושי הצליחו לפענח אותו.', null, 'כתב יד עתיק שקשה לפענח הוא ''דהוי''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'דהוי', true, 0),
+    (v_q, '2', 'חדש', false, 1),
+    (v_q, '3', 'צבעוני', false, 2),
+    (v_q, '4', 'עבה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'הרחק מלהיות ___, דבריו היו שקולים והוגנים.', null, '''הרחק מלהיות'' מציין ניגוד ל''שקולים והוגנים'' — כלומר לא ''מוטים''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מוטים', true, 0),
+    (v_q, '2', 'כנים', false, 1),
+    (v_q, '3', 'רגועים', false, 2),
+    (v_q, '4', 'קצרים', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'תופעות הלוואי של התרופה, אף שהן ___, אין להתעלם מהן לחלוטין.', null, '''אף שהן ___ אין להתעלם'' מרמז על תופעות ''קלות'' שעדיין יש להתייחס אליהן.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'קלות', true, 0),
+    (v_q, '2', 'חמורות', false, 1),
+    (v_q, '3', 'נפוצות', false, 2),
+    (v_q, '4', 'קטלניות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'מנהיגותו ה___ של המנכ"ל הובילה את החברה אל מעבר למשבר.', null, 'מי שמוביל בהצלחה דרך משבר מפגין מנהיגות ''נחושה''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'נחושה', true, 0),
+    (v_q, '2', 'מהוססת', false, 1),
+    (v_q, '3', 'נעדרת', false, 2),
+    (v_q, '4', 'רשלנית', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'הביקורת שיבחה את הספר על תיאורו ה___ של חיי הכפר, הרווי פרטים אותנטיים.', null, 'תיאור ''רווי פרטים אותנטיים'' הוא תיאור ''מפורט''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מפורט', true, 0),
+    (v_q, '2', 'מעורפל', false, 1),
+    (v_q, '3', 'שטחי', false, 2),
+    (v_q, '4', 'קצר', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'תשומת הלב הרבה שלו לפרטים הקטנים הפכה אותו למגיה ___.', null, 'תשומת לב רבה לפרטים הופכת מגיה ל''מצוין''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מצוין', true, 0),
+    (v_q, '2', 'גרוע', false, 1),
+    (v_q, '3', 'איטי', false, 2),
+    (v_q, '4', 'רשלן', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'אף על פי שהראיות היו ___, חבר המושבעים הגיע להכרעה פה אחד.', null, '''אף על פי'' מציין ניגוד: למרות שהראיות היו ''נסיבתיות'' (לא ישירות), ההכרעה הייתה פה אחד.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'נסיבתיות', true, 0),
+    (v_q, '2', 'מכריעות', false, 1),
+    (v_q, '3', 'חד-משמעיות', false, 2),
+    (v_q, '4', 'רבות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'הדיפלומטית בחרה את מילותיה ב___ רבה, מודעת לכך שכל טעות עלולה להצית סכסוך.', null, 'מודעות לכך שכל טעות מסוכנת מחייבת בחירת מילים ב''זהירות''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'זהירות', true, 0),
+    (v_q, '2', 'מהירות', false, 1),
+    (v_q, '3', 'אדישות', false, 2),
+    (v_q, '4', 'רשלנות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'ה___ שלו כלפי הסמכות הכניסה אותו פעמים רבות לצרות בבית הספר.', null, 'מה שמכניס לצרות מול הסמכות הוא ''המרדנות''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מרדנות', true, 0),
+    (v_q, '2', 'צייתנות', false, 1),
+    (v_q, '3', 'תשומת לב', false, 2),
+    (v_q, '4', 'נאמנות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'הדוח זכה לביקורת על היותו ___, בהשמיטו נתונים חיוניים שהמומחים ביקשו.', null, 'דוח שמשמיט נתונים חיוניים הוא ''חלקי''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'חלקי', true, 0),
+    (v_q, '2', 'יסודי', false, 1),
+    (v_q, '3', 'ארוך', false, 2),
+    (v_q, '4', 'מדויק', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'ההרצאות היו כה ___ עד שהסטודנטים התקשו להישאר ערים.', null, 'אם קשה להישאר ערים, ההרצאות היו ''מייגעות''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מייגעות', true, 0),
+    (v_q, '2', 'מרתקות', false, 1),
+    (v_q, '3', 'קצרות', false, 2),
+    (v_q, '4', 'תוססות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'סגנונו של הסופר זוכה להערכה בזכות ה___ שלו: כל משפט נקי ממילים מיותרות.', null, 'כתיבה נקייה ממילים מיותרות מצטיינת ב''תמציתיות''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'תמציתיות', true, 0),
+    (v_q, '2', 'מורכבות', false, 1),
+    (v_q, '3', 'עמימות', false, 2),
+    (v_q, '4', 'חזרתיות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'מה שנראה כניצחון ___ התברר עד מהרה כיקר, ורוקן את משאבי החברה.', null, 'ניצחון שהתברר כיקר ומרוקן משאבים הוא ניצחון ''חלול''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'חלול', true, 0),
+    (v_q, '2', 'מכריע', false, 1),
+    (v_q, '3', 'מתמשך', false, 2),
+    (v_q, '4', 'אמיתי', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'חזותה ה___ הסתירה נחישות עזה שמעטים שיערו את קיומה.', null, 'חזות שמסתירה נחישות עזה היא חזות ''שלווה''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'שלווה', true, 0),
+    (v_q, '2', 'תוקפנית', false, 1),
+    (v_q, '3', 'חרדה', false, 2),
+    (v_q, '4', 'כנה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'הוועדה דחתה את ההצעה בהיותה ___, בנימוק שאין לה כל בסיס מעשי.', null, 'הצעה נטולת בסיס מעשי נדחית בהיותה ''בלתי ישימה''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'בלתי ישימה', true, 0),
+    (v_q, '2', 'מבוססת', false, 1),
+    (v_q, '3', 'צנועה', false, 2),
+    (v_q, '4', 'דחופה', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מילולי – השלמת משפטים'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מילולי – השלמת משפטים', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'שתי התיאוריות אינן סותרות זו את זו אלא ___, כל אחת מסבירה את שהאחרת אינה יכולה.', null, 'תיאוריות שכל אחת מסבירה את מה שהאחרת אינה מסבירה הן ''משלימות''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'משלימות', true, 0),
+    (v_q, '2', 'זהות', false, 1),
+    (v_q, '3', 'מנוגדות', false, 2),
+    (v_q, '4', 'בלתי רלוונטיות', false, 3);
 end
 $seed$;
 
