@@ -38,6 +38,14 @@ export async function getDailyQuestion(): Promise<{
   return res.json();
 }
 
+export async function deleteAccount(): Promise<void> {
+  const res = await fetch(`${FUNCTIONS_URL}/delete-account`, {
+    method: "POST",
+    headers: await authedHeaders(),
+  });
+  if (!res.ok) throw new Error(`delete-account failed: ${res.status}`);
+}
+
 export async function submitAnswer(selectedOptionId: number): Promise<{
   isCorrect: boolean;
   correctOptionId: number | null;

@@ -106,6 +106,17 @@ eas submit --platform ios
 Start with **TestFlight** before a public release. Note: education / test-prep
 apps need a clear privacy policy in App Store Connect.
 
+### Accounts, entitlements & privacy
+- **Account deletion** (Apple requirement): **Profile → Delete account** calls the
+  `delete-account` Edge Function, which removes the `auth.users` row and cascades
+  to all of the user's data.
+- **Entitlements** (issue #5): `profiles.is_pro` / `pro_until` + the
+  `has_pro_access()` helper gate premium content server-side. The paywall screen
+  (`app/paywall.tsx`) presents the offer; hooking up StoreKit/IAP needs an Apple
+  Developer account + App Store subscription products.
+- **Privacy policy**: draft in [`PRIVACY.md`](./PRIVACY.md) — host it at a public
+  URL and add that URL in App Store Connect.
+
 ## Tests & CI
 
 Backend scoring logic (adaptive Elo, XP, streak transitions) is pure and unit

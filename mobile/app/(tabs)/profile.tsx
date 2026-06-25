@@ -1,11 +1,14 @@
 import { useCallback, useState } from "react";
-import { View, Text, Pressable, StyleSheet } from "react-native";
+import { View, Text, Pressable, StyleSheet, Alert } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { useFocusEffect } from "expo-router";
-import { Flame, Trophy, Snowflake, Target } from "lucide-react-native";
+import { useFocusEffect, useRouter } from "expo-router";
+import { Flame, Trophy, Snowflake, Target, Crown } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth, signOut } from "@/lib/auth";
+import { deleteAccount } from "@/lib/api";
 import { registerForPush } from "@/lib/push";
+import { capture } from "@/lib/analytics";
+import { captureError } from "@/lib/monitoring";
 import { colors, spacing, radius } from "@/lib/theme";
 
 type Profile = {
@@ -18,6 +21,7 @@ type Profile = {
   total_xp: number;
   total_answered: number;
   total_correct: number;
+  is_pro: boolean;
 };
 
 const TRACKS: { key: string; label: string }[] = [
@@ -27,6 +31,7 @@ const TRACKS: { key: string; label: string }[] = [
 
 export default function ProfileScreen() {
   const { session } = useAuth();
+  const router = useRouter();
   const [profile, setProfile] = useState<Profile | null>(null);
 
   const load = useCallback(async () => {
@@ -34,12 +39,36 @@ export default function ProfileScreen() {
     const { data } = await supabase
       .from("profiles")
       .select(
-        "display_name, username, active_track, current_streak, longest_streak, streak_freezes, total_xp, total_answered, total_correct",
+        "display_name, username, active_track, current_streak, longest_streak, streak_freezes, total_xp, total_answered, total_correct, is_pro",
       )
       .eq("id", session.user.id)
       .single();
     setProfile(data as Profile);
   }, [session]);
+
+  function confirmDelete() {
+    Alert.alert(
+      "מחיקת חשבון",
+      "הפעולה תמחק לצמיתות את החשבון וכל הנתונים שלך. לא ניתן לשחזר.",
+      [
+        { text: "ביטול", style: "cancel" },
+        {
+          text: "מחק חשבון",
+          style: "destructive",
+          onPress: async () => {
+            try {
+              capture("account_deleted");
+              await deleteAccount();
+              await signOut();
+            } catch (e) {
+              captureError(e, { where: "profile.delete" });
+              Alert.alert("שגיאה", "מחיקת החשבון נכשלה. נסו שוב מאוחר יותר.");
+            }
+          },
+        },
+      ],
+    );
+  }
 
   useFocusEffect(
     useCallback(() => {
@@ -97,8 +126,18 @@ export default function ProfileScreen() {
         ))}
       </View>
 
+      {!profile.is_pro && (
+        <Pressable style={styles.proCta} onPress={() => router.push("/paywall")}>
+          <Crown color={colors.streak} size={20} />
+          <Text style={styles.proText}>שדרגו ל-Aptitude Pro</Text>
+        </Pressable>
+      )}
+
       <Pressable style={styles.signOut} onPress={() => signOut()}>
         <Text style={styles.signOutText}>התנתקות</Text>
+      </Pressable>
+      <Pressable style={styles.deleteBtn} onPress={confirmDelete}>
+        <Text style={styles.deleteText}>מחיקת חשבון</Text>
       </Pressable>
     </SafeAreaView>
   );
@@ -165,6 +204,22 @@ const styles = StyleSheet.create({
   trackActive: { backgroundColor: colors.primary, borderColor: colors.primary },
   trackText: { color: colors.text, fontWeight: "600" },
   trackTextActive: { color: colors.primaryText },
-  signOut: { margin: spacing.md, padding: spacing.md, alignItems: "center" },
+  proCta: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.sm,
+    marginHorizontal: spacing.md,
+    marginTop: spacing.sm,
+    padding: spacing.md,
+    borderRadius: radius.md,
+    borderWidth: 1,
+    borderColor: colors.streak,
+    backgroundColor: colors.surface,
+  },
+  proText: { color: colors.text, fontWeight: "700", fontSize: 15 },
+  signOut: { marginHorizontal: spacing.md, marginTop: spacing.md, padding: spacing.md, alignItems: "center" },
   signOutText: { color: colors.danger, fontWeight: "600" },
+  deleteBtn: { marginHorizontal: spacing.md, paddingBottom: spacing.lg, alignItems: "center" },
+  deleteText: { color: colors.textMuted, fontWeight: "600", fontSize: 13 },
 });
