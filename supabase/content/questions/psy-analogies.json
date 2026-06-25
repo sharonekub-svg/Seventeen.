@@ -1,552 +1,1752 @@
 [
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2,
-    "body": "יד : כפפה — כמו רגל : ___",
-    "explanation": "הקשר הוא 'איבר ופריט הלבוש המכסה אותו'. כפפה מכסה את היד, נעל מכסה את הרגל.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "body": "גרב : כף רגל\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פריט לבוש והאיבר שעליו לובשים אותו. הזוג \"צעיף : צוואר\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "נעל", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "יד", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "ראש", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "כובע", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "פטיש : נגר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "צעיף : צוואר",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מקש : מקלדת",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "בוטנאי : צמחים",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 1,
-    "body": "מורה : בית ספר — כמו רופא : ___",
-    "explanation": "הקשר הוא 'בעל מקצוע ומקום עבודתו'. המורה עובד בבית הספר, הרופא בבית החולים.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "body": "חדר : בית\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"מקש : מקלדת\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "בית חולים", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "תרופה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "חולה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מורה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אזמל : מנתח",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גרב : כף רגל",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מקש : מקלדת",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אסטרונום : כוכבים",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2,
-    "body": "צייר : מכחול — כמו סופר : ___",
-    "explanation": "הקשר הוא 'יוצר וכלי העבודה שלו'. הצייר יוצר במכחול, הסופר כותב בעט.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "body": "ענף : עץ\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"גלגל : מכונית\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "עט", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ספר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "נייר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מילים", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "רוח : סופה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "נעל : רגל",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "גלגל : מכונית",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לימוד : ידע",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2,
-    "body": "קר : קפוא — כמו חם : ___",
-    "explanation": "הקשר הוא 'תכונה ודרגתה הקיצונית'. קפוא הוא קר במידה קיצונית, רותח הוא חם במידה קיצונית.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "body": "מקש : מקלדת\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"דף : ספר\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "רותח", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "פושר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "קריר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שמש", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "נמר : חיה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "קרדיולוג : לב",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ספרייה : קריאה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "דף : ספר",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 3,
-    "body": "אריה : טרף — כמו דבורה : ___",
-    "explanation": "הקשר הוא 'בעל החיים ומה שהוא אוסף/צד למזונו'. האריה צד טרף, הדבורה אוספת צוף.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "body": "נעל : רגל\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פריט לבוש והאיבר שעליו לובשים אותו. הזוג \"גרב : כף רגל\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "צוף", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "דבש", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פרח", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "כוורת", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מכחול : צייר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גרב : כף רגל",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "גלגל : מכונית",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עצב : ייאוש",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 3,
-    "body": "מנצח : תזמורת — כמו מאמן : ___",
-    "explanation": "הקשר הוא 'המנהיג והקבוצה שאותה הוא מוביל'. המנצח מוביל תזמורת, המאמן מוביל קבוצה.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "body": "חדר : בית\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"דף : ספר\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "קבוצה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "שחקן", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "מגרש", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "כדור", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "יהלום : אבן חן",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "דף : ספר",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "דבורה : דבש",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נעל : רגל",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 3,
-    "body": "רעב : אוכל — כמו עייפות : ___",
-    "explanation": "הקשר הוא 'מצב גופני והדבר שמפיג אותו'. אוכל מפיג רעב, שינה מפיגה עייפות.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "body": "אזמל : מנתח\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי עבודה ובעל המקצוע המשתמש בו. הזוג \"מכחול : צייר\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "שינה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מיטה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "חלום", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לילה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מכחול : צייר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "זהיר : חששן",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מסעדה : אכילה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כובע : ראש",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 4,
-    "body": "טיפה : אוקיינוס — כמו גרגר : ___",
-    "explanation": "הקשר הוא 'יחידה זעירה והשלם העצום הבנוי ממנה'. טיפה היא יחידת מים באוקיינוס, גרגר הוא יחידת חול במדבר.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "body": "גלגל : מכונית\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"חדר : בית\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "מדבר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "חוף", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "אבן", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מים", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "חדר : בית",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כפפה : יד",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נמר : חיה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שמחה : עצב",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 3,
-    "body": "אומן : יצירה — כמו אדריכל : ___",
-    "explanation": "הקשר הוא 'יוצר ותוצר עבודתו'. האומן יוצר יצירה, האדריכל מתכנן בניין.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "body": "כבשה : צמר\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: בעל חיים והתוצר שהוא מספק לאדם. הזוג \"פרה : חלב\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "בניין", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מכחול", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "אבן", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "תוכנית", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אמיץ : פזיז",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מצלמה : צלם",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קרדיולוג : לב",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "פרה : חלב",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 2, "difficulty": 4,
-    "body": "פסימי : אופטימי — כמו קמצן : ___",
-    "explanation": "הקשר הוא ניגוד בין תכונות. פסימי הפוך מאופטימי; קמצן הפוך מנדיב.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "body": "מקש : מקלדת\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"ענף : עץ\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "נדיב", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "עשיר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "חסכן", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שמח", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "צעיף : צוואר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אסטרונום : כוכבים",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ענף : עץ",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חום : להט",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 3, "difficulty": 3,
-    "body": "עיפרון : כתיבה — כמו מספריים : ___",
-    "explanation": "הקשר הוא 'כלי והפעולה שעושים בעזרתו'. עיפרון משמש לכתיבה, מספריים משמשים לגזירה.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 3,
+    "body": "פטיש : נגר\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי עבודה ובעל המקצוע המשתמש בו. הזוג \"מכחול : צייר\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "גזירה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "נייר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "חדות", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "יד", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "גשם : מבול",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חימום : המסה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מכחול : צייר",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עשיר : עני",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 3, "difficulty": 3,
-    "body": "כנף : ציפור — כמו סנפיר : ___",
-    "explanation": "הקשר הוא 'איבר תנועה ובעל החיים שלו הוא שייך'. כנף שייכת לציפור, סנפיר שייך לדג.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 3,
+    "body": "חדר : בית\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"גלגל : מכונית\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "דג", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מים", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שחייה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "ציפור", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מאגר : מידע",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גלגל : מכונית",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מכחול : צייר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כפפה : יד",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 3, "difficulty": 3,
-    "body": "דף : ספר — כמו חדר : ___",
-    "explanation": "הקשר הוא 'חלק והשלם שהוא מרכיב'. דף הוא חלק מספר, חדר הוא חלק מבית.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 3,
+    "body": "גרב : כף רגל\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פריט לבוש והאיבר שעליו לובשים אותו. הזוג \"כפפה : יד\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "בית", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "דלת", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "רהיט", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "קיר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "פרה : חלב",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אמיץ : פזיז",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עצב : ייאוש",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כפפה : יד",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 3, "difficulty": 4,
-    "body": "שעון : זמן — כמו מאזניים : ___",
-    "explanation": "הקשר הוא 'מכשיר ומה שהוא מודד'. שעון מודד זמן, מאזניים מודדים משקל.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 3,
+    "body": "ענף : עץ\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"גלגל : מכונית\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "משקל", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "אוכל", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "כסף", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "גובה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "נמר : חיה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גלגל : מכונית",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קרדיולוג : לב",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עצב : ייאוש",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 3, "difficulty": 3,
-    "body": "אצבע : יד — כמו עלה : ___",
-    "explanation": "הקשר הוא 'חלק קטן והשלם שהוא חלק ממנו'. אצבע היא חלק מהיד, עלה הוא חלק מהעץ.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 3,
+    "body": "כעס : זעם\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: תופעה ועוצמתה הקיצונית. הזוג \"רוח : סופה\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "עץ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "פרי", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שורש", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "יער", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "רוח : סופה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כינור : כלי נגינה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נעל : רגל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "תרנגולת : ביצה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 4, "difficulty": 3,
-    "body": "ורד : פרח — כמו אלון : ___",
-    "explanation": "הקשר הוא 'פרט וקבוצה שאליה הוא שייך'. ורד הוא סוג של פרח, אלון הוא סוג של עץ.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "דף : ספר\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: חלק והשלם שאליו הוא שייך. הזוג \"ענף : עץ\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "עץ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "יער", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פרי", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שיח", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ענף : עץ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פרה : חלב",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כובע : ראש",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מאגר : מידע",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 4, "difficulty": 4,
-    "body": "כלב : יונק — כמו נשר : ___",
-    "explanation": "הקשר הוא 'בעל חיים והמחלקה שאליה הוא שייך'. כלב הוא יונק, נשר הוא עוף (ציפור).",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "נמר : חיה\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג \"אורן : עץ\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "ציפור", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "יונק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "דג", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "חרק", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ענף : עץ",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חסכן : קמצן",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אורן : עץ",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "פרה : חלב",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 4, "difficulty": 4,
-    "body": "נגר : עץ — כמו צורף : ___",
-    "explanation": "הקשר הוא 'בעל מקצוע וחומר הגלם שלו'. הנגר עובד עם עץ, הצורף עובד עם זהב.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "רוח : סופה\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: תופעה ועוצמתה הקיצונית. הזוג \"עצב : ייאוש\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "זהב", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "טבעת", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פטיש", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "ריתוך", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "חימום : המסה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מלא : ריק",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עצב : ייאוש",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "יהלום : אבן חן",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 4, "difficulty": 4,
-    "body": "טבח : מטבח — כמו שופט : ___",
-    "explanation": "הקשר הוא 'בעל מקצוע ומקום עבודתו'. הטבח עובד במטבח, השופט עובד בבית משפט.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "ורד : פרח\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג \"נמר : חיה\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "בית משפט", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "חוק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "משפט", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "עונש", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אור : חושך",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "זריעה : יבול",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נמר : חיה",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קרדיולוג : לב",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 4, "difficulty": 4,
-    "body": "רופא : מרפא — כמו מורה : ___",
-    "explanation": "הקשר הוא 'בעל מקצוע והפעולה האופיינית לו'. הרופא מרפא, המורה מלמד.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "body": "מצלמה : צלם\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי עבודה ובעל המקצוע המשתמש בו. הזוג \"מספריים : ספר\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "מלמד", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מרפא", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "בונה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שופט", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "זהיר : חששן",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מספריים : ספר",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נעל : רגל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "דבורה : דבש",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 5, "difficulty": 4,
-    "body": "גשם : מבול — כמו רוח : ___",
-    "explanation": "הקשר הוא 'תופעה בעוצמה רגילה מול עוצמה קיצונית'. מבול הוא גשם עז, סופה היא רוח עזה.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 4,
+    "body": "כוס : מים\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג \"מחסן : סחורה\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "סופה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "בריזה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "אוויר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "ענן", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מחסן : סחורה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פטיש : נגר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "יהלום : אבן חן",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כיתה : לימוד",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 5, "difficulty": 4,
-    "body": "שמח : מאושר — כמו עצוב : ___",
-    "explanation": "הקשר הוא 'רגש ודרגתו החזקה'. מאושר הוא שמח מאוד, אומלל הוא עצוב מאוד.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 4,
+    "body": "אורן : עץ\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג \"כינור : כלי נגינה\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "אומלל", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "כועס", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "רגוע", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מבוהל", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "כינור : כלי נגינה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אור : חושך",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פרה : חלב",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "היסטוריון : עבר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 5, "difficulty": 4,
-    "body": "גבעה : הר — כמו שלולית : ___",
-    "explanation": "הקשר הוא 'גרסה קטנה מול גדולה'. גבעה היא הר קטן, שלולית היא מקווה מים קטן לעומת אגם.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 4,
+    "body": "כינור : כלי נגינה\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג \"אורן : עץ\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "אגם", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "טיפה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "גשם", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "נהר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "פרה : חלב",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אורן : עץ",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מסעדה : אכילה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מצלמה : צלם",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 5, "difficulty": 5,
-    "body": "לחישה : צעקה — כמו טפיחה : ___",
-    "explanation": "הקשר הוא 'פעולה עדינה מול פעולה עזה'. צעקה היא דיבור חזק, מכה היא טפיחה חזקה.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 4,
+    "body": "מאגר : מידע\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג \"מצבר : חשמל\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "מכה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ליטוף", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "יד", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "נגיעה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מצבר : חשמל",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גרב : כף רגל",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "יהלום : אבן חן",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אזמל : מנתח",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 6, "difficulty": 4,
-    "body": "אור : חושך — כמו רעש : ___",
-    "explanation": "הקשר הוא ניגוד. ההיפך של אור הוא חושך, ההיפך של רעש הוא שקט.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 4,
+    "body": "מצבר : חשמל\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג \"מאגר : מידע\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "שקט", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "קול", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "אוזן", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מוזיקה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "חימום : המסה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "קרדיולוג : לב",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כבשה : צמר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מאגר : מידע",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 6, "difficulty": 4,
-    "body": "התחלה : סוף — כמו לידה : ___",
-    "explanation": "הקשר הוא ניגוד בין קצוות. התחלה מול סוף, לידה מול מוות.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 4,
+    "body": "מצבר : חשמל\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג \"מאגר : מידע\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "מוות", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "חיים", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "תינוק", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "גיל", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "גשם : מבול",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כובע : ראש",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "גמיש : חסר עמוד שדרה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מאגר : מידע",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 6, "difficulty": 4,
-    "body": "עשיר : עני — כמו חזק : ___",
-    "explanation": "הקשר הוא ניגוד בין תכונות. עשיר מול עני, חזק מול חלש.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 4,
+    "body": "מאגר : מידע\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג \"ארנק : כסף\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "חלש", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "גיבור", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "כוח", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "בריא", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ארנק : כסף",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "תולעת משי : משי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כפפה : יד",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נמר : חיה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 6, "difficulty": 4,
-    "body": "פתוח : סגור — כמו מלא : ___",
-    "explanation": "הקשר הוא ניגוד. פתוח מול סגור, מלא מול ריק.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 4,
+    "body": "מסעדה : אכילה\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מקום והפעולה האופיינית המתבצעת בו. הזוג \"כיתה : לימוד\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "ריק", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "גדול", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "כבד", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שלם", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מאגר : מידע",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "צעיף : צוואר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כיתה : לימוד",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כבשה : צמר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 6, "difficulty": 5,
-    "body": "מהיר : איטי — כמו שופע : ___",
-    "explanation": "הקשר הוא ניגוד. מהיר מול איטי, שופע (בכמות רבה) מול דל (בכמות מועטה).",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 4,
+    "body": "בריכה : שחייה\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מקום והפעולה האופיינית המתבצעת בו. הזוג \"תיאטרון : הצגה\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "דל", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "רחב", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "מלא", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "גדול", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "שמחה : עצב",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "תיאטרון : הצגה",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לימוד : ידע",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כוס : מים",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 7, "difficulty": 4,
-    "body": "ניצוץ : שריפה — כמו חיידק : ___",
-    "explanation": "הקשר הוא 'גורם ותוצאה'. ניצוץ עלול לגרום לשריפה, חיידק עלול לגרום למחלה.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 4,
+    "body": "ארנק : כסף\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: כלי והחומר שהוא מכיל. הזוג \"מצבר : חשמל\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "מחלה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "תרופה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "רופא", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "בריאות", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "גאולוג : סלעים",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "תרנגולת : ביצה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אזמל : מנתח",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מצבר : חשמל",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 7, "difficulty": 5,
-    "body": "גשם : שיטפון — כמו רעידת אדמה : ___",
-    "explanation": "הקשר הוא 'גורם ותוצאה הרסנית'. גשם עז עלול לגרום לשיטפון, רעידת אדמה עלולה לגרום להרס.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "אור : חושך\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג \"חכם : טיפש\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "הרס", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "גשם", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "ים", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "רוח", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "תרנגולת : ביצה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גאולוג : סלעים",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חכם : טיפש",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כוס : מים",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 7, "difficulty": 4,
-    "body": "מנוע : תנועה — כמו מקרר : ___",
-    "explanation": "הקשר הוא 'מכשיר והתוצאה שהוא יוצר'. המנוע מפיק תנועה, המקרר מפיק קירור.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "מלא : ריק\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג \"עשיר : עני\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "קירור", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "חום", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "אוכל", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "חשמל", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "גרב : כף רגל",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "נמר : חיה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מאגר : מידע",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עשיר : עני",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 7, "difficulty": 5,
-    "body": "מפתח : דלת — כמו סיסמה : ___",
-    "explanation": "הקשר הוא 'אמצעי פתיחה ומה שהוא פותח'. מפתח פותח דלת, סיסמה פותחת חשבון/גישה.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "היסטוריון : עבר\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מומחה ותחום העיסוק שלו. הזוג \"גאולוג : סלעים\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "חשבון", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מנעול", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "מפתח", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מחשב", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "גאולוג : סלעים",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מאגר : מידע",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "תיאטרון : הצגה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "זהיר : חששן",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 8, "difficulty": 5,
-    "body": "מצלמה : תמונה — כמו עט : ___",
-    "explanation": "הקשר הוא 'כלי והתוצר שלו'. מצלמה מפיקה תמונה, עט מפיק כתב.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "קרדיולוג : לב\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מומחה ותחום העיסוק שלו. הזוג \"אסטרונום : כוכבים\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "כתב", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "נייר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "דיו", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "יד", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מכחול : צייר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אסטרונום : כוכבים",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "גשם : מבול",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חימום : המסה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 8, "difficulty": 5,
-    "body": "חיטה : קמח — כמו זית : ___",
-    "explanation": "הקשר הוא 'חומר גלם והמוצר המופק ממנו'. מחיטה מפיקים קמח, מזית מפיקים שמן.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "כעס : זעם\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: תופעה ועוצמתה הקיצונית. הזוג \"עצב : ייאוש\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "שמן", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "עץ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פרי", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מים", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אימון : כושר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "עצב : ייאוש",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "היסטוריון : עבר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עשיר : עני",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 8, "difficulty": 5,
-    "body": "צמר : סוודר — כמו עץ : ___",
-    "explanation": "הקשר הוא 'חומר גלם והמוצר העשוי ממנו'. מצמר עושים סוודר, מעץ עושים שולחן (רהיט).",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "שמחה : עצב\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג \"אור : חושך\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "שולחן", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "יער", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "נסורת", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "דלק", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מצבר : חשמל",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "בריכה : שחייה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כבשה : צמר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אור : חושך",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 8, "difficulty": 5,
-    "body": "חימר : כד — כמו אבן : ___",
-    "explanation": "הקשר הוא 'חומר גלם ויצירה המעוצבת ממנו'. מחימר מעצבים כד, מאבן מפסלים פסל.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "כעס : זעם\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: תופעה ועוצמתה הקיצונית. הזוג \"רוח : סופה\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "פסל", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "הר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "חצץ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מערה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אזמל : מנתח",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "השקיה : צמיחה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רוח : סופה",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "צעיף : צוואר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 9, "difficulty": 5,
-    "body": "מורה : ידע — כמו רופא : ___",
-    "explanation": "הקשר הוא 'בעל מקצוע ומה שהוא מקנה/מעניק'. המורה מקנה ידע, הרופא מעניק בריאות.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "אימון : כושר\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פעולה והתוצאה הנובעת ממנה. הזוג \"לימוד : ידע\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "בריאות", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מחלה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "תרופה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "חולה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ורד : פרח",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "לימוד : ידע",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כובע : ראש",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "תרנגולת : ביצה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 9, "difficulty": 5,
-    "body": "מצפן : כיוון — כמו מדחום : ___",
-    "explanation": "הקשר הוא 'מכשיר ומה שהוא מודד'. מצפן מורה כיוון, מדחום מודד טמפרטורה.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "עשיר : עני\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג \"שמחה : עצב\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "טמפרטורה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "לחץ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "זמן", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "משקל", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "שמחה : עצב",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כעס : זעם",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נעל : רגל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "בריכה : שחייה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 9, "difficulty": 5,
-    "body": "שחקן : תפקיד — כמו זמר : ___",
-    "explanation": "הקשר הוא 'אמן והיצירה שהוא מבצע'. שחקן מגלם תפקיד, זמר מבצע שיר.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "כינור : כלי נגינה\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פרט והקבוצה הכללית שאליה הוא משתייך. הזוג \"ורד : פרח\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "שיר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "במה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "קהל", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מיקרופון", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "כפפה : יד",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "זריעה : יבול",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ורד : פרח",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ארנק : כסף",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 9, "difficulty": 5,
-    "body": "מילה : משפט — כמו לבנה : ___",
-    "explanation": "הקשר הוא 'יחידת בנייה והשלם הנבנה ממנה'. ממילים בונים משפט, מלבנים בונים קיר.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "חסכן : קמצן\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: תכונה והמידה הקיצונית שלה (הגזמה). הזוג \"זהיר : חששן\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "קיר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "בית", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "מלט", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "חלון", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אורן : עץ",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "זהיר : חששן",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "גלגל : מכונית",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ארנק : כסף",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 10, "difficulty": 5,
-    "body": "תרנגולת : ביצה — כמו פרה : ___",
-    "explanation": "הקשר הוא 'בעל החיים והתוצר שהוא מספק'. תרנגולת מטילה ביצה, פרה מספקת חלב.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "מלא : ריק\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג \"חכם : טיפש\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "חלב", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "עגל", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "רפת", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "בשר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אזמל : מנתח",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כבשה : צמר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חכם : טיפש",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קרדיולוג : לב",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 10, "difficulty": 5,
-    "body": "חקלאי : מעדר — כמו צייד : ___",
-    "explanation": "הקשר הוא 'בעל עיסוק וכלי העבודה האופייני לו'. החקלאי משתמש במעדר, הצייד משתמש ברובה.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "זהיר : חששן\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: תכונה והמידה הקיצונית שלה (הגזמה). הזוג \"אמיץ : פזיז\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "רובה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "שדה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "חיה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "יער", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אמיץ : פזיז",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "תולעת משי : משי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קרדיולוג : לב",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מאגר : מידע",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 10, "difficulty": 5,
-    "body": "מנהיג : עם — כמו רועה : ___",
-    "explanation": "הקשר הוא 'המוביל והקבוצה שאותה הוא מוביל'. המנהיג מוביל עם, הרועה מוביל עדר.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "חימום : המסה\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פעולה והתוצאה הנובעת ממנה. הזוג \"זריעה : יבול\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "עדר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "כבשה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שדה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מקל", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מצלמה : צלם",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "זריעה : יבול",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נעל : רגל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אסטרונום : כוכבים",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 10, "difficulty": 5,
-    "body": "ספר : פרקים — כמו בניין : ___",
-    "explanation": "הקשר הוא 'שלם והיחידות שמרכיבות אותו'. ספר מורכב מפרקים, בניין מורכב מקומות.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "שמחה : עצב\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג \"מלא : ריק\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "קומות", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "לבנים", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "גג", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מעלית", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מלא : ריק",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ענף : עץ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "גמיש : חסר עמוד שדרה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "דבורה : דבש",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 10, "difficulty": 5,
-    "body": "זרע : צמח — כמו ביצה : ___",
-    "explanation": "הקשר הוא 'שלב התחלתי והיצור הבוגר המתפתח ממנו'. מזרע מתפתח צמח, מביצה מתפתח אפרוח.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "אור : חושך\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג \"שמחה : עצב\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "אפרוח", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "תרנגולת", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "קן", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "ציפור", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "בריכה : שחייה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חדר : בית",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שמחה : עצב",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "פרה : חלב",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 5, "difficulty": 4,
-    "body": "טוב : מצוין — כמו רע : ___",
-    "explanation": "הקשר הוא 'תכונה ודרגתה החזקה'. מצוין הוא טוב מאוד, גרוע הוא רע מאוד.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "שמחה : עצב\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מילים בעלות משמעות הפוכה (ניגוד). הזוג \"מלא : ריק\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "גרוע", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "בינוני", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "יפה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "חזק", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מלא : ריק",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מקש : מקלדת",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נמר : חיה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מכחול : צייר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 7, "difficulty": 5,
-    "body": "זריעה : יבול — כמו השקעה : ___",
-    "explanation": "הקשר הוא 'פעולה ראשונית והתוצאה החיובית שלה'. זריעה מניבה יבול, השקעה מניבה רווח.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "זריעה : יבול\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: פעולה והתוצאה הנובעת ממנה. הזוג \"השקיה : צמיחה\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "רווח", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "כסף", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "בנק", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "הפסד", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "גשם : מבול",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אור : חושך",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "השקיה : צמיחה",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ענף : עץ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 8, "difficulty": 5,
-    "body": "כותנה : חולצה — כמו גומי : ___",
-    "explanation": "הקשר הוא 'חומר גלם והמוצר העשוי ממנו'. מכותנה עושים חולצה, מגומי עושים צמיג.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "בטוח : יהיר\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: תכונה והמידה הקיצונית שלה (הגזמה). הזוג \"גמיש : חסר עמוד שדרה\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "צמיג", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "גלגל", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "מכונית", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "כביש", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "דף : ספר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גמיש : חסר עמוד שדרה",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כבשה : צמר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "השקיה : צמיחה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 9, "difficulty": 5,
-    "body": "עיתונאי : כתבה — כמו צלם : ___",
-    "explanation": "הקשר הוא 'בעל מקצוע והתוצר שהוא יוצר'. העיתונאי כותב כתבה, הצלם יוצר תצלום.",
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "אסטרונום : כוכבים\n\nבחרו את זוג המילים שהקשר ביניהן דומה לקשר שבזוג שלמעלה.",
+    "explanation": "הקשר בין שתי המילים שבשאלה: מומחה ותחום העיסוק שלו. הזוג \"גאולוג : סלעים\" מבטא בדיוק את אותו קשר, ולכן זו התשובה הנכונה.",
+    "source": "original",
     "options": [
-      { "label": "1", "body": "תצלום", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מצלמה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "עיתון", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "כתב", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "אמיץ : פזיז",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ענף : עץ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כבשה : צמר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "גאולוג : סלעים",
+        "is_correct": true,
+        "position": 3
+      }
     ]
   }
 ]
