@@ -16,9 +16,9 @@ type Progress = { level_id: number; status: string; stars: number };
 // Shown only until a real, seeded backend returns units — keeps the path
 // looking endless even before content exists. Real data always wins.
 const DEMO_UNITS: Unit[] = [
-  { id: 1, name: "אנגלית בסיסית", description: null, icon: null, position: 1, levels: Array.from({ length: 6 }, (_, i) => ({ id: i + 1, position: i + 1, title: null })) },
-  { id: 2, name: "מילים נפוצות", description: null, icon: null, position: 2, levels: Array.from({ length: 6 }, (_, i) => ({ id: i + 7, position: i + 1, title: null })) },
-  { id: 3, name: "דקדוק", description: null, icon: null, position: 3, levels: Array.from({ length: 6 }, (_, i) => ({ id: i + 13, position: i + 1, title: null })) },
+  { id: 1, name: "חשיבה כמותית", description: null, icon: null, position: 1, levels: Array.from({ length: 10 }, (_, i) => ({ id: i + 1, position: i + 1, title: null })) },
+  { id: 2, name: "אנלוגיות מילוליות", description: null, icon: null, position: 2, levels: Array.from({ length: 10 }, (_, i) => ({ id: i + 11, position: i + 1, title: null })) },
+  { id: 3, name: "הבנת הוראות", description: null, icon: null, position: 3, levels: Array.from({ length: 10 }, (_, i) => ({ id: i + 21, position: i + 1, title: null })) },
 ];
 const DEMO_PROGRESS: Record<number, Progress> = {
   1: { level_id: 1, status: "completed", stars: 3 },
