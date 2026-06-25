@@ -1,0 +1,47 @@
+[
+  {
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 7,
+    "difficulty": 5,
+    "body": "כל מי שעובר את המבחן מקבל תעודה. לרוני אין תעודה. מה נכון בהכרח?",
+    "explanation": "אם מעבר במבחן גורר קבלת תעודה, ולרוני אין תעודה, אז בהכרח רוני לא עבר את המבחן (היסק נגדי).",
+    "source": "original",
+    "options": [
+      { "label": "1", "body": "רוני לא עבר את המבחן", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רוני עבר את המבחן", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רוני לא ניגש למבחן", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "רוני נכשל בכוונה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "ספר א' כבד מספר ב', ספר ב' כבד מספר ג', וספר ג' כבד מספר ד'. איזה ספר הקל ביותר?",
+    "explanation": "סדר יורד לפי משקל: א', ב', ג', ד'. הקל ביותר הוא ספר ד'.",
+    "source": "original",
+    "options": [
+      { "label": "1", "body": "ספר ד'", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ספר ג'", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ספר א'", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ספר ב'", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "כל תלמיד בכיתה לומד או צרפתית או ספרדית. יעל אינה לומדת ספרדית. מה נכון בהכרח?",
+    "explanation": "אם כל תלמיד לומד אחת משתי השפות, ויעל אינה לומדת ספרדית, אז בהכרח היא לומדת צרפתית.",
+    "source": "original",
+    "options": [
+      { "label": "1", "body": "יעל לומדת צרפתית", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "יעל לומדת ספרדית", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "יעל אינה לומדת שפה זרה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  }
+]
