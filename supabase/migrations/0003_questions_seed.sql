@@ -14,6 +14,1166 @@ begin
   from levels l
   join units u on u.id = l.unit_id
   where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 0, '△ : △△△  —  כמו  ▽ : ___', null, 'הקשר: שכפול הצורה 3 פעמים. כשם ש-△ הופך ל-△△△, כך ▽ הופך ל-▽▽▽.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▽▽', false, 0),
+    (v_q, '2', '▽▽▽', true, 1),
+    (v_q, '3', '△△△', false, 2),
+    (v_q, '4', '▽▽▽▽', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 1, '□ : ■  —  כמו  △ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-□ הופך ל-■, כך △ הופך ל-▲.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▲', true, 0),
+    (v_q, '2', '■', false, 1),
+    (v_q, '3', '□', false, 2),
+    (v_q, '4', '△', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 2, '◇ : ◇□  —  כמו  △ : ___', null, 'הקשר: הוספת הצורה □ מימין. כשם ש-◇ הופך ל-◇□, כך △ הופך ל-△□.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '△□', true, 0),
+    (v_q, '2', '△△', false, 1),
+    (v_q, '3', '△□□', false, 2),
+    (v_q, '4', '□△', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 3, '▽ : ▼  —  כמו  ◇ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-▽ הופך ל-▼, כך ◇ הופך ל-◆.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◇', false, 0),
+    (v_q, '2', '▼', false, 1),
+    (v_q, '3', '◆', true, 2),
+    (v_q, '4', '△', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 4, '△ : △□  —  כמו  ☆ : ___', null, 'הקשר: הוספת הצורה □ מימין. כשם ש-△ הופך ל-△□, כך ☆ הופך ל-☆□.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '☆□', true, 0),
+    (v_q, '2', '☆□□', false, 1),
+    (v_q, '3', '□☆', false, 2),
+    (v_q, '4', '☆☆', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 0, '◇ : ◆  —  כמו  △ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-◇ הופך ל-◆, כך △ הופך ל-▲.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◆', false, 0),
+    (v_q, '2', '◇', false, 1),
+    (v_q, '3', '△', false, 2),
+    (v_q, '4', '▲', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 1, '□ : □□□  —  כמו  ○ : ___', null, 'הקשר: שכפול הצורה 3 פעמים. כשם ש-□ הופך ל-□□□, כך ○ הופך ל-○○○.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '○○', false, 0),
+    (v_q, '2', '□□□', false, 1),
+    (v_q, '3', '○○○○', false, 2),
+    (v_q, '4', '○○○', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 2, '☆ : ☆☆☆  —  כמו  ◇ : ___', null, 'הקשר: שכפול הצורה 3 פעמים. כשם ש-☆ הופך ל-☆☆☆, כך ◇ הופך ל-◇◇◇.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◇◇', false, 0),
+    (v_q, '2', '◇◇◇', true, 1),
+    (v_q, '3', '◇◇◇◇', false, 2),
+    (v_q, '4', '☆☆☆', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 3, '☆ : ☆☆☆  —  כמו  △ : ___', null, 'הקשר: שכפול הצורה 3 פעמים. כשם ש-☆ הופך ל-☆☆☆, כך △ הופך ל-△△△.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '☆☆☆', false, 0),
+    (v_q, '2', '△△△', true, 1),
+    (v_q, '3', '△△', false, 2),
+    (v_q, '4', '△△△△', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 2, 4, '☆ : ☆◇  —  כמו  ▽ : ___', null, 'הקשר: הוספת הצורה ◇ מימין. כשם ש-☆ הופך ל-☆◇, כך ▽ הופך ל-▽◇.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▽▽', false, 0),
+    (v_q, '2', '▽◇◇', false, 1),
+    (v_q, '3', '▽◇', true, 2),
+    (v_q, '4', '◇▽', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 0, '▽ : ▼  —  כמו  ◇ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-▽ הופך ל-▼, כך ◇ הופך ל-◆.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◇', false, 0),
+    (v_q, '2', '▼', false, 1),
+    (v_q, '3', '◆', true, 2),
+    (v_q, '4', '▽', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 1, '□ : □○  —  כמו  ▽ : ___', null, 'הקשר: הוספת הצורה ○ מימין. כשם ש-□ הופך ל-□○, כך ▽ הופך ל-▽○.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '○▽', false, 0),
+    (v_q, '2', '▽○', true, 1),
+    (v_q, '3', '▽○○', false, 2),
+    (v_q, '4', '▽▽', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 2, '◇ : ◆  —  כמו  ▽ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-◇ הופך ל-◆, כך ▽ הופך ל-▼.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▼', true, 0),
+    (v_q, '2', '▽', false, 1),
+    (v_q, '3', '☆', false, 2),
+    (v_q, '4', '◆', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 3, '○ : ○☆  —  כמו  △ : ___', null, 'הקשר: הוספת הצורה ☆ מימין. כשם ש-○ הופך ל-○☆, כך △ הופך ל-△☆.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '△☆☆', false, 0),
+    (v_q, '2', '△☆', true, 1),
+    (v_q, '3', '△△', false, 2),
+    (v_q, '4', '☆△', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 4, '□ : □□  —  כמו  ◇ : ___', null, 'הקשר: שכפול הצורה 2 פעמים. כשם ש-□ הופך ל-□□, כך ◇ הופך ל-◇◇.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '□□', false, 0),
+    (v_q, '2', '◇', false, 1),
+    (v_q, '3', '◇◇◇', false, 2),
+    (v_q, '4', '◇◇', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 0, '◇ : ◇◇  —  כמו  □ : ___', null, 'הקשר: שכפול הצורה 2 פעמים. כשם ש-◇ הופך ל-◇◇, כך □ הופך ל-□□.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '□', false, 0),
+    (v_q, '2', '◇◇', false, 1),
+    (v_q, '3', '□□', true, 2),
+    (v_q, '4', '□□□', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 1, '△ : △△  —  כמו  ◇ : ___', null, 'הקשר: שכפול הצורה 2 פעמים. כשם ש-△ הופך ל-△△, כך ◇ הופך ל-◇◇.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◇◇◇', false, 0),
+    (v_q, '2', '◇', false, 1),
+    (v_q, '3', '△△', false, 2),
+    (v_q, '4', '◇◇', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 2, '□ : □□□  —  כמו  ◇ : ___', null, 'הקשר: שכפול הצורה 3 פעמים. כשם ש-□ הופך ל-□□□, כך ◇ הופך ל-◇◇◇.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◇◇◇◇', false, 0),
+    (v_q, '2', '□□□', false, 1),
+    (v_q, '3', '◇◇', false, 2),
+    (v_q, '4', '◇◇◇', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 3, '▽ : ▼  —  כמו  ◇ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-▽ הופך ל-▼, כך ◇ הופך ל-◆.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▼', false, 0),
+    (v_q, '2', '◇', false, 1),
+    (v_q, '3', '○', false, 2),
+    (v_q, '4', '◆', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 3, 4, '□ : ■  —  כמו  ☆ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-□ הופך ל-■, כך ☆ הופך ל-★.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '☆', false, 0),
+    (v_q, '2', '△', false, 1),
+    (v_q, '3', '★', true, 2),
+    (v_q, '4', '■', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 0, '□ : ■■  —  כמו  ○ : ___', null, 'הקשר: מילוי הצורה ושכפולה 2 פעמים. כשם ש-□ הופך ל-■■, כך ○ הופך ל-●●.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '●●●', false, 0),
+    (v_q, '2', '■■', false, 1),
+    (v_q, '3', '○○', false, 2),
+    (v_q, '4', '●●', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 1, '○ : ●  —  כמו  □ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-○ הופך ל-●, כך □ הופך ל-■.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '□', false, 0),
+    (v_q, '2', '■', true, 1),
+    (v_q, '3', '●', false, 2),
+    (v_q, '4', '◇', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 2, '☆ : ★★  —  כמו  △ : ___', null, 'הקשר: מילוי הצורה ושכפולה 2 פעמים. כשם ש-☆ הופך ל-★★, כך △ הופך ל-▲▲.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▲▲', true, 0),
+    (v_q, '2', '▲▲▲', false, 1),
+    (v_q, '3', '★★', false, 2),
+    (v_q, '4', '△△', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 3, '▽ : ▽▽▽▽  —  כמו  △ : ___', null, 'הקשר: שכפול הצורה 4 פעמים. כשם ש-▽ הופך ל-▽▽▽▽, כך △ הופך ל-△△△△.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▽▽▽▽', false, 0),
+    (v_q, '2', '△△△△△', false, 1),
+    (v_q, '3', '△△△', false, 2),
+    (v_q, '4', '△△△△', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 4, '▽ : ▼▼  —  כמו  △ : ___', null, 'הקשר: מילוי הצורה ושכפולה 2 פעמים. כשם ש-▽ הופך ל-▼▼, כך △ הופך ל-▲▲.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▼▼', false, 0),
+    (v_q, '2', '△△', false, 1),
+    (v_q, '3', '▲▲', true, 2),
+    (v_q, '4', '▲▲▲', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 0, '□ : ■  —  כמו  ☆ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-□ הופך ל-■, כך ☆ הופך ל-★.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '★', true, 0),
+    (v_q, '2', '◇', false, 1),
+    (v_q, '3', '☆', false, 2),
+    (v_q, '4', '■', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 1, '▽ : ▽◇  —  כמו  △ : ___', null, 'הקשר: הוספת הצורה ◇ מימין. כשם ש-▽ הופך ל-▽◇, כך △ הופך ל-△◇.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '△△', false, 0),
+    (v_q, '2', '◇△', false, 1),
+    (v_q, '3', '△◇◇', false, 2),
+    (v_q, '4', '△◇', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 2, '□ : ■■■  —  כמו  ◇ : ___', null, 'הקשר: מילוי הצורה ושכפולה 3 פעמים. כשם ש-□ הופך ל-■■■, כך ◇ הופך ל-◆◆◆.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◇◇◇', false, 0),
+    (v_q, '2', '◆◆◆◆', false, 1),
+    (v_q, '3', '■■■', false, 2),
+    (v_q, '4', '◆◆◆', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 3, '△ : ▲▲  —  כמו  ☆ : ___', null, 'הקשר: מילוי הצורה ושכפולה 2 פעמים. כשם ש-△ הופך ל-▲▲, כך ☆ הופך ל-★★.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▲▲', false, 0),
+    (v_q, '2', '★★', true, 1),
+    (v_q, '3', '★★★', false, 2),
+    (v_q, '4', '☆☆', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 4, 4, '☆ : ☆◇  —  כמו  □ : ___', null, 'הקשר: הוספת הצורה ◇ מימין. כשם ש-☆ הופך ל-☆◇, כך □ הופך ל-□◇.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '□◇◇', false, 0),
+    (v_q, '2', '◇□', false, 1),
+    (v_q, '3', '□□', false, 2),
+    (v_q, '4', '□◇', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 0, '◇ : ◇○  —  כמו  △ : ___', null, 'הקשר: הוספת הצורה ○ מימין. כשם ש-◇ הופך ל-◇○, כך △ הופך ל-△○.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '△○○', false, 0),
+    (v_q, '2', '△○', true, 1),
+    (v_q, '3', '△△', false, 2),
+    (v_q, '4', '○△', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 1, '□ : ■  —  כמו  ☆ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-□ הופך ל-■, כך ☆ הופך ל-★.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '☆', false, 0),
+    (v_q, '2', '★', true, 1),
+    (v_q, '3', '□', false, 2),
+    (v_q, '4', '■', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 2, '☆ : ★★  —  כמו  ◇ : ___', null, 'הקשר: מילוי הצורה ושכפולה 2 פעמים. כשם ש-☆ הופך ל-★★, כך ◇ הופך ל-◆◆.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '★★', false, 0),
+    (v_q, '2', '◆◆◆', false, 1),
+    (v_q, '3', '◆◆', true, 2),
+    (v_q, '4', '◇◇', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 3, '☆ : ☆☆☆  —  כמו  ◇ : ___', null, 'הקשר: שכפול הצורה 3 פעמים. כשם ש-☆ הופך ל-☆☆☆, כך ◇ הופך ל-◇◇◇.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◇◇◇', true, 0),
+    (v_q, '2', '☆☆☆', false, 1),
+    (v_q, '3', '◇◇', false, 2),
+    (v_q, '4', '◇◇◇◇', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 4, '△ : △□  —  כמו  ☆ : ___', null, 'הקשר: הוספת הצורה □ מימין. כשם ש-△ הופך ל-△□, כך ☆ הופך ל-☆□.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '☆□', true, 0),
+    (v_q, '2', '☆□□', false, 1),
+    (v_q, '3', '□☆', false, 2),
+    (v_q, '4', '☆☆', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 0, '□ : ■  —  כמו  △ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-□ הופך ל-■, כך △ הופך ל-▲.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◇', false, 0),
+    (v_q, '2', '△', false, 1),
+    (v_q, '3', '▲', true, 2),
+    (v_q, '4', '■', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 1, '◇ : ◇◇◇◇  —  כמו  ○ : ___', null, 'הקשר: שכפול הצורה 4 פעמים. כשם ש-◇ הופך ל-◇◇◇◇, כך ○ הופך ל-○○○○.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '○○○○○', false, 0),
+    (v_q, '2', '○○○○', true, 1),
+    (v_q, '3', '○○○', false, 2),
+    (v_q, '4', '◇◇◇◇', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 2, '◇ : ◆  —  כמו  □ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-◇ הופך ל-◆, כך □ הופך ל-■.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '◆', false, 0),
+    (v_q, '2', '□', false, 1),
+    (v_q, '3', '■', true, 2),
+    (v_q, '4', '◇', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 3, '△ : △□  —  כמו  ☆ : ___', null, 'הקשר: הוספת הצורה □ מימין. כשם ש-△ הופך ל-△□, כך ☆ הופך ל-☆□.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '□☆', false, 0),
+    (v_q, '2', '☆☆', false, 1),
+    (v_q, '3', '☆□□', false, 2),
+    (v_q, '4', '☆□', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
+    and u.name  = 'אנלוגיות צורניות'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'daper', 'אנלוגיות צורניות', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('daper', v_level, 'multiple_choice', 5, 4, '▽ : ▼  —  כמו  ◇ : ___', null, 'הקשר: מילוי הצורה (מתאר → מלא). כשם ש-▽ הופך ל-▼, כך ◇ הופך ל-◆.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', '▼', false, 0),
+    (v_q, '2', '◆', true, 1),
+    (v_q, '3', '◇', false, 2),
+    (v_q, '4', '▽', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'daper'
     and u.name  = 'הבנת הוראות'
     and l.position = 3;
 
@@ -19912,6 +21072,1166 @@ begin
     (v_q, '2', 'קבלת ... אחר כך', false, 1),
     (v_q, '3', 'הבנת ... לעולם לא', false, 2),
     (v_q, '4', 'ניתוח ... לעולם לא', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'איזה משפט מתאים ביותר לפתיחת חיבור על חשיבות הספורט?', null, 'פתיחת חיבור צריכה להציג טענה כללית בנושא. רק האפשרות הראשונה מנסחת טענה כזו.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הספורט תורם לבריאות הגוף והנפש, ולכן ראוי לשלבו בחיי היומיום.', true, 0),
+    (v_q, '2', 'אתמול שיחקתי כדורגל עם חברים.', false, 1),
+    (v_q, '3', 'לכלב שלי קוראים רקס.', false, 2),
+    (v_q, '4', 'אני לא אוהב לקום מוקדם.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'השלימו את מילת הקישור המתאימה: "התאמנתי קשה, ___ ניצחתי בתחרות."', null, 'המשפט מבטא סיבה ותוצאה, ולכן מילת הקישור המתאימה היא ''ולכן''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'אף על פי', false, 0),
+    (v_q, '2', 'ולכן', true, 1),
+    (v_q, '3', 'אבל', false, 2),
+    (v_q, '4', 'למרות', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'איזה משפט אינו מתאים לפסקה העוסקת בחתולים?', null, 'הפסקה עוסקת בחתולים; המשפט על הג''ירפה חורג מהנושא.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'חתולים רבים ישנים שעות ארוכות ביום.', false, 0),
+    (v_q, '2', 'יש חתולים בצבעים ובדוגמאות שונים.', false, 1),
+    (v_q, '3', 'הג''ירפה היא החיה הגבוהה בעולם.', true, 2),
+    (v_q, '4', 'החתול מנקה את פרוותו בעזרת לשונו.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 3, 'איזו כותרת מתאימה ביותר לפסקה המתארת את יתרונות המיחזור?', null, 'הכותרת צריכה לשקף את תוכן הפסקה — יתרונות המיחזור.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מתכונים לארוחת ערב', false, 0),
+    (v_q, '2', 'היסטוריה של המכונית', false, 1),
+    (v_q, '3', 'כללי משחק הכדורסל', false, 2),
+    (v_q, '4', 'חשיבותו של המיחזור', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 3;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 3;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 4, 'איזה משפט מתאים לסיכום חיבור על שמירה על הסביבה?', null, 'משפט סיכום פותח לרוב במילה כמו ''לסיכום'' וחוזר על המסר המרכזי.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לסיכום, שמירה על הסביבה חיונית למען הדורות הבאים.', true, 0),
+    (v_q, '2', 'בנוסף, ארנבים אוכלים גזר.', false, 1),
+    (v_q, '3', 'ראשית, נצא לטיול.', false, 2),
+    (v_q, '4', 'השאלה הזו קשה מאוד.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 0, 'השלימו את מילת הקישור: "רציתי לצאת לטיול, ___ ירד גשם כבד."', null, 'יש ניגוד בין הרצון לבין הגשם שמנע אותו, ולכן מתאימה המילה ''אבל''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'וגם', false, 0),
+    (v_q, '2', 'אבל', true, 1),
+    (v_q, '3', 'ולכן', false, 2),
+    (v_q, '4', 'מכיוון ש', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 1, 'איזה מהמשפטים הבאים מבטא דעה ולא עובדה?', null, '''לטעמי'' מסמן עמדה אישית — דעה. השאר הם נתונים הניתנים לבדיקה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ישראל שוכנת במזרח הים התיכון.', false, 0),
+    (v_q, '2', 'לשבוע יש שבעה ימים.', false, 1),
+    (v_q, '3', 'לטעמי, הקיץ הוא העונה הנעימה ביותר.', true, 2),
+    (v_q, '4', 'המים רותחים בטמפרטורה של 100 מעלות.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 2, 2, 'איזה משפט מתאים לפתוח בו פסקה (משפט נושא)?', null, 'משפט נושא מציג את הרעיון הכללי של הפסקה; השאר הם פרטים תומכים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'היא מרחיבה את אוצר המילים.', false, 0),
+    (v_q, '2', 'היא משפרת את הריכוז.', false, 1),
+    (v_q, '3', 'היא חושפת לרעיונות חדשים.', false, 2),
+    (v_q, '4', 'לקריאת ספרים יתרונות רבים.', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'איזה משפט תומך בצורה הטובה ביותר בטענה "כדאי לישון מספיק שעות"?', null, 'התמיכה הטובה מקשרת ישירות בין שינה לתועלת מוכחת. השאר אינם רלוונטיים לטענה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מחקרים מראים ששינה מספקת משפרת את הזיכרון והריכוז.', true, 0),
+    (v_q, '2', 'יש אנשים שאוהבים לישון על הבטן.', false, 1),
+    (v_q, '3', 'מיטות מודרניות יקרות יותר מבעבר.', false, 2),
+    (v_q, '4', 'חלומות יכולים להיות מוזרים לעיתים.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 4;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 4;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'איזה משפט אינו מתאים לפסקה העוסקת ביתרונות הרכיבה על אופניים?', null, 'הפסקה עוסקת ביתרונות האופניים; המשפט על מחירי הדלק חורג מהנושא.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'רכיבה חוסכת בהוצאות נסיעה.', false, 0),
+    (v_q, '2', 'מחירי הדלק עלו בחודש שעבר.', true, 1),
+    (v_q, '3', 'רכיבה על אופניים משפרת את הכושר הגופני.', false, 2),
+    (v_q, '4', 'האופניים אינם מזהמים את האוויר.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'השלימו את מילת הקישור: "היא למדה במשך חודשים; ___, היא עברה את הבחינה בהצטיינות."', null, 'המשפט מציג תוצאה של הלימוד, ולכן מתאים ''כתוצאה מכך''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'למרות זאת', false, 0),
+    (v_q, '2', 'מצד שני', false, 1),
+    (v_q, '3', 'כתוצאה מכך', true, 2),
+    (v_q, '4', 'לעומת זאת', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'איזו גרסה כתובה בצורה הברורה והתמציתית ביותר?', null, 'הניסוח הראשון מוסר את אותו מידע בלי מילים מיותרות וכפילויות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הפגישה, שהייתה אמורה להתקיים, נדחתה והועברה ליום ראשון הקרוב שיבוא.', false, 0),
+    (v_q, '2', 'הפגישה זה דבר שנדחה ליום ראשון בעצם.', false, 1),
+    (v_q, '3', 'ביום ראשון, אז שם, הפגישה היא נדחית.', false, 2),
+    (v_q, '4', 'הפגישה נדחתה ליום ראשון.', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'בפסקה מופיעים המשפטים הבאים. איזה מהם מתאים לשמש משפט פותח?', null, 'המשפט הכללי על התחבורה הציבורית ממסגר את הפרטים שאחריו; השאר הם דוגמאות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לתחבורה הציבורית תפקיד מרכזי בחיי העיר.', true, 0),
+    (v_q, '2', 'האוטובוסים מפחיתים את הצפיפות בכבישים.', false, 1),
+    (v_q, '3', 'הרכבת מקצרת את זמני הנסיעה.', false, 2),
+    (v_q, '4', 'הקווים מגיעים גם לשכונות מרוחקות.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'איזה מהמשפטים הבאים הוא עובדה הניתנת לבדיקה?', null, 'מספר תושבים הוא נתון שניתן לאמת; השאר הם הערכות או דעות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'האוכל בה טעים מבכל מקום אחר.', false, 0),
+    (v_q, '2', 'בעיר מתגוררים כחצי מיליון תושבים.', true, 1),
+    (v_q, '3', 'זו העיר היפה בעולם.', false, 2),
+    (v_q, '4', 'כדאי לכולם לגור בה.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 5;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 5;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'איזה משפט סיום מתאים לחיבור הטוען שיש לעודד קריאה בקרב ילדים?', null, 'משפט הסיום מסכם את עמדת החיבור וקורא לפעולה התואמת אותה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לסיכום, טלוויזיה עדיפה על ספרים.', false, 0),
+    (v_q, '2', 'לסיכום, קריאה אינה חשובה במיוחד.', false, 1),
+    (v_q, '3', 'לסיכום, עידוד הקריאה מגיל צעיר הוא השקעה בעתיד הילדים.', true, 2),
+    (v_q, '4', 'לסיכום, יש להגביל את זמן הקריאה של ילדים.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 0, 'השלימו את מילת הקישור: "המחירים עלו בחדות; ___, הביקוש לא פחת."', null, 'קיים ניגוד בין עליית המחירים לבין הביקוש שנשמר, ולכן מתאים ''אף על פי כן''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לפיכך', false, 0),
+    (v_q, '2', 'כתוצאה מכך', false, 1),
+    (v_q, '3', 'בנוסף לכך', false, 2),
+    (v_q, '4', 'אף על פי כן', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 1, 'בפסקה הבאה יש משפט מיותר החוזר על רעיון קודם. איזה משפט הוא הכפילות? "הספרייה פתוחה לכול. כל אדם מוזמן להיכנס. (1) היא מציעה מגוון ספרים. (2) כל אחד רשאי להיכנס אליה בחופשיות."', null, 'המשפט ''(2) כל אחד רשאי להיכנס אליה בחופשיות'' חוזר על הרעיון ש''כל אדם מוזמן להיכנס''.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'כל אחד רשאי להיכנס אליה בחופשיות.', true, 0),
+    (v_q, '2', 'היא מציעה מגוון ספרים.', false, 1),
+    (v_q, '3', 'הספרייה פתוחה לכול.', false, 2),
+    (v_q, '4', 'אין בפסקה כל כפילות.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 2, 'איזה פרט תומך בצורה הטובה ביותר בטענה "לימודי מוזיקה מועילים לילדים"?', null, 'התמיכה הטובה מציגה ממצא רלוונטי המקשר בין מוזיקה לתועלת; השאר אינם תומכים בטענה.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'קונצרטים נמשכים לעיתים שעות.', false, 0),
+    (v_q, '2', 'מחקרים מצאו שלימוד נגינה משפר את היכולת המתמטית של ילדים.', true, 1),
+    (v_q, '3', 'כלי נגינה רבים עשויים מעץ.', false, 2),
+    (v_q, '4', 'יש סוגות מוזיקה רבות בעולם.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 3, 'איזה משפט מנוסח בלשון תקנית וברורה?', null, 'האפשרות הראשונה מנוסחת באופן דקדוקי ובהיר; האחרות שגויות או מסורבלות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'סיימו המבחן התלמידים, מחברות הוגשו על ידם הם.', false, 0),
+    (v_q, '2', 'המבחן את סיימו, מחברות והגישו.', false, 1),
+    (v_q, '3', 'התלמידים סיימו את המבחן והגישו את המחברות.', true, 2),
+    (v_q, '4', 'התלמידים סיימו את המבחן והם הגישו אותם המחברת.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 6;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 6;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 3, 4, 'סדרו את המשפטים לפסקה הגיונית. איזה משפט צריך לבוא ראשון? "לכן הוא נחשב למקצוע מאתגר. רופא נדרש לידע רב. הוא גם נדרש לקבל החלטות מהירות."', null, 'המשפט ''רופא נדרש לידע רב'' מציג את הנושא; השאר מתבססים עליו, והמשפט הפותח ב''לכן'' חייב לבוא בסוף.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לכן הוא נחשב למקצוע מאתגר.', false, 0),
+    (v_q, '2', 'הוא גם נדרש לקבל החלטות מהירות.', false, 1),
+    (v_q, '3', 'כל סדר אפשרי באותה מידה.', false, 2),
+    (v_q, '4', 'רופא נדרש לידע רב.', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'בחיבור עיוני, איזה ניסוח מתאים יותר מבחינת המשלב (רמת הלשון)?', null, 'חיבור עיוני דורש משלב גבוה ותקני; ''הדבר מעורר קשיים רבים'' מתאים, בעוד הניסוחים הסלנגיים אינם הולמים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'תופעה זו מעוררת קשיים רבים.', true, 0),
+    (v_q, '2', 'הקטע הזה ממש מבאס אותך.', false, 1),
+    (v_q, '3', 'זה סבבה לגמרי בקטע הזה.', false, 2),
+    (v_q, '4', 'וואלה זה דבר די בעייתי כזה.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'איזו טענה היא החלשה ביותר משום שאינה נתמכת בנימוק?', null, 'האפשרות הראשונה היא קביעה גורפת ללא כל ביסוס; השאר כוללות נימוק או הסתייגות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מחקרים מצביעים על השפעות מעורבות של הטכנולוגיה.', false, 0),
+    (v_q, '2', 'הטכנולוגיה מזיקה, וזה ברור לכולם.', true, 1),
+    (v_q, '3', 'הטכנולוגיה עלולה להזיק כאשר משתמשים בה לרעה.', false, 2),
+    (v_q, '4', 'לטכנולוגיה יתרונות וחסרונות כאחד.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'בחיבור טיעון, מהי הדרך הראויה להתייחס לעמדה המנוגדת?', null, 'כתיבה טיעונית טובה מכירה בעמדה הנגדית ואז משיבה עליה בנימוק, במקום להתעלם או להעליב.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'אין שום עמדה אחרת בנושא הזה.', false, 0),
+    (v_q, '2', 'לא משנה מה אחרים חושבים בכלל.', false, 1),
+    (v_q, '3', 'יש הטוענים אחרת, אך נימוקיהם אינם עומדים במבחן הביקורת משום ש...', true, 2),
+    (v_q, '4', 'מי שחושב אחרת פשוט טועה ולא כדאי להקשיב לו.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'השלימו את מילת הקישור המתאימה לפתיחת פסקה המציגה עמדה מנוגדת: "___, יש הסבורים כי דווקא ההפך הוא הנכון."', null, '''מנגד'' פותח הצגת עמדה נוגדת; השאר אינן מסמנות ניגוד.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'בנוסף', false, 0),
+    (v_q, '2', 'כמו כן', false, 1),
+    (v_q, '3', 'לסיכום', false, 2),
+    (v_q, '4', 'מנגד', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 7;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 7;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 4, 'איזה משפט חורג מקו הטיעון בפסקה הטוענת שיש לצמצם את השימוש במכוניות פרטיות?', null, 'המשפט על צבעי המכוניות אינו רלוונטי לטיעון בעד צמצום השימוש; השאר תומכים בו.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'מכוניות חדשות מגיעות במגוון צבעים אופנתיים.', true, 0),
+    (v_q, '2', 'מכוניות פרטיות תורמות לזיהום האוויר.', false, 1),
+    (v_q, '3', 'ריבוי מכוניות מגביר את העומס בכבישים.', false, 2),
+    (v_q, '4', 'צמצום השימוש בהן מעודד תחבורה ציבורית.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 0, 'איזו טענת פתיחה (תזה) היא המוצלחת ביותר לחיבור טיעון?', null, 'תזה טובה היא ממוקדת וניתנת לטיעון. הראשונה מציגה עמדה ברורה; האחרות כלליות מדי, ברורות מאליהן או רק עובדתיות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לכולם יש דעה על חינוך.', false, 0),
+    (v_q, '2', 'יש להעדיף לימוד מקצוע על פני תואר אקדמי, משום שהוא מקנה עצמאות כלכלית מהירה יותר.', true, 1),
+    (v_q, '3', 'חינוך הוא נושא חשוב מאוד.', false, 2),
+    (v_q, '4', 'יש בתי ספר רבים בישראל.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 1, 'איזה משפט מכיל הכללה גורפת שאינה מבוססת?', null, 'המילים ''כל'' ו''תמיד'' יוצרות הכללה מוחלטת שקשה לבססה; האחרות מסויגות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'חלק מהצעירים מתנדבים בקהילה.', false, 0),
+    (v_q, '2', 'יש צעירים המשלבים עבודה ולימודים.', false, 1),
+    (v_q, '3', 'כל הצעירים מבזבזים תמיד את זמנם לריק.', true, 2),
+    (v_q, '4', 'צעירים רבים מקדישים זמן רב לרשתות החברתיות.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 2, 'כדי לבסס את הטענה "זיהום האוויר פוגע בבריאות", איזה סוג של ראיה משכנע ביותר?', null, 'נתונים ממחקר מבוקר הם הראיה המשכנעת ביותר; דוגמה יחידה או רושם אישי חלשים יותר.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'שכן שלי משתעל לפעמים.', false, 0),
+    (v_q, '2', 'נדמה לי שזה נכון.', false, 1),
+    (v_q, '3', 'כך נאמר פעם בסרט.', false, 2),
+    (v_q, '4', 'נתונים ממחקר רפואי רחב היקף המקשר בין זיהום למחלות נשימה.', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 4, 3, 'איזה משפט סיכום חוזר על עמדת החיבור מבלי לחזור עליה במילים זהות?', null, 'ניסוח מחדש של העמדה (''בחירה מושכלת...'') טוב יותר מחזרה מילולית או מהוספת טענה חדשה בסיום.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לסיכום, בחירה מושכלת בתחבורה ציבורית משרתת הן את הפרט הן את החברה.', true, 0),
+    (v_q, '2', 'לסיכום, תחבורה ציבורית טובה לפרט ולחברה, כי היא טובה לפרט ולחברה.', false, 1),
+    (v_q, '3', 'לסיכום, יש לאסור לחלוטין על מכוניות פרטיות מחר בבוקר.', false, 2),
+    (v_q, '4', 'לסיכום, צבע האוטובוסים אינו חשוב.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 8;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 8;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'באיזו אפשרות הקשר הלוגי בין שני חלקי המשפט שגוי?', null, 'במשפט הראשון ''מכיוון ש'' מצביע על סיבה, אך התוכן מתאר ניגוד — ולכן הקישור שגוי. השאר עקביים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הוא הפסיד במשחק, שכן כמעט לא התאמן.', false, 0),
+    (v_q, '2', 'מכיוון שהתאמן מעט, הוא ניצח בקלות בכל המשחקים.', true, 1),
+    (v_q, '3', 'מכיוון שהתאמן רבות, הוא ניצח בתחרות.', false, 2),
+    (v_q, '4', 'למרות שהתאמן מעט, הוא הצליח לנצח.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'איזה ניסוח של תזה הוא המדויק והמורכב ביותר, המכיר במורכבות הנושא?', null, 'התזה הראשונה נוקטת עמדה אך מכירה בתנאי/הסתייגות — ניסוח בוגר. השאר גורפות מדי או סתמיות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'רשתות חברתיות הן דבר קיים בעולם.', false, 0),
+    (v_q, '2', 'כולם משתמשים ברשתות חברתיות כל הזמן.', false, 1),
+    (v_q, '3', 'אף שלרשתות החברתיות תועלות, יש להגביל את השימוש בהן בקרב ילדים בשל סיכוניהן.', true, 2),
+    (v_q, '4', 'הרשתות החברתיות הן הדבר הגרוע ביותר שקרה לאנושות.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'איזה משפט מדגים נימוק מעגלי (הנחת המבוקש)?', null, 'הנימוק המעגלי מבסס טענה על עצמה (''אמין מפני שהוא אומר אמת''). השאר מביאים נימוק חיצוני.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הוא דובר אמת, שכן דבריו אומתו בעדויות נוספות.', false, 0),
+    (v_q, '2', 'הוא דובר אמת, מפני שלא היה לו אינטרס לשקר.', false, 1),
+    (v_q, '3', 'הוא דובר אמת, כפי שעולה מן המסמכים שהציג.', false, 2),
+    (v_q, '4', 'הוא דובר אמת, מפני שהוא אדם אמין שאינו משקר.', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'איזו גרסה מנסחת את הרעיון בצורה המדויקת והחסכונית ביותר, ללא מילים מיותרות?', null, 'האפשרות הראשונה מוסרת את הרעיון בלשון מהודקת; האחרות גודשות מילים נרדפות ומיותרות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'ההחלטה התקבלה פה אחד.', true, 0),
+    (v_q, '2', 'ההחלטה התקבלה פה אחד על ידי כולם ובהסכמה מלאה של כל הנוכחים יחד.', false, 1),
+    (v_q, '3', 'ההחלטה, כלומר ההכרעה הזו, התקבלה והוסכמה פה אחד.', false, 2),
+    (v_q, '4', 'כל אחד ואחד הסכים והחליט יחד את אותה ההחלטה ממש.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'בפסקת טיעון, איזה משפט יש להסיר משום שהוא מחליש את הטיעון במקום לחזק אותו?', null, 'המשפט המודה ש''אין לדבר חשיבות רבה'' סותר את הטיעון ומחליש אותו; השאר תומכים בו.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'הניסיון המעשי מאשש את הדברים.', false, 0),
+    (v_q, '2', 'אמנם, ייתכן שלכל העניין אין באמת חשיבות רבה.', true, 1),
+    (v_q, '3', 'ראיות רבות תומכות בעמדה זו.', false, 2),
+    (v_q, '4', 'מומחים בתחום מסכימים עם טענה זו.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 9;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 9;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'איזו מילת קישור מתאימה לפתוח בה משפט המסיק מסקנה מן האמור קודם? "הנתונים מצביעים על מגמה עקבית; ___ ניתן לקבוע כי קיים קשר בין הגורמים."', null, '''אי לכך'' פותחת מסקנה הנובעת מן הנאמר; השאר אינן מתאימות להיסק.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לדוגמה', false, 0),
+    (v_q, '2', 'מצד שני', false, 1),
+    (v_q, '3', 'אי לכך', true, 2),
+    (v_q, '4', 'לעומת זאת', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 0, 'באיזו אפשרות מובחנת כראוי טענה (claim) מראיה (evidence)?', null, 'באפשרות הראשונה החלק הראשון הוא טענה והחלק השני ראיה התומכת בה. באחרות מוצגת טענה בלבד או שתי טענות.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'טענה: יש להרחיב את שעות הספרייה. ראיה: כי זה רעיון טוב.', false, 0),
+    (v_q, '2', 'טענה: הספרייה חשובה. ראיה: הספרייה חשובה מאוד.', false, 1),
+    (v_q, '3', 'טענה: כדאי. ראיה: כן.', false, 2),
+    (v_q, '4', 'טענה: יש להרחיב את שעות הספרייה. ראיה: סקר מצא ש-80% מהסטודנטים זקוקים למקום לימוד בערב.', true, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 1, 'איזה משפט מעבר מתאים ביותר בין פסקה התומכת בטענה לבין פסקה המציגה הסתייגות?', null, 'משפט המעבר הטוב מסמן מעבר מתמיכה להסתייגות (''עם זאת, יש לסייג...''); השאר אינם מסמנים את המעבר.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'עם זאת, יש לסייג טענה זו לנוכח כמה קשיים שאין להתעלם מהם.', true, 0),
+    (v_q, '2', 'בנוסף, כל הנקודות שהוצגו נכונות לחלוטין.', false, 1),
+    (v_q, '3', 'לסיכום, אין עוד מה להוסיף בנושא.', false, 2),
+    (v_q, '4', 'כפי שראינו, אין שום בעיה בטיעון.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 2, 'איזה ניסוח מבחין נכון בין סיבה לבין מתאם (קורלציה) ואינו מסיק יותר מדי?', null, 'האפשרות הראשונה זהירה ומדברת על ''קשר'' בלי לטעון לסיבתיות. האחרות קופצות למסקנה סיבתית בלתי מבוססת.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'כל מתאם מעיד בהכרח על קשר סיבתי ישיר.', false, 0),
+    (v_q, '2', 'נמצא קשר בין השניים, אך דרוש מחקר נוסף כדי לקבוע אם האחד גורם לאחר.', true, 1),
+    (v_q, '3', 'מכיוון שהשניים מופיעים יחד, ברור שהאחד גורם לאחר.', false, 2),
+    (v_q, '4', 'אם שני דברים קורים יחד, זו תמיד הוכחה לסיבה.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 3, 'איזה משפט סיום מסכם (סינתזה) בצורה הטובה ביותר חיבור ששקל שני צדדים?', null, 'הסיכום הטוב משקלל את שני הצדדים ומגיע לעמדה מאוזנת; השאר מתעלמים מצד אחד או אינם מסכמים.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'לסיכום, אין באמת מה לומר על הנושא.', false, 0),
+    (v_q, '2', 'לסיכום, נתחיל עכשיו לדון בנושא חדש לגמרי.', false, 1),
+    (v_q, '3', 'לסיכום, אף ששתי הגישות נושאות יתרונות, נראה כי שילוב ביניהן הוא הדרך המאוזנת ביותר.', true, 2),
+    (v_q, '4', 'לסיכום, צד אחד צודק לחלוטין והשני טועה לגמרי.', false, 3);
+end
+$seed$;
+
+do $seed$
+declare
+  v_level bigint;
+  v_q     bigint;
+begin
+  select l.id into v_level
+  from levels l
+  join units u on u.id = l.unit_id
+  where u.track = 'psychometric'
+    and u.name  = 'מטלת כתיבה'
+    and l.position = 10;
+
+  if v_level is null then
+    raise exception 'Seed: no level for track=% unit=% position=%',
+      'psychometric', 'מטלת כתיבה', 10;
+  end if;
+
+  insert into questions (track, level_id, type, difficulty, position, body, image_url, explanation, source, is_active)
+  values ('psychometric', v_level, 'multiple_choice', 5, 4, 'איזו פתיחה ממסגרת בצורה הטובה ביותר חיבור טיעון, בלי להכריע כבר במשפט הראשון?', null, 'פתיחה טובה מציגה את הסוגיה ואת המתח שבה לפני הכרעה; האחרות מכריעות מיד, סתמיות או חורגות מהנושא.', 'original', false)
+  returning id into v_q;
+
+  insert into answer_options (question_id, label, body, is_correct, position) values
+    (v_q, '1', 'חופש הפרט תמיד מנצח, וזהו.', false, 0),
+    (v_q, '2', 'יש הרבה נושאים בעולם.', false, 1),
+    (v_q, '3', 'אני אכתוב עכשיו על משהו אחר.', false, 2),
+    (v_q, '4', 'שאלת האיזון בין חופש הפרט לבין טובת הכלל מלווה את החברה זה דורות, ומעוררת עמדות מנוגדות.', true, 3);
 end
 $seed$;
 

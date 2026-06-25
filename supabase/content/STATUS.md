@@ -1,55 +1,62 @@
 # Question bank — coverage & exam-fidelity status
 
 Target per subject: **10 levels × 5 questions = 50**. Run `node scripts/build-seed.mjs`
-to regenerate `supabase/migrations/0003_questions_seed.sql`. All seeded with
-`is_active = false`; flip to `true` after QA (`source = 'original'`).
+to regenerate `supabase/migrations/0003_questions_seed.sql`. Seeded with
+`is_active = false`; migration `0004_activate_seed_questions.sql` flips the
+`source = 'original'` rows live.
 
-Current total: **670** active-ready questions. **13 of 15 subjects complete.**
+Current total: **750** questions. **All 15 subjects complete (50/50).**
 
 ## Content & sourcing policy
 
 All questions are **original** (written or code-generated here). Nothing is copied
 from prep institutes or exam booklets — see the copyright warning in
 `supabase/content/README.md`. Real exams are used **only as a format/difficulty
-reference**, via NITE's publicly published format pages (see Sources below).
+reference**, via NITE's publicly published format pages (Sources below).
 
 ## Exam-fidelity decisions (verified against NITE)
 
-- **All multiple-choice questions have exactly 4 options.** ✔ matches NITE.
-- **Psychometric analogies are pair-to-pair.** A stem word-pair is given and each
-  of the 4 options is itself a *pair*; you choose the pair with the same
-  relationship (official example: `ספר : ספרייה` → `תמונה : גלריה`). Implemented in
-  `scripts/gen-analogies.mjs` (correct-by-construction: distractor pairs come from
-  other relationship categories, so exactly one option matches).
-- **DAPER (psychotechnic / צו-ראשון) analogies are fill-in-the-blank**
-  (`א' : ב' כמו ג' : ___`). That is the authentic format for *that* track, so the
-  DAPER analogy unit is intentionally left in this form.
-- **Reading comprehension** = one passage + several questions; the passage is
-  embedded in each question's `body` (no schema change needed).
-- **Known remaining fidelity gap:** Hebrew/English *sentence completion* on the real
-  exam often has **two blanks** (each option supplies two words separated by `/`).
-  The current sentence-completion items are all single-blank — valid, but a
-  two-blank variant at the harder levels would raise realism. Not yet done.
+- **All multiple-choice questions have exactly 4 options.** ✔
+- **Psychometric analogies are pair-to-pair** (`scripts/gen-analogies.mjs`): a stem
+  pair, four pair options; correct-by-construction (distractors come from other
+  relationship categories).
+- **DAPER analogies are fill-in-the-blank** (`א' : ב' כמו ג' : ___`) — the authentic
+  format for the psychotechnic / צו-ראשון track.
+- **Reading comprehension**: one passage + several questions, passage embedded in
+  each question's `body` (`scripts/gen-reading.mjs`).
+- **Figural analogies** (`scripts/gen-figural.mjs`): rendered with Unicode
+  geometric shapes (○ ● △ ▲ □ ■ …) so they work in the text MCQ flow — no image
+  hosting needed. Transformations (count / fill / add / combined) are computed, so
+  answers are correct-by-construction. *If you later add image hosting, these can
+  be swapped for image-based items.*
+- **Writing task** (`psy-writing-3-10.json`): the real מטלת כתיבה is a graded essay,
+  which needs an open-response + human/AI-scoring flow the MVP doesn't have. Until
+  then, this unit holds **writing-skills MCQs** (thesis selection, paragraph
+  structure, argument strength, transitions, fact-vs-opinion, fallacies) — the
+  testable skills behind the essay, fitting the current schema. *Replace with a
+  real open-response task type when scoring infrastructure exists.*
+- **Known minor gap:** sentence-completion items are all single-blank; the real exam
+  also uses two-blank items (`word / word` per option) at harder levels.
 
-## Complete (50/50) — 13 subjects
+## Per-subject sources
+- daper: `daper-quantitative` · `daper-verbal-analogies` (+`-topoff`) ·
+  `daper-instructions` (+`-gen`) · `daper-shape-analogies` (+`daper-figural-3-10`)
+- psychometric quantitative: `psy-algebra` · `psy-geometry` · `psy-data`
+- psychometric verbal: `psy-analogies` (generated) · `psy-logic` (+`-topoff`) ·
+  `psy-sentence-completion` (+`-3-10`) · `psy-reading` (+`-3-10`) ·
+  `psy-writing` (+`-3-10`)
+- english: `eng-sentence-completion` (+`-3-10`) · `eng-restatement` (+`-3-10`) ·
+  `eng-reading` (+`-3-10`)
 
-daper: חשיבה כמותית · אנלוגיות מילוליות · הבנת הוראות
-psychometric: כמותי – אלגברה · כמותי – גיאומטריה · כמותי – גרפים וטבלאות ·
-מילולי – אנלוגיות · מילולי – היסק ולוגיקה · מילולי – השלמת משפטים ·
-מילולי – הבנת הנקרא · אנגלית – Sentence Completion · אנגלית – Restatement ·
-אנגלית – Reading
+## Generators (deterministic, re-runnable)
+`scripts/gen-instructions.mjs` · `scripts/gen-analogies.mjs` ·
+`scripts/gen-figural.mjs` · `scripts/gen-reading.mjs` → then `scripts/build-seed.mjs`.
 
-## Partial (10/50) — 2 subjects, blocked on a non-MCQ flow
-
-| Subject | Why it needs infrastructure first |
-|---------|-----------------------------------|
-| daper · אנלוגיות צורניות | **Figural** — each item is a set of shapes; needs `image_url` diagrams (Supabase Storage) or an inline-SVG convention, not text. |
-| psychometric · מטלת כתיבה | **Essay** — an open writing task graded by rubric, not a 4-option answer; needs an open-response question type + a scoring path (likely an Edge Function), separate from the MCQ grader. |
-
-### Recommended next steps
-1. **Two-blank sentence completion** for higher levels (realism; no schema change).
-2. **Figural items**: choose image hosting, set `type` + `image_url`, author shape sets.
-3. **Writing task**: add an open-response `type` + rubric scoring (Edge Function).
+## Recommended follow-ups (not blocking)
+1. Human QA pass before a public launch (content is self-checked, not human-reviewed).
+2. Two-blank sentence-completion variant for added realism.
+3. Image hosting → swap figural shapes for real diagrams.
+4. Open-response question type + rubric scoring → real essay writing task.
 
 ## Sources (format reference only — no content copied)
 - NITE — Test Format & Components: https://www.nite.org.il/psychometric-entrance-test/format/?lang=en
