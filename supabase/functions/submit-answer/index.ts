@@ -3,10 +3,7 @@
 // the correct answer never has to be exposed to the client.
 import { createClient } from "jsr:@supabase/supabase-js@2";
 import { corsHeaders, json } from "../_shared/cors.ts";
-
-const XP_CORRECT = 10;
-const XP_WRONG = 2;
-const K = 32; // Elo update rate
+import { eloUpdate, nextStreak, xpFor } from "../_shared/scoring.ts";
 
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response("ok", { headers: corsHeaders });
@@ -66,10 +63,7 @@ Deno.serve(async (req) => {
     const ability = ab?.ability ?? 1000;
     const seen = ab?.questions_seen ?? 0;
 
-    const expected = 1 / (1 + Math.pow(10, (questionElo - ability) / 400));
-    const actual = isCorrect ? 1 : 0;
-    const newAbility = ability + K * (actual - expected);
-    const newElo = questionElo - K * (actual - expected);
+    const { newAbility, newElo } = eloUpdate(ability, questionElo, isCorrect);
 
     await admin.from("user_ability").upsert({
       user_id: user.id, unit_id: unitId,
@@ -87,11 +81,8 @@ Deno.serve(async (req) => {
     .select("current_streak, longest_streak, last_active_date, total_xp, total_answered, total_correct")
     .eq("id", user.id).single();
 
-  let streak = p!.current_streak;
-  if (p!.last_active_date !== today) {
-    streak = p!.last_active_date === yesterday ? p!.current_streak + 1 : 1;
-  }
-  const xpGain = isCorrect ? XP_CORRECT : XP_WRONG;
+  const streak = nextStreak(p!.current_streak, p!.last_active_date, today, yesterday);
+  const xpGain = xpFor(isCorrect);
 
   await admin.from("profiles").update({
     current_streak: streak,

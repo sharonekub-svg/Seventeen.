@@ -13,6 +13,7 @@ import { Check, X, Flame } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
 import { getDailyQuestion, submitAnswer, type DailyQuestion } from "@/lib/api";
+import { starsFor } from "@/lib/scoring";
 import { colors, spacing, radius } from "@/lib/theme";
 
 type Result = {
@@ -82,7 +83,7 @@ export default function QuestionScreen() {
     // Level finished: record progress + unlock the next level.
     if (isLevel && params.levelId && session) {
       const total = queue.length;
-      const stars = correctInLevel === total ? 3 : correctInLevel >= total * 0.8 ? 2 : correctInLevel >= total * 0.5 ? 1 : 0;
+      const stars = starsFor(correctInLevel, total);
       await supabase.from("user_level_progress").upsert(
         {
           user_id: session.user.id,
