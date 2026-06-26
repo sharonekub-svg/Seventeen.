@@ -1,112 +1,172 @@
 [
   {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 1, "difficulty": 2,
-    "body": "Read the passage and answer:\n\"Dolphins are highly intelligent marine mammals. They communicate using a variety of clicks and whistles, and they often work together to catch fish.\"\n\nHow do dolphins communicate, according to the passage?\n\n(A) By changing color  (B) Using clicks and whistles  (C) By writing messages  (D) They do not communicate",
-    "explanation": "הקטע מציין במפורש: 'communicate using a variety of clicks and whistles'.",
-    "options": [
-      { "label": "A", "body": "By changing color", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "Using clicks and whistles", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "By writing messages", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "They do not communicate", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 1, "difficulty": 2,
-    "body": "Read the passage and answer:\n\"The Amazon rainforest produces a large share of the world's oxygen and is home to millions of species. Deforestation, however, threatens this vital ecosystem.\"\n\nWhat threatens the Amazon, according to the passage?\n\n(A) Oxygen  (B) Deforestation  (C) Rainfall  (D) Tourism",
-    "explanation": "הקטע אומר ש-'Deforestation ... threatens this vital ecosystem'.",
-    "options": [
-      { "label": "A", "body": "Oxygen", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "Deforestation", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "Rainfall", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "Tourism", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 1, "difficulty": 2,
-    "body": "Read the passage and answer:\n\"Honey almost never spoils. Archaeologists have found pots of honey in ancient tombs that are over 3,000 years old and still edible.\"\n\nWhat is surprising about honey, according to the passage?\n\n(A) It spoils within days  (B) It can last thousands of years  (C) It is found only in oceans  (D) It is poisonous",
-    "explanation": "הקטע מתאר דבש בן יותר מ-3000 שנה שעדיין ראוי לאכילה — כלומר הוא שורד אלפי שנים.",
-    "options": [
-      { "label": "A", "body": "It spoils within days", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "It can last thousands of years", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "It is found only in oceans", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "It is poisonous", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 1, "difficulty": 2,
-    "body": "Read the passage and answer:\n\"Recycling helps reduce waste and saves energy. Making products from recycled materials often uses less energy than making them from raw materials.\"\n\nAccording to the passage, recycling:\n\n(A) wastes energy  (B) saves energy  (C) increases waste  (D) is impossible",
-    "explanation": "הקטע אומר ש-'Recycling ... saves energy' ושימוש בחומרים ממוחזרים צורך פחות אנרגיה.",
-    "options": [
-      { "label": "A", "body": "wastes energy", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "saves energy", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "increases waste", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "is impossible", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 1, "difficulty": 2,
-    "body": "Read the passage and answer:\n\"The first computers were enormous machines that filled entire rooms. Today, far more powerful computers fit in our pockets.\"\n\nHow have computers changed over time?\n\n(A) They became larger  (B) They became smaller and more powerful  (C) They disappeared  (D) They became weaker",
-    "explanation": "הקטע מנגיד מחשבים ענקיים בעבר מול מחשבים חזקים יותר בכיס היום — קטנו והתחזקו.",
-    "options": [
-      { "label": "A", "body": "They became larger", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "They became smaller and more powerful", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "They disappeared", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "They became weaker", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "Read the passage and answer:\n\"While solar energy is clean and renewable, its wider adoption is limited by high initial costs and dependence on sunny weather. Researchers are working to make solar panels cheaper and more efficient.\"\n\nWhat can be inferred about solar energy?\n\n(A) It has no drawbacks at all  (B) Its main barriers are cost and weather dependence  (C) It is already the cheapest energy source  (D) It works best at night",
     "explanation": "מהמשפט על 'high initial costs and dependence on sunny weather' ניתן להסיק שאלו החסמים המרכזיים לאימוצה.",
     "options": [
-      { "label": "A", "body": "It has no drawbacks at all", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "Its main barriers are cost and weather dependence", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "It is already the cheapest energy source", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "It works best at night", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "It has no drawbacks at all",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Its main barriers are cost and weather dependence",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "It is already the cheapest energy source",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "It works best at night",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "Read the passage and answer:\n\"Many companies now allow employees to work from home. Studies suggest this can increase productivity, though some workers report feeling isolated.\"\n\nWhat does the passage imply about remote work?\n\n(A) It is entirely negative  (B) It has both benefits and drawbacks  (C) It always reduces productivity  (D) No one is willing to do it",
     "explanation": "הקטע מציין יתרון (פרודוקטיביות) לצד חיסרון (תחושת בידוד), כלומר לעבודה מהבית יתרונות וחסרונות גם יחד.",
     "options": [
-      { "label": "A", "body": "It is entirely negative", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "It has both benefits and drawbacks", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "It always reduces productivity", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "No one is willing to do it", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "It is entirely negative",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "It has both benefits and drawbacks",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "It always reduces productivity",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "No one is willing to do it",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "Read the passage and answer:\n\"The author argues that reading fiction builds empathy, because it requires imagining the thoughts and feelings of characters unlike ourselves.\"\n\nAccording to the author, fiction builds empathy by:\n\n(A) teaching historical facts  (B) making us imagine others' perspectives  (C) improving our vocabulary  (D) entertaining us for hours",
     "explanation": "הכותב טוען שקריאת ספרות בונה אמפתיה משום שהיא דורשת לדמיין את מחשבותיהם ורגשותיהם של אחרים.",
     "options": [
-      { "label": "A", "body": "teaching historical facts", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "making us imagine others' perspectives", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "improving our vocabulary", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "entertaining us for hours", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "teaching historical facts",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "making us imagine others' perspectives",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "improving our vocabulary",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "entertaining us for hours",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "Read the passage and answer:\n\"Although fast food is convenient and inexpensive, nutritionists warn that frequent consumption is linked to health problems such as obesity and heart disease.\"\n\nWhat is the nutritionists' main concern?\n\n(A) Fast food is too expensive  (B) Frequent fast food harms health  (C) Fast food is hard to find  (D) Fast food tastes bad",
     "explanation": "התזונאים מזהירים שאכילה תכופה של מזון מהיר קשורה לבעיות בריאות כמו השמנה ומחלות לב.",
     "options": [
-      { "label": "A", "body": "Fast food is too expensive", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "Frequent fast food harms health", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "Fast food is hard to find", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "Fast food tastes bad", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "Fast food is too expensive",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Frequent fast food harms health",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "Fast food is hard to find",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "Fast food tastes bad",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "אנגלית – Reading", "level_position": 2, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "אנגלית – Reading",
+    "level_position": 2,
+    "difficulty": 5,
     "body": "Read the passage and answer:\n\"Bilingual children sometimes start speaking slightly later than monolingual children, but research shows they often develop stronger problem-solving and multitasking skills.\"\n\nWhat can be concluded about bilingualism?\n\n(A) It only has disadvantages  (B) Early delays may come with long-term cognitive benefits  (C) It prevents children from speaking  (D) It has no effect on development",
     "explanation": "הקטע מציג עיכוב קל בתחילת הדיבור לצד יתרונות קוגניטיביים ארוכי-טווח — כלומר לעיכוב המוקדם עשויים להתלוות יתרונות בהמשך.",
     "options": [
-      { "label": "A", "body": "It only has disadvantages", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "Early delays may come with long-term cognitive benefits", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "It prevents children from speaking", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "It has no effect on development", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "It only has disadvantages",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "Early delays may come with long-term cognitive benefits",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "It prevents children from speaking",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "It has no effect on development",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

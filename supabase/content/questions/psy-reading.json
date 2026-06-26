@@ -1,112 +1,240 @@
 [
   {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 1, "difficulty": 2,
-    "body": "קראו את הקטע וענו: \"הדבורים ממלאות תפקיד חיוני בטבע. הן מעבירות אבקה מפרח לפרח, ובכך מאפשרות לצמחים רבים להניב פירות. ללא דבורים, גידולים חקלאיים רבים היו נכחדים.\"\n\nמהו התפקיד החשוב של הדבורים לפי הקטע?",
-    "explanation": "הקטע מציין במפורש שהדבורות 'מעבירות אבקה מפרח לפרח' ובכך מסייעות לצמחים להניב פירות.",
-    "options": [
-      { "label": "1", "body": "העברת אבקה בין פרחים", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ייצור דבש בלבד", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "אכילת פירות", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "הרס גידולים חקלאיים", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 1, "difficulty": 2,
-    "body": "קראו את הקטע וענו: \"ספריות ציבוריות מאפשרות לכל אדם לקרוא ספרים בחינם. הן משמשות גם מקום שקט ללימוד ולמפגשים קהילתיים.\"\n\nמהו יתרון מרכזי של ספרייה ציבורית לפי הקטע?",
-    "explanation": "הקטע מדגיש שהספרייה מאפשרת קריאת ספרים 'בחינם' — גישה חופשית לכל אדם.",
-    "options": [
-      { "label": "1", "body": "גישה חינם לספרים", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מכירת ספרים יקרים", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "מקום רועש ושוקק", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "פתוחה רק לחברים", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 1, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "מילולי – הבנת הנקרא",
+    "level_position": 1,
+    "difficulty": 3,
     "body": "קראו את הקטע וענו: \"פעילות גופנית סדירה משפרת את הבריאות. היא מחזקת את הלב, משפרת את מצב הרוח ומסייעת בשמירה על משקל תקין.\"\n\nאיזו תועלת אינה מוזכרת בקטע?",
     "explanation": "הקטע מזכיר חיזוק הלב, שיפור מצב הרוח ושמירה על משקל — אך אינו מזכיר שיפור הזיכרון.",
     "options": [
-      { "label": "1", "body": "שיפור הזיכרון", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "חיזוק הלב", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שיפור מצב הרוח", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שמירה על משקל תקין", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "שיפור הזיכרון",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חיזוק הלב",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שיפור מצב הרוח",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שמירה על משקל תקין",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 1, "difficulty": 2,
-    "body": "קראו את הקטע וענו: \"המים הם משאב מתכלה. אף שכדור הארץ מכוסה ברובו במים, רק אחוז קטן מהם מתאים לשתייה. לכן חשוב לחסוך במים.\"\n\nמדוע חשוב לחסוך במים לפי הקטע?",
-    "explanation": "הקטע מסביר שרק אחוז קטן מהמים מתאים לשתייה, ולכן יש לחסוך בהם.",
-    "options": [
-      { "label": "1", "body": "רק חלק קטן מהמים ראוי לשתייה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "אין מים כלל בעולם", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "המים זולים מאוד", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "כל מי הים ראויים לשתייה", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 1, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "מילולי – הבנת הנקרא",
+    "level_position": 1,
+    "difficulty": 3,
     "body": "קראו את הקטע וענו: \"החתול הוא חיה ביתית פופולרית. הוא ידוע בעצמאותו וביכולתו לצוד עכברים. רבים מגדלים חתולים גם בשל הניקיון הרב שהם מקפידים עליו.\"\n\nאיזו סיבה לגידול חתולים מצוינת בקטע?",
     "explanation": "הקטע מציין במפורש את 'הניקיון הרב' של החתולים כסיבה לגידולם.",
     "options": [
-      { "label": "1", "body": "הניקיון שהם מקפידים עליו", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "גודלם הרב", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "יכולתם לנבוח", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מחירם הגבוה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "הניקיון שהם מקפידים עליו",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גודלם הרב",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "יכולתם לנבוח",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מחירם הגבוה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "מילולי – הבנת הנקרא",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "קראו את הקטע וענו: \"המהפכה הדיגיטלית שינתה את שוק העבודה. מקצועות רבים שהתבססו על עבודה ידנית נעלמו, בעוד שנוצר ביקוש גובר למומחי טכנולוגיה. עובדים נדרשים כיום להתעדכן ולרכוש מיומנויות חדשות לאורך כל הקריירה.\"\n\nמה ניתן להסיק מהקטע על עתיד שוק העבודה?",
     "explanation": "מכך שעובדים נדרשים 'להתעדכן ולרכוש מיומנויות חדשות לאורך כל הקריירה' ניתן להסיק שלמידה מתמשכת תהיה הכרחית.",
     "options": [
-      { "label": "1", "body": "למידה מתמשכת תהיה הכרחית", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "העבודה הידנית תחזור לשלוט", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "לא יהיה צורך בהכשרה כלל", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "הטכנולוגיה תיעלם בקרוב", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "למידה מתמשכת תהיה הכרחית",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "העבודה הידנית תחזור לשלוט",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לא יהיה צורך בהכשרה כלל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "הטכנולוגיה תיעלם בקרוב",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "מילולי – הבנת הנקרא",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "קראו את הקטע וענו: \"צמצום שעות השינה משפיע על התפקוד הקוגניטיבי. מחקרים מצאו שאנשים הישנים פחות משש שעות בלילה מתקשים בריכוז ובקבלת החלטות, ונוטים יותר לטעויות.\"\n\nמה ניתן להסיק מהקטע?",
     "explanation": "אם מיעוט שינה פוגע בריכוז ובקבלת החלטות, ניתן להסיק ששינה מספקת תורמת לתפקוד טוב יותר.",
     "options": [
-      { "label": "1", "body": "שינה מספקת תורמת לתפקוד טוב יותר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "שינה אינה חשובה לתפקוד", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שש שעות שינה הן מותרות", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "טעויות אינן קשורות לשינה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "שינה מספקת תורמת לתפקוד טוב יותר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שינה אינה חשובה לתפקוד",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שש שעות שינה הן מותרות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "טעויות אינן קשורות לשינה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 2, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "מילולי – הבנת הנקרא",
+    "level_position": 2,
+    "difficulty": 5,
     "body": "קראו את הקטע וענו: \"ערים רבות מעודדות שימוש בתחבורה ציבורית כדי להפחית זיהום אוויר ועומסי תנועה. עם זאת, רבים ממשיכים להעדיף רכב פרטי בשל הנוחות והגמישות שהוא מציע.\"\n\nמהו המתח המרכזי המוצג בקטע?",
     "explanation": "הקטע מציב זה מול זה יעדים סביבתיים (הפחתת זיהום ועומסים) מול נוחות אישית (רכב פרטי).",
     "options": [
-      { "label": "1", "body": "בין יעדים סביבתיים לבין נוחות אישית", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "בין תושבי ערים לתושבי כפרים", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "בין רכבות לבין אוטובוסים", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "בין עשירים לבין עניים", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "בין יעדים סביבתיים לבין נוחות אישית",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "בין תושבי ערים לתושבי כפרים",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "בין רכבות לבין אוטובוסים",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "בין עשירים לבין עניים",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 2, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "מילולי – הבנת הנקרא",
+    "level_position": 2,
+    "difficulty": 5,
     "body": "קראו את הקטע וענו: \"ההיסטוריון טען כי אירועים גדולים בהיסטוריה אינם תוצאה של אדם יחיד, אלא של תהליכים חברתיים וכלכליים רחבים. לדבריו, גם ללא מנהיג מסוים, השינויים היו מתרחשים בסופו של דבר.\"\n\nמהי עמדת ההיסטוריון?",
     "explanation": "ההיסטוריון גורס שכוחות חברתיים-כלכליים רחבים מעצבים את ההיסטוריה יותר מאשר יחידים.",
     "options": [
-      { "label": "1", "body": "כוחות חברתיים רחבים מעצבים את ההיסטוריה יותר מיחידים", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "יחידים הם הגורם היחיד לשינוי", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "ההיסטוריה מקרית לחלוטין", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מנהיגים אינם קיימים כלל", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "כוחות חברתיים רחבים מעצבים את ההיסטוריה יותר מיחידים",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יחידים הם הגורם היחיד לשינוי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ההיסטוריה מקרית לחלוטין",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מנהיגים אינם קיימים כלל",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – הבנת הנקרא", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "מילולי – הבנת הנקרא",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "קראו את הקטע וענו: \"פרסומות רבות מציגות מוצר כפתרון לבעיה שהצרכן כלל לא היה מודע לקיומה קודם לכן. בכך הן יוצרות צורך חדש במקום להיענות לצורך קיים.\"\n\nמה מבקר הכותב בקטע?",
     "explanation": "הכותב מבקר את העובדה שפרסומות 'יוצרות צורך חדש' — כלומר צרכים מלאכותיים שלא היו קיימים קודם.",
     "options": [
-      { "label": "1", "body": "יצירת צרכים מלאכותיים על ידי פרסום", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מחיריהם הגבוהים של מוצרים", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "איכותם הירודה של מוצרים", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מיעוט הפרסומות בשוק", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "יצירת צרכים מלאכותיים על ידי פרסום",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מחיריהם הגבוהים של מוצרים",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "איכותם הירודה של מוצרים",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מיעוט הפרסומות בשוק",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

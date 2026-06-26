@@ -1,552 +1,1498 @@
 [
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 1,
-    "body": "מהו שטחו של ריבוע שאורך צלעו 5 ס\"מ?",
-    "explanation": "שטח ריבוע = צלע בריבוע = 5 × 5 = 25 סמ\"ר.",
-    "options": [
-      { "label": "1", "body": "25 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "20 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "10 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "5 סמ\"ר", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 1,
-    "body": "מהו סכום הזוויות במשולש?",
-    "explanation": "סכום הזוויות בכל משולש הוא 180°.",
-    "options": [
-      { "label": "1", "body": "180°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "90°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "360°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "270°", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 1,
-    "body": "מהו שטחו של מלבן שאורכו 8 ס\"מ ורוחבו 3 ס\"מ?",
-    "explanation": "שטח מלבן = אורך × רוחב = 8 × 3 = 24 סמ\"ר.",
-    "options": [
-      { "label": "1", "body": "24 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "22 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "11 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "16 סמ\"ר", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 2,
-    "body": "מהו היקפו של מלבן שאורכו 8 ס\"מ ורוחבו 3 ס\"מ?",
-    "explanation": "היקף מלבן = 2 × (אורך + רוחב) = 2 × (8 + 3) = 22 ס\"מ.",
-    "options": [
-      { "label": "1", "body": "22 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "24 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "11 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "14 ס\"מ", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 1, "difficulty": 2,
-    "body": "במשולש ישר-זווית אחת הזוויות היא 90°. אם זווית נוספת היא 30°, מהי הזווית השלישית?",
-    "explanation": "סכום הזוויות 180°. 180 − 90 − 30 = 60°.",
-    "options": [
-      { "label": "1", "body": "60°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "70°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "90°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "45°", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "מהו שטחו המקורב של עיגול שרדיוסו 3 ס\"מ? (π ≈ 3.14)",
     "explanation": "שטח עיגול = π × r² = 3.14 × 9 ≈ 28.3 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "כ-28.3 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "כ-18.8 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "כ-9.4 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "כ-6 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "כ-28.3 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כ-18.8 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כ-9.4 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כ-6 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "שטחו של ריבוע הוא 49 סמ\"ר. מהו היקפו?",
     "explanation": "אורך הצלע = שורש 49 = 7 ס\"מ. היקף = 4 × 7 = 28 ס\"מ.",
     "options": [
-      { "label": "1", "body": "28 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "49 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "14 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "196 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "28 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "49 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "14 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "196 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "במשולש שווה-שוקיים זווית הראש היא 40°. מהי כל אחת מזוויות הבסיס?",
     "explanation": "זוויות הבסיס שוות. (180 − 40) ÷ 2 = 70°.",
     "options": [
-      { "label": "1", "body": "70°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "40°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "140°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "100°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "70°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "40°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "140°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "100°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 2,
-    "body": "מהו נפחה של קובייה שאורך מקצועה 4 ס\"מ?",
-    "explanation": "נפח קובייה = מקצוע בשלישית = 4 × 4 × 4 = 64 סמ\"ק.",
-    "options": [
-      { "label": "1", "body": "64 סמ\"ק", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "16 סמ\"ק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12 סמ\"ק", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "48 סמ\"ק", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "אם מכפילים את אורך צלע הריבוע פי 2, פי כמה גדל שטחו?",
     "explanation": "השטח תלוי בצלע בריבוע. אם הצלע גדלה פי 2, השטח גדל פי 2² = 4.",
     "options": [
-      { "label": "1", "body": "פי 4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "פי 2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פי 8", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "פי 16", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "פי 4",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פי 2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פי 8",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "פי 16",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "במשולש שווה-צלעות, מהי מידת כל אחת מזוויותיו?",
     "explanation": "כל הזוויות שוות וסכומן 180°, ולכן כל אחת היא 60°.",
     "options": [
-      { "label": "1", "body": "60°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "90°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "45°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "30°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "60°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "90°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "45°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "30°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "מהו שטחו של משולש שאורך בסיסו 10 ס\"מ וגובהו 6 ס\"מ?",
     "explanation": "שטח משולש = (בסיס × גובה) ÷ 2 = (10 × 6) ÷ 2 = 30 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "30 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "60 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "16 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "15 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "30 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "60 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "16 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "15 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "שתי זוויות צמודות יוצרות יחד קו ישר. אם אחת מהן 110°, מהי השנייה?",
     "explanation": "זוויות צמודות על ישר משלימות ל-180°. 180 − 110 = 70°.",
     "options": [
-      { "label": "1", "body": "70°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "110°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "90°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "180°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "70°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "110°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "90°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "180°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "כמה צלעות יש למשושה?",
     "explanation": "משושה הוא מצולע בעל שש צלעות.",
     "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "5", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "7", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "8", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "5",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "7",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "8",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "מהו נפחה של תיבה שמידותיה 5 × 3 × 2 ס\"מ?",
     "explanation": "נפח תיבה = אורך × רוחב × גובה = 5 × 3 × 2 = 30 סמ\"ק.",
     "options": [
-      { "label": "1", "body": "30 סמ\"ק", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "10 סמ\"ק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "25 סמ\"ק", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "16 סמ\"ק", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "30 סמ\"ק",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "10 סמ\"ק",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "25 סמ\"ק",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "16 סמ\"ק",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 4, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 4,
+    "difficulty": 3,
     "body": "במשולש שתי זוויות הן 50° ו-60°. מהי הזווית השלישית?",
     "explanation": "180 − 50 − 60 = 70°.",
     "options": [
-      { "label": "1", "body": "70°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "80°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "60°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "90°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "70°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "80°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "60°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "90°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 4, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 4,
+    "difficulty": 3,
     "body": "מהו שטחה של מקבילית שאורך בסיסה 8 ס\"מ וגובהה 5 ס\"מ?",
     "explanation": "שטח מקבילית = בסיס × גובה = 8 × 5 = 40 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "40 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "13 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "26 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "20 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "40 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "13 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "26 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "20 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 4, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 4,
+    "difficulty": 4,
     "body": "מהו סכום הזוויות הפנימיות במרובע?",
     "explanation": "סכום הזוויות במרובע הוא 360° (אפשר לחלקו לשני משולשים, 2 × 180°).",
     "options": [
-      { "label": "1", "body": "360°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "180°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "540°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "720°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "360°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "180°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "540°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "720°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 4, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 4,
+    "difficulty": 3,
     "body": "מהו היקפו של מלבן שאורכו 12 ס\"מ ורוחבו 4 ס\"מ?",
     "explanation": "היקף = 2 × (12 + 4) = 2 × 16 = 32 ס\"מ.",
     "options": [
-      { "label": "1", "body": "32 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "48 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "16 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "24 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "32 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "48 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "16 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "24 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 4, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 4,
+    "difficulty": 4,
     "body": "זוויות קודקודיות (נגדיות) נוצרות בהצטלבות שני ישרים. אם אחת מהן 65°, מהי הזווית הנגדית לה?",
     "explanation": "זוויות קודקודיות שוות זו לזו, ולכן הנגדית גם היא 65°.",
     "options": [
-      { "label": "1", "body": "65°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "115°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "90°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "25°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "65°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "115°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "90°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "25°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "במשולש ישר-זווית אורכי הניצבים הם 3 ו-4 ס\"מ. מהו אורך היתר?",
     "explanation": "לפי משפט פיתגורס: היתר = שורש(3² + 4²) = שורש(9 + 16) = שורש 25 = 5 ס\"מ.",
     "options": [
-      { "label": "1", "body": "5 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "7 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "6 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "7 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "6 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "מהו שטחו של טרפז שאורכי בסיסיו 6 ו-10 ס\"מ וגובהו 4 ס\"מ?",
     "explanation": "שטח טרפז = ((סכום הבסיסים) ÷ 2) × גובה = ((6 + 10) ÷ 2) × 4 = 8 × 4 = 32 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "32 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "40 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "64 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "16 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "32 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "40 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "64 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "16 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "מהו היקפו המקורב של עיגול שרדיוסו 5 ס\"מ? (π ≈ 3.14)",
     "explanation": "היקף עיגול = 2 × π × r = 2 × 3.14 × 5 = 31.4 ס\"מ.",
     "options": [
-      { "label": "1", "body": "31.4 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "78.5 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "15.7 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "25 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "31.4 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "78.5 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "15.7 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "25 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "אם שטחו של ריבוע הוא 64 סמ\"ר, מהו אורך צלעו?",
     "explanation": "אורך הצלע = שורש 64 = 8 ס\"מ.",
     "options": [
-      { "label": "1", "body": "8 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "16 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "32 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "8 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "16 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "32 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "מהו שטחו המקורב של עיגול שקוטרו 10 ס\"מ? (π ≈ 3.14)",
     "explanation": "הרדיוס הוא חצי מהקוטר, כלומר 5 ס\"מ. שטח = 3.14 × 5² = 3.14 × 25 = 78.5 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "78.5 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "31.4 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "314 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "25 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "78.5 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "31.4 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "314 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "25 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "במשולש שווה-שוקיים כל אחת מזוויות הבסיס היא 50°. מהי זווית הראש?",
     "explanation": "סכום זוויות הבסיס הוא 100°. זווית הראש: 180 − 100 = 80°.",
     "options": [
-      { "label": "1", "body": "80°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "50°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "100°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "130°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "80°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "50°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "100°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "130°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 6, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 6,
+    "difficulty": 5,
     "body": "מהו שטח הפנים הכולל של קובייה שאורך מקצועה 3 ס\"מ?",
     "explanation": "לקובייה 6 פאות, כל אחת בשטח 3² = 9. שטח הפנים = 6 × 9 = 54 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "54 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "27 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "18 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "9 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "54 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "27 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "18 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "9 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "מהו שטחו של משולש ישר-זווית שאורכי ניצביו 6 ו-8 ס\"מ?",
     "explanation": "במשולש ישר-זווית הניצבים משמשים כבסיס וגובה. שטח = (6 × 8) ÷ 2 = 24 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "24 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "48 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "14 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "28 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "24 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "48 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "14 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "28 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "מהו היקפו של משולש שווה-צלעות שאורך צלעו 7 ס\"מ?",
     "explanation": "לשלוש צלעות שוות, ההיקף הוא 3 × 7 = 21 ס\"מ.",
     "options": [
-      { "label": "1", "body": "21 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "49 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "14 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "28 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "21 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "49 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "14 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "28 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 7, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 7,
+    "difficulty": 5,
     "body": "מהו סכום הזוויות הפנימיות במחומש (מצולע בן 5 צלעות)?",
     "explanation": "סכום הזוויות במצולע בן n צלעות הוא (n − 2) × 180°. עבור n = 5: 3 × 180 = 540°.",
     "options": [
-      { "label": "1", "body": "540°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "360°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "720°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "500°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "540°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "360°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "720°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "500°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 7, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 7,
+    "difficulty": 5,
     "body": "מהי מידת כל זווית פנימית במחומש משוכלל (כל הצלעות והזוויות שוות)?",
     "explanation": "סכום הזוויות במחומש הוא 540°, ויש 5 זוויות שוות: 540 ÷ 5 = 108°.",
     "options": [
-      { "label": "1", "body": "108°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "120°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "90°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "100°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "108°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "120°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "90°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "100°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 7, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 7,
+    "difficulty": 5,
     "body": "במערכת צירים, מהו המרחק בין הנקודות (0,0) ו-(3,4)?",
     "explanation": "המרחק = שורש((3−0)² + (4−0)²) = שורש(9 + 16) = שורש 25 = 5.",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "7", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "25", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "7",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "25",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "מהי נקודת האמצע של הקטע שבין (2,0) ל-(6,0)?",
     "explanation": "נקודת האמצע = ((2+6)/2 , (0+0)/2) = (4, 0).",
     "options": [
-      { "label": "1", "body": "(4, 0)", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "(8, 0)", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "(2, 0)", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "(4, 4)", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "(4, 0)",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "(8, 0)",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "(2, 0)",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "(4, 4)",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "זווית חיצונית של משולש שווה לסכום שתי הזוויות הפנימיות שאינן צמודות לה. אם הן 40° ו-70°, מהי הזווית החיצונית?",
     "explanation": "הזווית החיצונית = 40 + 70 = 110°.",
     "options": [
-      { "label": "1", "body": "110°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "70°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "40°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "180°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "110°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "70°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "40°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "180°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "מהו שטחו של מעוין שאורכי אלכסוניו 6 ו-8 ס\"מ?",
     "explanation": "שטח מעוין = (מכפלת האלכסונים) ÷ 2 = (6 × 8) ÷ 2 = 24 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "24 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "48 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "14 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "28 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "24 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "48 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "14 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "28 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "אם שטחו של מלבן הוא 48 סמ\"ר ואורכו 8 ס\"מ, מהו רוחבו?",
     "explanation": "רוחב = שטח ÷ אורך = 48 ÷ 8 = 6 ס\"מ.",
     "options": [
-      { "label": "1", "body": "6 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "40 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "5 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "40 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "5 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "מהו נפחו המקורב של גליל שרדיוס בסיסו 2 ס\"מ וגובהו 5 ס\"מ? (π ≈ 3.14)",
     "explanation": "נפח גליל = π × r² × גובה = 3.14 × 4 × 5 = 62.8 סמ\"ק.",
     "options": [
-      { "label": "1", "body": "62.8 סמ\"ק", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "31.4 סמ\"ק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "125.6 סמ\"ק", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "20 סמ\"ק", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "62.8 סמ\"ק",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "31.4 סמ\"ק",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "125.6 סמ\"ק",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "20 סמ\"ק",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "אם מקטינים את אורך צלע הריבוע פי 2, פי כמה קטן שטחו?",
     "explanation": "השטח פרופורציוני לריבוע הצלע. אם הצלע קטנה פי 2, השטח קטן פי 2² = 4.",
     "options": [
-      { "label": "1", "body": "פי 4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "פי 2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פי 8", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "פי 16", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "פי 4",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פי 2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פי 8",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "פי 16",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "במשולש ישר-זווית אורך היתר 13 ס\"מ ואחד הניצבים 5 ס\"מ. מהו אורך הניצב השני?",
     "explanation": "לפי פיתגורס: הניצב = שורש(13² − 5²) = שורש(169 − 25) = שורש 144 = 12 ס\"מ.",
     "options": [
-      { "label": "1", "body": "12 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "8 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "11 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "18 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "12 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "8 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "11 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "18 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "מהו סכום הזוויות הפנימיות במשושה (מצולע בן 6 צלעות)?",
     "explanation": "(n − 2) × 180° עבור n = 6: 4 × 180 = 720°.",
     "options": [
-      { "label": "1", "body": "720°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "540°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "360°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "1080°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "720°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "540°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "360°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "1080°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "נפחה של תיבה הוא 60 סמ\"ק. שטח בסיסה 5 × 4 ס\"מ. מהו גובהה?",
     "explanation": "שטח הבסיס 20 סמ\"ר. גובה = נפח ÷ שטח בסיס = 60 ÷ 20 = 3 ס\"מ.",
     "options": [
-      { "label": "1", "body": "3 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "12 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "5 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "4 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "3 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "12 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "5 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "4 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "מהו המרחק בין הנקודות (1,2) ו-(4,6) במערכת צירים?",
     "explanation": "המרחק = שורש((4−1)² + (6−2)²) = שורש(9 + 16) = שורש 25 = 5.",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "7", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "25", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "3", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "7",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "25",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "3",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "מהו שטח הפנים הכולל של תיבה שמידותיה 2 × 3 × 4 ס\"מ?",
     "explanation": "שטח פנים = 2 × (2×3 + 3×4 + 2×4) = 2 × (6 + 12 + 8) = 2 × 26 = 52 סמ\"ר.",
     "options": [
-      { "label": "1", "body": "52 סמ\"ר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "24 סמ\"ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "26 סמ\"ר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "48 סמ\"ר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "52 סמ\"ר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "24 סמ\"ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "26 סמ\"ר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "48 סמ\"ר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "זווית היקפית במעגל הנשענת על הקוטר היא תמיד בת כמה מעלות?",
     "explanation": "זווית היקפית הנשענת על קוטר (חצי מעגל) היא תמיד 90° (משפט תאלס).",
     "options": [
-      { "label": "1", "body": "90°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "180°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "45°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "60°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "90°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "180°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "45°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "60°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "מהו אורך צלעו של ריבוע ששטחו 144 סמ\"ר?",
     "explanation": "אורך הצלע = שורש 144 = 12 ס\"מ.",
     "options": [
-      { "label": "1", "body": "12 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "72 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "14 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "24 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "12 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "72 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "14 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "24 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "במשולש שווה-שוקיים ההיקף הוא 32 ס\"מ והבסיס 12 ס\"מ. מהו אורך כל שוק?",
     "explanation": "סכום שני השוקיים = 32 − 12 = 20. כל שוק = 20 ÷ 2 = 10 ס\"מ.",
     "options": [
-      { "label": "1", "body": "10 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "20 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "16 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "10 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "20 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "16 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "מהו היקפו של ריבוע ששטחו 36 סמ\"ר?",
     "explanation": "אורך הצלע = שורש 36 = 6 ס\"מ. היקף = 4 × 6 = 24 ס\"מ.",
     "options": [
-      { "label": "1", "body": "24 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "36 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "18 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "24 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "36 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "18 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "שטח פאה אחת של קובייה הוא 9 סמ\"ר. מהו נפח הקובייה?",
     "explanation": "אורך המקצוע = שורש 9 = 3 ס\"מ. נפח = 3³ = 27 סמ\"ק.",
     "options": [
-      { "label": "1", "body": "27 סמ\"ק", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "9 סמ\"ק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "54 סמ\"ק", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "18 סמ\"ק", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "27 סמ\"ק",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "9 סמ\"ק",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "54 סמ\"ק",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "18 סמ\"ק",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "במעוין כל הצלעות שוות באורכן. אם אורך הצלע 5 ס\"מ, מהו היקפו?",
     "explanation": "למעוין 4 צלעות שוות, ולכן ההיקף = 4 × 5 = 20 ס\"מ.",
     "options": [
-      { "label": "1", "body": "20 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "25 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "10 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "15 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "20 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "25 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "10 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "15 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גיאומטריה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גיאומטריה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "פי כמה גדל שטחו של עיגול אם מכפילים את רדיוסו פי 3?",
     "explanation": "השטח פרופורציוני לריבוע הרדיוס. אם הרדיוס גדל פי 3, השטח גדל פי 3² = 9.",
     "options": [
-      { "label": "1", "body": "פי 9", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "פי 3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פי 6", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "פי 27", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "פי 9",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פי 3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פי 6",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "פי 27",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

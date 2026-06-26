@@ -1,552 +1,1532 @@
 [
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 1, "difficulty": 1,
-    "body": "אם 2x = 14, מה ערכו של x?",
-    "explanation": "מחלקים את שני האגפים ב-2: x = 14 ÷ 2 = 7.",
-    "options": [
-      { "label": "1", "body": "7", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "12", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "16", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "28", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 1, "difficulty": 1,
-    "body": "פתרו: x + 9 = 21.",
-    "explanation": "מחסירים 9 משני האגפים: x = 21 − 9 = 12.",
-    "options": [
-      { "label": "1", "body": "12", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "30", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "11", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "13", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 1, "difficulty": 2,
-    "body": "אם 5x − 3 = 22, מה ערכו של x?",
-    "explanation": "מוסיפים 3: 5x = 25. מחלקים ב-5: x = 5.",
-    "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "4", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "6", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "19", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 1, "difficulty": 1,
-    "body": "מהו ערך הביטוי 3a + 2 כאשר a = 4?",
-    "explanation": "מציבים: 3 × 4 + 2 = 12 + 2 = 14.",
-    "options": [
-      { "label": "1", "body": "14", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "12", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "18", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "20", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 1, "difficulty": 1,
-    "body": "מספר גדל ב-7 והתקבל 20. מהו המספר המקורי?",
-    "explanation": "x + 7 = 20, ולכן x = 13.",
-    "options": [
-      { "label": "1", "body": "13", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "27", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "14", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "פתרו: 2(x + 3) = 16.",
     "explanation": "מחלקים ב-2: x + 3 = 8, ולכן x = 5.",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "8", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "11", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "2", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "8",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "11",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "2",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "אם 3x + 2 = x + 10, מה ערכו של x?",
     "explanation": "מעבירים אגפים: 3x − x = 10 − 2, כלומר 2x = 8, ולכן x = 4.",
     "options": [
-      { "label": "1", "body": "4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "3", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "4",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "3",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "סכומם של שני מספרים שלמים עוקבים הוא 35. מהו הגדול שביניהם?",
     "explanation": "n + (n+1) = 35, כלומר 2n + 1 = 35, ולכן n = 17 והגדול הוא 18.",
     "options": [
-      { "label": "1", "body": "18", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "17", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "16", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "19", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "18",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "17",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "16",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "19",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "אם x/4 + 2 = 5, מה ערכו של x?",
     "explanation": "מחסירים 2: x/4 = 3. מכפילים ב-4: x = 12.",
     "options": [
-      { "label": "1", "body": "12", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "28", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "20", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "12",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "28",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "20",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "עט ועיפרון עולים יחד 12 ₪. העט יקר מהעיפרון ב-4 ₪. כמה עולה העט?",
     "explanation": "נסמן עט = p, עיפרון = p − 4. אז p + (p − 4) = 12, כלומר 2p = 16 ו-p = 8 ₪.",
     "options": [
-      { "label": "1", "body": "8 ₪", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "6 ₪", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "4 ₪", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "10 ₪", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "8 ₪",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "6 ₪",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "4 ₪",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "10 ₪",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "פתרו: 4x − 7 = 2x + 5.",
     "explanation": "מעבירים אגפים: 4x − 2x = 5 + 7, כלומר 2x = 12, ולכן x = 6.",
     "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "1", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "1",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "מהו ערך הביטוי 2a + 3b כאשר a = 5 ו-b = 2?",
     "explanation": "מציבים: 2 × 5 + 3 × 2 = 10 + 6 = 16.",
     "options": [
-      { "label": "1", "body": "16", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "13", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "20", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "25", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "16",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "13",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "20",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "25",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "פתרו: x/3 = 9.",
     "explanation": "מכפילים את שני האגפים ב-3: x = 27.",
     "options": [
-      { "label": "1", "body": "27", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "27",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 3, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 3,
+    "difficulty": 4,
     "body": "אם 7x = 3x + 16, מה ערכו של x?",
     "explanation": "מעבירים אגפים: 7x − 3x = 16, כלומר 4x = 16, ולכן x = 4.",
     "options": [
-      { "label": "1", "body": "4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "16", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "8", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "4",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "16",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "8",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "מספר שלם, כאשר מכפילים אותו ב-3 ומוסיפים 4, מתקבל 19. מהו המספר?",
     "explanation": "3x + 4 = 19, כלומר 3x = 15, ולכן x = 5.",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "7", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "6", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "15", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "7",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "6",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "15",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 4, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 4,
+    "difficulty": 3,
     "body": "פתרו: 3(x − 2) = 9.",
     "explanation": "מחלקים ב-3: x − 2 = 3, ולכן x = 5.",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "1", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "9", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "1",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "9",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 4, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 4,
+    "difficulty": 4,
     "body": "פתרו: 2x + 3x = 35.",
     "explanation": "מאחדים: 5x = 35, ולכן x = 7.",
     "options": [
-      { "label": "1", "body": "7", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "5", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "35", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "7",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "5",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "35",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 4, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 4,
+    "difficulty": 4,
     "body": "אם 6x − 4 = 2x + 12, מה ערכו של x?",
     "explanation": "מעבירים אגפים: 6x − 2x = 12 + 4, כלומר 4x = 16, ולכן x = 4.",
     "options": [
-      { "label": "1", "body": "4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "8", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "3", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "4",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "8",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "3",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 4, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 4,
+    "difficulty": 4,
     "body": "סכום שני מספרים הוא 20 וההפרש ביניהם 4. מהו הגדול?",
     "explanation": "x + y = 20, x − y = 4. חיבור המשוואות: 2x = 24, ולכן x = 12.",
     "options": [
-      { "label": "1", "body": "12", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "8", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "16", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "10", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "12",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "8",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "16",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "10",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 4, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 4,
+    "difficulty": 4,
     "body": "מהו ערך הביטוי a² − b כאשר a = 4 ו-b = 6?",
     "explanation": "מציבים: 4² − 6 = 16 − 6 = 10.",
     "options": [
-      { "label": "1", "body": "10", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "26", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "14", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "10",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "26",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "14",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "פתרו: (x + 4)/2 = 6.",
     "explanation": "מכפילים ב-2: x + 4 = 12, ולכן x = 8.",
     "options": [
-      { "label": "1", "body": "8", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "12", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "2", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "16", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "8",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "12",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "2",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "16",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "אם 5(x − 1) = 3x + 7, מה ערכו של x?",
     "explanation": "מפתחים: 5x − 5 = 3x + 7. מעבירים: 2x = 12, ולכן x = 6.",
     "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "4", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "3", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "3",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "גילו של אב גדול פי 3 מגיל בנו. בעוד 5 שנים יהיה האב בן 50. מהו גיל הבן כיום?",
     "explanation": "האב כיום בן 45 (50 בעוד 5 שנים). הבן: 45 ÷ 3 = 15.",
     "options": [
-      { "label": "1", "body": "15", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "12", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "10", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "18", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "15",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "12",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "10",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "18",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 5, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 5,
+    "difficulty": 5,
     "body": "אם x + y = 10 ו-2x − y = 5, מה ערכו של x?",
     "explanation": "חיבור שתי המשוואות: 3x = 15, ולכן x = 5.",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "7", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "10", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "7",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "10",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "מהו ערך הביטוי 3(a + 2) − a כאשר a = 4?",
     "explanation": "מפשטים: 3a + 6 − a = 2a + 6. מציבים: 2 × 4 + 6 = 14.",
     "options": [
-      { "label": "1", "body": "14", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "12", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "18", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "10", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "14",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "12",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "18",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "10",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "פתרו: 8 − 2x = 0.",
     "explanation": "מעבירים: 2x = 8, ולכן x = 4.",
     "options": [
-      { "label": "1", "body": "4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "−4", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "8", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "2", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "4",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "−4",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "8",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "2",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "אם 3x/2 = 9, מה ערכו של x?",
     "explanation": "מכפילים ב-2: 3x = 18, ולכן x = 6.",
     "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "9", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "9",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 6, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 6,
+    "difficulty": 5,
     "body": "מחיר 3 עפרונות ו-2 מחקים הוא 16 ₪. עיפרון עולה 4 ₪. כמה עולה מחק?",
     "explanation": "3 עפרונות עולים 12 ₪. נשארו 16 − 12 = 4 ₪ עבור 2 מחקים, ולכן מחק עולה 2 ₪.",
     "options": [
-      { "label": "1", "body": "2 ₪", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "4 ₪", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "1 ₪", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "3 ₪", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "2 ₪",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4 ₪",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "1 ₪",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "3 ₪",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "אם 2x − 5 = 11, מה ערכו של 4x?",
     "explanation": "2x − 5 = 11 ⟵ 2x = 16, x = 8. לכן 4x = 32.",
     "options": [
-      { "label": "1", "body": "32", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "16", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "8", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "24", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "32",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "16",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "8",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "24",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 6, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 6,
+    "difficulty": 5,
     "body": "סכום שלושה מספרים שלמים עוקבים הוא 48. מהו הקטן שבהם?",
     "explanation": "(n−1) + n + (n+1) = 3n = 48, ולכן n = 16 והקטן הוא 15.",
     "options": [
-      { "label": "1", "body": "15", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "16", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "14", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "17", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "15",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "16",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "14",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "17",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "פתרו: 10 − 3x = x − 2.",
     "explanation": "מעבירים אגפים: 10 + 2 = x + 3x, כלומר 12 = 4x, ולכן x = 3.",
     "options": [
-      { "label": "1", "body": "3", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "4", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "3",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "4",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 7, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 7,
+    "difficulty": 5,
     "body": "אם 2(x + 1) = 3(x − 2), מה ערכו של x?",
     "explanation": "מפתחים: 2x + 2 = 3x − 6. מעבירים: 8 = x, ולכן x = 8.",
     "options": [
-      { "label": "1", "body": "8", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "4", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "−8", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "2", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "8",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "−8",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "2",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 7, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 7,
+    "difficulty": 5,
     "body": "מכוניתו של דן נסעה x ק\"מ, ושל רן נסעה פי 2 ועוד 10 ק\"מ. יחד נסעו 100 ק\"מ. כמה נסע דן?",
     "explanation": "x + (2x + 10) = 100, כלומר 3x + 10 = 100, 3x = 90, ולכן x = 30 ק\"מ.",
     "options": [
-      { "label": "1", "body": "30 ק\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "45 ק\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "20 ק\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "40 ק\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "30 ק\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "45 ק\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "20 ק\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "40 ק\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "אם חצי ממספר ועוד שליש ממנו שווה 25, מהו המספר?",
     "explanation": "x/2 + x/3 = 5x/6 = 25, ולכן x = 30.",
     "options": [
-      { "label": "1", "body": "30", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "25", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "36", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "15", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "30",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "25",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "36",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "15",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 7, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 7,
+    "difficulty": 5,
     "body": "מהו ערך הביטוי (x² − 9) כאשר x = 5?",
     "explanation": "מציבים: 5² − 9 = 25 − 9 = 16.",
     "options": [
-      { "label": "1", "body": "16", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "1", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "34", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "−4", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "16",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "1",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "34",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "−4",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "אם x = 3, מה ערכו של 2x² − 4x + 1?",
     "explanation": "מציבים: 2 × 9 − 4 × 3 + 1 = 18 − 12 + 1 = 7.",
     "options": [
-      { "label": "1", "body": "7", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "5", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "11", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "1", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "7",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "5",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "11",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "1",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "פתרו: 4x + 3 = 2(x + 9).",
     "explanation": "מפתחים: 4x + 3 = 2x + 18. מעבירים: 2x = 15, ולכן x = 7.5.",
     "options": [
-      { "label": "1", "body": "7.5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "7", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "9", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "7.5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "7",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "9",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "אם x + y = 14 ו-x − y = 2, מה ערכו של y?",
     "explanation": "חיסור המשוואות: 2y = 12, ולכן y = 6.",
     "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "8", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "4", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "7", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "8",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "4",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "7",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "בכיתה מספר הבנות גדול ב-6 ממספר הבנים. בסך הכול 30 תלמידים. כמה בנים יש?",
     "explanation": "בנים = b, בנות = b + 6. אז b + (b + 6) = 30, כלומר 2b = 24, b = 12.",
     "options": [
-      { "label": "1", "body": "12", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "18", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "15", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "10", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "12",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "18",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "15",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "10",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "פתרו עבור x: x/2 − x/5 = 3.",
     "explanation": "מכנה משותף 10: 5x/10 − 2x/10 = 3x/10 = 3, ולכן x = 10.",
     "options": [
-      { "label": "1", "body": "10", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "15", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "5", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "10",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "6",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "15",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "5",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "אם 3x − 2y = 12 ו-y = 3, מה ערכו של x?",
     "explanation": "מציבים y = 3: 3x − 6 = 12, כלומר 3x = 18, ולכן x = 6.",
     "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "4", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "2", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "9", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "2",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "9",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "מספר כלשהו: אם מכפילים אותו בעצמו ומוסיפים 5, מתקבל 30. מהו המספר החיובי?",
     "explanation": "x² + 5 = 30, כלומר x² = 25, ולכן x = 5 (הערך החיובי).",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "25", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "4", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "6",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "25",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "4",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "פתרו: 2(3x − 1) = 4(x + 2).",
     "explanation": "מפתחים: 6x − 2 = 4x + 8. מעבירים: 2x = 10, ולכן x = 5.",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "4", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "4",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "אורך מלבן גדול פי 2 מרוחבו. ההיקף הוא 36 ס\"מ. מהו הרוחב?",
     "explanation": "רוחב = w, אורך = 2w. היקף = 2(2w + w) = 6w = 36, ולכן w = 6 ס\"מ.",
     "options": [
-      { "label": "1", "body": "6 ס\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "12 ס\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "9 ס\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "4 ס\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6 ס\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "12 ס\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "9 ס\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "4 ס\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "אם a/b = 3 ו-b = 4, מה ערכו של a + b?",
     "explanation": "מ-a/b = 3 נובע a = 3b = 12. לכן a + b = 12 + 4 = 16.",
     "options": [
-      { "label": "1", "body": "16", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "7", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "19", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "16",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "7",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "19",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "פתרו: 5x − 3(x − 4) = 20.",
     "explanation": "מפתחים: 5x − 3x + 12 = 20, כלומר 2x + 12 = 20, 2x = 8, ולכן x = 4.",
     "options": [
-      { "label": "1", "body": "4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "8", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "4",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "8",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "אם 2x + 3y = 18 ו-x = 3, מה ערכו של y?",
     "explanation": "מציבים x = 3: 6 + 3y = 18, כלומר 3y = 12, ולכן y = 4.",
     "options": [
-      { "label": "1", "body": "4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "2", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "5", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "4",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "6",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "2",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "5",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "סכומם של שני מספרים הוא 30, ואחד גדול פי 4 מהשני. מהו הגדול?",
     "explanation": "x + 4x = 5x = 30, ולכן x = 6 והגדול הוא 4 × 6 = 24.",
     "options": [
-      { "label": "1", "body": "24", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "20", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "18", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "24",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "6",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "20",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "18",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "מהו ערך הביטוי (a + b)² כאשר a = 2 ו-b = 3?",
     "explanation": "(2 + 3)² = 5² = 25.",
     "options": [
-      { "label": "1", "body": "25", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "13", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "10", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "36", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "25",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "13",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "10",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "36",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – אלגברה", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – אלגברה",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "פתרו: (2x − 1)/3 = (x + 2)/2.",
     "explanation": "מכפילים באלכסון: 2(2x − 1) = 3(x + 2), כלומר 4x − 2 = 3x + 6, ולכן x = 8.",
     "options": [
-      { "label": "1", "body": "8", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "4", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "5", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "2", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "8",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "5",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "2",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

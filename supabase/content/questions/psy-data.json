@@ -1,552 +1,1498 @@
 [
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 2,
-    "body": "בטבלת מכירות: יום א' = 10, יום ב' = 15, יום ג' = 20. מהו סך המכירות בשלושת הימים?",
-    "explanation": "10 + 15 + 20 = 45.",
-    "options": [
-      { "label": "1", "body": "45", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "35", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "50", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "40", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 2,
-    "body": "בכיתה 25 תלמידים, ו-20% מהם נעדרו. כמה תלמידים נעדרו?",
-    "explanation": "20% מתוך 25 = 0.20 × 25 = 5 תלמידים.",
-    "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "20", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "10", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "4", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 2,
-    "body": "בגרף עמודות מספר התלמידים בחוגים: כדורגל 12, כדורסל 8, שחייה 5. בכמה תלמידים יותר יש בכדורגל מאשר בשחייה?",
-    "explanation": "12 − 5 = 7 תלמידים.",
-    "options": [
-      { "label": "1", "body": "7", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "4", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "5", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 1,
-    "body": "מהו הממוצע של הציונים 70, 80, 90?",
-    "explanation": "(70 + 80 + 90) ÷ 3 = 240 ÷ 3 = 80.",
-    "options": [
-      { "label": "1", "body": "80", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "75", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "85", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "240", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 1, "difficulty": 2,
-    "body": "אם 3/4 מתוך 40 תלמידים אוהבים מתמטיקה, כמה תלמידים זה?",
-    "explanation": "3/4 מתוך 40 = (40 ÷ 4) × 3 = 30 תלמידים.",
-    "options": [
-      { "label": "1", "body": "30", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "10", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "34", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "20", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "חברה הרוויחה 200 ₪ בינואר ו-260 ₪ בפברואר. בכמה אחוזים עלה הרווח?",
     "explanation": "העלייה 60 ₪. ביחס לבסיס: 60 ÷ 200 = 0.30 = 30%.",
     "options": [
-      { "label": "1", "body": "30%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "60%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "23%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "26%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "30%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "60%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "23%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "26%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "בסקר השתתפו 200 אנשים. 45% העדיפו תה, והשאר קפה. כמה אנשים העדיפו קפה?",
     "explanation": "קפה הועדף על ידי 55%: 0.55 × 200 = 110.",
     "options": [
-      { "label": "1", "body": "110", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "90", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "55", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "145", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "110",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "90",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "55",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "145",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "לפי טבלה, מחיר מוצר עלה מ-50 ₪ ל-65 ₪. מהו שיעור העלייה באחוזים?",
     "explanation": "העלייה 15 ₪. ביחס לבסיס: 15 ÷ 50 = 0.30 = 30%.",
     "options": [
-      { "label": "1", "body": "30%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "15%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "23%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "65%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "30%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "15%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "23%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "65%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 2,
-    "body": "הממוצע של 4 מספרים הוא 25. מהו סכומם?",
-    "explanation": "סכום = ממוצע × מספר האיברים = 25 × 4 = 100.",
-    "options": [
-      { "label": "1", "body": "100", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "29", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "50", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "75", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 2, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 2,
+    "difficulty": 5,
     "body": "ממוצע 5 מבחנים של תלמיד הוא 80. איזה ציון הוא צריך לקבל במבחן השישי כדי שהממוצע יעלה ל-82?",
     "explanation": "סכום 5 המבחנים 400. לממוצע 82 בשישה מבחנים דרוש סכום 492. הציון הדרוש: 492 − 400 = 92.",
     "options": [
-      { "label": "1", "body": "92", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "82", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "84", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "90", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "92",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "82",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "84",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "90",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "בגרף עמודות: ראשון 30, שני 45, שלישי 25. מהו סך כל המכירות?",
     "explanation": "30 + 45 + 25 = 100.",
     "options": [
-      { "label": "1", "body": "100", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "90", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "110", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "75", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "100",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "90",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "110",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "75",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "בטבלה: מתמטיקה 28, אנגלית 35, מדעים 22. בכמה תלמידים אנגלית עולה על מדעים?",
     "explanation": "35 − 22 = 13.",
     "options": [
-      { "label": "1", "body": "13", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "7", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "57", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "13",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "7",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "57",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "מהו הערך הנמוך ביותר מבין: 18, 24, 12, 30?",
     "explanation": "המספר הקטן ביותר הוא 12.",
     "options": [
-      { "label": "1", "body": "12", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "30", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "18", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "24", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "12",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "30",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "18",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "24",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "טמפרטורות שנמדדו: 20°, 22°, 24°, 26°. מהו ההפרש בין הגבוהה לנמוכה?",
     "explanation": "26 − 20 = 6 מעלות.",
     "options": [
-      { "label": "1", "body": "6°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "4°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "26°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "46°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "26°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "46°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 3, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 3,
+    "difficulty": 3,
     "body": "חנות מכרה 60 פריטים, ומתוכם הוחזרו 12. כמה פריטים נשארו מכורים?",
     "explanation": "60 − 12 = 48.",
     "options": [
-      { "label": "1", "body": "48", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "72", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "60", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "48",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "72",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "60",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 4, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 4,
+    "difficulty": 3,
     "body": "מתוך 50 תלמידים, 30% נמצאים במגמת מדעים. כמה תלמידים זה?",
     "explanation": "0.30 × 50 = 15.",
     "options": [
-      { "label": "1", "body": "15", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "20", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "30", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "35", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "15",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "20",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "30",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "35",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 4, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 4,
+    "difficulty": 3,
     "body": "בסקר בקרב 80 איש, 25% צופים בחדשות מדי יום. כמה אנשים זה?",
     "explanation": "0.25 × 80 = 20.",
     "options": [
-      { "label": "1", "body": "20", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "25", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "60", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "55", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "20",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "25",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "60",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "55",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 4, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 4,
+    "difficulty": 3,
     "body": "חנות מכרה 200 מוצרים, ו-10% מהם הוחזרו. כמה מוצרים הוחזרו?",
     "explanation": "0.10 × 200 = 20.",
     "options": [
-      { "label": "1", "body": "20", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "10", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "180", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "2", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "20",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "10",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "180",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "2",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 4, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 4,
+    "difficulty": 4,
     "body": "בכיתה 40 תלמידים, 45% מהם בנים. כמה בנות יש בכיתה?",
     "explanation": "בנות הן 55%: 0.55 × 40 = 22.",
     "options": [
-      { "label": "1", "body": "22", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "18", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "45", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "55", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "22",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "18",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "45",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "55",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 4, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 4,
+    "difficulty": 4,
     "body": "מתוך 120 הזמנות, 75% סופקו בזמן. כמה הזמנות לא סופקו בזמן?",
     "explanation": "לא סופקו 25%: 0.25 × 120 = 30.",
     "options": [
-      { "label": "1", "body": "30", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "90", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "45", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "25", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "30",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "90",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "45",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "25",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 5, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 5,
+    "difficulty": 3,
     "body": "ציוני תלמיד: 60, 70, 80, 90. מהו ממוצע הציונים?",
     "explanation": "(60 + 70 + 80 + 90) ÷ 4 = 300 ÷ 4 = 75.",
     "options": [
-      { "label": "1", "body": "75", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "70", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "80", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "300", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "75",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "70",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "80",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "300",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "מכירות יומיות: 10, 20, 30, 40, 50. מהו הממוצע היומי?",
     "explanation": "הסכום 150, חלקי 5 ימים = 30.",
     "options": [
-      { "label": "1", "body": "30", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "25", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "150", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "35", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "30",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "25",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "150",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "35",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "הממוצע של 4 משקלים הוא 50 ק\"ג. מהו סך כל המשקלים?",
     "explanation": "סכום = 50 × 4 = 200 ק\"ג.",
     "options": [
-      { "label": "1", "body": "200 ק\"ג", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "54 ק\"ג", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "46 ק\"ג", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "100 ק\"ג", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "200 ק\"ג",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "54 ק\"ג",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "46 ק\"ג",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "100 ק\"ג",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "הטמפרטורה הממוצעת ב-5 ימים הייתה 24°. מהו סכום הטמפרטורות?",
     "explanation": "סכום = 24 × 5 = 120 מעלות.",
     "options": [
-      { "label": "1", "body": "120°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "29°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "24°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "100°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "120°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "29°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "24°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "100°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 5, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 5,
+    "difficulty": 4,
     "body": "ממוצע 3 מספרים הוא 10. שניים מהם 8 ו-9. מהו השלישי?",
     "explanation": "הסכום 30. השלישי = 30 − 8 − 9 = 13.",
     "options": [
-      { "label": "1", "body": "13", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "10", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "11", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "13",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "10",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "11",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "הרווח עלה מ-100 ₪ ל-150 ₪. מהו שיעור העלייה?",
     "explanation": "העלייה 50 ₪, ביחס לבסיס 100: 50%.",
     "options": [
-      { "label": "1", "body": "50%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "150%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "33%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "15%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "50%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "150%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "33%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "15%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "מחיר ירד מ-200 ₪ ל-150 ₪. מהו שיעור הירידה?",
     "explanation": "הירידה 50 ₪, ביחס לבסיס 200: 50 ÷ 200 = 25%.",
     "options": [
-      { "label": "1", "body": "25%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "50%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "75%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "33%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "25%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "50%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "75%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "33%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "מספר המבקרים עלה מ-400 ל-500. מהו שיעור העלייה?",
     "explanation": "העלייה 100, ביחס לבסיס 400: 100 ÷ 400 = 25%.",
     "options": [
-      { "label": "1", "body": "25%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "20%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "100%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "125%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "25%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "20%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "100%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "125%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 6, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 6,
+    "difficulty": 4,
     "body": "המכירות ירדו מ-80 יחידות ל-60 יחידות. מהו שיעור הירידה?",
     "explanation": "הירידה 20, ביחס לבסיס 80: 20 ÷ 80 = 25%.",
     "options": [
-      { "label": "1", "body": "25%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "20%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "33%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "40%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "25%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "20%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "33%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "40%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 6, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 6,
+    "difficulty": 5,
     "body": "אם ערך כלשהו הוכפל (גדל פי 2), מהו שיעור העלייה באחוזים?",
     "explanation": "הכפלה פירושה תוספת של 100% מהערך המקורי.",
     "options": [
-      { "label": "1", "body": "100%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "50%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "200%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "2%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "100%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "50%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "200%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "2%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "בטבלה: 12 כלבים ו-18 חתולים. מהו היחס המצומצם בין כלבים לחתולים?",
     "explanation": "12:18 מצומצם בחלוקה ב-6 ל-2:3.",
     "options": [
-      { "label": "1", "body": "2:3", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "3:2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "12:18", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "1:2", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "2:3",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "3:2",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12:18",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "1:2",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "בהצבעה 60 הצביעו בעד ו-40 נגד. מהו היחס המצומצם בעד:נגד?",
     "explanation": "60:40 מצומצם בחלוקה ב-20 ל-3:2.",
     "options": [
-      { "label": "1", "body": "3:2", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2:3", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "6:4", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "1:1", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "3:2",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2:3",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "6:4",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "1:1",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "במפה, 1 ס\"מ מייצג 50 ק\"מ בשטח. כמה ק\"מ מייצגים 4 ס\"מ?",
     "explanation": "4 × 50 = 200 ק\"מ.",
     "options": [
-      { "label": "1", "body": "200 ק\"מ", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "150 ק\"מ", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "54 ק\"מ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "100 ק\"מ", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "200 ק\"מ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "150 ק\"מ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "54 ק\"מ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "100 ק\"מ",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "בכיתה היחס בין בנים לבנות הוא 3:2, ובסך הכול 30 תלמידים. כמה בנים יש?",
     "explanation": "סך היחידות 5, כל יחידה 6. בנים = 3 × 6 = 18.",
     "options": [
-      { "label": "1", "body": "18", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "12", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "15", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "20", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "18",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "12",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "15",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "20",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 7, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 7,
+    "difficulty": 4,
     "body": "מכונה מייצרת בקצב 2 מוצרים לדקה. כמה מוצרים תייצר בשעה אחת?",
     "explanation": "בשעה 60 דקות. 2 × 60 = 120 מוצרים.",
     "options": [
-      { "label": "1", "body": "120", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "60", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "100", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "30", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "120",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "60",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "100",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "30",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "מתוך 200 אנשים, 40% הן נשים, ומחציתן עובדות. כמה נשים עובדות?",
     "explanation": "נשים: 0.40 × 200 = 80. מחציתן עובדות: 40.",
     "options": [
-      { "label": "1", "body": "40", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "80", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "100", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "20", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "40",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "80",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "100",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "20",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "מתוך 500 אנשים, 60% גברים, ומתוכם 25% מעשנים. כמה גברים מעשנים?",
     "explanation": "גברים: 0.60 × 500 = 300. מעשנים: 0.25 × 300 = 75.",
     "options": [
-      { "label": "1", "body": "75", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "125", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "300", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "60", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "75",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "125",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "300",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "60",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "ממוצע 4 מבחנים הוא 80. התלמיד קיבל 90 במבחן החמישי. מהו הממוצע של חמשת המבחנים?",
     "explanation": "סכום 4 המבחנים 320. עם 90: 410, חלקי 5 = 82.",
     "options": [
-      { "label": "1", "body": "82", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "85", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "80", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "86", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "82",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "85",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "80",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "86",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "חנות מכרה 150 פריטים ב-10 ₪ כל אחד, ו-50 פריטים ב-20 ₪ כל אחד. מהי ההכנסה הכוללת?",
     "explanation": "150 × 10 + 50 × 20 = 1500 + 1000 = 2500 ₪.",
     "options": [
-      { "label": "1", "body": "2500 ₪", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2000 ₪", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "3000 ₪", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "2200 ₪", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "2500 ₪",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2000 ₪",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "3000 ₪",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "2200 ₪",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 8, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 8,
+    "difficulty": 5,
     "body": "חברה הרוויחה 1000 ₪ בינואר. בפברואר הרווח ירד ב-10%, ובמרץ עלה ב-10% ביחס לפברואר. מהו הרווח במרץ?",
     "explanation": "פברואר: 900. מרץ: 900 × 1.1 = 990 ₪ (לא חוזרים ל-1000 כי האחוזים על בסיסים שונים).",
     "options": [
-      { "label": "1", "body": "990 ₪", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "1000 ₪", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "900 ₪", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "1100 ₪", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "990 ₪",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "1000 ₪",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "900 ₪",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "1100 ₪",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "אם 30% ממספר הם 60, מהו המספר השלם (100%)?",
     "explanation": "x × 0.3 = 60, ולכן x = 60 ÷ 0.3 = 200.",
     "options": [
-      { "label": "1", "body": "200", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "180", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "90", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "300", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "200",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "180",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "90",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "300",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "ממוצע 6 מספרים הוא 20. מסירים שניים שממוצעם 10. מהו ממוצע ארבעת הנותרים?",
     "explanation": "סכום הכול 120. שני המוסרים מסתכמים ל-20. נשאר 100 עבור 4 מספרים: 100 ÷ 4 = 25.",
     "options": [
-      { "label": "1", "body": "25", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "20", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "30", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "15", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "25",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "20",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "30",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "15",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "במבצע 'קנה 3 קבל 1 חינם', אם שילמת על 9 פריטים, כמה פריטים קיבלת בחינם?",
     "explanation": "כל 3 ששולמו מזכים בפריט חינם. 9 ÷ 3 = 3 פריטים חינם.",
     "options": [
-      { "label": "1", "body": "3", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "1", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "9", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "3",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "1",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "9",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "המכירות גדלות ב-10% בכל חודש, ומתחילות ב-100 בחודש הראשון. מהן המכירות בחודש השלישי?",
     "explanation": "חודש שני: 110. חודש שלישי: 110 × 1.1 = 121.",
     "options": [
-      { "label": "1", "body": "121", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "120", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "110", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "130", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "121",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "120",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "110",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "130",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "בתרשים עוגה: 50% דיור, 25% מזון, והשאר חיסכון. אם התקציב 4000 ₪, כמה מיועד לחיסכון?",
     "explanation": "חיסכון = 100% − 50% − 25% = 25%. 0.25 × 4000 = 1000 ₪.",
     "options": [
-      { "label": "1", "body": "1000 ₪", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2000 ₪", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "500 ₪", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "1500 ₪", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "1000 ₪",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "2000 ₪",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "500 ₪",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "1500 ₪",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "הטמפרטורה הממוצעת ב-5 ערים היא 30°. אם בעיר אחת נמדדו 50°, מהו ממוצע ארבע הערים האחרות?",
     "explanation": "סכום הכול 150. ללא העיר בת 50°: 100, חלקי 4 = 25°.",
     "options": [
-      { "label": "1", "body": "25°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "30°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "20°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "40°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "25°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "30°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "20°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "40°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "אם 2/5 מתוך 200 איש הם ילדים, כמה מבוגרים יש?",
     "explanation": "ילדים: (200 ÷ 5) × 2 = 80. מבוגרים: 200 − 80 = 120.",
     "options": [
-      { "label": "1", "body": "120", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "80", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "160", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "40", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "120",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "80",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "160",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "40",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "תלמיד ענה נכון על 18 שאלות מתוך 24. מהו אחוז התשובות הנכונות?",
     "explanation": "18 ÷ 24 = 0.75 = 75%.",
     "options": [
-      { "label": "1", "body": "75%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "72%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "80%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "60%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "75%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "72%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "80%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "60%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 9, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 9,
+    "difficulty": 5,
     "body": "אם 20% ממספר הם 50, מהו המספר?",
     "explanation": "x × 0.2 = 50, ולכן x = 50 ÷ 0.2 = 250.",
     "options": [
-      { "label": "1", "body": "250", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "200", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "100", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "300", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "250",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "200",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "100",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "300",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "כמותי – גרפים וטבלאות", "level_position": 10, "difficulty": 5,
+    "track": "psychometric",
+    "unit": "כמותי – גרפים וטבלאות",
+    "level_position": 10,
+    "difficulty": 5,
     "body": "תלמיד ענה נכון על 60 שאלות מתוך 80. מהו אחוז השגיאות שלו?",
     "explanation": "שגה ב-20 שאלות מתוך 80: 20 ÷ 80 = 0.25 = 25%.",
     "options": [
-      { "label": "1", "body": "25%", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "75%", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "20%", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "40%", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "25%",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "75%",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "20%",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "40%",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

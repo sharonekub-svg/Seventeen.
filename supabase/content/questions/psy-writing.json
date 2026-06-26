@@ -1,112 +1,172 @@
 [
   {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 1, "difficulty": 2,
-    "body": "איזה מהמשפטים הבאים מתאים ביותר לשמש משפט פתיחה (טענה) לחיבור טיעון?",
-    "explanation": "טענה טובה מציגה עמדה ברורה שניתן לנמק. 'יש להגביל את השימוש בטלפונים ניידים בבתי ספר' היא עמדה הניתנת לביסוס, בניגוד למשפטים שאינם מנסחים טענה.",
-    "options": [
-      { "label": "1", "body": "יש להגביל את השימוש בטלפונים ניידים בבתי ספר.", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "אני מאוד אוהב טלפונים ניידים.", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "טלפונים ניידים קיימים בעולם.", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מה דעתכם על טלפונים?", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 1, "difficulty": 2,
-    "body": "מהו תפקידה של פסקת הסיכום בחיבור טיעון?",
-    "explanation": "פסקת הסיכום מקבצת את הטיעונים שהוצגו ומחזקת את המסקנה, ואינה מקום להציג נושא או דוגמה חדשים.",
-    "options": [
-      { "label": "1", "body": "לסכם את הטיעונים ולחזק את המסקנה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "להציג נושא חדש לגמרי", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "לפתוח בשאלה פתוחה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לפרט דוגמאות חדשות שלא הוזכרו", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 1, "difficulty": 2,
-    "body": "איזה מחבר המילים הבאים מתאים ביותר לציון ניגוד בין שתי פסקאות בחיבור?",
-    "explanation": "'לעומת זאת' מציין ניגוד. 'בנוסף' מציין הוספה, 'למשל' הדגמה, ו'משום כך' סיבתיות.",
-    "options": [
-      { "label": "1", "body": "לעומת זאת", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "בנוסף", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "למשל", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "משום כך", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 1, "difficulty": 2,
-    "body": "מהי הדרך הטובה ביותר לבסס טענה בחיבור טיעון?",
-    "explanation": "טענה מתבססת היטב באמצעות נימוקים ודוגמאות תומכות, ולא בחזרה על הטענה עצמה או בקיצור יתר.",
-    "options": [
-      { "label": "1", "body": "להביא נימוקים ודוגמאות תומכות", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "לחזור שוב ושוב על הטענה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "לכתוב משפט אחד בלבד", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "להשתמש בסימני קריאה רבים", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 1, "difficulty": 2,
-    "body": "איזה מהמשפטים הבאים מנוסח בצורה הברורה והתקנית ביותר?",
-    "explanation": "המשפט 'התחבורה הציבורית מפחיתה את זיהום האוויר בערים' תקני, בהיר ובעל מבנה שלם, בניגוד לשאר.",
-    "options": [
-      { "label": "1", "body": "התחבורה הציבורית מפחיתה את זיהום האוויר בערים.", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "זיהום אוויר ערים תחבורה.", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "למה בעצם יש זיהום?", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "תחבורה זה טוב מאוד מאוד מאוד.", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "מהו החיסרון המרכזי בשימוש בטענה גורפת כמו 'כולם יודעים ש...' בחיבור טיעון?",
     "explanation": "טענה גורפת אינה מבוססת על ראיה, ולכן עלולה להיתפס כלא אמינה ולהחליש את הטיעון.",
     "options": [
-      { "label": "1", "body": "היא אינה מבוססת ועלולה להיתפס כלא אמינה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "היא משכנעת מדי", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "היא קצרה מדי", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "היא מנומסת מדי", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "היא אינה מבוססת ועלולה להיתפס כלא אמינה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "היא משכנעת מדי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "היא קצרה מדי",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "היא מנומסת מדי",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "כדי לחזק טיעון בחיבור, על מה עדיף להסתמך?",
     "explanation": "הסתמכות על נתונים ומחקרים רלוונטיים מחזקת טיעון יותר מאשר דעה אישית, שמועות או פנייה לרגש בלבד.",
     "options": [
-      { "label": "1", "body": "נתונים ומחקרים רלוונטיים", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "דעה אישית בלבד", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שמועות לא מבוססות", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "פנייה לרגשות הקורא בלבד", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "נתונים ומחקרים רלוונטיים",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "דעה אישית בלבד",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שמועות לא מבוססות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "פנייה לרגשות הקורא בלבד",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "מהי 'טענת נגד' (אנטיתזה) בחיבור טיעון?",
     "explanation": "טענת נגד היא עמדה מנוגדת שהכותב מציג ומתייחס אליה (לרוב מפריך אותה), כדי לחזק את עמדתו.",
     "options": [
-      { "label": "1", "body": "עמדה מנוגדת שהכותב מתייחס אליה ומפריך", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "חזרה מילולית על הטענה המרכזית", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פסקת הסיכום של החיבור", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "כותרת החיבור", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "עמדה מנוגדת שהכותב מתייחס אליה ומפריך",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חזרה מילולית על הטענה המרכזית",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פסקת הסיכום של החיבור",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כותרת החיבור",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "איזה מבנה מתאים ביותר לחיבור טיעון משכנע?",
     "explanation": "מבנה אפקטיבי כולל פתיחה עם טענה, גוף עם נימוקים ודוגמאות, וסיכום שמחזק את המסקנה.",
     "options": [
-      { "label": "1", "body": "פתיחה עם טענה, גוף עם נימוקים, וסיכום", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "רשימת עובדות ללא סדר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "פתיחה וסיום בלבד, ללא גוף", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שאלות רבות ללא תשובות", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "פתיחה עם טענה, גוף עם נימוקים, וסיכום",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "רשימת עובדות ללא סדר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פתיחה וסיום בלבד, ללא גוף",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שאלות רבות ללא תשובות",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מטלת כתיבה", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "מדוע חשוב לשמור על מעבר הגיוני וקולח בין הפסקאות בחיבור?",
     "explanation": "מעברים הגיוניים מאפשרים לקורא לעקוב אחר רצף הטיעון ומחזקים את בהירות החיבור ושכנועו.",
     "options": [
-      { "label": "1", "body": "כדי שהקורא יוכל לעקוב אחר רצף הטיעון", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "כדי להאריך את החיבור באופן מלאכותי", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "כדי להרשים במילים נדירות", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "אין לכך כל חשיבות", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "כדי שהקורא יוכל לעקוב אחר רצף הטיעון",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כדי להאריך את החיבור באופן מלאכותי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כדי להרשים במילים נדירות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אין לכך כל חשיבות",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

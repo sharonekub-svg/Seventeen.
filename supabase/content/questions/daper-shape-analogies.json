@@ -1,112 +1,206 @@
 [
   {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 1, "difficulty": 2,
-    "body": "בסדרה המתחלפת: עיגול, ריבוע, עיגול, ריבוע, ___ . מהי הצורה הבאה?",
-    "explanation": "הסדרה מתחלפת בין עיגול לריבוע. לאחר ריבוע מגיע עיגול.",
-    "options": [
-      { "label": "1", "body": "עיגול", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ריבוע", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "משולש", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מעוין", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 1, "difficulty": 1,
-    "body": "למשולש 3 צלעות ולריבוע 4 צלעות. כמה צלעות יש למחומש?",
-    "explanation": "מחומש הוא צורה בעלת חמש צלעות.",
-    "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "4", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "3", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 1, "difficulty": 1,
-    "body": "בסדרה גדל מספר הנקודות בכל צורה: 1, 2, 3, ___ . כמה נקודות יהיו בצורה הבאה?",
-    "explanation": "בכל שלב מתווספת נקודה אחת, ולכן אחרי 3 מגיעות 4.",
-    "options": [
-      { "label": "1", "body": "4", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "5", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "3", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "6", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 1, "difficulty": 2,
-    "body": "משולש קטן הופך למשולש גדול. לפי אותו כלל, עיגול קטן הופך ל___?",
-    "explanation": "הכלל הוא 'הגדלת הצורה תוך שמירה על סוגה'. עיגול קטן הופך לעיגול גדול.",
-    "options": [
-      { "label": "1", "body": "עיגול גדול", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ריבוע גדול", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "עיגול קטן", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "משולש גדול", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 1, "difficulty": 3,
+    "track": "daper",
+    "unit": "אנלוגיות צורניות",
+    "level_position": 1,
+    "difficulty": 3,
     "body": "חץ מצביע כלפי מעלה. מסובבים אותו ב-90° עם כיוון השעון. לאיזה כיוון יצביע כעת?",
     "explanation": "סיבוב של 90° עם כיוון השעון ממעלה מביא את החץ להצביע ימינה.",
     "options": [
-      { "label": "1", "body": "ימינה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "שמאלה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "למטה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "למעלה", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ימינה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שמאלה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "למטה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "למעלה",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 2, "difficulty": 4,
+    "track": "daper",
+    "unit": "אנלוגיות צורניות",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "כלל ההמרה הוא היפוך צבעים (שחור נעשה לבן, ולבן נעשה שחור). אם ההתחלה היא ריבוע שחור ובתוכו עיגול לבן, מה תהיה התוצאה?",
     "explanation": "מהפכים כל צבע: הריבוע השחור נעשה לבן, והעיגול הלבן נעשה שחור.",
     "options": [
-      { "label": "1", "body": "ריבוע לבן ובתוכו עיגול שחור", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ריבוע שחור ובתוכו עיגול לבן", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "עיגול לבן ובתוכו ריבוע שחור", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "ריבוע שחור בלבד", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ריבוע לבן ובתוכו עיגול שחור",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ריבוע שחור ובתוכו עיגול לבן",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עיגול לבן ובתוכו ריבוע שחור",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ריבוע שחור בלבד",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 2, "difficulty": 3,
+    "track": "daper",
+    "unit": "אנלוגיות צורניות",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "ריבוע מסתובב ב-45° בכל שלב. בכמה מעלות יסתובב מהמצב ההתחלתי לאחר שני שלבים?",
     "explanation": "שני שלבים של 45° נותנים 45 + 45 = 90 מעלות.",
     "options": [
-      { "label": "1", "body": "90°", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "45°", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "135°", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "180°", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "90°",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "45°",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "135°",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "180°",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 2, "difficulty": 4,
+    "track": "daper",
+    "unit": "אנלוגיות צורניות",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "בכל שלב מתווסף עיגול אחד לקבוצה: בשלב 1 יש עיגול אחד, בשלב 2 שני עיגולים וכן הלאה. כמה עיגולים יהיו בשלב 5?",
     "explanation": "מספר העיגולים שווה למספר השלב, ולכן בשלב 5 יהיו 5 עיגולים.",
     "options": [
-      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "4", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "10", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "6",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "4",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "10",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 2, "difficulty": 3,
+    "track": "daper",
+    "unit": "אנלוגיות צורניות",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "גדול : קטן — כמו מלא : ___ (ביחס בין צורות)",
     "explanation": "הקשר הוא ניגוד. ההיפך של 'גדול' הוא 'קטן', וההיפך של 'מלא' (צורה צבועה במלואה) הוא 'ריק'.",
     "options": [
-      { "label": "1", "body": "ריק", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "גדול", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "עגול", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שחור", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ריק",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גדול",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עגול",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שחור",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "אנלוגיות צורניות", "level_position": 2, "difficulty": 5,
+    "track": "daper",
+    "unit": "אנלוגיות צורניות",
+    "level_position": 2,
+    "difficulty": 5,
     "body": "בסדרה: 1 צלע נוספת בכל צורה — משולש (3), ריבוע (4), מחומש (5), ___ . לכמה צלעות נצפה בצורה הבאה?",
     "explanation": "בכל שלב מתווספת צלע אחת: 3, 4, 5, ולכן הבאה היא בעלת 6 צלעות (משושה).",
     "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "7", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "5", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "8", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "7",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "5",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "8",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

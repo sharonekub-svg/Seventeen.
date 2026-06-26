@@ -1,112 +1,172 @@
 [
   {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 1, "difficulty": 2,
-    "body": "סדרו את המספרים 3, 7, 5, 2 בסדר עולה, ובחרו את המספר השני ברצף שהתקבל.",
-    "explanation": "בסדר עולה: 2, 3, 5, 7. המספר השני הוא 3.",
-    "options": [
-      { "label": "1", "body": "3", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "2", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "5", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "7", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 1, "difficulty": 1,
-    "body": "אם היום יום שלישי, איזה יום יהיה בעוד יומיים?",
-    "explanation": "שלישי + יומיים = חמישי (רביעי ואז חמישי).",
-    "options": [
-      { "label": "1", "body": "חמישי", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "רביעי", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שישי", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "שני", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 1, "difficulty": 2,
-    "body": "הוסיפו 4 למספר 6, ולאחר מכן הכפילו את התוצאה ב-2. מה המספר שהתקבל?",
-    "explanation": "קודם 6 + 4 = 10, ואז 10 × 2 = 20.",
-    "options": [
-      { "label": "1", "body": "20", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "16", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "14", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 1, "difficulty": 1,
-    "body": "מבין המילים: שולחן, כיסא, תפוח, מנורה — בחרו את המילה שאינה שייכת לקבוצת הרהיטים/חפצי הבית מאותו סוג.",
-    "explanation": "שולחן, כיסא ומנורה הם חפצי בית; תפוח הוא פרי ואינו שייך לקבוצה.",
-    "options": [
-      { "label": "1", "body": "תפוח", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "שולחן", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "כיסא", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מנורה", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 1, "difficulty": 2,
-    "body": "ספרו אחורה מ-10 בקפיצות של 2. מהו המספר השלישי שתאמרו?",
-    "explanation": "הרצף: 10 (ראשון), 8 (שני), 6 (שלישי). המספר השלישי הוא 6.",
-    "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "8", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "4", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "2", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 2, "difficulty": 3,
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "קחו את האות הראשונה במילה 'שמש' ואת האות האחרונה במילה 'ירח'. אילו שתי אותיות קיבלתם?",
     "explanation": "האות הראשונה ב'שמש' היא ש; האות האחרונה ב'ירח' היא ח. לכן: ש ו-ח.",
     "options": [
-      { "label": "1", "body": "ש ו-ח", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ש ו-ר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "מ ו-ח", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "ש ו-י", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ש ו-ח",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ש ו-ר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מ ו-ח",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ש ו-י",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 2, "difficulty": 3,
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "נתון: A גדול מ-B, ו-B גדול מ-C. מה נכון בהכרח?",
     "explanation": "אם A>B ו-B>C אז בהכרח A>C (טרנזיטיביות).",
     "options": [
-      { "label": "1", "body": "A גדול מ-C", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "C גדול מ-A", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "A שווה ל-C", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "B גדול מ-A", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "A גדול מ-C",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "C גדול מ-A",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "A שווה ל-C",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "B גדול מ-A",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 2, "difficulty": 4,
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "סובבו את רצף האותיות א, ב, ג, ד צעד אחד ימינה — כך שהאות האחרונה עוברת לראש הרצף. מהו הרצף החדש?",
     "explanation": "האות האחרונה ד עוברת לראש, והשאר נדחקות: ד, א, ב, ג.",
     "options": [
-      { "label": "1", "body": "ד, א, ב, ג", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ב, ג, ד, א", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "א, ב, ג, ד", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "ג, ד, א, ב", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "ד, א, ב, ג",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ב, ג, ד, א",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "א, ב, ג, ד",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ג, ד, א, ב",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 2, "difficulty": 4,
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "בחרו את המספר שמקיים בו-זמנית את כל התנאים: גדול מ-5, קטן מ-12, זוגי, ומתחלק ב-3.",
     "explanation": "בין 6 ל-11, זוגי ומתחלק ב-3: רק 6 מקיים את כל התנאים (12 אינו קטן מ-12).",
     "options": [
-      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "9", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "8", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "9",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "8",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "daper", "unit": "הבנת הוראות", "level_position": 2, "difficulty": 3,
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "נתון: כל החתולים הם חיות. רותם אינה חיה. מה נכון בהכרח?",
     "explanation": "אם כל החתולים הם חיות, ורותם אינה חיה, אז רותם בוודאי אינה חתול.",
     "options": [
-      { "label": "1", "body": "רותם אינה חתול", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "רותם חתול", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "רותם חיה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לא ניתן לדעת דבר", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "רותם אינה חתול",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "רותם חתול",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רותם חיה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לא ניתן לדעת דבר",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

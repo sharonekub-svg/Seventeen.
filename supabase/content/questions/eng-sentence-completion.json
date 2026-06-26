@@ -1,112 +1,172 @@
 [
   {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 1, "difficulty": 1,
-    "body": "It started to rain, so we opened our ___.\n\n(A) books  (B) umbrella  (C) windows  (D) shoes",
-    "explanation": "כשיורד גשם פותחים מטרייה (umbrella) כדי לא להירטב.",
-    "options": [
-      { "label": "A", "body": "books", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "umbrella", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "windows", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "shoes", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 1, "difficulty": 1,
-    "body": "The students ___ carefully to the teacher's instructions.\n\n(A) listened  (B) shouted  (C) ran  (D) slept",
-    "explanation": "מקשיבים (listened) להוראות המורה — זו הפעולה ההגיונית במשפט.",
-    "options": [
-      { "label": "A", "body": "listened", "is_correct": true, "position": 0 },
-      { "label": "B", "body": "shouted", "is_correct": false, "position": 1 },
-      { "label": "C", "body": "ran", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "slept", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 1, "difficulty": 2,
-    "body": "The library was so ___ that you could hear a pin drop.\n\n(A) noisy  (B) quiet  (C) crowded  (D) bright",
-    "explanation": "אם אפשר לשמוע סיכה נופלת, המקום שקט מאוד (quiet).",
-    "options": [
-      { "label": "A", "body": "noisy", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "quiet", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "crowded", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "bright", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 1, "difficulty": 2,
-    "body": "She was ___ after running the marathon and needed to rest.\n\n(A) energetic  (B) exhausted  (C) hungry  (D) excited",
-    "explanation": "לאחר ריצת מרתון ובצורך במנוחה, המילה המתאימה היא 'exhausted' (תשושה).",
-    "options": [
-      { "label": "A", "body": "energetic", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "exhausted", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "hungry", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "excited", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 1, "difficulty": 1,
-    "body": "Please ___ the lights when you leave the room.\n\n(A) turn off  (B) turn up  (C) look at  (D) open",
-    "explanation": "כשעוזבים חדר מכבים את האור — 'turn off'.",
-    "options": [
-      { "label": "A", "body": "turn off", "is_correct": true, "position": 0 },
-      { "label": "B", "body": "turn up", "is_correct": false, "position": 1 },
-      { "label": "C", "body": "look at", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "open", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "אנגלית – Sentence Completion",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "Although the task seemed ___, she completed it with surprising ease.\n\n(A) simple  (B) daunting  (C) boring  (D) quick",
     "explanation": "'Although' מציין ניגוד מול 'with surprising ease'. המשימה נראתה מרתיעה/קשה (daunting) אך הושלמה בקלות.",
     "options": [
-      { "label": "A", "body": "simple", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "daunting", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "boring", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "quick", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "simple",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "daunting",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "boring",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "quick",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 2, "difficulty": 3,
+    "track": "psychometric",
+    "unit": "אנגלית – Sentence Completion",
+    "level_position": 2,
+    "difficulty": 3,
     "body": "The new policy was met with ___ from employees who feared losing their jobs.\n\n(A) enthusiasm  (B) indifference  (C) resistance  (D) joy",
     "explanation": "עובדים החוששים לאבד את עבודתם יגיבו בהתנגדות (resistance).",
     "options": [
-      { "label": "A", "body": "enthusiasm", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "indifference", "is_correct": false, "position": 1 },
-      { "label": "C", "body": "resistance", "is_correct": true, "position": 2 },
-      { "label": "D", "body": "joy", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "enthusiasm",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "indifference",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "resistance",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "joy",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "אנגלית – Sentence Completion",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "His argument was so ___ that no one could find a flaw in it.\n\n(A) weak  (B) compelling  (C) confusing  (D) brief",
     "explanation": "אם איש לא מצא פגם בטיעון, הוא היה משכנע ומבוסס (compelling).",
     "options": [
-      { "label": "A", "body": "weak", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "compelling", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "confusing", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "brief", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "weak",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "compelling",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "confusing",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "brief",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "אנגלית – Sentence Completion",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "Despite the ___ evidence against him, the jury remained unconvinced of his guilt.\n\n(A) abundant  (B) missing  (C) false  (D) hidden",
     "explanation": "'Despite' מציין ניגוד: למרות ראיות רבות (abundant), חבר המושבעים לא השתכנע.",
     "options": [
-      { "label": "A", "body": "abundant", "is_correct": true, "position": 0 },
-      { "label": "B", "body": "missing", "is_correct": false, "position": 1 },
-      { "label": "C", "body": "false", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "hidden", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "abundant",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "missing",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "false",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "hidden",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "אנגלית – Sentence Completion", "level_position": 2, "difficulty": 4,
+    "track": "psychometric",
+    "unit": "אנגלית – Sentence Completion",
+    "level_position": 2,
+    "difficulty": 4,
     "body": "The scientist's theory was initially ___ but later became widely accepted.\n\n(A) praised  (B) ridiculed  (C) forgotten  (D) proven",
     "explanation": "'initially ... but later became widely accepted' מרמז על ניגוד: בתחילה לעגו לתאוריה (ridiculed) ורק אחר כך התקבלה.",
     "options": [
-      { "label": "A", "body": "praised", "is_correct": false, "position": 0 },
-      { "label": "B", "body": "ridiculed", "is_correct": true, "position": 1 },
-      { "label": "C", "body": "forgotten", "is_correct": false, "position": 2 },
-      { "label": "D", "body": "proven", "is_correct": false, "position": 3 }
+      {
+        "label": "A",
+        "body": "praised",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "B",
+        "body": "ridiculed",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "C",
+        "body": "forgotten",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "D",
+        "body": "proven",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

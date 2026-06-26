@@ -1,169 +1,1192 @@
 [
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 3, "difficulty": 2, "source": "original",
-    "body": "החורף הוא העונה ה___ ביותר בשנה.",
-    "explanation": "החורף מאופיין במזג אוויר 'קר', ולכן זו העונה הקרה ביותר.",
-    "options": [ { "label": "1", "body": "קרה", "is_correct": true, "position": 0 }, { "label": "2", "body": "חמה", "is_correct": false, "position": 1 }, { "label": "3", "body": "יבשה", "is_correct": false, "position": 2 }, { "label": "4", "body": "ארוכה", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 3, "difficulty": 2, "source": "original",
-    "body": "כדי להגיע בזמן לרכבת, עלינו לצאת ___.",
-    "explanation": "כדי לא לאחר יש לצאת 'מוקדם'.",
-    "options": [ { "label": "1", "body": "מוקדם", "is_correct": true, "position": 0 }, { "label": "2", "body": "מאוחר", "is_correct": false, "position": 1 }, { "label": "3", "body": "לאט", "is_correct": false, "position": 2 }, { "label": "4", "body": "אתמול", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 3, "difficulty": 2, "source": "original",
-    "body": "הוא היה ___ מאוד ולכן אכל ארוחה גדולה.",
-    "explanation": "מי שאוכל ארוחה גדולה היה 'רעב'.",
-    "options": [ { "label": "1", "body": "רעב", "is_correct": true, "position": 0 }, { "label": "2", "body": "שבע", "is_correct": false, "position": 1 }, { "label": "3", "body": "עייף", "is_correct": false, "position": 2 }, { "label": "4", "body": "שמח", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 3, "difficulty": 2, "source": "original",
-    "body": "הספר היה ___ כל כך שלא יכולתי להפסיק לקרוא בו.",
-    "explanation": "ספר שאי אפשר להפסיק לקרוא בו הוא 'מעניין'.",
-    "options": [ { "label": "1", "body": "מעניין", "is_correct": true, "position": 0 }, { "label": "2", "body": "משעמם", "is_correct": false, "position": 1 }, { "label": "3", "body": "קצר", "is_correct": false, "position": 2 }, { "label": "4", "body": "כבד", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 3, "difficulty": 2, "source": "original",
-    "body": "לאחר הריצה הארוכה הוא היה ___ ושתה הרבה מים.",
-    "explanation": "מי ששותה הרבה מים אחרי ריצה היה 'צמא'.",
-    "options": [ { "label": "1", "body": "צמא", "is_correct": true, "position": 0 }, { "label": "2", "body": "מלא", "is_correct": false, "position": 1 }, { "label": "3", "body": "קר", "is_correct": false, "position": 2 }, { "label": "4", "body": "רגוע", "is_correct": false, "position": 3 } ] },
-
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 4, "difficulty": 2, "source": "original",
-    "body": "למרות שהיה חולה, הוא בכל זאת ___ לעבודה.",
-    "explanation": "'למרות' מציין ניגוד: על אף המחלה הוא 'הגיע' לעבודה.",
-    "options": [ { "label": "1", "body": "הגיע", "is_correct": true, "position": 0 }, { "label": "2", "body": "נעדר", "is_correct": false, "position": 1 }, { "label": "3", "body": "ויתר", "is_correct": false, "position": 2 }, { "label": "4", "body": "פחד", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 4, "difficulty": 3, "source": "original",
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
     "body": "בעקבות הגשם הכבד, המשחק ___ למועד אחר.",
     "explanation": "'למועד אחר' מלמד שהמשחק 'נדחה' (ולא בוטל).",
-    "options": [ { "label": "1", "body": "נדחה", "is_correct": true, "position": 0 }, { "label": "2", "body": "בוטל", "is_correct": false, "position": 1 }, { "label": "3", "body": "התחיל", "is_correct": false, "position": 2 }, { "label": "4", "body": "נמשך", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 4, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "נדחה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "בוטל",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "התחיל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נמשך",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
     "body": "בזכות הלימוד הקשה, היא קיבלה ציון ___.",
     "explanation": "לימוד קשה מוביל בדרך כלל לציון 'גבוה'.",
-    "options": [ { "label": "1", "body": "גבוה", "is_correct": true, "position": 0 }, { "label": "2", "body": "נמוך", "is_correct": false, "position": 1 }, { "label": "3", "body": "ממוצע", "is_correct": false, "position": 2 }, { "label": "4", "body": "אחיד", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 4, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "גבוה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "נמוך",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ממוצע",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אחיד",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
     "body": "הילד ___ מהחושך ולכן הדליק את האור.",
     "explanation": "מי שמדליק אור בגלל החושך 'פחד' ממנו.",
-    "options": [ { "label": "1", "body": "פחד", "is_correct": true, "position": 0 }, { "label": "2", "body": "נהנה", "is_correct": false, "position": 1 }, { "label": "3", "body": "צחק", "is_correct": false, "position": 2 }, { "label": "4", "body": "התעייף", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 4, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "פחד",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "נהנה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "צחק",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "התעייף",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
     "body": "השכן החדש ___ מאוד, והוא תמיד מוכן לעזור לכולם.",
     "explanation": "מי שתמיד מוכן לעזור הוא אדם 'אדיב'.",
-    "options": [ { "label": "1", "body": "אדיב", "is_correct": true, "position": 0 }, { "label": "2", "body": "גס", "is_correct": false, "position": 1 }, { "label": "3", "body": "עצלן", "is_correct": false, "position": 2 }, { "label": "4", "body": "קמצן", "is_correct": false, "position": 3 } ] },
-
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 5, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "אדיב",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גס",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עצלן",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קמצן",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
     "body": "ההרצאה הייתה ארוכה ו___, והקהל החל להשתעמם.",
     "explanation": "הרצאה שגורמת לשעמום היא 'מייגעת'.",
-    "options": [ { "label": "1", "body": "מייגעת", "is_correct": true, "position": 0 }, { "label": "2", "body": "מרתקת", "is_correct": false, "position": 1 }, { "label": "3", "body": "קצרה", "is_correct": false, "position": 2 }, { "label": "4", "body": "מצחיקה", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 5, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מייגעת",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מרתקת",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קצרה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מצחיקה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
     "body": "אף על פי שהתאמן רבות, הוא ___ בתחרות.",
     "explanation": "'אף על פי' מציין ניגוד: למרות האימונים הוא 'הפסיד'.",
-    "options": [ { "label": "1", "body": "הפסיד", "is_correct": true, "position": 0 }, { "label": "2", "body": "ניצח", "is_correct": false, "position": 1 }, { "label": "3", "body": "השתפר", "is_correct": false, "position": 2 }, { "label": "4", "body": "הצטיין", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 5, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "הפסיד",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ניצח",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "השתפר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "הצטיין",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
     "body": "המדריך ביקש מהמטיילים ___ על השביל ולא לסטות ממנו.",
     "explanation": "מי שלא סוטה מהשביל 'נשאר' עליו.",
-    "options": [ { "label": "1", "body": "להישאר", "is_correct": true, "position": 0 }, { "label": "2", "body": "לוותר", "is_correct": false, "position": 1 }, { "label": "3", "body": "למהר", "is_correct": false, "position": 2 }, { "label": "4", "body": "לשיר", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 5, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "להישאר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "לוותר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "למהר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לשיר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
     "body": "הדירה הייתה ___ מאוד, ולכן החליטו לצבוע ולשפץ אותה.",
     "explanation": "דירה שצריך לשפץ ולצבוע הייתה 'מוזנחת'.",
-    "options": [ { "label": "1", "body": "מוזנחת", "is_correct": true, "position": 0 }, { "label": "2", "body": "חדשה", "is_correct": false, "position": 1 }, { "label": "3", "body": "מרווחת", "is_correct": false, "position": 2 }, { "label": "4", "body": "יקרה", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 5, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מוזנחת",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חדשה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מרווחת",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "יקרה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
     "body": "בגלל הפקק הכבד, הם ___ לפגישה.",
     "explanation": "פקק כבד גורם לכך שמגיעים באיחור — הם 'איחרו'.",
-    "options": [ { "label": "1", "body": "איחרו", "is_correct": true, "position": 0 }, { "label": "2", "body": "הקדימו", "is_correct": false, "position": 1 }, { "label": "3", "body": "הגיעו מוקדם", "is_correct": false, "position": 2 }, { "label": "4", "body": "ויתרו", "is_correct": false, "position": 3 } ] },
-
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 6, "difficulty": 3, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "איחרו",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "הקדימו",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "הגיעו מוקדם",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ויתרו",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
     "body": "דבריו היו ___ כל כך שאיש לא הצליח להפריך אותם.",
     "explanation": "דברים שאי אפשר להפריך הם 'משכנעים'.",
-    "options": [ { "label": "1", "body": "משכנעים", "is_correct": true, "position": 0 }, { "label": "2", "body": "מבלבלים", "is_correct": false, "position": 1 }, { "label": "3", "body": "חלשים", "is_correct": false, "position": 2 }, { "label": "4", "body": "קצרים", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 6, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "משכנעים",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מבלבלים",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חלשים",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קצרים",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 6,
+    "difficulty": 4,
+    "source": "original",
     "body": "למרות הצלחתה הרבה, היא נשארה ___ ולא התגאתה.",
     "explanation": "'למרות' מציין ניגוד להתגאות: היא נותרה 'צנועה'.",
-    "options": [ { "label": "1", "body": "צנועה", "is_correct": true, "position": 0 }, { "label": "2", "body": "יהירה", "is_correct": false, "position": 1 }, { "label": "3", "body": "עשירה", "is_correct": false, "position": 2 }, { "label": "4", "body": "מפורסמת", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 6, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "צנועה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יהירה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עשירה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מפורסמת",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 6,
+    "difficulty": 4,
+    "source": "original",
     "body": "ההחלטה התקבלה ___, ללא התנגדות של אף אחד מהחברים.",
     "explanation": "החלטה ללא כל התנגדות מתקבלת 'פה אחד'.",
-    "options": [ { "label": "1", "body": "פה אחד", "is_correct": true, "position": 0 }, { "label": "2", "body": "בקושי", "is_correct": false, "position": 1 }, { "label": "3", "body": "באיחור", "is_correct": false, "position": 2 }, { "label": "4", "body": "בכפייה", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 6, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "פה אחד",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "בקושי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "באיחור",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "בכפייה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 6,
+    "difficulty": 4,
+    "source": "original",
     "body": "הוראות ההרכבה היו ___, ולכן רבים טעו בהרכבת הרהיט.",
     "explanation": "אם רבים טעו, ההוראות היו 'מבלבלות'.",
-    "options": [ { "label": "1", "body": "מבלבלות", "is_correct": true, "position": 0 }, { "label": "2", "body": "ברורות", "is_correct": false, "position": 1 }, { "label": "3", "body": "קצרות", "is_correct": false, "position": 2 }, { "label": "4", "body": "מועילות", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 6, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מבלבלות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ברורות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קצרות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מועילות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 6,
+    "difficulty": 4,
+    "source": "original",
     "body": "החברה החליטה ___ את המחירים כדי למשוך לקוחות חדשים.",
     "explanation": "כדי למשוך לקוחות נוהגים 'להוזיל' מחירים.",
-    "options": [ { "label": "1", "body": "להוזיל", "is_correct": true, "position": 0 }, { "label": "2", "body": "להעלות", "is_correct": false, "position": 1 }, { "label": "3", "body": "להסתיר", "is_correct": false, "position": 2 }, { "label": "4", "body": "להעלים", "is_correct": false, "position": 3 } ] },
-
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 7, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "להוזיל",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "להעלות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "להסתיר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "להעלים",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
     "body": "ממצאי המחקר ___ בתחילה, אך ניסויים מאוחרים יותר אישרו אותם.",
     "explanation": "'אך אישרו אותם' מציין ניגוד: בתחילה הממצאים 'הוטלו בספק'.",
-    "options": [ { "label": "1", "body": "הוטלו בספק", "is_correct": true, "position": 0 }, { "label": "2", "body": "התקבלו", "is_correct": false, "position": 1 }, { "label": "3", "body": "זכו לשבחים", "is_correct": false, "position": 2 }, { "label": "4", "body": "פורסמו", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 7, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "הוטלו בספק",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "התקבלו",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "זכו לשבחים",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "פורסמו",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
     "body": "הוא ידוע בהערותיו ה___, שלא פעם פוגעות בסובבים אותו.",
     "explanation": "הערות שפוגעות באחרים הן 'פוגעניות'.",
-    "options": [ { "label": "1", "body": "פוגעניות", "is_correct": true, "position": 0 }, { "label": "2", "body": "עדינות", "is_correct": false, "position": 1 }, { "label": "3", "body": "מנומסות", "is_correct": false, "position": 2 }, { "label": "4", "body": "זהירות", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 7, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "פוגעניות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "עדינות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מנומסות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "זהירות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
     "body": "המשא ומתן הגיע ל___ כאשר אף צד לא היה מוכן להתפשר.",
     "explanation": "כשאין נכונות להתפשר מגיעים ל'מבוי סתום'.",
-    "options": [ { "label": "1", "body": "מבוי סתום", "is_correct": true, "position": 0 }, { "label": "2", "body": "הסכמה", "is_correct": false, "position": 1 }, { "label": "3", "body": "התחלה", "is_correct": false, "position": 2 }, { "label": "4", "body": "חגיגה", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 7, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מבוי סתום",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "הסכמה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "התחלה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חגיגה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
     "body": "גישתה ה___ גרמה לעמיתים להירתע מלשתף אותה ברעיונות.",
     "explanation": "גישה שגורמת להירתעות היא גישה 'מזלזלת'.",
-    "options": [ { "label": "1", "body": "מזלזלת", "is_correct": true, "position": 0 }, { "label": "2", "body": "מסבירת פנים", "is_correct": false, "position": 1 }, { "label": "3", "body": "סקרנית", "is_correct": false, "position": 2 }, { "label": "4", "body": "עליזה", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 7, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מזלזלת",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מסבירת פנים",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "סקרנית",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עליזה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
     "body": "כתב היד העתיק היה כה ___ עד שהחוקרים בקושי הצליחו לפענח אותו.",
     "explanation": "כתב יד עתיק שקשה לפענח הוא 'דהוי'.",
-    "options": [ { "label": "1", "body": "דהוי", "is_correct": true, "position": 0 }, { "label": "2", "body": "חדש", "is_correct": false, "position": 1 }, { "label": "3", "body": "צבעוני", "is_correct": false, "position": 2 }, { "label": "4", "body": "עבה", "is_correct": false, "position": 3 } ] },
-
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 8, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "דהוי",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חדש",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "צבעוני",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עבה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
     "body": "הרחק מלהיות ___, דבריו היו שקולים והוגנים.",
     "explanation": "'הרחק מלהיות' מציין ניגוד ל'שקולים והוגנים' — כלומר לא 'מוטים'.",
-    "options": [ { "label": "1", "body": "מוטים", "is_correct": true, "position": 0 }, { "label": "2", "body": "כנים", "is_correct": false, "position": 1 }, { "label": "3", "body": "רגועים", "is_correct": false, "position": 2 }, { "label": "4", "body": "קצרים", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 8, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מוטים",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כנים",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רגועים",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קצרים",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
     "body": "תופעות הלוואי של התרופה, אף שהן ___, אין להתעלם מהן לחלוטין.",
     "explanation": "'אף שהן ___ אין להתעלם' מרמז על תופעות 'קלות' שעדיין יש להתייחס אליהן.",
-    "options": [ { "label": "1", "body": "קלות", "is_correct": true, "position": 0 }, { "label": "2", "body": "חמורות", "is_correct": false, "position": 1 }, { "label": "3", "body": "נפוצות", "is_correct": false, "position": 2 }, { "label": "4", "body": "קטלניות", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 8, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "קלות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חמורות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נפוצות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קטלניות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
     "body": "מנהיגותו ה___ של המנכ\"ל הובילה את החברה אל מעבר למשבר.",
     "explanation": "מי שמוביל בהצלחה דרך משבר מפגין מנהיגות 'נחושה'.",
-    "options": [ { "label": "1", "body": "נחושה", "is_correct": true, "position": 0 }, { "label": "2", "body": "מהוססת", "is_correct": false, "position": 1 }, { "label": "3", "body": "נעדרת", "is_correct": false, "position": 2 }, { "label": "4", "body": "רשלנית", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 8, "difficulty": 4, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "נחושה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מהוססת",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נעדרת",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רשלנית",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
     "body": "הביקורת שיבחה את הספר על תיאורו ה___ של חיי הכפר, הרווי פרטים אותנטיים.",
     "explanation": "תיאור 'רווי פרטים אותנטיים' הוא תיאור 'מפורט'.",
-    "options": [ { "label": "1", "body": "מפורט", "is_correct": true, "position": 0 }, { "label": "2", "body": "מעורפל", "is_correct": false, "position": 1 }, { "label": "3", "body": "שטחי", "is_correct": false, "position": 2 }, { "label": "4", "body": "קצר", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 8, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מפורט",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מעורפל",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שטחי",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קצר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 8,
+    "difficulty": 5,
+    "source": "original",
     "body": "תשומת הלב הרבה שלו לפרטים הקטנים הפכה אותו למגיה ___.",
     "explanation": "תשומת לב רבה לפרטים הופכת מגיה ל'מצוין'.",
-    "options": [ { "label": "1", "body": "מצוין", "is_correct": true, "position": 0 }, { "label": "2", "body": "גרוע", "is_correct": false, "position": 1 }, { "label": "3", "body": "איטי", "is_correct": false, "position": 2 }, { "label": "4", "body": "רשלן", "is_correct": false, "position": 3 } ] },
-
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 9, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מצוין",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גרוע",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "איטי",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רשלן",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
     "body": "אף על פי שהראיות היו ___, חבר המושבעים הגיע להכרעה פה אחד.",
     "explanation": "'אף על פי' מציין ניגוד: למרות שהראיות היו 'נסיבתיות' (לא ישירות), ההכרעה הייתה פה אחד.",
-    "options": [ { "label": "1", "body": "נסיבתיות", "is_correct": true, "position": 0 }, { "label": "2", "body": "מכריעות", "is_correct": false, "position": 1 }, { "label": "3", "body": "חד-משמעיות", "is_correct": false, "position": 2 }, { "label": "4", "body": "רבות", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 9, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "נסיבתיות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מכריעות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חד-משמעיות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רבות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
     "body": "הדיפלומטית בחרה את מילותיה ב___ רבה, מודעת לכך שכל טעות עלולה להצית סכסוך.",
     "explanation": "מודעות לכך שכל טעות מסוכנת מחייבת בחירת מילים ב'זהירות'.",
-    "options": [ { "label": "1", "body": "זהירות", "is_correct": true, "position": 0 }, { "label": "2", "body": "מהירות", "is_correct": false, "position": 1 }, { "label": "3", "body": "אדישות", "is_correct": false, "position": 2 }, { "label": "4", "body": "רשלנות", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 9, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "זהירות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מהירות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אדישות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רשלנות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
     "body": "ה___ שלו כלפי הסמכות הכניסה אותו פעמים רבות לצרות בבית הספר.",
     "explanation": "מה שמכניס לצרות מול הסמכות הוא 'המרדנות'.",
-    "options": [ { "label": "1", "body": "מרדנות", "is_correct": true, "position": 0 }, { "label": "2", "body": "צייתנות", "is_correct": false, "position": 1 }, { "label": "3", "body": "תשומת לב", "is_correct": false, "position": 2 }, { "label": "4", "body": "נאמנות", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 9, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מרדנות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "צייתנות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "תשומת לב",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נאמנות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
     "body": "הדוח זכה לביקורת על היותו ___, בהשמיטו נתונים חיוניים שהמומחים ביקשו.",
     "explanation": "דוח שמשמיט נתונים חיוניים הוא 'חלקי'.",
-    "options": [ { "label": "1", "body": "חלקי", "is_correct": true, "position": 0 }, { "label": "2", "body": "יסודי", "is_correct": false, "position": 1 }, { "label": "3", "body": "ארוך", "is_correct": false, "position": 2 }, { "label": "4", "body": "מדויק", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 9, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "חלקי",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יסודי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ארוך",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מדויק",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
     "body": "ההרצאות היו כה ___ עד שהסטודנטים התקשו להישאר ערים.",
     "explanation": "אם קשה להישאר ערים, ההרצאות היו 'מייגעות'.",
-    "options": [ { "label": "1", "body": "מייגעות", "is_correct": true, "position": 0 }, { "label": "2", "body": "מרתקות", "is_correct": false, "position": 1 }, { "label": "3", "body": "קצרות", "is_correct": false, "position": 2 }, { "label": "4", "body": "תוססות", "is_correct": false, "position": 3 } ] },
-
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 10, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מייגעות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מרתקות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קצרות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "תוססות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
     "body": "סגנונו של הסופר זוכה להערכה בזכות ה___ שלו: כל משפט נקי ממילים מיותרות.",
     "explanation": "כתיבה נקייה ממילים מיותרות מצטיינת ב'תמציתיות'.",
-    "options": [ { "label": "1", "body": "תמציתיות", "is_correct": true, "position": 0 }, { "label": "2", "body": "מורכבות", "is_correct": false, "position": 1 }, { "label": "3", "body": "עמימות", "is_correct": false, "position": 2 }, { "label": "4", "body": "חזרתיות", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 10, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "תמציתיות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מורכבות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עמימות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חזרתיות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
     "body": "מה שנראה כניצחון ___ התברר עד מהרה כיקר, ורוקן את משאבי החברה.",
     "explanation": "ניצחון שהתברר כיקר ומרוקן משאבים הוא ניצחון 'חלול'.",
-    "options": [ { "label": "1", "body": "חלול", "is_correct": true, "position": 0 }, { "label": "2", "body": "מכריע", "is_correct": false, "position": 1 }, { "label": "3", "body": "מתמשך", "is_correct": false, "position": 2 }, { "label": "4", "body": "אמיתי", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 10, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "חלול",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מכריע",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מתמשך",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אמיתי",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
     "body": "חזותה ה___ הסתירה נחישות עזה שמעטים שיערו את קיומה.",
     "explanation": "חזות שמסתירה נחישות עזה היא חזות 'שלווה'.",
-    "options": [ { "label": "1", "body": "שלווה", "is_correct": true, "position": 0 }, { "label": "2", "body": "תוקפנית", "is_correct": false, "position": 1 }, { "label": "3", "body": "חרדה", "is_correct": false, "position": 2 }, { "label": "4", "body": "כנה", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 10, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "שלווה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "תוקפנית",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חרדה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כנה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
     "body": "הוועדה דחתה את ההצעה בהיותה ___, בנימוק שאין לה כל בסיס מעשי.",
     "explanation": "הצעה נטולת בסיס מעשי נדחית בהיותה 'בלתי ישימה'.",
-    "options": [ { "label": "1", "body": "בלתי ישימה", "is_correct": true, "position": 0 }, { "label": "2", "body": "מבוססת", "is_correct": false, "position": 1 }, { "label": "3", "body": "צנועה", "is_correct": false, "position": 2 }, { "label": "4", "body": "דחופה", "is_correct": false, "position": 3 } ] },
-  { "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 10, "difficulty": 5, "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "בלתי ישימה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מבוססת",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "צנועה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "דחופה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – השלמת משפטים",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
     "body": "שתי התיאוריות אינן סותרות זו את זו אלא ___, כל אחת מסבירה את שהאחרת אינה יכולה.",
     "explanation": "תיאוריות שכל אחת מסבירה את מה שהאחרת אינה מסבירה הן 'משלימות'.",
-    "options": [ { "label": "1", "body": "משלימות", "is_correct": true, "position": 0 }, { "label": "2", "body": "זהות", "is_correct": false, "position": 1 }, { "label": "3", "body": "מנוגדות", "is_correct": false, "position": 2 }, { "label": "4", "body": "בלתי רלוונטיות", "is_correct": false, "position": 3 } ] }
+    "options": [
+      {
+        "label": "1",
+        "body": "משלימות",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "זהות",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מנוגדות",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "בלתי רלוונטיות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  }
 ]
