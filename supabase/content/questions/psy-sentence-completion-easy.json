@@ -1,90 +1,90 @@
 [
   {
-    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
-    "body": "בחורף יורד ___ והאוויר נעשה קר.",
-    "explanation": "בחורף הקר יורד 'גשם'. שאר האפשרויות אינן מתאימות לעונה הקרה.",
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 8, "difficulty": 4, "source": "original",
+    "body": "הממשלה אימצה מדיניות ___ כלפי ארגוני הסביבה, וזאת למרות ש___ לה שיתוף פעולה עמהם יכול היה להועיל.",
+    "explanation": "'אף על פי' מציין ניגוד בין המדיניות הנוהגת להיגיון: הממשלה נהגה בעוינות למרות שנסיבות הצדיקו שיתוף פעולה.",
     "options": [
-      { "label": "1", "body": "גשם", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "אבק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "חול", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "אור", "is_correct": false, "position": 3 }
+      { "label": "1", "body": "עוינת ... ברור היה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "תומכת ... נהיר היה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אדישה ... נראה היה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "שיתופית ... ספק היה", "is_correct": false, "position": 3 }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
-    "body": "כדי לפתוח את הדלת הנעולה היה צריך ___.",
-    "explanation": "דלת נעולה נפתחת בעזרת 'מפתח'.",
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 8, "difficulty": 4, "source": "original",
+    "body": "ההיסטוריון טען כי המרד לא היה ___ אלא תוצאה ___ של מצב כלכלי ומדיני שהחריף לאורך שנים.",
+    "explanation": "ניגוד בין אירוע ספונטני לבין תהליך מצטבר: אם המרד לא היה 'ספונטני', הוא היה תוצאה 'בלתי נמנעת' של התפתחות ממושכת.",
     "options": [
-      { "label": "1", "body": "כיסא", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "מפתח", "is_correct": true, "position": 1 },
-      { "label": "3", "body": "כפפה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "מטרייה", "is_correct": false, "position": 3 }
+      { "label": "1", "body": "ספונטני ... בלתי נמנעת", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מאורגן ... מקרית", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מתוכנן ... צפויה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "אלים ... שרירותית", "is_correct": false, "position": 3 }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
-    "body": "הילד היה ___ אחרי שאכל ארוחה גדולה.",
-    "explanation": "לאחר ארוחה גדולה אדם מרגיש 'שבע'.",
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 8, "difficulty": 5, "source": "original",
+    "body": "הפרוזה שלו ___ ביופיה אך ___ בתוכנה — קליפה נוצצת ללא כל ממשות.",
+    "explanation": "'קליפה נוצצת ללא ממשות' מתאר משהו יפה חיצונית אך ריק פנימית — הפרוזה עשירה/מרשימה בצורתה אך שטחית/רדודה בתוכנה.",
     "options": [
-      { "label": "1", "body": "רעב", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "צמא", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שבע", "is_correct": true, "position": 2 },
-      { "label": "4", "body": "עצוב", "is_correct": false, "position": 3 }
+      { "label": "1", "body": "עשירה ... שטחית", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "עמוקה ... מורכבת", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ענייה ... עמוקה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "עמומה ... בהירה", "is_correct": false, "position": 3 }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
-    "body": "היא ___ את הספר מהספרייה כדי לקרוא אותו בבית.",
-    "explanation": "מספרייה 'משאילים' או לוקחים ספר; כאן 'לקחה' מתאים להמשך 'לקרוא אותו בבית'.",
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 9, "difficulty": 5, "source": "original",
+    "body": "הפילוסוף טען כי כל ניסיון להגדיר את 'החופש' בצורה ___ כרוך בהכרח ב___ של עצם המושג, שכן חופש אמיתי חומק מכל מסגרת לוגית.",
+    "explanation": "הגדרה מדויקת וממצה ('ממצה') של חופש תצמצם אותו ותסתור אותו — כלומר ה'צמצום' או ה'סיכול' של עצמו.",
     "options": [
-      { "label": "1", "body": "לקחה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "מכרה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "שרפה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "זרקה", "is_correct": false, "position": 3 }
+      { "label": "1", "body": "ממצה ... סיכול", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חלקית ... חיזוק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "עמומה ... הבהרה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "שגויה ... ביסוס", "is_correct": false, "position": 3 }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
-    "body": "מכיוון שהשעה הייתה מאוחרת, הוא הלך ___.",
-    "explanation": "בשעה מאוחרת הולכים 'לישון'.",
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 9, "difficulty": 5, "source": "original",
+    "body": "בניגוד למחקרים קודמים שייחסו את התופעה ל___ גורמים, הממצאים החדשים מצביעים על ___ מפתיע: מדובר בשרשרת סיבות בלתי-ליניארית.",
+    "explanation": "'בניגוד ל' מציין שהמחקר הישן ייחס לגורמים מובנים/בודדים, והחדש מגלה מורכבות גדולה יותר — 'מונוקאוזליים' ו'קומפלקס' הם הניגוד המדויק.",
     "options": [
-      { "label": "1", "body": "לשחק", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "לישון", "is_correct": true, "position": 1 },
-      { "label": "3", "body": "לרוץ", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לאכול", "is_correct": false, "position": 3 }
+      { "label": "1", "body": "מונוקאוזליים ... קומפלקס", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מורכבים ... פישוט", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אקראיים ... סדר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מובנים ... אישוש", "is_correct": false, "position": 3 }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2, "source": "original",
-    "body": "הוא ___ מהר מאוד כדי שלא יאחר לאוטובוס.",
-    "explanation": "כדי לא לאחר לאוטובוס צריך 'רץ' מהר.",
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 10, "difficulty": 5, "source": "original",
+    "body": "מחקר שטרם עבר ___ ראוי להיחשב ___ בלבד, גם אם מסקנותיו נראות משכנעות.",
+    "explanation": "מחקר שלא עבר ביקורת עמיתים ('עריכה') ראוי להיחשב 'ראשוני' — לא סופי ולא מוכח.",
     "options": [
-      { "label": "1", "body": "ישן", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "רץ", "is_correct": true, "position": 1 },
-      { "label": "3", "body": "עצר", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "חיכה", "is_correct": false, "position": 3 }
+      { "label": "1", "body": "ביקורת עמיתים ... ממצא ראשוני", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "פרסום ... מאמר גמור", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שכפול ... ממצא חלוץ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ביקורת ... ידע מוסכם", "is_correct": false, "position": 3 }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2, "source": "original",
-    "body": "אף על פי שהמבחן היה קשה, היא הצליחה בו כי ___ הרבה.",
-    "explanation": "הצלחה במבחן קשה נובעת מכך ש'למדה' הרבה.",
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 10, "difficulty": 5, "source": "original",
+    "body": "הרומן מצליח להיות ___ לאורך כל עמודיו — לא בשל ___ של הסגנון אלא בשל עומק הרעיון המלווה כל פסקה.",
+    "explanation": "דבר שמחזיק עניין ותשומת לב — 'מרתק'; לא בשל 'גינדור' (פאר חיצוני) של הסגנון אלא בשל תוכן פנימי.",
     "options": [
-      { "label": "1", "body": "ישנה", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "שיחקה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "למדה", "is_correct": true, "position": 2 },
-      { "label": "4", "body": "ויתרה", "is_correct": false, "position": 3 }
+      { "label": "1", "body": "מרתק ... גינדור", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "משעמם ... קלילות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מאתגר ... פשטות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "קריא ... עוצמה", "is_correct": false, "position": 3 }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2, "source": "original",
-    "body": "הכלב ___ בשמחה כשבעליו חזר הביתה.",
-    "explanation": "כלב שמח מ'כשכש' בזנבו; הפועל המתאים לשמחת הכלב הוא 'כשכש'.",
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 10, "difficulty": 5, "source": "original",
+    "body": "העדויות ה___ שנחשפו במשפט לא רק ___ את גרסת ההגנה אלא כמעט הפכו את כל מבנה התביעה.",
+    "explanation": "עדויות ש'סתרו' (refuted) את גרסת ההגנה ואף הפכו את התביעה — אלו עדויות 'מפריכות' שהגיעו 'בהפתעה'.",
     "options": [
-      { "label": "1", "body": "כשכש", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "נשך", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "ברח", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "נרדם", "is_correct": false, "position": 3 }
+      { "label": "1", "body": "מפתיעות ... הפריכו", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מצוקות ... חיזקו", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מייגעות ... אישרו", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חשובות ... העמיקו", "is_correct": false, "position": 3 }
     ]
   }
 ]

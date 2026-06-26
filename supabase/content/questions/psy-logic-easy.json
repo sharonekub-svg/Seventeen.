@@ -1,68 +1,68 @@
 [
   {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 1, "source": "original",
-    "body": "כל התפוחים בסל אדומים. הוצאתי תפוח מהסל. מה נכון בהכרח?",
-    "explanation": "אם כל התפוחים בסל אדומים, אז גם התפוח שהוצא אדום.",
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 4, "source": "original",
+    "body": "בחברה A: כל מי שעובד קשה מצליח. בחברה B: כל מי שמצליח עובד קשה. בחברה C: רק מי שעובד קשה מצליח. איזה מהמשפטים הבאים שקול למשפט 'אם לא עובדים קשה, לא מצליחים'?",
+    "explanation": "המשפט 'אם לא עובדים קשה, לא מצליחים' שקול ל-'רק מי שעובד קשה מצליח' — שזהו בדיוק כלל חברה C. בחברה A ניתן להצליח גם בדרכים אחרות; בחברה B עבודה קשה נובעת מהצלחה, לא להיפך.",
     "options": [
-      { "label": "1", "body": "התפוח אדום", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "התפוח ירוק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "התפוח מתוק", "is_correct": false, "position": 2 },
+      { "label": "1", "body": "חברה A", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "חברה B", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חברה C", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "חברות B ו-C", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 4, "source": "original",
+    "body": "ידוע: (1) כל הציירים הם אמנים. (2) חלק מהאמנים הם מוזיקאים. (3) אף מוזיקאי אינו מהנדס.\n\nאיזו מסקנה נכונה בהכרח?",
+    "explanation": "מ-(1) ו-(3): אם כל ציירים הם אמנים, וחלק מהאמנים הם מוזיקאים — ייתכן שיש ציירים שהם מוזיקאים. מוזיקאים אינם מהנדסים (3). לכן: יש אמנים שאינם מהנדסים — נכון בהכרח כי המוזיקאים שהם אמנים אינם מהנדסים.",
+    "options": [
+      { "label": "1", "body": "כל הציירים הם מוזיקאים", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "אף צייר אינו מהנדס", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "יש אמנים שאינם מהנדסים", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "כל המהנדסים הם אמנים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 4, "source": "original",
+    "body": "ארבעה ידידים — אדם, בן, גל, דן — ישבו סביב שולחן עגול. אדם ישב ממול לבן. גל ישב משמאל לדן. מי ישב משמאל לאדם?",
+    "explanation": "בשולחן עגול בן רואה את אדם ממול. גל משמאל לדן, כלומר גל ודן צמודים. שני המקומות הנותרים (לאדם ולבן) הם 'שמאל' ו'ימין' יחסית לדן ולגל. דן ישב ממול לגל — ישבו: אדם, גל, בן, דן (בסדר שעון). משמאל לאדם ישב דן.",
+    "options": [
+      { "label": "1", "body": "בן", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "גל", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דן", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "לא ניתן לקבוע", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5, "source": "original",
+    "body": "כל שאינו A הוא B. כל B הוא C. מקס אינו C. מה נכון בהכרח לגבי מקס?",
+    "explanation": "נניח מקס אינו A. אז מקס הוא B (מכלל ראשון). אז מקס הוא C (מכלל שני). סתירה — כי נאמר שמקס אינו C. לכן: מקס הוא A.",
+    "options": [
+      { "label": "1", "body": "מקס הוא B", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "מקס הוא A", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "מקס אינו A", "is_correct": false, "position": 2 },
       { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 1, "source": "original",
-    "body": "דנה גבוהה מרון. רון גבוה מיוסי. מי הנמוך מכולם?",
-    "explanation": "דנה > רון > יוסי, ולכן יוסי הוא הנמוך מכולם.",
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5, "source": "original",
+    "body": "חמישה ספרים — P, Q, R, S, T — מסודרים במדף משמאל לימין. P לא ראשון ולא אחרון. Q נמצא מיד אחרי R. S נמצא לפני P. T נמצא בסוף. באיזה מקום נמצא R?",
+    "explanation": "T אחרון (מיקום 5). Q מיד אחרי R. S לפני P, וP לא קצה. אם S=1, P=2 או 3. Q אחרי R — נסה R=3, Q=4: הסדר יכול להיות S(1), P(2), R(3), Q(4), T(5) — תקין. R במקום 3.",
     "options": [
-      { "label": "1", "body": "דנה", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "רון", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "יוסי", "is_correct": true, "position": 2 },
+      { "label": "1", "body": "שני", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "שלישי", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "רביעי", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לקבוע", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5, "source": "original",
+    "body": "ידוע: 'אם גשם, אז קר. אם קר, אז לובשים מעיל.' היום לא לובשים מעיל. איזה מסקנה נובעת?",
+    "explanation": "מ'קר → לובשים מעיל' ו'לא לובשים מעיל' נובע 'לא קר' (קונטרה-פוזיטיב). מ'גשם → קר' ו'לא קר' נובע 'לא גשם' (קונטרה-פוזיטיב שוב).",
+    "options": [
+      { "label": "1", "body": "לא ירד גשם וגם לא קר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ירד גשם אך לא קר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "קר אך לא ירד גשם", "is_correct": false, "position": 2 },
       { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 1, "source": "original",
-    "body": "כל הילדים בכיתה לובשים חולצה כחולה. מאיה ילדה בכיתה. איזו חולצה לובשת מאיה?",
-    "explanation": "אם כל הילדים בכיתה לובשים חולצה כחולה ומאיה בכיתה, אז מאיה לובשת חולצה כחולה.",
-    "options": [
-      { "label": "1", "body": "כחולה", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "אדומה", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "ירוקה", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2, "source": "original",
-    "body": "אם יורד גשם, אז אני לוקח מטרייה. היום אני לא לקחתי מטרייה. מה נכון בהכרח?",
-    "explanation": "אם בכל פעם שיורד גשם אני לוקח מטרייה, ולא לקחתי מטרייה, אז בהכרח לא ירד גשם.",
-    "options": [
-      { "label": "1", "body": "ירד גשם", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "לא ירד גשם", "is_correct": true, "position": 1 },
-      { "label": "3", "body": "היה חם", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2, "source": "original",
-    "body": "במקרר יש רק פירות וירקות. כל הפירות מתוקים. הוצאתי משהו מתוק מהמקרר. האם בהכרח הוצאתי פרי?",
-    "explanation": "ייתכן שגם ירק מתוק, וגם ייתכן שזה פרי. מהמידע הנתון לא ניתן לקבוע בהכרח שהוצאתי פרי דווקא.",
-    "options": [
-      { "label": "1", "body": "כן, בהכרח פרי", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "לא, בהכרח ירק", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "לא ניתן לדעת בהכרח", "is_correct": true, "position": 2 },
-      { "label": "4", "body": "אין במקרר דבר מתוק", "is_correct": false, "position": 3 }
-    ]
-  },
-  {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2, "source": "original",
-    "body": "תמיד כאשר עומר משחק כדורגל הוא חוזר עייף. היום עומר חזר עייף. מה נכון בהכרח?",
-    "explanation": "מהמשפט יודעים רק שמשחק כדורגל גורם לעייפות, אך ייתכנו סיבות אחרות לעייפות. לכן לא ניתן לדעת בהכרח שעומר שיחק כדורגל.",
-    "options": [
-      { "label": "1", "body": "עומר שיחק כדורגל", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "עומר לא שיחק כדורגל", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "לא ניתן לדעת אם עומר שיחק כדורגל", "is_correct": true, "position": 2 },
-      { "label": "4", "body": "עומר אינו אוהב כדורגל", "is_correct": false, "position": 3 }
     ]
   }
 ]
