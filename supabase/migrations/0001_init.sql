@@ -55,7 +55,7 @@ create table levels (
   unit_id         bigint not null references units(id) on delete cascade,
   title           text,
   position        smallint not null,
-  questions_count smallint not null default 5,
+  questions_count smallint not null default 10,
   unique (unit_id, position)
 );
 

@@ -25,8 +25,8 @@ insert into units (track, name, description, icon, position) values
   ('psychometric', 'אנגלית – Reading',         'הבנת הנקרא באנגלית',                      'newspaper',       10),
   ('psychometric', 'מטלת כתיבה',               'חיבור טיעון מובנה',                       'file-pen',        11);
 
--- ----- 10 levels per unit -----
+-- ----- 10 levels per unit, 10 questions per level -----
 insert into levels (unit_id, position, title, questions_count)
-select u.id, gs, 'שלב ' || gs, 5
+select u.id, gs, 'שלב ' || gs, 10
 from units u
 cross join generate_series(1, 10) as gs;

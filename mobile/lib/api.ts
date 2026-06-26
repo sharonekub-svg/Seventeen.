@@ -26,6 +26,51 @@ export type DailyQuestion = {
   answer_options: AnswerOption[];
 };
 
+// Loads a level's graduated question set (2 easy -> 3 medium -> 5 hard),
+// already ordered easy->hard by the `level_questions` SQL function. Options are
+// fetched separately so the correct answer is never pulled to the client.
+export async function getLevelQuestions(
+  levelId: number,
+): Promise<DailyQuestion[]> {
+  const { data: rows, error } = await supabase.rpc("level_questions", {
+    p_level_id: levelId,
+  });
+  if (error) throw error;
+  const ordered = (rows ?? []) as Array<{
+    id: number;
+    body: string;
+    image_url: string | null;
+    type: string;
+    difficulty: number;
+    slot: number;
+  }>;
+  if (ordered.length === 0) return [];
+
+  const ids = ordered.map((r) => r.id);
+  const { data: opts } = await supabase
+    .from("answer_options")
+    .select("question_id, id, label, body, position")
+    .in("question_id", ids);
+
+  const byQuestion = new Map<number, AnswerOption[]>();
+  for (const o of opts ?? []) {
+    const list = byQuestion.get(o.question_id) ?? [];
+    list.push({ id: o.id, label: o.label, body: o.body, position: o.position });
+    byQuestion.set(o.question_id, list);
+  }
+
+  return ordered
+    .slice()
+    .sort((a, b) => a.slot - b.slot)
+    .map((r) => ({
+      id: r.id,
+      body: r.body,
+      image_url: r.image_url,
+      type: r.type,
+      answer_options: byQuestion.get(r.id) ?? [],
+    }));
+}
+
 export async function getDailyQuestion(): Promise<{
   question: DailyQuestion | null;
   completed: boolean;

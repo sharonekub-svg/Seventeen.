@@ -9,10 +9,15 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { Check, X, Flame } from "lucide-react-native";
+import { Check, X, Flame, SkipForward } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
-import { getDailyQuestion, submitAnswer, type DailyQuestion } from "@/lib/api";
+import {
+  getDailyQuestion,
+  getLevelQuestions,
+  submitAnswer,
+  type DailyQuestion,
+} from "@/lib/api";
 import { colors, spacing, radius } from "@/lib/theme";
 
 type Result = {
@@ -29,29 +34,32 @@ export default function QuestionScreen() {
   const params = useLocalSearchParams<{ mode: string; levelId?: string }>();
   const isLevel = params.mode === "level";
 
-  const [queue, setQueue] = useState<DailyQuestion[]>([]);
-  const [index, setIndex] = useState(0);
+  // `pending` is the queue of questions still to be answered, in play order.
+  // The current question is always pending[0]; answering removes it, while
+  // skipping moves it to the back so it returns at the end of the level.
+  const [pending, setPending] = useState<DailyQuestion[]>([]);
+  const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<number | null>(null);
   const [result, setResult] = useState<Result | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [correctInLevel, setCorrectInLevel] = useState(0);
 
-  const current = queue[index];
+  const current = pending[0];
+  const answered = total - pending.length;
+  const canSkip = pending.length > 1 && !result;
 
   const load = useCallback(async () => {
     setLoading(true);
     if (isLevel && params.levelId) {
-      const { data } = await supabase
-        .from("questions")
-        .select("id, body, image_url, type, answer_options(id, label, body, position)")
-        .eq("level_id", Number(params.levelId))
-        .eq("is_active", true)
-        .order("position");
-      setQueue((data as DailyQuestion[]) ?? []);
+      // Graduated set: 2 easy -> 3 medium -> 5 hard, already ordered easy->hard.
+      const questions = await getLevelQuestions(Number(params.levelId));
+      setPending(questions);
+      setTotal(questions.length);
     } else {
       const { question } = await getDailyQuestion();
-      setQueue(question ? [question] : []);
+      setPending(question ? [question] : []);
+      setTotal(question ? 1 : 0);
     }
     setLoading(false);
   }, [isLevel, params.levelId]);
@@ -72,16 +80,22 @@ export default function QuestionScreen() {
     }
   }
 
+  // Move the current (unanswered) question to the back of the queue.
+  function skip() {
+    if (!canSkip) return;
+    setPending((prev) => [...prev.slice(1), prev[0]]);
+    setSelected(null);
+  }
+
   async function next() {
-    if (index + 1 < queue.length) {
-      setIndex(index + 1);
+    if (pending.length > 1) {
+      setPending((prev) => prev.slice(1));
       setSelected(null);
       setResult(null);
       return;
     }
-    // Level finished: record progress + unlock the next level.
+    // Last question answered — level finished: record progress + unlock next.
     if (isLevel && params.levelId && session) {
-      const total = queue.length;
       const stars = correctInLevel === total ? 3 : correctInLevel >= total * 0.8 ? 2 : correctInLevel >= total * 0.5 ? 1 : 0;
       await supabase.from("user_level_progress").upsert(
         {
@@ -136,12 +150,17 @@ export default function QuestionScreen() {
   return (
     <SafeAreaView style={styles.safe}>
       <View style={styles.progressBar}>
-        <View style={[styles.progressFill, { width: `${((index + 1) / queue.length) * 100}%` }]} />
+        <View
+          style={[
+            styles.progressFill,
+            { width: `${total ? ((answered + (result ? 1 : 0)) / total) * 100 : 0}%` },
+          ]}
+        />
       </View>
 
       <ScrollView contentContainerStyle={{ padding: spacing.lg }}>
         <Text style={styles.counter}>
-          שאלה {index + 1} מתוך {queue.length}
+          שאלה {answered + 1} מתוך {total}
         </Text>
         <Text style={styles.body}>{current.body}</Text>
 
@@ -194,21 +213,33 @@ export default function QuestionScreen() {
 
       <View style={styles.footer}>
         {!result ? (
-          <Pressable
-            style={[styles.primaryBtn, (selected == null || submitting) && { opacity: 0.5 }]}
-            onPress={check}
-            disabled={selected == null || submitting}
-          >
-            {submitting ? (
-              <ActivityIndicator color={colors.primaryText} />
-            ) : (
-              <Text style={styles.primaryBtnText}>בדיקה</Text>
+          <View style={styles.footerRow}>
+            {canSkip && (
+              <Pressable style={styles.skipBtn} onPress={skip}>
+                <SkipForward color={colors.textMuted} size={18} />
+                <Text style={styles.skipBtnText}>דלג</Text>
+              </Pressable>
             )}
-          </Pressable>
+            <Pressable
+              style={[
+                styles.primaryBtn,
+                styles.grow,
+                (selected == null || submitting) && { opacity: 0.5 },
+              ]}
+              onPress={check}
+              disabled={selected == null || submitting}
+            >
+              {submitting ? (
+                <ActivityIndicator color={colors.primaryText} />
+              ) : (
+                <Text style={styles.primaryBtnText}>בדיקה</Text>
+              )}
+            </Pressable>
+          </View>
         ) : (
           <Pressable style={styles.primaryBtn} onPress={next}>
             <Text style={styles.primaryBtnText}>
-              {index + 1 < queue.length ? "השאלה הבאה" : "סיום"}
+              {pending.length > 1 ? "השאלה הבאה" : "סיום"}
             </Text>
           </Pressable>
         )}
@@ -252,6 +283,20 @@ const styles = StyleSheet.create({
   streakText: { color: colors.text, fontWeight: "600", fontSize: 13 },
   explanationText: { color: colors.text, fontSize: 15, lineHeight: 24, textAlign: "right" },
   footer: { padding: spacing.md, borderTopColor: colors.border, borderTopWidth: 1 },
+  footerRow: { flexDirection: "row-reverse", alignItems: "center", gap: spacing.sm },
+  grow: { flex: 1 },
   primaryBtn: { backgroundColor: colors.primary, borderRadius: radius.md, padding: spacing.md, alignItems: "center" },
   primaryBtnText: { color: colors.primaryText, fontSize: 16, fontWeight: "700" },
+  skipBtn: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    gap: 6,
+    backgroundColor: colors.surface,
+    borderColor: colors.border,
+    borderWidth: 1,
+    borderRadius: radius.md,
+    paddingVertical: spacing.md,
+    paddingHorizontal: spacing.lg,
+  },
+  skipBtnText: { color: colors.textMuted, fontSize: 15, fontWeight: "600" },
 });

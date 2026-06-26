@@ -37,7 +37,8 @@ supabase/    Postgres schema (migrations), RLS, Edge Functions
    ```bash
    supabase db push
    ```
-   This creates all tables + RLS and seeds 15 units with 10 levels each (150).
+   This creates all tables + RLS and seeds 15 units with 10 levels each (150),
+   every level holding **10 questions** (see *Level structure* below).
 4. Deploy the Edge Functions:
    ```bash
    supabase functions deploy daily-question
@@ -120,6 +121,27 @@ insert into answer_options (question_id, label, body, is_correct, position) valu
   (<qid>, '3', 'אפשרות ג', false, 2),
   (<qid>, '4', 'אפשרות ד', false, 3);
 ```
+
+## Level structure
+
+A level is not a flat bag of random questions — it is a fixed set of **10
+questions that ramp up in difficulty**, presented easy → hard:
+
+```
+2 easy   →   3 medium   →   5 hard
+```
+
+- Difficulty bands map onto `questions.difficulty` (1–5): easy = 1–2,
+  medium = 3, hard = 4–5.
+- Only **active questions that actually have answer options** are eligible, so
+  the easy slots can't be filled with empty/placeholder rows.
+- The ordered set is produced by the `level_questions(level_id)` SQL function
+  (`0003_level_structure.sql`); the app loads it via `getLevelQuestions()`.
+- **Skip-to-end**: a question you don't answer is moved to the back of the
+  queue and comes back at the end of the level, so nothing is left unanswered.
+
+To change the mix or the band cut-offs, edit `level_difficulty_plan()` and the
+band `case` in `level_questions()`.
 
 ## Data model (high level)
 
