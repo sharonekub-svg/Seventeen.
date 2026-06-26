@@ -3,7 +3,10 @@ import { supabase } from "./supabase";
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
-    shouldShowAlert: true,
+    // SDK 53+ replaced `shouldShowAlert` with the more granular
+    // `shouldShowBanner` / `shouldShowList`.
+    shouldShowBanner: true,
+    shouldShowList: true,
     shouldPlaySound: true,
     shouldSetBadge: false,
   }),
