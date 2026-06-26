@@ -1,0 +1,552 @@
+[
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 1, "difficulty": 2,
+    "body": "חנות מציעה הנחה של 20% על מעיל שמחירו 250 ₪. כמה ישלם הקונה לאחר ההנחה?",
+    "explanation": "הנחה של 20% מ-250 ₪ היא 50 ₪. המחיר לתשלום: 250 − 50 = 200 ₪.",
+    "options": [
+      { "label": "1", "body": "200 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "230 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "210 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "50 ₪", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 1, "difficulty": 2,
+    "body": "ממוצע של שלושה מספרים הוא 14. שניים מהם הם 10 ו-16. מהו המספר השלישי?",
+    "explanation": "סכום שלושת המספרים הוא 3 × 14 = 42. השניים הידועים מסתכמים ל-26, ולכן השלישי הוא 16.",
+    "options": [
+      { "label": "1", "body": "16", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "12", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "14", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "18", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 1, "difficulty": 2,
+    "body": "היחס בין בנים לבנות בכיתה הוא 2:3. אם יש 12 בנים, כמה בנות יש בכיתה?",
+    "explanation": "כל יחידה ביחס שווה ל-12 ÷ 2 = 6. מספר הבנות: 3 × 6 = 18.",
+    "options": [
+      { "label": "1", "body": "18", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "8", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "20", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "15", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 1, "difficulty": 1,
+    "body": "מכונית נוסעת 180 ק\"מ במשך 3 שעות. מהי מהירותה הממוצעת?",
+    "explanation": "מהירות ממוצעת = מרחק חלקי זמן = 180 ÷ 3 = 60 קמ\"ש.",
+    "options": [
+      { "label": "1", "body": "60 קמ\"ש", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "50 קמ\"ש", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "90 קמ\"ש", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "540 קמ\"ש", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 1, "difficulty": 1,
+    "body": "פועל מסיים עבודה אחת ב-6 שעות. בקצב זה, כמה עבודות כאלה יסיים ב-18 שעות?",
+    "explanation": "18 ÷ 6 = 3 עבודות.",
+    "options": [
+      { "label": "1", "body": "3", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "2", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "4", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 2, "difficulty": 4,
+    "body": "ברז אחד ממלא בריכה ב-4 שעות, וברז שני ממלא אותה ב-12 שעות. תוך כמה זמן ימלאו את הבריכה יחד?",
+    "explanation": "בשעה הברז הראשון ממלא 1/4 והשני 1/12. יחד: 4/12 = 1/3 בשעה. לכן ימלאו אותה ב-3 שעות.",
+    "options": [
+      { "label": "1", "body": "3 שעות", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "6 שעות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "8 שעות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "16 שעות", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 2, "difficulty": 4,
+    "body": "מחיר מוצר עלה ב-20% ולאחר מכן ירד ב-20%. מהו השינוי הכולל ביחס למחיר המקורי?",
+    "explanation": "נניח מחיר 100. לאחר עלייה: 120. ירידה של 20% מ-120 היא 24, ולכן המחיר 96 — ירידה של 4%.",
+    "options": [
+      { "label": "1", "body": "ירידה של 4%", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ללא שינוי", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ירידה של 40%", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "עלייה של 4%", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 2, "difficulty": 5,
+    "body": "אדם נסע 60 ק\"מ במהירות 60 קמ\"ש, וחזר באותו מסלול במהירות 40 קמ\"ש. מהי מהירותו הממוצעת לכל הדרך?",
+    "explanation": "המרחק הכולל 120 ק\"מ. הזמן: 1 שעה הלוך + 1.5 שעות חזור = 2.5 שעות. מהירות ממוצעת = 120 ÷ 2.5 = 48 קמ\"ש.",
+    "options": [
+      { "label": "1", "body": "48 קמ\"ש", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "50 קמ\"ש", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "52 קמ\"ש", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "45 קמ\"ש", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 2, "difficulty": 3,
+    "body": "סכום של 600 ₪ מחולק בין שלושה אנשים לפי היחס 1:2:3. כמה מקבל מי שחלקו הגדול ביותר?",
+    "explanation": "סך היחידות: 1 + 2 + 3 = 6. כל יחידה: 600 ÷ 6 = 100 ₪. החלק הגדול: 3 × 100 = 300 ₪.",
+    "options": [
+      { "label": "1", "body": "300 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "200 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "100 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "360 ₪", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 2, "difficulty": 3,
+    "body": "לאחר העלאה של 25% מחירו של מוצר הוא 100 ₪. מה היה מחירו לפני ההעלאה?",
+    "explanation": "המחיר החדש הוא 125% מהמקורי. מחיר מקורי = 100 ÷ 1.25 = 80 ₪.",
+    "options": [
+      { "label": "1", "body": "80 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "75 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "125 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "90 ₪", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 3, "difficulty": 3,
+    "body": "מהו 15% מתוך 240?",
+    "explanation": "15% = 0.15. 0.15 × 240 = 36.",
+    "options": [
+      { "label": "1", "body": "36", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "24", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "40", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "30", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 3, "difficulty": 3,
+    "body": "מספר הוקטן ב-10% והפך ל-90. מה היה המספר המקורי?",
+    "explanation": "90 הם 90% מהמקורי. מקורי = 90 ÷ 0.9 = 100.",
+    "options": [
+      { "label": "1", "body": "100", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "99", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "81", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "110", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 3, "difficulty": 3,
+    "body": "כמה אחוזים הם 18 מתוך 72?",
+    "explanation": "18 ÷ 72 = 0.25 = 25%.",
+    "options": [
+      { "label": "1", "body": "25%", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "18%", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "20%", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "40%", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 3, "difficulty": 3,
+    "body": "מחיר מוצר עלה מ-80 ₪ ל-100 ₪. מהו שיעור העלייה באחוזים?",
+    "explanation": "העלייה 20 ₪. ביחס לבסיס: 20 ÷ 80 = 0.25 = 25%.",
+    "options": [
+      { "label": "1", "body": "25%", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "20%", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "80%", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "125%", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 3, "difficulty": 3,
+    "body": "40% ממספר הם 32. מהו המספר?",
+    "explanation": "0.4 × x = 32, ולכן x = 32 ÷ 0.4 = 80.",
+    "options": [
+      { "label": "1", "body": "80", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "72", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "128", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "12.8", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 4, "difficulty": 3,
+    "body": "היחס בין תפוחים לתפוזים בארגז הוא 5:3. אם יש 15 תפוחים, כמה תפוזים יש?",
+    "explanation": "כל יחידה = 15 ÷ 5 = 3. תפוזים = 3 × 3 = 9.",
+    "options": [
+      { "label": "1", "body": "9", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "25", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "12", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "5", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 4, "difficulty": 3,
+    "body": "מתכון דורש 2 כוסות קמח לכל 3 ביצים. כמה כוסות קמח דרושות ל-9 ביצים?",
+    "explanation": "9 ביצים הן פי 3 מ-3 ביצים, ולכן דרושות פי 3 כוסות קמח: 2 × 3 = 6.",
+    "options": [
+      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "4", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "9", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 4, "difficulty": 3,
+    "body": "סכום של 800 ₪ מחולק לפי היחס 3:5. מהו החלק הקטן?",
+    "explanation": "סך היחידות 8. כל יחידה = 800 ÷ 8 = 100. החלק הקטן: 3 × 100 = 300 ₪.",
+    "options": [
+      { "label": "1", "body": "300 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "500 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "160 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "267 ₪", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 4, "difficulty": 4,
+    "body": "היחס בין רוחב מלבן לאורכו הוא 2:5. אם הרוחב 6 ס\"מ, מהו האורך?",
+    "explanation": "כל יחידה = 6 ÷ 2 = 3. אורך = 5 × 3 = 15 ס\"מ.",
+    "options": [
+      { "label": "1", "body": "15 ס\"מ", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "12 ס\"מ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "30 ס\"מ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "3 ס\"מ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 4, "difficulty": 4,
+    "body": "50 איש חולקו לשלוש קבוצות לפי היחס 1:2:2. כמה אנשים בקבוצה הגדולה ביותר?",
+    "explanation": "סך היחידות 5. כל יחידה = 50 ÷ 5 = 10. קבוצה גדולה (2 יחידות) = 20.",
+    "options": [
+      { "label": "1", "body": "20", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "10", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "25", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "30", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 5, "difficulty": 4,
+    "body": "ממוצע של 4 מספרים הוא 20. מוסיפים מספר חמישי, 30. מהו הממוצע החדש?",
+    "explanation": "סכום ארבעת הראשונים 80. עם 30: 110, חלקי 5 = 22.",
+    "options": [
+      { "label": "1", "body": "22", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "25", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "21", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "24", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 5, "difficulty": 4,
+    "body": "ממוצע גובהם של 3 ילדים הוא 140 ס\"מ. אם אחד מהם גובהו 150 ס\"מ, מהו ממוצע גובהם של שני האחרים?",
+    "explanation": "סכום הגבהים 420. ללא הילד בן 150: 270, חלקי 2 = 135 ס\"מ.",
+    "options": [
+      { "label": "1", "body": "135 ס\"מ", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "130 ס\"מ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "140 ס\"מ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "145 ס\"מ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 5, "difficulty": 4,
+    "body": "מערבבים 2 ק\"ג סוכר במחיר 10 ₪/ק\"ג עם 3 ק\"ג סוכר במחיר 5 ₪/ק\"ג. מהו המחיר הממוצע לק\"ג בתערובת?",
+    "explanation": "עלות כוללת: 2×10 + 3×5 = 20 + 15 = 35 ₪ עבור 5 ק\"ג. ממוצע = 35 ÷ 5 = 7 ₪/ק\"ג.",
+    "options": [
+      { "label": "1", "body": "7 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "7.5 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "6 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "8 ₪", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 5, "difficulty": 4,
+    "body": "ממוצע 5 מבחנים הוא 84. מורידים את הציון הנמוך ביותר, 64. מהו ממוצע ארבעת הנותרים?",
+    "explanation": "סכום 5 הציונים 420. בלי 64: 356, חלקי 4 = 89.",
+    "options": [
+      { "label": "1", "body": "89", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "84", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "80", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "90", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 6, "difficulty": 4,
+    "body": "רכבת עוברת 120 ק\"מ ב-90 דקות. מהי מהירותה בקמ\"ש?",
+    "explanation": "90 דקות = 1.5 שעות. מהירות = 120 ÷ 1.5 = 80 קמ\"ש.",
+    "options": [
+      { "label": "1", "body": "80 קמ\"ש", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "120 קמ\"ש", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "90 קמ\"ש", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "60 קמ\"ש", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 6, "difficulty": 4,
+    "body": "אדם הולך במהירות 5 קמ\"ש. כמה זמן ייקח לו לעבור 12.5 ק\"מ?",
+    "explanation": "זמן = מרחק ÷ מהירות = 12.5 ÷ 5 = 2.5 שעות.",
+    "options": [
+      { "label": "1", "body": "2.5 שעות", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "2 שעות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "3 שעות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "1.5 שעות", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 6, "difficulty": 5,
+    "body": "שתי מכוניות יוצאות זו לקראת זו ממרחק 200 ק\"מ, במהירויות 60 ו-40 קמ\"ש. תוך כמה זמן ייפגשו?",
+    "explanation": "מהירות ההתקרבות = 60 + 40 = 100 קמ\"ש. זמן = 200 ÷ 100 = 2 שעות.",
+    "options": [
+      { "label": "1", "body": "2 שעות", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "4 שעות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "3 שעות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "2.5 שעות", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 6, "difficulty": 4,
+    "body": "מכונית נסעה 3 שעות במהירות 50 קמ\"ש, ואז שעתיים במהירות 70 קמ\"ש. מהו המרחק הכולל?",
+    "explanation": "3 × 50 + 2 × 70 = 150 + 140 = 290 ק\"מ.",
+    "options": [
+      { "label": "1", "body": "290 ק\"מ", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "300 ק\"מ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "260 ק\"מ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "250 ק\"מ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 6, "difficulty": 4,
+    "body": "אופנוע עבר 90 ק\"מ ב-1.5 שעות. כמה ק\"מ יעבור ב-4 שעות באותה מהירות?",
+    "explanation": "המהירות 90 ÷ 1.5 = 60 קמ\"ש. ב-4 שעות: 60 × 4 = 240 ק\"מ.",
+    "options": [
+      { "label": "1", "body": "240 ק\"מ", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "360 ק\"מ", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "135 ק\"מ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "210 ק\"מ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 7, "difficulty": 4,
+    "body": "12 פועלים מסיימים עבודה ב-8 ימים. כמה ימים ידרשו ל-16 פועלים לאותה עבודה?",
+    "explanation": "סך ימי-עבודה = 12 × 8 = 96. עבור 16 פועלים: 96 ÷ 16 = 6 ימים.",
+    "options": [
+      { "label": "1", "body": "6 ימים", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "10 ימים", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "4 ימים", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "12 ימים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 7, "difficulty": 4,
+    "body": "מכונה מייצרת 200 יחידות ב-5 שעות. כמה יחידות תייצר ב-8 שעות באותו קצב?",
+    "explanation": "קצב = 200 ÷ 5 = 40 יחידות לשעה. ב-8 שעות: 40 × 8 = 320.",
+    "options": [
+      { "label": "1", "body": "320", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "250", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "160", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "400", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 7, "difficulty": 5,
+    "body": "ברז ממלא בריכה ב-3 שעות, וצינור ניקוז מרוקן אותה ב-6 שעות. אם שניהם פתוחים, תוך כמה זמן תתמלא הבריכה?",
+    "explanation": "בשעה: ממלא 1/3 ומרוקן 1/6. נטו: 1/3 − 1/6 = 1/6 בשעה. לכן תתמלא ב-6 שעות.",
+    "options": [
+      { "label": "1", "body": "6 שעות", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "2 שעות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "9 שעות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "3 שעות", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 7, "difficulty": 4,
+    "body": "פועל א' מסיים עבודה ב-4 שעות, ופועל ב' ב-12 שעות. תוך כמה זמן יסיימו אותה יחד?",
+    "explanation": "בשעה: 1/4 + 1/12 = 3/12 + 1/12 = 4/12 = 1/3. לכן יחד יסיימו ב-3 שעות.",
+    "options": [
+      { "label": "1", "body": "3 שעות", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "6 שעות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "8 שעות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "16 שעות", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 7, "difficulty": 5,
+    "body": "5 מכונות מייצרות 5 מוצרים ב-5 דקות. כמה מוצרים יייצרו 5 מכונות ב-100 דקות?",
+    "explanation": "כל מכונה מייצרת מוצר אחד ב-5 דקות. ב-100 דקות מכונה מייצרת 20, ו-5 מכונות מייצרות 100.",
+    "options": [
+      { "label": "1", "body": "100", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "5", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "20", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "500", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 8, "difficulty": 4,
+    "body": "סכום שלושה מספרים שלמים עוקבים הוא 72. מהו המספר האמצעי?",
+    "explanation": "שלושה עוקבים: סכומם = 3 × האמצעי. לכן האמצעי = 72 ÷ 3 = 24.",
+    "options": [
+      { "label": "1", "body": "24", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "23", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "25", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "22", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 8, "difficulty": 5,
+    "body": "מכפלת שני מספרים היא 48 וסכומם 14. מהו הגדול שביניהם?",
+    "explanation": "המספרים 6 ו-8 (6 × 8 = 48, 6 + 8 = 14). הגדול הוא 8.",
+    "options": [
+      { "label": "1", "body": "8", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "12", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "4", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 8, "difficulty": 4,
+    "body": "אם רבע ממספר הוא 9, מהו המספר?",
+    "explanation": "x/4 = 9, ולכן x = 36.",
+    "options": [
+      { "label": "1", "body": "36", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "9", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "4", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "13", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 8, "difficulty": 4,
+    "body": "כמה מספרים שלמים יש בין 3 ל-9 (לא כולל את 3 ואת 9)?",
+    "explanation": "המספרים הם 4, 5, 6, 7, 8 — חמישה מספרים.",
+    "options": [
+      { "label": "1", "body": "5", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "7", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "4", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 8, "difficulty": 5,
+    "body": "מספר זוגי כפול 3 שווה ל-24. מהו המספר?",
+    "explanation": "3x = 24, ולכן x = 8 (ואכן זוגי).",
+    "options": [
+      { "label": "1", "body": "8", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "6", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "12", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "4", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 9, "difficulty": 5,
+    "body": "מטילים קובייה הוגנת. מה ההסתברות לקבל מספר זוגי?",
+    "explanation": "המספרים הזוגיים הם 2, 4, 6 — שלושה מתוך שישה. ההסתברות: 3/6 = 1/2.",
+    "options": [
+      { "label": "1", "body": "1/2", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "1/3", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "1/6", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "2/3", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 9, "difficulty": 5,
+    "body": "בשקית 4 כדורים אדומים ו-6 כחולים. מה ההסתברות לשלוף כדור אדום?",
+    "explanation": "סך הכדורים 10. הסתברות לאדום: 4/10 = 2/5.",
+    "options": [
+      { "label": "1", "body": "2/5", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "4/6", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "1/2", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "1/4", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 9, "difficulty": 5,
+    "body": "מטילים מטבע הוגן פעמיים. מה ההסתברות לקבל פעמיים 'עץ'?",
+    "explanation": "כל הטלה: הסתברות 1/2 ל'עץ'. שתי הטלות בלתי תלויות: 1/2 × 1/2 = 1/4.",
+    "options": [
+      { "label": "1", "body": "1/4", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "1/2", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "1/3", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "2/4", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 9, "difficulty": 5,
+    "body": "בכמה דרכים שונות ניתן לסדר 3 ספרים שונים בשורה על מדף?",
+    "explanation": "מספר הסידורים = 3! = 3 × 2 × 1 = 6.",
+    "options": [
+      { "label": "1", "body": "6", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "9", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "12", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 10, "difficulty": 5,
+    "body": "אם 4 עטים עולים 12 ₪, כמה יעלו 7 עטים באותו מחיר ליחידה?",
+    "explanation": "עט אחד עולה 12 ÷ 4 = 3 ₪. שבעה עטים: 7 × 3 = 21 ₪.",
+    "options": [
+      { "label": "1", "body": "21 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "28 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "18 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "24 ₪", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 10, "difficulty": 5,
+    "body": "מתוך 200 איש, 35% הם ילדים. כמה מבוגרים יש?",
+    "explanation": "מבוגרים הם 65%: 0.65 × 200 = 130.",
+    "options": [
+      { "label": "1", "body": "130", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "70", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "165", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "135", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 10, "difficulty": 5,
+    "body": "חולצה הוזלה ב-30% ומחירה כעת 84 ₪. מה היה מחירה המקורי?",
+    "explanation": "84 הם 70% מהמחיר המקורי. מקורי = 84 ÷ 0.7 = 120 ₪.",
+    "options": [
+      { "label": "1", "body": "120 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "109 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "110 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "114 ₪", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 10, "difficulty": 5,
+    "body": "מהו המספר השלם בין 20 ל-30 המתחלק גם ב-4 וגם ב-6?",
+    "explanation": "מספר המתחלק ב-4 וב-6 מתחלק ב-12. בין 20 ל-30 המספר היחיד כזה הוא 24.",
+    "options": [
+      { "label": "1", "body": "24", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "20", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "28", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "26", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 5, "difficulty": 4,
+    "body": "ממוצע של 6 ושל מספר נוסף הוא 9. מהו המספר הנוסף?",
+    "explanation": "אם הממוצע של שני מספרים הוא 9, סכומם 18. המספר הנוסף = 18 − 6 = 12.",
+    "options": [
+      { "label": "1", "body": "12", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "9", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "3", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "15", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 9, "difficulty": 5,
+    "body": "מטילים קובייה הוגנת. מה ההסתברות לקבל מספר הגדול מ-4?",
+    "explanation": "המספרים הגדולים מ-4 הם 5 ו-6 — שניים מתוך שישה. ההסתברות: 2/6 = 1/3.",
+    "options": [
+      { "label": "1", "body": "1/3", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "1/2", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "1/6", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "2/3", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper", "unit": "חשיבה כמותית", "level_position": 10, "difficulty": 5,
+    "body": "אם 3 ק\"ג תפוחים עולים 18 ₪, כמה יעלו 5 ק\"ג באותו מחיר לק\"ג?",
+    "explanation": "ק\"ג אחד עולה 18 ÷ 3 = 6 ₪. חמישה ק\"ג: 5 × 6 = 30 ₪.",
+    "options": [
+      { "label": "1", "body": "30 ₪", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "36 ₪", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "24 ₪", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "45 ₪", "is_correct": false, "position": 3 }
+    ]
+  }
+]

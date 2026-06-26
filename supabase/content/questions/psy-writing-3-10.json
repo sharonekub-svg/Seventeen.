@@ -1,0 +1,1402 @@
+[
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "איזה משפט מתאים ביותר לפתיחת חיבור על חשיבות הספורט?",
+    "explanation": "פתיחת חיבור צריכה להציג טענה כללית בנושא. רק האפשרות הראשונה מנסחת טענה כזו.",
+    "options": [
+      {
+        "label": "1",
+        "body": "הספורט תורם לבריאות הגוף והנפש, ולכן ראוי לשלבו בחיי היומיום.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אתמול שיחקתי כדורגל עם חברים.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לכלב שלי קוראים רקס.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אני לא אוהב לקום מוקדם.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "השלימו את מילת הקישור המתאימה: \"התאמנתי קשה, ___ ניצחתי בתחרות.\"",
+    "explanation": "המשפט מבטא סיבה ותוצאה, ולכן מילת הקישור המתאימה היא 'ולכן'.",
+    "options": [
+      {
+        "label": "1",
+        "body": "אף על פי",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ולכן",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אבל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "למרות",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "איזה משפט אינו מתאים לפסקה העוסקת בחתולים?",
+    "explanation": "הפסקה עוסקת בחתולים; המשפט על הג'ירפה חורג מהנושא.",
+    "options": [
+      {
+        "label": "1",
+        "body": "חתולים רבים ישנים שעות ארוכות ביום.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יש חתולים בצבעים ובדוגמאות שונים.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "הג'ירפה היא החיה הגבוהה בעולם.",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "החתול מנקה את פרוותו בעזרת לשונו.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "איזו כותרת מתאימה ביותר לפסקה המתארת את יתרונות המיחזור?",
+    "explanation": "הכותרת צריכה לשקף את תוכן הפסקה — יתרונות המיחזור.",
+    "options": [
+      {
+        "label": "1",
+        "body": "מתכונים לארוחת ערב",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "היסטוריה של המכונית",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כללי משחק הכדורסל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חשיבותו של המיחזור",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "איזה משפט מתאים לסיכום חיבור על שמירה על הסביבה?",
+    "explanation": "משפט סיכום פותח לרוב במילה כמו 'לסיכום' וחוזר על המסר המרכזי.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לסיכום, שמירה על הסביבה חיונית למען הדורות הבאים.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "בנוסף, ארנבים אוכלים גזר.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ראשית, נצא לטיול.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "השאלה הזו קשה מאוד.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 4,
+    "difficulty": 2,
+    "source": "original",
+    "body": "השלימו את מילת הקישור: \"רציתי לצאת לטיול, ___ ירד גשם כבד.\"",
+    "explanation": "יש ניגוד בין הרצון לבין הגשם שמנע אותו, ולכן מתאימה המילה 'אבל'.",
+    "options": [
+      {
+        "label": "1",
+        "body": "וגם",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אבל",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ולכן",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מכיוון ש",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 4,
+    "difficulty": 2,
+    "source": "original",
+    "body": "איזה מהמשפטים הבאים מבטא דעה ולא עובדה?",
+    "explanation": "'לטעמי' מסמן עמדה אישית — דעה. השאר הם נתונים הניתנים לבדיקה.",
+    "options": [
+      {
+        "label": "1",
+        "body": "ישראל שוכנת במזרח הים התיכון.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "לשבוע יש שבעה ימים.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לטעמי, הקיץ הוא העונה הנעימה ביותר.",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "המים רותחים בטמפרטורה של 100 מעלות.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 4,
+    "difficulty": 2,
+    "source": "original",
+    "body": "איזה משפט מתאים לפתוח בו פסקה (משפט נושא)?",
+    "explanation": "משפט נושא מציג את הרעיון הכללי של הפסקה; השאר הם פרטים תומכים.",
+    "options": [
+      {
+        "label": "1",
+        "body": "היא מרחיבה את אוצר המילים.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "היא משפרת את הריכוז.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "היא חושפת לרעיונות חדשים.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לקריאת ספרים יתרונות רבים.",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
+    "body": "איזה משפט תומך בצורה הטובה ביותר בטענה \"כדאי לישון מספיק שעות\"?",
+    "explanation": "התמיכה הטובה מקשרת ישירות בין שינה לתועלת מוכחת. השאר אינם רלוונטיים לטענה.",
+    "options": [
+      {
+        "label": "1",
+        "body": "מחקרים מראים ששינה מספקת משפרת את הזיכרון והריכוז.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יש אנשים שאוהבים לישון על הבטן.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מיטות מודרניות יקרות יותר מבעבר.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חלומות יכולים להיות מוזרים לעיתים.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
+    "body": "איזה משפט אינו מתאים לפסקה העוסקת ביתרונות הרכיבה על אופניים?",
+    "explanation": "הפסקה עוסקת ביתרונות האופניים; המשפט על מחירי הדלק חורג מהנושא.",
+    "options": [
+      {
+        "label": "1",
+        "body": "רכיבה חוסכת בהוצאות נסיעה.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מחירי הדלק עלו בחודש שעבר.",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רכיבה על אופניים משפרת את הכושר הגופני.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "האופניים אינם מזהמים את האוויר.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "השלימו את מילת הקישור: \"היא למדה במשך חודשים; ___, היא עברה את הבחינה בהצטיינות.\"",
+    "explanation": "המשפט מציג תוצאה של הלימוד, ולכן מתאים 'כתוצאה מכך'.",
+    "options": [
+      {
+        "label": "1",
+        "body": "למרות זאת",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מצד שני",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כתוצאה מכך",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לעומת זאת",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "איזו גרסה כתובה בצורה הברורה והתמציתית ביותר?",
+    "explanation": "הניסוח הראשון מוסר את אותו מידע בלי מילים מיותרות וכפילויות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "הפגישה, שהייתה אמורה להתקיים, נדחתה והועברה ליום ראשון הקרוב שיבוא.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "הפגישה זה דבר שנדחה ליום ראשון בעצם.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ביום ראשון, אז שם, הפגישה היא נדחית.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "הפגישה נדחתה ליום ראשון.",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "בפסקה מופיעים המשפטים הבאים. איזה מהם מתאים לשמש משפט פותח?",
+    "explanation": "המשפט הכללי על התחבורה הציבורית ממסגר את הפרטים שאחריו; השאר הם דוגמאות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לתחבורה הציבורית תפקיד מרכזי בחיי העיר.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "האוטובוסים מפחיתים את הצפיפות בכבישים.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "הרכבת מקצרת את זמני הנסיעה.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "הקווים מגיעים גם לשכונות מרוחקות.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "איזה מהמשפטים הבאים הוא עובדה הניתנת לבדיקה?",
+    "explanation": "מספר תושבים הוא נתון שניתן לאמת; השאר הם הערכות או דעות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "האוכל בה טעים מבכל מקום אחר.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "בעיר מתגוררים כחצי מיליון תושבים.",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "זו העיר היפה בעולם.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כדאי לכולם לגור בה.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "איזה משפט סיום מתאים לחיבור הטוען שיש לעודד קריאה בקרב ילדים?",
+    "explanation": "משפט הסיום מסכם את עמדת החיבור וקורא לפעולה התואמת אותה.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לסיכום, טלוויזיה עדיפה על ספרים.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "לסיכום, קריאה אינה חשובה במיוחד.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לסיכום, עידוד הקריאה מגיל צעיר הוא השקעה בעתיד הילדים.",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לסיכום, יש להגביל את זמן הקריאה של ילדים.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "השלימו את מילת הקישור: \"המחירים עלו בחדות; ___, הביקוש לא פחת.\"",
+    "explanation": "קיים ניגוד בין עליית המחירים לבין הביקוש שנשמר, ולכן מתאים 'אף על פי כן'.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לפיכך",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כתוצאה מכך",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "בנוסף לכך",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אף על פי כן",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "בפסקה הבאה יש משפט מיותר החוזר על רעיון קודם. איזה משפט הוא הכפילות? \"הספרייה פתוחה לכול. כל אדם מוזמן להיכנס. (1) היא מציעה מגוון ספרים. (2) כל אחד רשאי להיכנס אליה בחופשיות.\"",
+    "explanation": "המשפט '(2) כל אחד רשאי להיכנס אליה בחופשיות' חוזר על הרעיון ש'כל אדם מוזמן להיכנס'.",
+    "options": [
+      {
+        "label": "1",
+        "body": "כל אחד רשאי להיכנס אליה בחופשיות.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "היא מציעה מגוון ספרים.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "הספרייה פתוחה לכול.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אין בפסקה כל כפילות.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "איזה פרט תומך בצורה הטובה ביותר בטענה \"לימודי מוזיקה מועילים לילדים\"?",
+    "explanation": "התמיכה הטובה מציגה ממצא רלוונטי המקשר בין מוזיקה לתועלת; השאר אינם תומכים בטענה.",
+    "options": [
+      {
+        "label": "1",
+        "body": "קונצרטים נמשכים לעיתים שעות.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מחקרים מצאו שלימוד נגינה משפר את היכולת המתמטית של ילדים.",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כלי נגינה רבים עשויים מעץ.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "יש סוגות מוזיקה רבות בעולם.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "איזה משפט מנוסח בלשון תקנית וברורה?",
+    "explanation": "האפשרות הראשונה מנוסחת באופן דקדוקי ובהיר; האחרות שגויות או מסורבלות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "סיימו המבחן התלמידים, מחברות הוגשו על ידם הם.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "המבחן את סיימו, מחברות והגישו.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "התלמידים סיימו את המבחן והגישו את המחברות.",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "התלמידים סיימו את המבחן והם הגישו אותם המחברת.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "סדרו את המשפטים לפסקה הגיונית. איזה משפט צריך לבוא ראשון? \"לכן הוא נחשב למקצוע מאתגר. רופא נדרש לידע רב. הוא גם נדרש לקבל החלטות מהירות.\"",
+    "explanation": "המשפט 'רופא נדרש לידע רב' מציג את הנושא; השאר מתבססים עליו, והמשפט הפותח ב'לכן' חייב לבוא בסוף.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לכן הוא נחשב למקצוע מאתגר.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "הוא גם נדרש לקבל החלטות מהירות.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כל סדר אפשרי באותה מידה.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רופא נדרש לידע רב.",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "בחיבור עיוני, איזה ניסוח מתאים יותר מבחינת המשלב (רמת הלשון)?",
+    "explanation": "חיבור עיוני דורש משלב גבוה ותקני; 'הדבר מעורר קשיים רבים' מתאים, בעוד הניסוחים הסלנגיים אינם הולמים.",
+    "options": [
+      {
+        "label": "1",
+        "body": "תופעה זו מעוררת קשיים רבים.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "הקטע הזה ממש מבאס אותך.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "זה סבבה לגמרי בקטע הזה.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "וואלה זה דבר די בעייתי כזה.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "איזו טענה היא החלשה ביותר משום שאינה נתמכת בנימוק?",
+    "explanation": "האפשרות הראשונה היא קביעה גורפת ללא כל ביסוס; השאר כוללות נימוק או הסתייגות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "מחקרים מצביעים על השפעות מעורבות של הטכנולוגיה.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "הטכנולוגיה מזיקה, וזה ברור לכולם.",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "הטכנולוגיה עלולה להזיק כאשר משתמשים בה לרעה.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לטכנולוגיה יתרונות וחסרונות כאחד.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "בחיבור טיעון, מהי הדרך הראויה להתייחס לעמדה המנוגדת?",
+    "explanation": "כתיבה טיעונית טובה מכירה בעמדה הנגדית ואז משיבה עליה בנימוק, במקום להתעלם או להעליב.",
+    "options": [
+      {
+        "label": "1",
+        "body": "אין שום עמדה אחרת בנושא הזה.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "לא משנה מה אחרים חושבים בכלל.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "יש הטוענים אחרת, אך נימוקיהם אינם עומדים במבחן הביקורת משום ש...",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מי שחושב אחרת פשוט טועה ולא כדאי להקשיב לו.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "השלימו את מילת הקישור המתאימה לפתיחת פסקה המציגה עמדה מנוגדת: \"___, יש הסבורים כי דווקא ההפך הוא הנכון.\"",
+    "explanation": "'מנגד' פותח הצגת עמדה נוגדת; השאר אינן מסמנות ניגוד.",
+    "options": [
+      {
+        "label": "1",
+        "body": "בנוסף",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כמו כן",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לסיכום",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מנגד",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "איזה משפט חורג מקו הטיעון בפסקה הטוענת שיש לצמצם את השימוש במכוניות פרטיות?",
+    "explanation": "המשפט על צבעי המכוניות אינו רלוונטי לטיעון בעד צמצום השימוש; השאר תומכים בו.",
+    "options": [
+      {
+        "label": "1",
+        "body": "מכוניות חדשות מגיעות במגוון צבעים אופנתיים.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מכוניות פרטיות תורמות לזיהום האוויר.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ריבוי מכוניות מגביר את העומס בכבישים.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "צמצום השימוש בהן מעודד תחבורה ציבורית.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "איזו טענת פתיחה (תזה) היא המוצלחת ביותר לחיבור טיעון?",
+    "explanation": "תזה טובה היא ממוקדת וניתנת לטיעון. הראשונה מציגה עמדה ברורה; האחרות כלליות מדי, ברורות מאליהן או רק עובדתיות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לכולם יש דעה על חינוך.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יש להעדיף לימוד מקצוע על פני תואר אקדמי, משום שהוא מקנה עצמאות כלכלית מהירה יותר.",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חינוך הוא נושא חשוב מאוד.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "יש בתי ספר רבים בישראל.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "איזה משפט מכיל הכללה גורפת שאינה מבוססת?",
+    "explanation": "המילים 'כל' ו'תמיד' יוצרות הכללה מוחלטת שקשה לבססה; האחרות מסויגות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "חלק מהצעירים מתנדבים בקהילה.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יש צעירים המשלבים עבודה ולימודים.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כל הצעירים מבזבזים תמיד את זמנם לריק.",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "צעירים רבים מקדישים זמן רב לרשתות החברתיות.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "כדי לבסס את הטענה \"זיהום האוויר פוגע בבריאות\", איזה סוג של ראיה משכנע ביותר?",
+    "explanation": "נתונים ממחקר מבוקר הם הראיה המשכנעת ביותר; דוגמה יחידה או רושם אישי חלשים יותר.",
+    "options": [
+      {
+        "label": "1",
+        "body": "שכן שלי משתעל לפעמים.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "נדמה לי שזה נכון.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כך נאמר פעם בסרט.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נתונים ממחקר רפואי רחב היקף המקשר בין זיהום למחלות נשימה.",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "איזה משפט סיכום חוזר על עמדת החיבור מבלי לחזור עליה במילים זהות?",
+    "explanation": "ניסוח מחדש של העמדה ('בחירה מושכלת...') טוב יותר מחזרה מילולית או מהוספת טענה חדשה בסיום.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לסיכום, בחירה מושכלת בתחבורה ציבורית משרתת הן את הפרט הן את החברה.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "לסיכום, תחבורה ציבורית טובה לפרט ולחברה, כי היא טובה לפרט ולחברה.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לסיכום, יש לאסור לחלוטין על מכוניות פרטיות מחר בבוקר.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לסיכום, צבע האוטובוסים אינו חשוב.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 8,
+    "difficulty": 5,
+    "source": "original",
+    "body": "באיזו אפשרות הקשר הלוגי בין שני חלקי המשפט שגוי?",
+    "explanation": "במשפט הראשון 'מכיוון ש' מצביע על סיבה, אך התוכן מתאר ניגוד — ולכן הקישור שגוי. השאר עקביים.",
+    "options": [
+      {
+        "label": "1",
+        "body": "הוא הפסיד במשחק, שכן כמעט לא התאמן.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מכיוון שהתאמן מעט, הוא ניצח בקלות בכל המשחקים.",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מכיוון שהתאמן רבות, הוא ניצח בתחרות.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "למרות שהתאמן מעט, הוא הצליח לנצח.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "איזה ניסוח של תזה הוא המדויק והמורכב ביותר, המכיר במורכבות הנושא?",
+    "explanation": "התזה הראשונה נוקטת עמדה אך מכירה בתנאי/הסתייגות — ניסוח בוגר. השאר גורפות מדי או סתמיות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "רשתות חברתיות הן דבר קיים בעולם.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כולם משתמשים ברשתות חברתיות כל הזמן.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אף שלרשתות החברתיות תועלות, יש להגביל את השימוש בהן בקרב ילדים בשל סיכוניהן.",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "הרשתות החברתיות הן הדבר הגרוע ביותר שקרה לאנושות.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "איזה משפט מדגים נימוק מעגלי (הנחת המבוקש)?",
+    "explanation": "הנימוק המעגלי מבסס טענה על עצמה ('אמין מפני שהוא אומר אמת'). השאר מביאים נימוק חיצוני.",
+    "options": [
+      {
+        "label": "1",
+        "body": "הוא דובר אמת, שכן דבריו אומתו בעדויות נוספות.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "הוא דובר אמת, מפני שלא היה לו אינטרס לשקר.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "הוא דובר אמת, כפי שעולה מן המסמכים שהציג.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "הוא דובר אמת, מפני שהוא אדם אמין שאינו משקר.",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "איזו גרסה מנסחת את הרעיון בצורה המדויקת והחסכונית ביותר, ללא מילים מיותרות?",
+    "explanation": "האפשרות הראשונה מוסרת את הרעיון בלשון מהודקת; האחרות גודשות מילים נרדפות ומיותרות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "ההחלטה התקבלה פה אחד.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ההחלטה התקבלה פה אחד על ידי כולם ובהסכמה מלאה של כל הנוכחים יחד.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ההחלטה, כלומר ההכרעה הזו, התקבלה והוסכמה פה אחד.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כל אחד ואחד הסכים והחליט יחד את אותה ההחלטה ממש.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "בפסקת טיעון, איזה משפט יש להסיר משום שהוא מחליש את הטיעון במקום לחזק אותו?",
+    "explanation": "המשפט המודה ש'אין לדבר חשיבות רבה' סותר את הטיעון ומחליש אותו; השאר תומכים בו.",
+    "options": [
+      {
+        "label": "1",
+        "body": "הניסיון המעשי מאשש את הדברים.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אמנם, ייתכן שלכל העניין אין באמת חשיבות רבה.",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ראיות רבות תומכות בעמדה זו.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מומחים בתחום מסכימים עם טענה זו.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "איזו מילת קישור מתאימה לפתוח בה משפט המסיק מסקנה מן האמור קודם? \"הנתונים מצביעים על מגמה עקבית; ___ ניתן לקבוע כי קיים קשר בין הגורמים.\"",
+    "explanation": "'אי לכך' פותחת מסקנה הנובעת מן הנאמר; השאר אינן מתאימות להיסק.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לדוגמה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מצד שני",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אי לכך",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לעומת זאת",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "באיזו אפשרות מובחנת כראוי טענה (claim) מראיה (evidence)?",
+    "explanation": "באפשרות הראשונה החלק הראשון הוא טענה והחלק השני ראיה התומכת בה. באחרות מוצגת טענה בלבד או שתי טענות.",
+    "options": [
+      {
+        "label": "1",
+        "body": "טענה: יש להרחיב את שעות הספרייה. ראיה: כי זה רעיון טוב.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "טענה: הספרייה חשובה. ראיה: הספרייה חשובה מאוד.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "טענה: כדאי. ראיה: כן.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "טענה: יש להרחיב את שעות הספרייה. ראיה: סקר מצא ש-80% מהסטודנטים זקוקים למקום לימוד בערב.",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "איזה משפט מעבר מתאים ביותר בין פסקה התומכת בטענה לבין פסקה המציגה הסתייגות?",
+    "explanation": "משפט המעבר הטוב מסמן מעבר מתמיכה להסתייגות ('עם זאת, יש לסייג...'); השאר אינם מסמנים את המעבר.",
+    "options": [
+      {
+        "label": "1",
+        "body": "עם זאת, יש לסייג טענה זו לנוכח כמה קשיים שאין להתעלם מהם.",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "בנוסף, כל הנקודות שהוצגו נכונות לחלוטין.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לסיכום, אין עוד מה להוסיף בנושא.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כפי שראינו, אין שום בעיה בטיעון.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "איזה ניסוח מבחין נכון בין סיבה לבין מתאם (קורלציה) ואינו מסיק יותר מדי?",
+    "explanation": "האפשרות הראשונה זהירה ומדברת על 'קשר' בלי לטעון לסיבתיות. האחרות קופצות למסקנה סיבתית בלתי מבוססת.",
+    "options": [
+      {
+        "label": "1",
+        "body": "כל מתאם מעיד בהכרח על קשר סיבתי ישיר.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "נמצא קשר בין השניים, אך דרוש מחקר נוסף כדי לקבוע אם האחד גורם לאחר.",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מכיוון שהשניים מופיעים יחד, ברור שהאחד גורם לאחר.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אם שני דברים קורים יחד, זו תמיד הוכחה לסיבה.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "איזה משפט סיום מסכם (סינתזה) בצורה הטובה ביותר חיבור ששקל שני צדדים?",
+    "explanation": "הסיכום הטוב משקלל את שני הצדדים ומגיע לעמדה מאוזנת; השאר מתעלמים מצד אחד או אינם מסכמים.",
+    "options": [
+      {
+        "label": "1",
+        "body": "לסיכום, אין באמת מה לומר על הנושא.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "לסיכום, נתחיל עכשיו לדון בנושא חדש לגמרי.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "לסיכום, אף ששתי הגישות נושאות יתרונות, נראה כי שילוב ביניהן הוא הדרך המאוזנת ביותר.",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לסיכום, צד אחד צודק לחלוטין והשני טועה לגמרי.",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מטלת כתיבה",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "איזו פתיחה ממסגרת בצורה הטובה ביותר חיבור טיעון, בלי להכריע כבר במשפט הראשון?",
+    "explanation": "פתיחה טובה מציגה את הסוגיה ואת המתח שבה לפני הכרעה; האחרות מכריעות מיד, סתמיות או חורגות מהנושא.",
+    "options": [
+      {
+        "label": "1",
+        "body": "חופש הפרט תמיד מנצח, וזהו.",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יש הרבה נושאים בעולם.",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אני אכתוב עכשיו על משהו אחר.",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שאלת האיזון בין חופש הפרט לבין טובת הכלל מלווה את החברה זה דורות, ומעוררת עמדות מנוגדות.",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  }
+]

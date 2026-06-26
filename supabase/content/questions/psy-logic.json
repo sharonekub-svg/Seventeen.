@@ -1,0 +1,519 @@
+[
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2,
+    "body": "כל הכלבים נובחים. רקס הוא כלב. מה נכון בהכרח?",
+    "explanation": "אם כל הכלבים נובחים ורקס כלב, אז רקס נובח.",
+    "options": [
+      { "label": "1", "body": "רקס נובח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רקס אינו נובח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רקס הוא חתול", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 3,
+    "body": "אם יורד גשם — הכביש רטוב. הכביש יבש. מה נכון בהכרח?",
+    "explanation": "אם הכביש היה רטוב בכל פעם שיורד גשם, ועכשיו הוא יבש, אז בהכרח לא ירד גשם.",
+    "options": [
+      { "label": "1", "body": "לא ירד גשם", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ירד גשם", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הכביש רטוב", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "תמיד יבש", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2,
+    "body": "דנה גבוהה מרון. רון גבוה מתום. מי הנמוך מבין השלושה?",
+    "explanation": "הסדר מהגבוה לנמוך: דנה, רון, תום. הנמוך ביותר הוא תום.",
+    "options": [
+      { "label": "1", "body": "תום", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "דנה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רון", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כולם שווים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 3,
+    "body": "אם כל A הם B, וכל B הם C, מה נכון בהכרח?",
+    "explanation": "טרנזיטיביות: אם כל A הם B וכל B הם C, אז כל A הם C.",
+    "options": [
+      { "label": "1", "body": "כל A הם C", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כל C הם A", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אף A אינו C", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 3,
+    "body": "כל הציפורים מטילות ביצים. תרנגולת מטילה ביצים. האם נובע מכך בהכרח שתרנגולת היא ציפור?",
+    "explanation": "לא. עצם הטלת ביצים אינה הופכת משהו לציפור (כשל לוגי). מההנחות לבדן אי-אפשר להסיק זאת בהכרח.",
+    "options": [
+      { "label": "1", "body": "לא ניתן להסיק זאת בהכרח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כן, בהכרח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "תרנגולת אינה ציפור", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ביצים אינן של ציפורים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 3,
+    "body": "במרוץ הגיע יוסי לפני דני אך אחרי מאיה. מי ניצח במרוץ?",
+    "explanation": "מאיה לפני יוסי, ויוסי לפני דני. הסדר: מאיה, יוסי, דני — מאיה ניצחה.",
+    "options": [
+      { "label": "1", "body": "מאיה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "יוסי", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דני", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "תיקו", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 5,
+    "body": "נתון שהמשפט 'כל הפרחים זקוקים למים' נכון. איזה משפט בהכרח נכון גם הוא?",
+    "explanation": "זהו הניסוח השקול ההפוך (קונטרה-פוזיטיב): אם משהו אינו זקוק למים, הוא בהכרח אינו פרח.",
+    "options": [
+      { "label": "1", "body": "דבר שאינו זקוק למים אינו פרח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כל הזקוק למים הוא פרח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "יש פרחים שאינם זקוקים למים", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מים הם פרחים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 3,
+    "body": "חמישה חברים עומדים בתור. גיל אחרי דנה, דנה אחרי נועה, ונועה ראשונה. מי עומד שני בתור?",
+    "explanation": "נועה ראשונה, אחריה דנה, אחריה גיל. השני בתור הוא דנה.",
+    "options": [
+      { "label": "1", "body": "דנה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "גיל", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "נועה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ידוע", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 5,
+    "body": "בעולם שבו אביר אומר תמיד אמת ונוכל אומר תמיד שקר, אדם מצהיר: 'אני נוכל'. מה הבעיה בהצהרה?",
+    "explanation": "אם הוא אביר — הוא דובר אמת, אך אז 'אני נוכל' שקר; סתירה. אם הוא נוכל — הוא משקר, אך אז 'אני נוכל' אמת; שוב סתירה.",
+    "options": [
+      { "label": "1", "body": "ההצהרה יוצרת סתירה לוגית", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "הוא בוודאי אביר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הוא בוודאי נוכל", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "אין בעיה בהצהרה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 2, "difficulty": 3,
+    "body": "כל התלמידים בכיתה עברו את המבחן. מה נכון בהכרח?",
+    "explanation": "אם כולם עברו, אז אין אף תלמיד בכיתה שנכשל.",
+    "options": [
+      { "label": "1", "body": "אין תלמיד בכיתה שנכשל", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כולם קיבלו 100", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חלקם נכשלו", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "המבחן היה קל", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 3, "difficulty": 3,
+    "body": "כל החתולים הם בעלי חיים. שמשון הוא חתול. מה נכון בהכרח?",
+    "explanation": "אם כל החתולים הם בעלי חיים ושמשון חתול, אז שמשון בעל חיים.",
+    "options": [
+      { "label": "1", "body": "שמשון הוא בעל חיים", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שמשון אינו בעל חיים", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שמשון הוא כלב", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 3, "difficulty": 3,
+    "body": "כל פיסות הברזל שוקעות במים. חפץ מסוים אינו שוקע במים. מה נכון בהכרח?",
+    "explanation": "אם כל הברזלים שוקעים, וחפץ זה אינו שוקע, אז הוא בהכרח אינו עשוי ברזל.",
+    "options": [
+      { "label": "1", "body": "החפץ אינו עשוי ברזל", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "החפץ עשוי ברזל", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "החפץ כבד", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "החפץ עשוי עץ", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 3, "difficulty": 3,
+    "body": "כל הפרחים זקוקים לאור. הצמח הזה אינו זקוק לאור. מה נכון בהכרח?",
+    "explanation": "לפי הקונטרה-פוזיטיב, צמח שאינו זקוק לאור אינו פרח.",
+    "options": [
+      { "label": "1", "body": "הצמח אינו פרח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "הצמח הוא פרח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הצמח מת", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "הצמח זקוק למים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 3, "difficulty": 4,
+    "body": "כל הדגים חיים במים. לוויתן אינו דג. מה נכון בהכרח לפי המידע הזה?",
+    "explanation": "ההנחה עוסקת רק בדגים. מהיותו 'לא דג' אי-אפשר להסיק היכן חי הלוויתן — לא ניתן לדעת.",
+    "options": [
+      { "label": "1", "body": "לא ניתן לדעת אם לוויתן חי במים", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "לוויתן אינו חי במים", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "לוויתן הוא דג", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כל מה שחי במים הוא דג", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 3, "difficulty": 3,
+    "body": "כל התלמידים בכיתה גבוהים מ-1.50 מטר. דני הוא תלמיד בכיתה. מה נכון בהכרח?",
+    "explanation": "אם כל תלמידי הכיתה גבוהים מ-1.50 ודני אחד מהם, אז דני גבוה מ-1.50 מטר.",
+    "options": [
+      { "label": "1", "body": "דני גבוה מ-1.50 מטר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "דני נמוך מ-1.50 מטר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דני הכי גבוה בכיתה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 4, "difficulty": 3,
+    "body": "א' גבוה מ-ב', ו-ג' נמוך מ-ב'. מי הגבוה ביותר?",
+    "explanation": "א' גבוה מ-ב', ו-ב' גבוה מ-ג'. לכן א' הוא הגבוה ביותר.",
+    "options": [
+      { "label": "1", "body": "א'", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ב'", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ג'", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 4, "difficulty": 3,
+    "body": "ציון רותם גבוה מציון נועה, וציון נועה גבוה מציון גיל. מי קיבל את הציון הנמוך ביותר?",
+    "explanation": "הסדר מהגבוה לנמוך: רותם, נועה, גיל. הנמוך ביותר הוא גיל.",
+    "options": [
+      { "label": "1", "body": "גיל", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רותם", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "נועה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כולם שווים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 4, "difficulty": 4,
+    "body": "חיפה צפונית לתל אביב, ותל אביב צפונית לאילת. איזו עיר היא הדרומית ביותר?",
+    "explanation": "סדר מצפון לדרום: חיפה, תל אביב, אילת. הדרומית ביותר היא אילת.",
+    "options": [
+      { "label": "1", "body": "אילת", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חיפה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "תל אביב", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 4, "difficulty": 4,
+    "body": "על מדף: ספר א' משמאל לספר ב', וספר ב' משמאל לספר ג'. איזה ספר נמצא באמצע?",
+    "explanation": "הסדר משמאל לימין: א', ב', ג'. הספר האמצעי הוא ב'.",
+    "options": [
+      { "label": "1", "body": "ב'", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "א'", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ג'", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 4, "difficulty": 4,
+    "body": "במרוץ: דנה לפני יוסי, יוסי לפני רן, ורן לפני תום. מי הגיע במקום השלישי?",
+    "explanation": "הסדר: דנה (1), יוסי (2), רן (3), תום (4). השלישי הוא רן.",
+    "options": [
+      { "label": "1", "body": "רן", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "יוסי", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "תום", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "דנה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 5, "difficulty": 4,
+    "body": "אם אדם לומד, הוא מצליח. דני לומד. מה נכון בהכרח?",
+    "explanation": "היקש ישיר (מודוס פוננס): התנאי מתקיים, ולכן דני מצליח.",
+    "options": [
+      { "label": "1", "body": "דני מצליח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "דני נכשל", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דני אינו לומד", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 5, "difficulty": 4,
+    "body": "אם פותחים את החלון — נכנס אוויר. לא נכנס אוויר. מה נכון בהכרח?",
+    "explanation": "מודוס טולנס: אם פתיחה גוררת כניסת אוויר, והאוויר לא נכנס, אז החלון לא נפתח.",
+    "options": [
+      { "label": "1", "body": "לא פתחו את החלון", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "פתחו את החלון", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "נכנס אוויר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "החלון שבור", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 5, "difficulty": 4,
+    "body": "אם השעה אחרי 20:00 — החנות סגורה. החנות פתוחה. מה נכון בהכרח?",
+    "explanation": "מודוס טולנס: אם החנות פתוחה, אז השעה אינה אחרי 20:00.",
+    "options": [
+      { "label": "1", "body": "השעה אינה אחרי 20:00", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "השעה אחרי 20:00", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "החנות סגורה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "החנות נסגרה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 5, "difficulty": 4,
+    "body": "אם יורד שלג — בית הספר סגור. בית הספר פתוח. מה נכון בהכרח?",
+    "explanation": "מודוס טולנס: אם בית הספר פתוח, אז לא ירד שלג.",
+    "options": [
+      { "label": "1", "body": "לא ירד שלג", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ירד שלג", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "בית הספר סגור", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חופשה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 5, "difficulty": 4,
+    "body": "אם מחממים קרח — הוא נמס. חיממנו את הקרח. מה קרה?",
+    "explanation": "התנאי התקיים (חיממנו), ולכן לפי הכלל הקרח נמס.",
+    "options": [
+      { "label": "1", "body": "הקרח נמס", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "הקרח נשאר מוצק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הקרח התקשה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 6, "difficulty": 4,
+    "body": "כל A הם B. אף B אינו C. מה נכון בהכרח?",
+    "explanation": "אם כל A נכללים ב-B, ואף B אינו C, אז אף A אינו C.",
+    "options": [
+      { "label": "1", "body": "אף A אינו C", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כל A הם C", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חלק מ-A הם C", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כל C הם A", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 6, "difficulty": 4,
+    "body": "כל הכלבים נאמנים. רקס אינו נאמן. מה נכון בהכרח?",
+    "explanation": "לפי הקונטרה-פוזיטיב, אם רקס אינו נאמן, אז רקס אינו כלב.",
+    "options": [
+      { "label": "1", "body": "רקס אינו כלב", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רקס כלב", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רקס חתול", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כל הנאמנים הם כלבים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 6, "difficulty": 4,
+    "body": "חלק מהתלמידים אוהבים מתמטיקה. כל מי שאוהב מתמטיקה אוהב מספרים. מה נכון בהכרח?",
+    "explanation": "אם חלק מהתלמידים אוהבים מתמטיקה, וכל אוהבי המתמטיקה אוהבים מספרים, אז חלק מהתלמידים אוהבים מספרים.",
+    "options": [
+      { "label": "1", "body": "חלק מהתלמידים אוהבים מספרים", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כל התלמידים אוהבים מספרים", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אף תלמיד אינו אוהב מספרים", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מספרים שונאים תלמידים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 6, "difficulty": 4,
+    "body": "אף עצל אינו מצליח. דני מצליח. מה נכון בהכרח?",
+    "explanation": "אם אף עצל אינו מצליח, ודני מצליח, אז דני אינו עצל.",
+    "options": [
+      { "label": "1", "body": "דני אינו עצל", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "דני עצל", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "כל המצליחים עצלים", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 6, "difficulty": 5,
+    "body": "כל הברווזים שוחים. אף חתול אינו שוחה. מה נכון בהכרח?",
+    "explanation": "אם כל הברווזים שוחים, ואף חתול אינו שוחה, אז אף חתול אינו ברווז.",
+    "options": [
+      { "label": "1", "body": "אף חתול אינו ברווז", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חלק מהחתולים ברווזים", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "כל הברווזים חתולים", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חתולים שוחים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 7, "difficulty": 5,
+    "body": "כל פעם שיורד גשם, דני לוקח מטרייה. היום דני לא לקח מטרייה. מה נכון בהכרח?",
+    "explanation": "אם ירידת גשם גוררת לקיחת מטרייה, וכיום דני לא לקח, אז בהכרח לא ירד גשם.",
+    "options": [
+      { "label": "1", "body": "לא ירד גשם היום", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ירד גשם היום", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דני שכח את המטרייה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "דני לא יצא מהבית", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 7, "difficulty": 5,
+    "body": "המסיבה תתקיים רק אם יגיעו לפחות 10 אנשים. המסיבה התקיימה. מה נכון בהכרח?",
+    "explanation": "'רק אם' הופך את ההגעה לתנאי הכרחי. אם המסיבה התקיימה, אז הגיעו לפחות 10 אנשים.",
+    "options": [
+      { "label": "1", "body": "הגיעו לפחות 10 אנשים", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "הגיעו פחות מ-10 אנשים", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "המסיבה בוטלה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "הגיעו בדיוק 10 אנשים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 7, "difficulty": 5,
+    "body": "אם תאכל ירקות, תהיה בריא. אתה בריא. האם בהכרח אכלת ירקות?",
+    "explanation": "לא בהכרח. ייתכנו סיבות אחרות לבריאות; להסיק זאת מהמסקנה הוא כשל לוגי.",
+    "options": [
+      { "label": "1", "body": "לא בהכרח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כן, בהכרח אכלת ירקות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "בהכרח לא אכלת ירקות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ירקות אינם בריאים", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 7, "difficulty": 4,
+    "body": "אם A אמת אז B אמת. ידוע ש-B שקר. מה נכון לגבי A?",
+    "explanation": "מודוס טולנס: אם A גורר B, ו-B שקר, אז A שקר.",
+    "options": [
+      { "label": "1", "body": "A שקר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "A אמת", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "A ו-B אמת", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 5,
+    "body": "כל A הם B, כל B הם C, וכל C הם D. מה נכון בהכרח?",
+    "explanation": "שרשרת טרנזיטיבית: כל A הם B הם C הם D, ולכן כל A הם D.",
+    "options": [
+      { "label": "1", "body": "כל A הם D", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כל D הם A", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "אף A אינו D", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 5,
+    "body": "אם מספר מתחלק ב-4, הוא זוגי. המספר 7 אינו זוגי. מה נכון בהכרח?",
+    "explanation": "מודוס טולנס: אם 7 אינו זוגי, אז 7 אינו מתחלק ב-4.",
+    "options": [
+      { "label": "1", "body": "7 אינו מתחלק ב-4", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "7 מתחלק ב-4", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "7 זוגי", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כל מספר אי-זוגי מתחלק ב-4", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 5,
+    "body": "אם דלת נעולה, צריך מפתח כדי לפתוח אותה. הדלת נפתחה ללא מפתח. מה נכון בהכרח?",
+    "explanation": "אם דלת נעולה מחייבת מפתח, ונפתחה בלי מפתח, אז היא לא הייתה נעולה.",
+    "options": [
+      { "label": "1", "body": "הדלת לא הייתה נעולה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "הדלת הייתה נעולה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "המפתח אבד", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "הדלת שבורה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 5,
+    "body": "ידוע: אם X אז Y, ואם Y אז Z. נתון ש-X אמת. מה נכון בהכרח?",
+    "explanation": "שרשרת היקשים: X גורר Y, ו-Y גורר Z, ולכן Z אמת.",
+    "options": [
+      { "label": "1", "body": "Z אמת", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "Z שקר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "Y שקר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 5,
+    "body": "כל הסטודנטים בקורס למדו לפחות שפה אחת. מאיה לא למדה אף שפה. מה נכון בהכרח?",
+    "explanation": "אם כל הסטודנטים למדו שפה, ומאיה לא למדה אף אחת, אז מאיה אינה סטודנטית בקורס.",
+    "options": [
+      { "label": "1", "body": "מאיה אינה סטודנטית בקורס", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מאיה סטודנטית בקורס", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מאיה למדה שתי שפות", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5,
+    "body": "דן גבוה מגיל, גיל גבוה מרון, ורון גבוה מעמית. מי הנמוך ביותר מבין הארבעה?",
+    "explanation": "סדר יורד: דן, גיל, רון, עמית. הנמוך ביותר הוא עמית.",
+    "options": [
+      { "label": "1", "body": "עמית", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רון", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דן", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "גיל", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5,
+    "body": "בתחרות בין שלוש מתמודדות נועה אינה ראשונה ואינה אחרונה. באיזה מקום הגיעה נועה?",
+    "explanation": "מבין שלושה מקומות, אם נועה אינה ראשונה ואינה שלישית (אחרונה), היא במקום השני.",
+    "options": [
+      { "label": "1", "body": "שני", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ראשון", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שלישי", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5,
+    "body": "חמישה אנשים עומדים בתור לפי גובה עולה (הנמוך ראשון). דנה עומדת במקום השלישי. כמה אנשים נמוכים ממנה?",
+    "explanation": "אם דנה שלישית בסדר עולה, לפניה עומדים שניים נמוכים ממנה.",
+    "options": [
+      { "label": "1", "body": "2", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "3", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "1", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "4", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5,
+    "body": "בכל סיבוב המנצח עובר הלאה. יוסי ניצח את דני, ודני ניצח את רם. מי המנצח הכולל אם יוסי ממשיך לנצח?",
+    "explanation": "יוסי ניצח את דני (שניצח את רם), ואם יוסי ממשיך לנצח — הוא המנצח הכולל.",
+    "options": [
+      { "label": "1", "body": "יוסי", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "דני", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רם", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "תיקו", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 10, "difficulty": 5,
+    "body": "כל ילד במשפחה הוא או נמוך או גבוה. דני אינו נמוך. מה נכון בהכרח?",
+    "explanation": "אם כל ילד הוא נמוך או גבוה, ודני אינו נמוך, אז דני גבוה.",
+    "options": [
+      { "label": "1", "body": "דני גבוה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "דני נמוך", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "דני בינוני", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 10, "difficulty": 5,
+    "body": "אם מזג האוויר נאה — נצא לטיול. לא יצאנו לטיול. מה ניתן להסיק בהכרח?",
+    "explanation": "מודוס טולנס: אם מזג אוויר נאה גורר יציאה לטיול, ולא יצאנו, אז מזג האוויר לא היה נאה.",
+    "options": [
+      { "label": "1", "body": "מזג האוויר לא היה נאה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מזג האוויר היה נאה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הטיול בוטל מסיבה אחרת", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן להסיק דבר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 10, "difficulty": 5,
+    "body": "כל מספר ראשוני גדול מ-2 הוא אי-זוגי. המספר 9 אי-זוגי. האם נובע בהכרח ש-9 ראשוני?",
+    "explanation": "לא. היות מספר אי-זוגי אינו הופך אותו לראשוני (9 = 3×3). זהו כשל של 'אישוש המסקנה'.",
+    "options": [
+      { "label": "1", "body": "לא ניתן להסיק זאת", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כן, 9 ראשוני", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "9 זוגי", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כל מספר אי-זוגי ראשוני", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 10, "difficulty": 5,
+    "body": "אם תרוץ מהר, תזיע. אתה מזיע. האם בהכרח רצת מהר?",
+    "explanation": "לא בהכרח. הזעה יכולה לנבוע מסיבות אחרות; להסיק את הסיבה מהתוצאה הוא כשל לוגי.",
+    "options": [
+      { "label": "1", "body": "לא בהכרח", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כן, בהכרח רצת מהר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "בהכרח לא רצת", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ריצה אינה גורמת להזעה", "is_correct": false, "position": 3 }
+    ]
+  }
+]

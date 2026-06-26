@@ -107,7 +107,29 @@ copyright/ToS problem that would jeopardize the whole app. Instead:
 1. Provide your own seed questions (questions you wrote or are licensed to use).
 2. Generate **original** questions in the same *format and difficulty* (e.g. with
    an LLM under human review) — never light paraphrases of existing material.
-3. Insert with `is_active = false`, review (QA), then flip to `true`:
+3. Insert with `is_active = false`, review (QA), then flip to `true`.
+
+### Authoring pipeline (`supabase/content/`)
+
+Rather than writing SQL by hand, author questions as JSON and generate the seed:
+
+```
+supabase/content/questions/*.json     # original questions, one file per subject
+        │  node scripts/build-seed.mjs
+        ▼
+supabase/migrations/0003_questions_seed.sql   # generated, is_active = false
+        │  supabase db push
+        ▼
+update questions set is_active = true where source = 'original';   # after QA
+```
+
+- `supabase/content/README.md` — JSON format + the exact 15 subject names.
+- `supabase/content/EXAMPLES.md` — sheet for collecting *reference* samples (style
+  calibration only; never shipped verbatim).
+- The generator validates every question (valid subject/level, difficulty 1–5,
+  exactly one correct option) and fails loudly on bad content.
+
+Under the hood it emits the same inserts you'd write by hand:
 
 ```sql
 insert into questions (track, level_id, difficulty, body, explanation, is_active)

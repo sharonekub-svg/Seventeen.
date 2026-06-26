@@ -1,0 +1,1402 @@
+[
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "אם 15 גדול מ-18, ענו 30; אחרת ענו 22.",
+    "explanation": "15 אינו גדול מ-18, ולכן יש לבחור באפשרות השנייה: 22.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "30",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "26",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "20",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "22",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "השעה כעת 08:00. מה תהיה השעה בעוד 4 שעות?",
+    "explanation": "08:00 ועוד 4:00 שעות = 12:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "12:30",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "11:00",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "13:00",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "12:00",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "החודש הוא אוגוסט. איזה חודש יהיה בעוד 6 חודשים?",
+    "explanation": "אוגוסט ועוד 6 חודשים (6 mod 12 = 6) הוא פברואר.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "אפריל",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מרץ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פברואר",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ינואר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "אם 7 גדול מ-16, ענו 50; אחרת ענו 19.",
+    "explanation": "7 אינו גדול מ-16, ולכן יש לבחור באפשרות השנייה: 19.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "50",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "19",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "20",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "15",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 3,
+    "difficulty": 2,
+    "body": "סדרו את האותיות ג, ד, י, א לפי סדר האלף-בית, ובחרו את האות הראשונה.",
+    "explanation": "לפי הא\"ב: א, ג, ד, י. האות הראשונה היא א.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "י",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "א",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ב",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ג",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 4,
+    "difficulty": 2,
+    "body": "אם היום יום שני, איזה יום יהיה בעוד 4 ימים?",
+    "explanation": "שני ועוד 4 ימים (4 mod 7 = 4) נופל על יום שישי.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "שישי",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ראשון",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שבת",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חמישי",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 4,
+    "difficulty": 2,
+    "body": "אם 25 גדול מ-9, ענו 26; אחרת ענו 19.",
+    "explanation": "25 גדול מ-9, ולכן יש לבחור באפשרות הראשונה: 26.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "30",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "22",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "26",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "19",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 4,
+    "difficulty": 2,
+    "body": "סדרו את המספרים 50, 48, 11, 58, 8 בסדר עולה, ובחרו את המספר הראשון ברצף שהתקבל.",
+    "explanation": "בסדר עולה: 8, 11, 48, 50, 58. המספר הראשון הוא 8.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "50",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "58",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "11",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "8",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 4,
+    "difficulty": 2,
+    "body": "החודש הוא נובמבר. איזה חודש יהיה בעוד 3 חודשים?",
+    "explanation": "נובמבר ועוד 3 חודשים (3 mod 12 = 3) הוא פברואר.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "מרץ",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פברואר",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אפריל",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ינואר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 4,
+    "difficulty": 2,
+    "body": "אם היום יום ראשון, איזה יום יהיה בעוד 7 ימים?",
+    "explanation": "ראשון ועוד 7 ימים (7 mod 7 = 0) נופל על יום ראשון.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "שלישי",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שבת",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ראשון",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שני",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 5,
+    "difficulty": 3,
+    "body": "סדרו את האותיות י, ד, ט, ב לפי סדר האלף-בית, ובחרו את האות הראשונה.",
+    "explanation": "לפי הא\"ב: ב, ד, ט, י. האות הראשונה היא ב.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "י",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ד",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ג",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ב",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 5,
+    "difficulty": 3,
+    "body": "אם היום יום חמישי, איזה יום יהיה בעוד 6 ימים?",
+    "explanation": "חמישי ועוד 6 ימים (6 mod 7 = 6) נופל על יום רביעי.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "רביעי",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חמישי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שישי",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שלישי",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 5,
+    "difficulty": 2,
+    "body": "נתונה הרשימה: 18, 8, 12, 12, 10. כמה מספרים ברשימה גדולים מ-8?",
+    "explanation": "המספרים שגדולים מ-8: 18, 12, 12, 10. סך הכול 4.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "5",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "3",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "6",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 5,
+    "difficulty": 2,
+    "body": "החודש הוא נובמבר. איזה חודש יהיה בעוד 8 חודשים?",
+    "explanation": "נובמבר ועוד 8 חודשים (8 mod 12 = 8) הוא יולי.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "ספטמבר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יולי",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אוגוסט",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "יוני",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 5,
+    "difficulty": 2,
+    "body": "השעה כעת 06:00. מה תהיה השעה בעוד 4 שעות?",
+    "explanation": "06:00 ועוד 4:00 שעות = 10:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "11:00",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "10:30",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "10:00",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "09:00",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 6,
+    "difficulty": 2,
+    "body": "קחו את המספר 8, החסירו 1, החסירו 2. מהי התוצאה הסופית?",
+    "explanation": "8 → החסירו 1 → החסירו 2 = 5.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "7",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "6",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "5",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "4",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 6,
+    "difficulty": 2,
+    "body": "אם היום יום חמישי, איזה יום יהיה בעוד 3 ימים?",
+    "explanation": "חמישי ועוד 3 ימים (3 mod 7 = 3) נופל על יום ראשון.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "שלישי",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שבת",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ראשון",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שני",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 6,
+    "difficulty": 2,
+    "body": "נתונה הרשימה: 2, 10, 14, 12, 14, 12. כמה מספרים ברשימה קטנים מ-13?",
+    "explanation": "המספרים שקטנים מ-13: 2, 10, 12, 12. סך הכול 4.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "3",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "5",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 6,
+    "difficulty": 2,
+    "body": "השעה כעת 14:00. מה תהיה השעה בעוד 4 שעות?",
+    "explanation": "14:00 ועוד 4:00 שעות = 18:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "18:00",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "17:00",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "19:00",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "18:30",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 6,
+    "difficulty": 3,
+    "body": "סדרו את האותיות ב, י, ח, ג, ד לפי סדר האלף-בית, ובחרו את האות החמישית.",
+    "explanation": "לפי הא\"ב: ב, ג, ד, ח, י. האות החמישית היא י.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "ח",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "א",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "י",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ב",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 7,
+    "difficulty": 3,
+    "body": "קחו את המספר 5, הכפילו ב-2, הכפילו ב-3. מהי התוצאה הסופית?",
+    "explanation": "5 → הכפילו ב-2 → הכפילו ב-3 = 30.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "29",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "31",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "30",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "34",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 7,
+    "difficulty": 3,
+    "body": "השעה כעת 06:00. מה תהיה השעה בעוד 3 שעות?",
+    "explanation": "06:00 ועוד 3:00 שעות = 09:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "09:30",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "10:00",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "08:00",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "09:00",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 7,
+    "difficulty": 3,
+    "body": "אם 27 גדול מ-12, ענו 15; אחרת ענו 38.",
+    "explanation": "27 גדול מ-12, ולכן יש לבחור באפשרות הראשונה: 15.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "19",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "38",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "15",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "14",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 7,
+    "difficulty": 4,
+    "body": "סדרו את האותיות ו, ג, ט, א לפי סדר האלף-בית, ובחרו את האות השנייה.",
+    "explanation": "לפי הא\"ב: א, ג, ו, ט. האות השנייה היא ג.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "א",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ד",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ו",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ג",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 7,
+    "difficulty": 3,
+    "body": "קחו את המספר 3, החסירו 2, הוסיפו 6. מהי התוצאה הסופית?",
+    "explanation": "3 → החסירו 2 → הוסיפו 6 = 7.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "6",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "8",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "11",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "7",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "השעה כעת 18:30. מה תהיה השעה בעוד 7 וחצי שעות?",
+    "explanation": "18:30 ועוד 7:30 שעות = 02:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "01:00",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "02:30",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "03:00",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "02:00",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 8,
+    "difficulty": 3,
+    "body": "נתונה הרשימה: 14, 12, 17, 18, 6, 17, 4. כמה מספרים ברשימה גדולים מ-14?",
+    "explanation": "המספרים שגדולים מ-14: 17, 18, 17. סך הכול 3.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "2",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "4",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "5",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "3",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 8,
+    "difficulty": 3,
+    "body": "סדרו את האותיות ז, א, ט, ג לפי סדר האלף-בית, ובחרו את האות הראשונה.",
+    "explanation": "לפי הא\"ב: א, ג, ז, ט. האות הראשונה היא א.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "א",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ט",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ב",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "ג",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "אם 19 גדול מ-25, ענו 10; אחרת ענו 44.",
+    "explanation": "19 אינו גדול מ-25, ולכן יש לבחור באפשרות השנייה: 44.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "10",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "41",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "44",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "46",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 8,
+    "difficulty": 4,
+    "body": "השעה כעת 06:30. מה תהיה השעה בעוד 7 וחצי שעות?",
+    "explanation": "06:30 ועוד 7:30 שעות = 14:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "14:30",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "13:00",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "14:00",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "15:00",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 9,
+    "difficulty": 4,
+    "body": "קחו את המספר 29, הוסיפו 2, הוסיפו 11, הכפילו ב-2. מהי התוצאה הסופית?",
+    "explanation": "29 → הוסיפו 2 → הוסיפו 11 → הכפילו ב-2 = 84.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "85",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "89",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "83",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "84",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 9,
+    "difficulty": 4,
+    "body": "השעה כעת 08:00. מה תהיה השעה בעוד 7 שעות?",
+    "explanation": "08:00 ועוד 7:00 שעות = 15:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "15:00",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "16:00",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "15:30",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "14:00",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "אם 13 גדול מ-24, ענו 42; אחרת ענו 44.",
+    "explanation": "13 אינו גדול מ-24, ולכן יש לבחור באפשרות השנייה: 44.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "42",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "48",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "44",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "40",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "החודש הוא פברואר. איזה חודש יהיה בעוד 12 חודשים?",
+    "explanation": "פברואר ועוד 12 חודשים (12 mod 12 = 0) הוא פברואר.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "ינואר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פברואר",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מרץ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אפריל",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "אם היום יום רביעי, איזה יום יהיה בעוד 9 ימים?",
+    "explanation": "רביעי ועוד 9 ימים (9 mod 7 = 2) נופל על יום שישי.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "ראשון",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חמישי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שישי",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שבת",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 10,
+    "difficulty": 4,
+    "body": "השעה כעת 09:00. מה תהיה השעה בעוד 3 שעות?",
+    "explanation": "09:00 ועוד 3:00 שעות = 12:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "11:00",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "12:30",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "12:00",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "13:00",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 10,
+    "difficulty": 4,
+    "body": "החודש הוא יולי. איזה חודש יהיה בעוד 15 חודשים?",
+    "explanation": "יולי ועוד 15 חודשים (15 mod 12 = 3) הוא אוקטובר.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "ספטמבר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "נובמבר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "אוקטובר",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "דצמבר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 10,
+    "difficulty": 4,
+    "body": "אם היום יום שני, איזה יום יהיה בעוד 15 ימים?",
+    "explanation": "שני ועוד 15 ימים (15 mod 7 = 1) נופל על יום שלישי.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "רביעי",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שני",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חמישי",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שלישי",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "נתונה הרשימה: 16, 8, 7, 7, 12, 20, 4, 6. כמה מספרים ברשימה קטנים מ-12?",
+    "explanation": "המספרים שקטנים מ-12: 8, 7, 7, 4, 6. סך הכול 5.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "7",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "6",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "4",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "5",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "הבנת הוראות",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "השעה כעת 17:30. מה תהיה השעה בעוד 6 וחצי שעות?",
+    "explanation": "17:30 ועוד 6:30 שעות = 00:00.",
+    "source": "original",
+    "options": [
+      {
+        "label": "1",
+        "body": "00:00",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "23:00",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "01:00",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "00:30",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  }
+]

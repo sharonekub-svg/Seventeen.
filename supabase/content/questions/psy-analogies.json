@@ -1,0 +1,1752 @@
+[
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nכלב : גור",
+    "explanation": "הקשר: בעל חיים בוגר והצאצא שלו. כשם ש\"כלב\" מתקשר ל\"גור\", כך \"סוס\" מתקשר ל\"סייח\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "חתול : כלב",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פרה : חלב",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עדר : כבש",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "סוס : סייח",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nיד : אצבע",
+    "explanation": "הקשר: איבר והחלק הקטן שבקצהו. כשם ש\"יד\" מתקשר ל\"אצבע\", כך \"רגל\" מתקשר ל\"בוהן\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "נעל : רגל",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שעון : זמן",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רגל : בוהן",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כפפה : יד",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nחם : קר",
+    "explanation": "הקשר: תכונה וההפך שלה. כשם ש\"חם\" מתקשר ל\"קר\", כך \"גבוה\" מתקשר ל\"נמוך\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "גדול : ענק",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גבוה : נמוך",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מתוק : סוכר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "יום : בוקר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nדג : מים",
+    "explanation": "הקשר: בעל חיים והסביבה הטבעית שבה הוא חי. כשם ש\"דג\" מתקשר ל\"מים\", כך \"ציפור\" מתקשר ל\"שמיים\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "ציפור : שמיים",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כלב : עצם",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "דבורה : דבש",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נמר : מהיר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 1,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nעיפרון : כתיבה",
+    "explanation": "הקשר: כלי והפעולה שמבצעים באמצעותו. כשם ש\"עיפרון\" מתקשר ל\"כתיבה\", כך \"מטאטא\" מתקשר ל\"טאטוא\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "כיסא : עץ",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מורה : כיתה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "גשם : מטרייה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מטאטא : טאטוא",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nגלגל : מכונית",
+    "explanation": "הקשר: חלק והשלם שהוא מרכיב. כשם ש\"גלגל\" מתקשר ל\"מכונית\", כך \"דף\" מתקשר ל\"ספר\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "נהג : מכונית",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כביש : נסיעה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "דף : ספר",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מנוע : דלק",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nרופא : חולה",
+    "explanation": "הקשר: נותן השירות ומקבל השירות. כשם ש\"רופא\" מתקשר ל\"חולה\", כך \"מורה\" מתקשר ל\"תלמיד\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "שוטר : אקדח",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מורה : תלמיד",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שופט : משפט",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "טבח : מסעדה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nצמא : שתייה",
+    "explanation": "הקשר: מצב מחסור והפעולה שמספקת אותו. כשם ש\"צמא\" מתקשר ל\"שתייה\", כך \"רעב\" מתקשר ל\"אכילה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "רעב : אכילה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כאב : צעקה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קור : חורף",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שמחה : צחוק",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nספר : פרק",
+    "explanation": "הקשר: שלם והיחידה שמרכיבה אותו. כשם ש\"ספר\" מתקשר ל\"פרק\", כך \"שנה\" מתקשר ל\"חודש\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "מילה : משפט",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ספרייה : ספר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עמוד : מילה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שנה : חודש",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 2,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nמלך : ממלכה",
+    "explanation": "הקשר: בעל הסמכות העליונה והתחום שעליו הוא מופקד. כשם ש\"מלך\" מתקשר ל\"ממלכה\", כך \"קברניט\" מתקשר ל\"אונייה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "נוסע : רכבת",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שחקן : הצגה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קברניט : אונייה",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נגן : תזמורת",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nשמש : אור",
+    "explanation": "הקשר: מקור והדבר שהוא מפיק. כשם ש\"שמש\" מתקשר ל\"אור\", כך \"תנור\" מתקשר ל\"חום\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "אש : מים",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "תנור : חום",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ירח : לילה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נר : שעווה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nסופר : ספר",
+    "explanation": "הקשר: יוצר והיצירה שהוא מפיק. כשם ש\"סופר\" מתקשר ל\"ספר\", כך \"צייר\" מתקשר ל\"תמונה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "צייר : תמונה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "קורא : ספר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מסגרת : תמונה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מוזיאון : ציור",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nאש : אפר",
+    "explanation": "הקשר: תהליך והתוצאה שנותרת אחריו. כשם ש\"אש\" מתקשר ל\"אפר\", כך \"גשם\" מתקשר ל\"שלולית\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "ענן : גשם",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שמש : קיץ",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רוח : עץ",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "גשם : שלולית",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nמנעול : מפתח",
+    "explanation": "הקשר: דבר הדורש פתרון והאמצעי הפותח אותו. כשם ש\"מנעול\" מתקשר ל\"מפתח\", כך \"שאלה\" מתקשר ל\"תשובה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "מנעול : שרשרת",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כספת : כסף",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שאלה : תשובה",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "דלת : בית",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 3,
+    "difficulty": 2,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nכסף : ארנק",
+    "explanation": "הקשר: חפץ והמכל הייעודי לאחסונו. כשם ש\"כסף\" מתקשר ל\"ארנק\", כך \"חרב\" מתקשר ל\"נדן\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "ספר : מדף",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חרב : נדן",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ארון : בגדים",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לחם : מאפייה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nגדול : ענק",
+    "explanation": "הקשר: תכונה והדרגה המוקצנת שלה. כשם ש\"גדול\" מתקשר ל\"ענק\", כך \"חכם\" מתקשר ל\"גאון\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "חכם : גאון",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יפה : מכוער",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חם : שמש",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מהיר : ריצה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nרוח : סופה",
+    "explanation": "הקשר: תופעת טבע והעוצמה הקיצונית שלה. כשם ש\"רוח\" מתקשר ל\"סופה\", כך \"גשם\" מתקשר ל\"מבול\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "ים : גל",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שלג : לבן",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "ברק : רעם",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "גשם : מבול",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nשקט : רעש",
+    "explanation": "הקשר: מצב והיעדרו. כשם ש\"שקט\" מתקשר ל\"רעש\", כך \"חושך\" מתקשר ל\"אור\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "קול : אוזן",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "צבע : עיוור",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חושך : אור",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לילה : כוכבים",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nזמר : שירה",
+    "explanation": "הקשר: אדם והפעולה האופיינית לתפקידו. כשם ש\"זמר\" מתקשר ל\"שירה\", כך \"רקדן\" מתקשר ל\"ריקוד\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "במאי : שחקן",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "רקדן : ריקוד",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "סופר : ספר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חולה : רופא",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 4,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nרעל : מוות",
+    "explanation": "הקשר: גורם והתוצאה שהוא מחולל. כשם ש\"רעל\" מתקשר ל\"מוות\", כך \"תרופה\" מתקשר ל\"ריפוי\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "תרופה : ריפוי",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מחלה : חיידק",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רופא : תרופה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מים : צמא",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nשמח : עליז",
+    "explanation": "הקשר: מילים נרדפות. כשם ש\"שמח\" מתקשר ל\"עליז\", כך \"עצוב\" מתקשר ל\"נוגה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "גדול : קטן",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יפה : יופי",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רץ : עייף",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עצוב : נוגה",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nענב : יין",
+    "explanation": "הקשר: חומר גלם והמוצר המופק ממנו. כשם ש\"ענב\" מתקשר ל\"יין\", כך \"חלב\" מתקשר ל\"גבינה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "עץ : יער",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פרי : מתוק",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חלב : גבינה",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "יין : בקבוק",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nשופט : צדק",
+    "explanation": "הקשר: בעל תפקיד והערך שעליו הוא מופקד. כשם ש\"שופט\" מתקשר ל\"צדק\", כך \"רופא\" מתקשר ל\"בריאות\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "עורך דין : בית משפט",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "רופא : בריאות",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מורה : כיתה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שוטר : אקדח",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nמחט : חוט",
+    "explanation": "הקשר: כלי והחומר שמשתמשים בו יחד איתו. כשם ש\"מחט\" מתקשר ל\"חוט\", כך \"מברשת\" מתקשר ל\"צבע\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "מברשת : צבע",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מסרק : שיער",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כף : מרק",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "סכין : לחם",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 5,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nהתחלה : סוף",
+    "explanation": "הקשר: שני הקצוות של תהליך. כשם ש\"התחלה\" מתקשר ל\"סוף\", כך \"לידה\" מתקשר ל\"מוות\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "בוקר : צהריים",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ראש : גוף",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עבר : זיכרון",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לידה : מוות",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nעשן : אש",
+    "explanation": "הקשר: סימן והדבר שהוא מעיד על קיומו. כשם ש\"עשן\" מתקשר ל\"אש\", כך \"חום\" מתקשר ל\"מחלה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "ענן : שמיים",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ריח : אף",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חום : מחלה",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אש : חום",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nספרן : ספרייה",
+    "explanation": "הקשר: בעל מקצוע ומקום עבודתו. כשם ש\"ספרן\" מתקשר ל\"ספרייה\", כך \"חקלאי\" מתקשר ל\"שדה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "נגר : עץ",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חקלאי : שדה",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מורה : תלמיד",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רופא : מחלה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nאלבום : תמונות",
+    "explanation": "הקשר: אוסף מאורגן והפריטים שמרכיבים אותו. כשם ש\"אלבום\" מתקשר ל\"תמונות\", כך \"מילון\" מתקשר ל\"מילים\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "מילון : מילים",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "סופר : ספר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כיתה : תלמיד",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "עמוד : שורה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nאמיץ : פחדן",
+    "explanation": "הקשר: תכונה והתכונה ההפוכה לה. כשם ש\"אמיץ\" מתקשר ל\"פחדן\", כך \"נדיב\" מתקשר ל\"קמצן\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "חכם : חכמה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "זריז : מהיר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חרוץ : עבודה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נדיב : קמצן",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 6,
+    "difficulty": 3,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nמאזניים : משקל",
+    "explanation": "הקשר: מכשיר והגודל שהוא מודד או מציין. כשם ש\"מאזניים\" מתקשר ל\"משקל\", כך \"מצפן\" מתקשר ל\"כיוון\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "טלסקופ : רחוק",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "משקפת : עיניים",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מצפן : כיוון",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "סרגל : ישר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nצחוק : שמחה",
+    "explanation": "הקשר: ביטוי חיצוני והרגש שהוא מבטא. כשם ש\"צחוק\" מתקשר ל\"שמחה\", כך \"בכי\" מתקשר ל\"עצב\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "כעס : צעקה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "בכי : עצב",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "דמעה : עין",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חיוך : פה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nלחישה : צעקה",
+    "explanation": "הקשר: פעולה והגרסה העזה שלה. כשם ש\"לחישה\" מתקשר ל\"צעקה\", כך \"טפטוף\" מתקשר ל\"מבול\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "טפטוף : מבול",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "דיבור : שתיקה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קול : אוזן",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רעש : שקט",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nזהב : יקר",
+    "explanation": "הקשר: חומר והתכונה הבולטת שלו. כשם ש\"זהב\" מתקשר ל\"יקר\", כך \"נוצה\" מתקשר ל\"קל\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "ברזל : מסמר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "יהלום : טבעת",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "עץ : יער",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נוצה : קל",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nסכר : מים",
+    "explanation": "הקשר: מחסום והדבר שזרימתו נבלמת על ידו. כשם ש\"סכר\" מתקשר ל\"מים\", כך \"צנזורה\" מתקשר ל\"מידע\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "חומה : עיר",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מסנן : לכלוך",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "צנזורה : מידע",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "גשר : נהר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 7,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nסופר : כתיבה",
+    "explanation": "הקשר: בעל מקצוע והפעולה שמגדירה אותו. כשם ש\"סופר\" מתקשר ל\"כתיבה\", כך \"צייר\" מתקשר ל\"ציור\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "מורה : כיתה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "צייר : ציור",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רופא : חולה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "נגר : רהיט",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nטיפה : ים",
+    "explanation": "הקשר: יחידה זעירה והמסה הגדולה שהיא חלק ממנה. כשם ש\"טיפה\" מתקשר ל\"ים\", כך \"גרגר\" מתקשר ל\"ערמה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "גרגר : ערמה",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ים : אוקיינוס",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חול : מדבר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מים : אגם",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nמטרייה : גשם",
+    "explanation": "הקשר: אמצעי והבעיה שהוא נועד למנוע. כשם ש\"מטרייה\" מתקשר ל\"גשם\", כך \"חיסון\" מתקשר ל\"מחלה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "רופא : מחלה",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "כאב : תרופה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שמש : חום",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חיסון : מחלה",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nאופטימי : פסימי",
+    "explanation": "הקשר: שתי גישות מנוגדות זו לזו. כשם ש\"אופטימי\" מתקשר ל\"פסימי\", כך \"פזרן\" מתקשר ל\"קמצן\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "חכם : משכיל",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "פזרן : כסף",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פזרן : קמצן",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "אופטימי : תקווה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nטביעת אצבע : אדם",
+    "explanation": "הקשר: סימן ייחודי והדבר שהוא מאמת את זהותו. כשם ש\"טביעת אצבע\" מתקשר ל\"אדם\", כך \"חותם\" מתקשר ל\"מסמך\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "צל : שמש",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חותם : מסמך",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שם : אדם",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קול : אוזן",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nפסל : שיש",
+    "explanation": "הקשר: יצירה והחומר שממנו היא עשויה. כשם ש\"פסל\" מתקשר ל\"שיש\", כך \"תכשיט\" מתקשר ל\"זהב\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "תכשיט : זהב",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "צייר : צבע",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פסל : אמן",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שיש : כבד",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nמים : צינור",
+    "explanation": "הקשר: דבר זורם והתעלה שמובילה אותו. כשם ש\"מים\" מתקשר ל\"צינור\", כך \"חשמל\" מתקשר ל\"כבל\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "דם : לב",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אוויר : בלון",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "נהר : גשר",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חשמל : כבל",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nעד : שקר",
+    "explanation": "הקשר: בעל תפקיד והפגם המקצועי שעליו להימנע ממנו. כשם ש\"עד\" מתקשר ל\"שקר\", כך \"שופט\" מתקשר ל\"משוא פנים\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "מורה : בורות",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שחקן : במה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שופט : משוא פנים",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רופא : חולה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nצמא : רוויה",
+    "explanation": "הקשר: מצב מחסור והמצב המנוגד שמסמן את סיומו. כשם ש\"צמא\" מתקשר ל\"רוויה\", כך \"עייפות\" מתקשר ל\"מנוחה\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "רעב : אוכל",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "עייפות : מנוחה",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "כאב : תרופה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קור : אש",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nניצוץ : שריפה",
+    "explanation": "הקשר: ראשית קטנה והתוצאה רחבת ההיקף שצומחת ממנה. כשם ש\"ניצוץ\" מתקשר ל\"שריפה\", כך \"זרע\" מתקשר ל\"עץ\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "זרע : עץ",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אש : עשן",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "שמש : אור",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "גפרור : נר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nבוגד : נאמנות",
+    "explanation": "הקשר: אדם והערך שהוא מפר. כשם ש\"בוגד\" מתקשר ל\"נאמנות\", כך \"שקרן\" מתקשר ל\"אמת\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "גנב : חפץ",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "נאמן : חבר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "בוגד : אויב",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "שקרן : אמת",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nעריץ : חירות",
+    "explanation": "הקשר: גורם והערך שהוא שולל מן העולם. כשם ש\"עריץ\" מתקשר ל\"חירות\", כך \"מגפה\" מתקשר ל\"בריאות\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "עריץ : כוח",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שלום : מלחמה",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מגפה : בריאות",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "רופא : מחלה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nרהוט : גמגום",
+    "explanation": "הקשר: מעלה והליקוי המנוגד לה. כשם ש\"רהוט\" מתקשר ל\"גמגום\", כך \"זריז\" מתקשר ל\"מגושם\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "חכם : לימוד",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "זריז : מגושם",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רהוט : נואם",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "זריז : ריצה",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nתשתית : בניין",
+    "explanation": "הקשר: מבנה תומך והדבר שכולו נשען עליו. כשם ש\"תשתית\" מתקשר ל\"בניין\", כך \"שלד\" מתקשר ל\"גוף\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "שלד : גוף",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "קיר : בית",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "גג : בית",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חלון : קיר",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nאכזר : רחמים",
+    "explanation": "הקשר: תכונה והרגש שנעדר ממי שניחן בה. כשם ש\"אכזר\" מתקשר ל\"רחמים\", כך \"קמצן\" מתקשר ל\"נדיבות\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "אדיש : שעמום",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אכזר : כוח",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רחום : עזרה",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "קמצן : נדיבות",
+        "is_correct": true,
+        "position": 3
+      }
+    ]
+  },
+  {
+    "track": "psychometric",
+    "unit": "מילולי – אנלוגיות",
+    "level_position": 10,
+    "difficulty": 5,
+    "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nניצחון : מלחמה",
+    "explanation": "הקשר: תוצאה מכרעת וההתמודדות שבסופה היא מוכרעת. כשם ש\"ניצחון\" מתקשר ל\"מלחמה\", כך \"פסק דין\" מתקשר ל\"משפט\".",
+    "options": [
+      {
+        "label": "1",
+        "body": "מלחמה : שלום",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "צבא : חייל",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "פסק דין : משפט",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "מדליה : ספורטאי",
+        "is_correct": false,
+        "position": 3
+      }
+    ]
+  }
+]

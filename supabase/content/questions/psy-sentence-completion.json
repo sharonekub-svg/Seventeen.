@@ -1,0 +1,112 @@
+[
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1,
+    "body": "השמש ___ בבוקר ושוקעת בערב.",
+    "explanation": "הניגוד ל'שוקעת' (בערב) הוא 'זורחת' (בבוקר).",
+    "options": [
+      { "label": "1", "body": "זורחת", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "נעלמת", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ישנה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "רצה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2,
+    "body": "למרות שהיה עייף מאוד, הוא ___ ללמוד למבחן עד שעה מאוחרת.",
+    "explanation": "'למרות' מציין ניגוד: למרות העייפות הוא לא הפסיק אלא 'המשיך'.",
+    "options": [
+      { "label": "1", "body": "המשיך", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "הפסיק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "נרדם", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ויתר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2,
+    "body": "הגינה הייתה ___ בפרחים צבעוניים לאחר ימי הגשם.",
+    "explanation": "ימי גשם מצמיחים פרחים, ולכן הגינה הייתה 'מלאה' בפרחים.",
+    "options": [
+      { "label": "1", "body": "מלאה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ריקה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "יבשה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חשוכה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2,
+    "body": "הוא דיבר בקול ___ כדי שכל הנוכחים באולם הגדול ישמעו אותו.",
+    "explanation": "כדי שכולם ישמעו באולם גדול צריך קול 'רם' (חזק).",
+    "options": [
+      { "label": "1", "body": "רם", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חלש", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שקט", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לחשני", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2,
+    "body": "מכיוון שלא הכין את שיעורי הבית, המורה ___ ממנו.",
+    "explanation": "אי-הכנת שיעורי בית גורמת לתגובה שלילית, ולכן המורה 'התאכזב' ממנו.",
+    "options": [
+      { "label": "1", "body": "התאכזב", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "התגאה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שמח", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "צחק", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 2, "difficulty": 4,
+    "body": "אף על פי שהביקורת הייתה ___, הוא קיבל אותה ב___ ולמד ממנה רבות.",
+    "explanation": "'אף על פי' מציין ניגוד: הביקורת הייתה קשה, אך הוא קיבל אותה בבגרות (בגישה בוגרת) ולמד ממנה.",
+    "options": [
+      { "label": "1", "body": "קשה ... בגרות", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "נעימה ... כעס", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "מועילה ... עלבון", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "פשוטה ... קלות", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 2, "difficulty": 4,
+    "body": "ככל שהמטפסים התקרבו לפסגה, האוויר נעשה ___ והנשימה נעשתה ___ יותר.",
+    "explanation": "בגובה רב האוויר 'דליל' יותר, ולכן הנשימה נעשית 'קשה' יותר.",
+    "options": [
+      { "label": "1", "body": "דליל ... קשה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "סמיך ... קלה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חם ... נוחה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לח ... פשוטה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 2, "difficulty": 5,
+    "body": "המדען סירב לפרסם את ממצאיו עד שיהיו ___ לחלוטין, שכן העריך ___ מעל לכל ערך אחר.",
+    "explanation": "מדען זהיר ירצה שממצאיו יהיו 'מבוססים' לחלוטין, מתוך הערכה ל'דיוק' מעל הכול.",
+    "options": [
+      { "label": "1", "body": "מבוססים ... דיוק", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "שגויים ... מהירות", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חלקיים ... פרסום", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "עמומים ... עמימות", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 2, "difficulty": 3,
+    "body": "התנהגותו ה___ הפתיעה את כולם, שכן בדרך כלל היה אדם שקט ומופנם.",
+    "explanation": "הניגוד ל'שקט ומופנם' הוא התנהגות 'תוקפנית', ולכן היא הפתיעה.",
+    "options": [
+      { "label": "1", "body": "תוקפנית", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "ביישנית", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רגועה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "שתקנית", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 2, "difficulty": 4,
+    "body": "המנהיג הבין ש___ הבעיה אינה פתרון, ולכן בחר להתמודד עמה ___.",
+    "explanation": "התעלמות מבעיה אינה פתרון, ולכן הוא בחר להתמודד עמה 'מיד' במקום לדחות.",
+    "options": [
+      { "label": "1", "body": "התעלמות מן ... מיד", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "קבלת ... אחר כך", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "הבנת ... לעולם לא", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ניתוח ... לעולם לא", "is_correct": false, "position": 3 }
+    ]
+  }
+]

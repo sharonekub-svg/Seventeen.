@@ -1,0 +1,47 @@
+[
+  {
+    "track": "daper",
+    "unit": "אנלוגיות מילוליות",
+    "level_position": 5,
+    "difficulty": 4,
+    "body": "רופא : בית חולים — כמו מורה : ___",
+    "explanation": "הקשר הוא 'בעל מקצוע ומקום עבודתו'. רופא עובד בבית חולים, מורה עובד בבית ספר.",
+    "source": "original",
+    "options": [
+      { "label": "1", "body": "בית ספר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "תלמיד", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ספר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לוח", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "אנלוגיות מילוליות",
+    "level_position": 9,
+    "difficulty": 5,
+    "body": "סופר : ספר — כמו במאי : ___",
+    "explanation": "הקשר הוא 'יוצר והיצירה שהוא מפיק'. סופר כותב ספר, במאי יוצר סרט.",
+    "source": "original",
+    "options": [
+      { "label": "1", "body": "סרט", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "תסריט", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שחקן", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מצלמה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "daper",
+    "unit": "אנלוגיות מילוליות",
+    "level_position": 10,
+    "difficulty": 5,
+    "body": "גור : כלב — כמו עגל : ___",
+    "explanation": "הקשר הוא 'צאצא והחיה הבוגרת ממינו'. גור הוא צאצא של כלב, עגל הוא צאצא של פרה.",
+    "source": "original",
+    "options": [
+      { "label": "1", "body": "פרה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "חלב", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "רפת", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כבשה", "is_correct": false, "position": 3 }
+    ]
+  }
+]

@@ -1,50 +1,51 @@
 import { useCallback, useState } from "react";
-import {
-  View,
-  Text,
-  ScrollView,
-  Pressable,
-  StyleSheet,
-  RefreshControl,
-} from "react-native";
+import { View, Text, ScrollView, StyleSheet, RefreshControl, useWindowDimensions } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFocusEffect, useRouter } from "expo-router";
-import { Flame, Star, Lock, Check } from "lucide-react-native";
+import { Flame, Zap, Heart } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
-import { unitIcon } from "@/lib/icons";
-import { colors, spacing, radius } from "@/lib/theme";
+import { PathTrack, type PathNode } from "@/components/PathTrack";
+import { Heartbeat } from "@/components/anim";
+import { colors, fonts, radius, spacing } from "@/lib/theme";
 
 type Level = { id: number; position: number; title: string | null };
-type Unit = {
-  id: number;
-  name: string;
-  description: string | null;
-  icon: string | null;
-  position: number;
-  levels: Level[];
-};
+type Unit = { id: number; name: string; description: string | null; icon: string | null; position: number; levels: Level[] };
 type Progress = { level_id: number; status: string; stars: number };
+
+// Shown only until a real, seeded backend returns units — keeps the path
+// looking endless even before content exists. Real data always wins.
+const DEMO_UNITS: Unit[] = [
+  { id: 1, name: "חשיבה כמותית", description: null, icon: null, position: 1, levels: Array.from({ length: 10 }, (_, i) => ({ id: i + 1, position: i + 1, title: null })) },
+  { id: 2, name: "אנלוגיות מילוליות", description: null, icon: null, position: 2, levels: Array.from({ length: 10 }, (_, i) => ({ id: i + 11, position: i + 1, title: null })) },
+  { id: 3, name: "הבנת הוראות", description: null, icon: null, position: 3, levels: Array.from({ length: 10 }, (_, i) => ({ id: i + 21, position: i + 1, title: null })) },
+];
+const DEMO_PROGRESS: Record<number, Progress> = {
+  1: { level_id: 1, status: "completed", stars: 3 },
+  2: { level_id: 2, status: "completed", stars: 2 },
+  3: { level_id: 3, status: "completed", stars: 3 },
+};
 
 export default function PathScreen() {
   const { session } = useAuth();
   const router = useRouter();
+  const { width } = useWindowDimensions();
   const [units, setUnits] = useState<Unit[]>([]);
   const [progress, setProgress] = useState<Record<number, Progress>>({});
   const [streak, setStreak] = useState(0);
-  const [track, setTrack] = useState<string>("psychometric");
+  const [xp, setXp] = useState(0);
   const [refreshing, setRefreshing] = useState(false);
 
   const load = useCallback(async () => {
     if (!session) return;
     const { data: profile } = await supabase
       .from("profiles")
-      .select("active_track, current_streak")
+      .select("active_track, current_streak, total_xp")
       .eq("id", session.user.id)
       .single();
     const activeTrack = profile?.active_track ?? "psychometric";
-    setTrack(activeTrack);
     setStreak(profile?.current_streak ?? 0);
+    setXp(profile?.total_xp ?? 0);
 
     const { data: u } = await supabase
       .from("units")
@@ -75,151 +76,115 @@ export default function PathScreen() {
     setRefreshing(false);
   }
 
-  function levelState(unit: Unit, level: Level): "completed" | "unlocked" | "locked" {
-    const p = progress[level.id];
+  const useDemo = units.length === 0;
+  const srcUnits = useDemo ? DEMO_UNITS : units;
+  const srcProgress = useDemo ? DEMO_PROGRESS : progress;
+
+  function levelState(level: Level): "completed" | "unlocked" | "locked" {
+    const p = srcProgress[level.id];
     if (p?.status === "completed") return "completed";
     if (p?.status === "unlocked") return "unlocked";
-    // First level of each unit is open by default.
     if (level.position === 1) return "unlocked";
     return "locked";
   }
 
+  // Flatten every unit's levels into one continuous, endless serpentine.
+  const nodes: PathNode[] = [];
+  let activeAssigned = false;
+  for (const unit of srcUnits) {
+    unit.levels.forEach((level, i) => {
+      const ls = levelState(level);
+      let state: PathNode["state"];
+      if (ls === "completed") state = "completed";
+      else if (ls === "locked") state = "locked";
+      else if (!activeAssigned) {
+        state = "active";
+        activeAssigned = true;
+      } else state = "open";
+
+      nodes.push({
+        key: `u${unit.id}-l${level.id}`,
+        kind: "level",
+        state,
+        stars: srcProgress[level.id]?.stars ?? 0,
+        unitLabel: i === 0 ? `יחידה ${unit.position} · ${unit.name}` : undefined,
+        onPress:
+          ls === "locked"
+            ? undefined
+            : () =>
+                router.push({
+                  pathname: "/question/[mode]",
+                  params: { mode: "level", unitId: String(unit.id), levelId: String(level.id) },
+                }),
+      });
+    });
+    // reward chest at the end of each unit
+    const unitDone = unit.levels.every((l) => levelState(l) === "completed");
+    nodes.push({ key: `u${unit.id}-chest`, kind: "chest", state: unitDone ? "completed" : "locked" });
+  }
+
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
-      <View style={styles.header}>
-        <Text style={styles.title}>המסלול שלי</Text>
-        <View style={styles.streakBadge}>
-          <Flame color={colors.streak} size={18} />
-          <Text style={styles.streakText}>{streak}</Text>
-        </View>
+      <View style={styles.hud}>
+        <Chip border={colors.streakBorder} shadow={colors.streakShadow}>
+          <Heartbeat>
+            <Flame color={colors.streak} fill={colors.streak} size={18} />
+          </Heartbeat>
+          <Text style={[styles.chipText, { color: colors.streak }]}>{streak}</Text>
+        </Chip>
+        <View style={{ flex: 1 }} />
+        <Chip border={colors.xpBorder} shadow={colors.xpShadow}>
+          <Zap color={colors.xp} fill={colors.xp} size={17} />
+          <Text style={[styles.chipText, { color: colors.xp }]}>{xp.toLocaleString()}</Text>
+        </Chip>
+        <Chip border={colors.heartBorder} shadow={colors.heartShadow}>
+          <Heart color={colors.heart} fill={colors.heart} size={17} />
+          <Text style={[styles.chipText, { color: colors.heart }]}>5</Text>
+        </Chip>
       </View>
 
       <ScrollView
-        contentContainerStyle={{ padding: spacing.md, paddingBottom: spacing.xl }}
-        refreshControl={
-          <RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.text} />
-        }
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: spacing.xl }}
+        refreshControl={<RefreshControl refreshing={refreshing} onRefresh={onRefresh} tintColor={colors.primary} />}
       >
-        {units.map((unit) => {
-          const Icon = unitIcon(unit.icon);
-          return (
-            <View key={unit.id} style={styles.unitCard}>
-              <View style={styles.unitHeader}>
-                <View style={styles.unitIcon}>
-                  <Icon color={colors.primary} size={22} />
-                </View>
-                <View style={{ flex: 1 }}>
-                  <Text style={styles.unitName}>{unit.name}</Text>
-                  {unit.description && (
-                    <Text style={styles.unitDesc}>{unit.description}</Text>
-                  )}
-                </View>
-              </View>
-
-              <View style={styles.levelRow}>
-                {unit.levels.map((level) => {
-                  const state = levelState(unit, level);
-                  const locked = state === "locked";
-                  const completed = state === "completed";
-                  const stars = progress[level.id]?.stars ?? 0;
-                  return (
-                    <Pressable
-                      key={level.id}
-                      disabled={locked}
-                      onPress={() =>
-                        router.push({
-                          pathname: "/question/[mode]",
-                          params: { mode: "level", unitId: String(unit.id), levelId: String(level.id) },
-                        })
-                      }
-                      style={[
-                        styles.level,
-                        completed && styles.levelDone,
-                        locked && styles.levelLocked,
-                      ]}
-                    >
-                      {locked ? (
-                        <Lock color={colors.textMuted} size={16} />
-                      ) : completed ? (
-                        <Check color={colors.primaryText} size={18} />
-                      ) : (
-                        <Text style={styles.levelNum}>{level.position}</Text>
-                      )}
-                      {completed && stars > 0 && (
-                        <View style={styles.stars}>
-                          {Array.from({ length: stars }).map((_, i) => (
-                            <Star key={i} color={colors.streak} fill={colors.streak} size={9} />
-                          ))}
-                        </View>
-                      )}
-                    </Pressable>
-                  );
-                })}
-              </View>
-            </View>
-          );
-        })}
+        <PathTrack nodes={nodes} width={width} />
       </ScrollView>
     </SafeAreaView>
   );
 }
 
+function Chip({ children, border, shadow }: { children: React.ReactNode; border: string; shadow: string }) {
+  return (
+    <View style={[styles.chip, { borderColor: border, shadowColor: shadow }]}>{children}</View>
+  );
+}
+
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: colors.bg },
-  header: {
+  safe: { flex: 1, backgroundColor: colors.bgSoft },
+  hud: {
     flexDirection: "row",
     alignItems: "center",
-    justifyContent: "space-between",
-    paddingHorizontal: spacing.md,
-    paddingVertical: spacing.sm,
+    gap: 9,
+    paddingHorizontal: 18,
+    paddingTop: 6,
+    paddingBottom: 12,
+    backgroundColor: colors.bgSoft,
+    zIndex: 30,
   },
-  title: { color: colors.text, fontSize: 22, fontWeight: "700" },
-  streakBadge: {
+  chip: {
     flexDirection: "row",
     alignItems: "center",
-    gap: spacing.xs,
-    backgroundColor: colors.surface,
-    paddingHorizontal: spacing.sm,
-    paddingVertical: spacing.xs,
-    borderRadius: radius.pill,
-  },
-  streakText: { color: colors.text, fontWeight: "700" },
-  unitCard: {
-    backgroundColor: colors.surface,
-    borderRadius: radius.lg,
-    borderColor: colors.border,
-    borderWidth: 1,
-    padding: spacing.md,
-    marginBottom: spacing.md,
-  },
-  unitHeader: { flexDirection: "row", alignItems: "center", gap: spacing.sm },
-  unitIcon: {
-    width: 40,
-    height: 40,
+    gap: 6,
+    backgroundColor: "#fff",
+    borderWidth: 2,
     borderRadius: radius.md,
-    backgroundColor: colors.surfaceAlt,
-    alignItems: "center",
-    justifyContent: "center",
+    paddingVertical: 7,
+    paddingHorizontal: 13,
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 1,
+    shadowRadius: 0,
+    elevation: 2,
   },
-  unitName: { color: colors.text, fontSize: 16, fontWeight: "600", textAlign: "right" },
-  unitDesc: { color: colors.textMuted, fontSize: 12, textAlign: "right", marginTop: 2 },
-  levelRow: {
-    flexDirection: "row-reverse",
-    flexWrap: "wrap",
-    gap: spacing.sm,
-    marginTop: spacing.md,
-  },
-  level: {
-    width: 44,
-    height: 44,
-    borderRadius: radius.pill,
-    backgroundColor: colors.primary,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  levelDone: { backgroundColor: colors.success },
-  levelLocked: { backgroundColor: colors.locked },
-  levelNum: { color: colors.primaryText, fontWeight: "700", fontSize: 15 },
-  levelLockedText: { color: colors.textMuted },
-  stars: { flexDirection: "row", position: "absolute", bottom: -2, gap: 1 },
+  chipText: { fontFamily: fonts.display, fontSize: 18 },
 });
