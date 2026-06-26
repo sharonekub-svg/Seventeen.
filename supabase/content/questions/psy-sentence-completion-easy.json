@@ -1,0 +1,90 @@
+[
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "בחורף יורד ___ והאוויר נעשה קר.",
+    "explanation": "בחורף הקר יורד 'גשם'. שאר האפשרויות אינן מתאימות לעונה הקרה.",
+    "options": [
+      { "label": "1", "body": "גשם", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "אבק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חול", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "אור", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "כדי לפתוח את הדלת הנעולה היה צריך ___.",
+    "explanation": "דלת נעולה נפתחת בעזרת 'מפתח'.",
+    "options": [
+      { "label": "1", "body": "כיסא", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "מפתח", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "כפפה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מטרייה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "הילד היה ___ אחרי שאכל ארוחה גדולה.",
+    "explanation": "לאחר ארוחה גדולה אדם מרגיש 'שבע'.",
+    "options": [
+      { "label": "1", "body": "רעב", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "צמא", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שבע", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "עצוב", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "היא ___ את הספר מהספרייה כדי לקרוא אותו בבית.",
+    "explanation": "מספרייה 'משאילים' או לוקחים ספר; כאן 'לקחה' מתאים להמשך 'לקרוא אותו בבית'.",
+    "options": [
+      { "label": "1", "body": "לקחה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "מכרה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "שרפה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "זרקה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "מכיוון שהשעה הייתה מאוחרת, הוא הלך ___.",
+    "explanation": "בשעה מאוחרת הולכים 'לישון'.",
+    "options": [
+      { "label": "1", "body": "לשחק", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "לישון", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "לרוץ", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לאכול", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "הוא ___ מהר מאוד כדי שלא יאחר לאוטובוס.",
+    "explanation": "כדי לא לאחר לאוטובוס צריך 'רץ' מהר.",
+    "options": [
+      { "label": "1", "body": "ישן", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "רץ", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "עצר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חיכה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "אף על פי שהמבחן היה קשה, היא הצליחה בו כי ___ הרבה.",
+    "explanation": "הצלחה במבחן קשה נובעת מכך ש'למדה' הרבה.",
+    "options": [
+      { "label": "1", "body": "ישנה", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "שיחקה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "למדה", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "ויתרה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – השלמת משפטים", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "הכלב ___ בשמחה כשבעליו חזר הביתה.",
+    "explanation": "כלב שמח מ'כשכש' בזנבו; הפועל המתאים לשמחת הכלב הוא 'כשכש'.",
+    "options": [
+      { "label": "1", "body": "כשכש", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "נשך", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ברח", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "נרדם", "is_correct": false, "position": 3 }
+    ]
+  }
+]

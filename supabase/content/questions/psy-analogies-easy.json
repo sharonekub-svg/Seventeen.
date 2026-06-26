@@ -1,0 +1,112 @@
+[
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nמורה : בית ספר",
+    "explanation": "הקשר: בעל מקצוע ומקום העבודה שלו. כשם ש\"מורה\" עובד ב\"בית ספר\", כך \"רופא\" עובד ב\"בית חולים\".",
+    "options": [
+      { "label": "1", "body": "תלמיד : מחברת", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "רופא : בית חולים", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "ספר : ספרייה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חולה : תרופה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nציפור : כנף",
+    "explanation": "הקשר: בעל חיים והאיבר שבעזרתו הוא נע. כשם שה\"ציפור\" נעה בעזרת ה\"כנף\", כך ה\"דג\" נע בעזרת ה\"סנפיר\".",
+    "options": [
+      { "label": "1", "body": "דג : סנפיר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "כלב : עצם", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "חתול : עכבר", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "פרה : רפת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nחם : קר",
+    "explanation": "הקשר: שני הפכים. כשם ש\"חם\" הפוך ל\"קר\", כך \"גבוה\" הפוך ל\"נמוך\".",
+    "options": [
+      { "label": "1", "body": "גדול : ענק", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "מים : קרח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "גבוה : נמוך", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "שמש : אור", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nאופה : לחם",
+    "explanation": "הקשר: בעל מקצוע והמוצר שהוא מייצר. כשם שה\"אופה\" מייצר \"לחם\", כך ה\"נגר\" מייצר \"שולחן\".",
+    "options": [
+      { "label": "1", "body": "נגר : שולחן", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "סנדלר : עור", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "צייר : מכחול", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "חקלאי : טרקטור", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nספר : פרק",
+    "explanation": "הקשר: שלם והחלק שממנו הוא מורכב. כשם ש\"ספר\" מורכב מ\"פרקים\", כך \"בניין\" מורכב מ\"קומות\".",
+    "options": [
+      { "label": "1", "body": "עיר : מדינה", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "בניין : קומה", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "עט : דיו", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "מחברת : תלמיד", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nשמש : יום",
+    "explanation": "הקשר: גרם השמיים המאיר ופרק הזמן שבו הוא נראה. כשם שה\"שמש\" שייכת ל\"יום\", כך ה\"ירח\" שייך ל\"לילה\".",
+    "options": [
+      { "label": "1", "body": "כוכב : שמיים", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "אור : חושך", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ירח : לילה", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "ענן : גשם", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nרעב : אוכל",
+    "explanation": "הקשר: תחושת מחסור והדבר שמספק אותה. כשם ש\"רעב\" מסופק על ידי \"אוכל\", כך \"צמא\" מסופק על ידי \"מים\".",
+    "options": [
+      { "label": "1", "body": "עייפות : ריצה", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "צמא : מים", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "קור : חורף", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כאב : מחלה", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nמספריים : לגזור",
+    "explanation": "הקשר: כלי והפעולה שמבצעים בעזרתו. כשם שה\"מספריים\" משמשים \"לגזור\", כך ה\"מטאטא\" משמש \"לטאטא\".",
+    "options": [
+      { "label": "1", "body": "מטאטא : לטאטא", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "סכין : מטבח", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "עיפרון : מחק", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "פטיש : מסמר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nגדול : ענק",
+    "explanation": "הקשר: תכונה והעצמה הקיצונית שלה. כשם ש\"ענק\" הוא גדול במידה קיצונית, כך \"זעיר\" הוא קטן במידה קיצונית.",
+    "options": [
+      { "label": "1", "body": "קטן : זעיר", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "רחב : צר", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "כבד : משקל", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "ארוך : קצר", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – אנלוגיות", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "מצאו את הזוג שהיחס בין מילותיו דומה ליחס שבזוג שלהלן:\n\nרופא : מרפא",
+    "explanation": "הקשר: בעל תפקיד והפעולה האופיינית לו. כשם שה\"רופא\" \"מרפא\", כך ה\"שופט\" \"שופט\".",
+    "options": [
+      { "label": "1", "body": "מורה : תלמיד", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "שופט : שופט", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "טבח : מסעדה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "כבאי : אש", "is_correct": false, "position": 3 }
+    ]
+  }
+]

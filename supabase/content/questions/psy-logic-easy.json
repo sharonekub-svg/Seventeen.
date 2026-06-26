@@ -1,0 +1,68 @@
+[
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "כל התפוחים בסל אדומים. הוצאתי תפוח מהסל. מה נכון בהכרח?",
+    "explanation": "אם כל התפוחים בסל אדומים, אז גם התפוח שהוצא אדום.",
+    "options": [
+      { "label": "1", "body": "התפוח אדום", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "התפוח ירוק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "התפוח מתוק", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "דנה גבוהה מרון. רון גבוה מיוסי. מי הנמוך מכולם?",
+    "explanation": "דנה > רון > יוסי, ולכן יוסי הוא הנמוך מכולם.",
+    "options": [
+      { "label": "1", "body": "דנה", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "רון", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "יוסי", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 1, "source": "original",
+    "body": "כל הילדים בכיתה לובשים חולצה כחולה. מאיה ילדה בכיתה. איזו חולצה לובשת מאיה?",
+    "explanation": "אם כל הילדים בכיתה לובשים חולצה כחולה ומאיה בכיתה, אז מאיה לובשת חולצה כחולה.",
+    "options": [
+      { "label": "1", "body": "כחולה", "is_correct": true, "position": 0 },
+      { "label": "2", "body": "אדומה", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "ירוקה", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "אם יורד גשם, אז אני לוקח מטרייה. היום אני לא לקחתי מטרייה. מה נכון בהכרח?",
+    "explanation": "אם בכל פעם שיורד גשם אני לוקח מטרייה, ולא לקחתי מטרייה, אז בהכרח לא ירד גשם.",
+    "options": [
+      { "label": "1", "body": "ירד גשם", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "לא ירד גשם", "is_correct": true, "position": 1 },
+      { "label": "3", "body": "היה חם", "is_correct": false, "position": 2 },
+      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "במקרר יש רק פירות וירקות. כל הפירות מתוקים. הוצאתי משהו מתוק מהמקרר. האם בהכרח הוצאתי פרי?",
+    "explanation": "ייתכן שגם ירק מתוק, וגם ייתכן שזה פרי. מהמידע הנתון לא ניתן לקבוע בהכרח שהוצאתי פרי דווקא.",
+    "options": [
+      { "label": "1", "body": "כן, בהכרח פרי", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "לא, בהכרח ירק", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "לא ניתן לדעת בהכרח", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "אין במקרר דבר מתוק", "is_correct": false, "position": 3 }
+    ]
+  },
+  {
+    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 1, "difficulty": 2, "source": "original",
+    "body": "תמיד כאשר עומר משחק כדורגל הוא חוזר עייף. היום עומר חזר עייף. מה נכון בהכרח?",
+    "explanation": "מהמשפט יודעים רק שמשחק כדורגל גורם לעייפות, אך ייתכנו סיבות אחרות לעייפות. לכן לא ניתן לדעת בהכרח שעומר שיחק כדורגל.",
+    "options": [
+      { "label": "1", "body": "עומר שיחק כדורגל", "is_correct": false, "position": 0 },
+      { "label": "2", "body": "עומר לא שיחק כדורגל", "is_correct": false, "position": 1 },
+      { "label": "3", "body": "לא ניתן לדעת אם עומר שיחק כדורגל", "is_correct": true, "position": 2 },
+      { "label": "4", "body": "עומר אינו אוהב כדורגל", "is_correct": false, "position": 3 }
+    ]
+  }
+]
