@@ -19,9 +19,9 @@ function RootNavigator() {
 
   return (
     <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bg } }}>
-      <Stack.Screen name="(auth)" />
+      <Stack.Screen name="(auth)/login" />
       <Stack.Screen name="(tabs)" />
-      <Stack.Screen name="question" options={{ presentation: "modal" }} />
+      <Stack.Screen name="question/[mode]" options={{ presentation: "modal" }} />
     </Stack>
   );
 }
