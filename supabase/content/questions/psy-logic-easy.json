@@ -1,68 +1,212 @@
 [
   {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 4, "source": "original",
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
     "body": "בחברה A: כל מי שעובד קשה מצליח. בחברה B: כל מי שמצליח עובד קשה. בחברה C: רק מי שעובד קשה מצליח. איזה מהמשפטים הבאים שקול למשפט 'אם לא עובדים קשה, לא מצליחים'?",
-    "explanation": "המשפט 'אם לא עובדים קשה, לא מצליחים' שקול ל-'רק מי שעובד קשה מצליח' — שזהו בדיוק כלל חברה C. בחברה A ניתן להצליח גם בדרכים אחרות; בחברה B עבודה קשה נובעת מהצלחה, לא להיפך.",
+    "explanation": "תשובה נכונה: חברה C. 'אם לא עובדים קשה, לא מצליחים' שקול ל'רק מי שעובד קשה מצליח' (עבודה קשה היא תנאי הכרחי) = כלל חברה C. בחברה A עבודה קשה מספיקה אך לא הכרחית; בחברה B עבודה קשה היא תוצאה של הצלחה.\n\nאיך לפתור: תרגם משפטים לתנאים. 'אם לא P אז לא Q' ⇔ 'Q רק אם P' ⇔ 'P הכרחי ל-Q'. הבחן בין 'תנאי הכרחי' (רק אם) ל'תנאי מספיק' (אם) — זו ההטעיה המרכזית בשאלות לוגיקה.",
     "options": [
-      { "label": "1", "body": "חברה A", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "חברה B", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "חברה C", "is_correct": true, "position": 2 },
-      { "label": "4", "body": "חברות B ו-C", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "חברה A",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "חברה B",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "חברה C",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "חברות B ו-C",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 4, "source": "original",
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
     "body": "ידוע: (1) כל הציירים הם אמנים. (2) חלק מהאמנים הם מוזיקאים. (3) אף מוזיקאי אינו מהנדס.\n\nאיזו מסקנה נכונה בהכרח?",
-    "explanation": "מ-(1) ו-(3): אם כל ציירים הם אמנים, וחלק מהאמנים הם מוזיקאים — ייתכן שיש ציירים שהם מוזיקאים. מוזיקאים אינם מהנדסים (3). לכן: יש אמנים שאינם מהנדסים — נכון בהכרח כי המוזיקאים שהם אמנים אינם מהנדסים.",
+    "explanation": "תשובה נכונה: 'יש אמנים שאינם מהנדסים'. חלק מהאמנים מוזיקאים (2), ואף מוזיקאי אינו מהנדס (3) — לכן אותם אמנים-מוזיקאים אינם מהנדסים. שאר התשובות אינן נובעות בהכרח.\n\nאיך לפתור סילוגיזמים: צייר דיאגרמות (עיגולים) לכל קבוצה. 'כל' = הכלה מלאה; 'חלק' = חפיפה חלקית; 'אף לא' = הפרדה. מסקנה נכונה 'בהכרח' רק אם היא מתקיימת בכל ציור אפשרי — חפש ציור-נגד שמפריך כל מסיח.",
     "options": [
-      { "label": "1", "body": "כל הציירים הם מוזיקאים", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "אף צייר אינו מהנדס", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "יש אמנים שאינם מהנדסים", "is_correct": true, "position": 2 },
-      { "label": "4", "body": "כל המהנדסים הם אמנים", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "כל הציירים הם מוזיקאים",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "אף צייר אינו מהנדס",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "יש אמנים שאינם מהנדסים",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "כל המהנדסים הם אמנים",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 8, "difficulty": 4, "source": "original",
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 8,
+    "difficulty": 4,
+    "source": "original",
     "body": "ארבעה ידידים — אדם, בן, גל, דן — ישבו סביב שולחן עגול. אדם ישב ממול לבן. גל ישב משמאל לדן. מי ישב משמאל לאדם?",
-    "explanation": "בשולחן עגול בן רואה את אדם ממול. גל משמאל לדן, כלומר גל ודן צמודים. שני המקומות הנותרים (לאדם ולבן) הם 'שמאל' ו'ימין' יחסית לדן ולגל. דן ישב ממול לגל — ישבו: אדם, גל, בן, דן (בסדר שעון). משמאל לאדם ישב דן.",
+    "explanation": "תשובה נכונה: דן. שולחן עגול: אדם מול בן, גל משמאל לדן (צמודים). הסדר בכיוון השעון: אדם, גל, בן, דן — ואז משמאל לאדם (נגד כיוון השעון) יושב דן.\n\nאיך לפתור שאלות הושבה: קבע עוגן אחד (אדם), מקם את מי שמולו, ואז שבץ את הזוגות הצמודים. שים לב להגדרת 'שמאל' סביב שולחן עגול — תמיד צייר ולא תסתמך על דמיון.",
     "options": [
-      { "label": "1", "body": "בן", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "גל", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "דן", "is_correct": true, "position": 2 },
-      { "label": "4", "body": "לא ניתן לקבוע", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "בן",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "גל",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "דן",
+        "is_correct": true,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לא ניתן לקבוע",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5, "source": "original",
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
     "body": "כל שאינו A הוא B. כל B הוא C. מקס אינו C. מה נכון בהכרח לגבי מקס?",
-    "explanation": "נניח מקס אינו A. אז מקס הוא B (מכלל ראשון). אז מקס הוא C (מכלל שני). סתירה — כי נאמר שמקס אינו C. לכן: מקס הוא A.",
+    "explanation": "תשובה נכונה: מקס הוא A. הוכחה בשלילה: נניח מקס אינו A → אז הוא B (כלל 1) → אז הוא C (כלל 2). אך נאמר 'מקס אינו C' — סתירה. לכן מקס הוא A.\n\nאיך לפתור: כשנתון 'מקס אינו C' ושרשרת גוררת C, השתמש בהוכחה בשלילה (נניח את ההפך וחפש סתירה) או בקונטרה-פוזיטיב לאורך השרשרת: ¬C → ¬B → A.",
     "options": [
-      { "label": "1", "body": "מקס הוא B", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "מקס הוא A", "is_correct": true, "position": 1 },
-      { "label": "3", "body": "מקס אינו A", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "מקס הוא B",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "מקס הוא A",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "מקס אינו A",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לא ניתן לדעת",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5, "source": "original",
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
     "body": "חמישה ספרים — P, Q, R, S, T — מסודרים במדף משמאל לימין. P לא ראשון ולא אחרון. Q נמצא מיד אחרי R. S נמצא לפני P. T נמצא בסוף. באיזה מקום נמצא R?",
-    "explanation": "T אחרון (מיקום 5). Q מיד אחרי R. S לפני P, וP לא קצה. אם S=1, P=2 או 3. Q אחרי R — נסה R=3, Q=4: הסדר יכול להיות S(1), P(2), R(3), Q(4), T(5) — תקין. R במקום 3.",
+    "explanation": "תשובה נכונה: שלישי. T אחרון (5). S לפני P, P לא קצה. שיבוץ עקבי יחיד: S(1), P(2), R(3), Q(4), T(5) — Q מיד אחרי R, ו-R במקום 3.\n\nאיך לפתור שאלות סדר: רשום את האילוצים המוחלטים קודם (T=5), אחר כך אילוצי צמידות (Q אחרי R) ואי-קצה (P). נסה שיבוצים ופסול אלה שמפרים אילוץ — לרוב נשאר סידור יחיד.",
     "options": [
-      { "label": "1", "body": "שני", "is_correct": false, "position": 0 },
-      { "label": "2", "body": "שלישי", "is_correct": true, "position": 1 },
-      { "label": "3", "body": "רביעי", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לא ניתן לקבוע", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "שני",
+        "is_correct": false,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "שלישי",
+        "is_correct": true,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "רביעי",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לא ניתן לקבוע",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   },
   {
-    "track": "psychometric", "unit": "מילולי – היסק ולוגיקה", "level_position": 9, "difficulty": 5, "source": "original",
+    "track": "psychometric",
+    "unit": "מילולי – היסק ולוגיקה",
+    "level_position": 9,
+    "difficulty": 5,
+    "source": "original",
     "body": "ידוע: 'אם גשם, אז קר. אם קר, אז לובשים מעיל.' היום לא לובשים מעיל. איזה מסקנה נובעת?",
-    "explanation": "מ'קר → לובשים מעיל' ו'לא לובשים מעיל' נובע 'לא קר' (קונטרה-פוזיטיב). מ'גשם → קר' ו'לא קר' נובע 'לא גשם' (קונטרה-פוזיטיב שוב).",
+    "explanation": "תשובה נכונה: 'לא ירד גשם וגם לא קר'. קונטרה-פוזיטיב כפול: מ'קר→מעיל' ו'אין מעיל' נובע 'לא קר'; מ'גשם→קר' ו'לא קר' נובע 'לא גשם'.\n\nאיך לפתור: בשרשרת תנאים A→B→C, אם הסוף שקרי (אין מעיל) — שלול אחורה: ¬C→¬B→¬A. זהו הכלל החזק ביותר בלוגיקה — 'מודוס טולנס'. אל תסיק קדימה ממה שלא ניתן.",
     "options": [
-      { "label": "1", "body": "לא ירד גשם וגם לא קר", "is_correct": true, "position": 0 },
-      { "label": "2", "body": "ירד גשם אך לא קר", "is_correct": false, "position": 1 },
-      { "label": "3", "body": "קר אך לא ירד גשם", "is_correct": false, "position": 2 },
-      { "label": "4", "body": "לא ניתן לדעת", "is_correct": false, "position": 3 }
+      {
+        "label": "1",
+        "body": "לא ירד גשם וגם לא קר",
+        "is_correct": true,
+        "position": 0
+      },
+      {
+        "label": "2",
+        "body": "ירד גשם אך לא קר",
+        "is_correct": false,
+        "position": 1
+      },
+      {
+        "label": "3",
+        "body": "קר אך לא ירד גשם",
+        "is_correct": false,
+        "position": 2
+      },
+      {
+        "label": "4",
+        "body": "לא ניתן לדעת",
+        "is_correct": false,
+        "position": 3
+      }
     ]
   }
 ]

@@ -105,40 +105,6 @@
     "track": "psychometric",
     "unit": "מילולי – השלמת משפטים",
     "level_position": 2,
-    "difficulty": 3,
-    "body": "התנהגותו ה___ הפתיעה את כולם, שכן בדרך כלל היה אדם שקט ומופנם.",
-    "explanation": "הניגוד ל'שקט ומופנם' הוא התנהגות 'תוקפנית', ולכן היא הפתיעה.",
-    "options": [
-      {
-        "label": "1",
-        "body": "תוקפנית",
-        "is_correct": true,
-        "position": 0
-      },
-      {
-        "label": "2",
-        "body": "ביישנית",
-        "is_correct": false,
-        "position": 1
-      },
-      {
-        "label": "3",
-        "body": "רגועה",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "4",
-        "body": "שתקנית",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "psychometric",
-    "unit": "מילולי – השלמת משפטים",
-    "level_position": 2,
     "difficulty": 4,
     "body": "המנהיג הבין ש___ הבעיה אינה פתרון, ולכן בחר להתמודד עמה ___.",
     "explanation": "התעלמות מבעיה אינה פתרון, ולכן הוא בחר להתמודד עמה 'מיד' במקום לדחות.",

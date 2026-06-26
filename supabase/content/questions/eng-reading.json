@@ -105,40 +105,6 @@
     "track": "psychometric",
     "unit": "אנגלית – Reading",
     "level_position": 2,
-    "difficulty": 3,
-    "body": "Read the passage and answer:\n\"Although fast food is convenient and inexpensive, nutritionists warn that frequent consumption is linked to health problems such as obesity and heart disease.\"\n\nWhat is the nutritionists' main concern?\n\n(A) Fast food is too expensive  (B) Frequent fast food harms health  (C) Fast food is hard to find  (D) Fast food tastes bad",
-    "explanation": "התזונאים מזהירים שאכילה תכופה של מזון מהיר קשורה לבעיות בריאות כמו השמנה ומחלות לב.",
-    "options": [
-      {
-        "label": "A",
-        "body": "Fast food is too expensive",
-        "is_correct": false,
-        "position": 0
-      },
-      {
-        "label": "B",
-        "body": "Frequent fast food harms health",
-        "is_correct": true,
-        "position": 1
-      },
-      {
-        "label": "C",
-        "body": "Fast food is hard to find",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "D",
-        "body": "Fast food tastes bad",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "psychometric",
-    "unit": "אנגלית – Reading",
-    "level_position": 2,
     "difficulty": 5,
     "body": "Read the passage and answer:\n\"Bilingual children sometimes start speaking slightly later than monolingual children, but research shows they often develop stronger problem-solving and multitasking skills.\"\n\nWhat can be concluded about bilingualism?\n\n(A) It only has disadvantages  (B) Early delays may come with long-term cognitive benefits  (C) It prevents children from speaking  (D) It has no effect on development",
     "explanation": "הקטע מציג עיכוב קל בתחילת הדיבור לצד יתרונות קוגניטיביים ארוכי-טווח — כלומר לעיכוב המוקדם עשויים להתלוות יתרונות בהמשך.",

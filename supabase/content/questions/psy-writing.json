@@ -37,40 +37,6 @@
     "track": "psychometric",
     "unit": "מטלת כתיבה",
     "level_position": 2,
-    "difficulty": 3,
-    "body": "כדי לחזק טיעון בחיבור, על מה עדיף להסתמך?",
-    "explanation": "הסתמכות על נתונים ומחקרים רלוונטיים מחזקת טיעון יותר מאשר דעה אישית, שמועות או פנייה לרגש בלבד.",
-    "options": [
-      {
-        "label": "1",
-        "body": "נתונים ומחקרים רלוונטיים",
-        "is_correct": true,
-        "position": 0
-      },
-      {
-        "label": "2",
-        "body": "דעה אישית בלבד",
-        "is_correct": false,
-        "position": 1
-      },
-      {
-        "label": "3",
-        "body": "שמועות לא מבוססות",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "4",
-        "body": "פנייה לרגשות הקורא בלבד",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "psychometric",
-    "unit": "מטלת כתיבה",
-    "level_position": 2,
     "difficulty": 4,
     "body": "מהי 'טענת נגד' (אנטיתזה) בחיבור טיעון?",
     "explanation": "טענת נגד היא עמדה מנוגדת שהכותב מציג ומתייחס אליה (לרוב מפריך אותה), כדי לחזק את עמדתו.",
@@ -96,40 +62,6 @@
       {
         "label": "4",
         "body": "כותרת החיבור",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "psychometric",
-    "unit": "מטלת כתיבה",
-    "level_position": 2,
-    "difficulty": 3,
-    "body": "איזה מבנה מתאים ביותר לחיבור טיעון משכנע?",
-    "explanation": "מבנה אפקטיבי כולל פתיחה עם טענה, גוף עם נימוקים ודוגמאות, וסיכום שמחזק את המסקנה.",
-    "options": [
-      {
-        "label": "1",
-        "body": "פתיחה עם טענה, גוף עם נימוקים, וסיכום",
-        "is_correct": true,
-        "position": 0
-      },
-      {
-        "label": "2",
-        "body": "רשימת עובדות ללא סדר",
-        "is_correct": false,
-        "position": 1
-      },
-      {
-        "label": "3",
-        "body": "פתיחה וסיום בלבד, ללא גוף",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "4",
-        "body": "שאלות רבות ללא תשובות",
         "is_correct": false,
         "position": 3
       }

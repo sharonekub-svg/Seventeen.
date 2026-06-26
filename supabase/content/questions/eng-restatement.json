@@ -37,40 +37,6 @@
     "track": "psychometric",
     "unit": "אנגלית – Restatement",
     "level_position": 2,
-    "difficulty": 3,
-    "body": "Choose the sentence closest in meaning to: \"The project succeeded not because of luck but through careful planning.\"\n\n(A) Luck was the main reason for the success.  (B) Careful planning, rather than luck, led to the success.  (C) The project failed despite planning.  (D) Planning was unnecessary for success.",
-    "explanation": "'not because of luck but through careful planning' מדגיש שהתכנון, ולא המזל, הביא להצלחה.",
-    "options": [
-      {
-        "label": "A",
-        "body": "Luck was the main reason for the success.",
-        "is_correct": false,
-        "position": 0
-      },
-      {
-        "label": "B",
-        "body": "Careful planning, rather than luck, led to the success.",
-        "is_correct": true,
-        "position": 1
-      },
-      {
-        "label": "C",
-        "body": "The project failed despite planning.",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "D",
-        "body": "Planning was unnecessary for success.",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "psychometric",
-    "unit": "אנגלית – Restatement",
-    "level_position": 2,
     "difficulty": 5,
     "body": "Choose the sentence closest in meaning to: \"Hardly had the game begun when it started to rain.\"\n\n(A) It had rained long before the game began.  (B) The game began just before the rain started.  (C) The game was canceled because of rain.  (D) It never rained during the game.",
     "explanation": "'Hardly had X happened when Y' מציין ש-Y קרה מיד אחרי X: המשחק התחיל וכמעט מיד התחיל לרדת גשם.",
@@ -130,40 +96,6 @@
       {
         "label": "D",
         "body": "No one believed in the diet at all.",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "psychometric",
-    "unit": "אנגלית – Restatement",
-    "level_position": 2,
-    "difficulty": 3,
-    "body": "Choose the sentence closest in meaning to: \"The more he practiced, the better he performed.\"\n\n(A) Practice did not change his performance.  (B) His performance improved as he practiced more.  (C) He performed worse the more he practiced.  (D) He stopped practicing to perform better.",
-    "explanation": "מבנה 'The more ... the better' מציין קשר ישר: ככל שתרגל יותר, ביצועיו השתפרו.",
-    "options": [
-      {
-        "label": "A",
-        "body": "Practice did not change his performance.",
-        "is_correct": false,
-        "position": 0
-      },
-      {
-        "label": "B",
-        "body": "His performance improved as he practiced more.",
-        "is_correct": true,
-        "position": 1
-      },
-      {
-        "label": "C",
-        "body": "He performed worse the more he practiced.",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "D",
-        "body": "He stopped practicing to perform better.",
         "is_correct": false,
         "position": 3
       }

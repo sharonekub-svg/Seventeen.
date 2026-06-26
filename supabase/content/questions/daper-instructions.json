@@ -3,74 +3,6 @@
     "track": "daper",
     "unit": "הבנת הוראות",
     "level_position": 2,
-    "difficulty": 3,
-    "body": "קחו את האות הראשונה במילה 'שמש' ואת האות האחרונה במילה 'ירח'. אילו שתי אותיות קיבלתם?",
-    "explanation": "האות הראשונה ב'שמש' היא ש; האות האחרונה ב'ירח' היא ח. לכן: ש ו-ח.",
-    "options": [
-      {
-        "label": "1",
-        "body": "ש ו-ח",
-        "is_correct": true,
-        "position": 0
-      },
-      {
-        "label": "2",
-        "body": "ש ו-ר",
-        "is_correct": false,
-        "position": 1
-      },
-      {
-        "label": "3",
-        "body": "מ ו-ח",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "4",
-        "body": "ש ו-י",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "daper",
-    "unit": "הבנת הוראות",
-    "level_position": 2,
-    "difficulty": 3,
-    "body": "נתון: A גדול מ-B, ו-B גדול מ-C. מה נכון בהכרח?",
-    "explanation": "אם A>B ו-B>C אז בהכרח A>C (טרנזיטיביות).",
-    "options": [
-      {
-        "label": "1",
-        "body": "A גדול מ-C",
-        "is_correct": true,
-        "position": 0
-      },
-      {
-        "label": "2",
-        "body": "C גדול מ-A",
-        "is_correct": false,
-        "position": 1
-      },
-      {
-        "label": "3",
-        "body": "A שווה ל-C",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "4",
-        "body": "B גדול מ-A",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "daper",
-    "unit": "הבנת הוראות",
-    "level_position": 2,
     "difficulty": 4,
     "body": "סובבו את רצף האותיות א, ב, ג, ד צעד אחד ימינה — כך שהאות האחרונה עוברת לראש הרצף. מהו הרצף החדש?",
     "explanation": "האות האחרונה ד עוברת לראש, והשאר נדחקות: ד, א, ב, ג.",
@@ -130,40 +62,6 @@
       {
         "label": "4",
         "body": "12",
-        "is_correct": false,
-        "position": 3
-      }
-    ]
-  },
-  {
-    "track": "daper",
-    "unit": "הבנת הוראות",
-    "level_position": 2,
-    "difficulty": 3,
-    "body": "נתון: כל החתולים הם חיות. רותם אינה חיה. מה נכון בהכרח?",
-    "explanation": "אם כל החתולים הם חיות, ורותם אינה חיה, אז רותם בוודאי אינה חתול.",
-    "options": [
-      {
-        "label": "1",
-        "body": "רותם אינה חתול",
-        "is_correct": true,
-        "position": 0
-      },
-      {
-        "label": "2",
-        "body": "רותם חתול",
-        "is_correct": false,
-        "position": 1
-      },
-      {
-        "label": "3",
-        "body": "רותם חיה",
-        "is_correct": false,
-        "position": 2
-      },
-      {
-        "label": "4",
-        "body": "לא ניתן לדעת דבר",
         "is_correct": false,
         "position": 3
       }
