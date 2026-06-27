@@ -167,6 +167,24 @@ subject's question bank, ramping up in difficulty:
 To resize the exam or its time budget, edit `exam_difficulty_plan()` and the
 `time_limit_seconds` seeded in `0004_unit_exams.sql`.
 
+## Sounds, account & friends
+
+- **Answer feedback** — a correct or wrong answer plays a short sound
+  (`mobile/assets/sounds/correct.wav` / `wrong.wav`) plus a haptic tap
+  (`lib/sound.ts`), alongside the written explanation of why it was right or
+  wrong. It plays even when the iOS ringer is on silent and degrades to a no-op
+  if audio is unavailable.
+- **Account** — the profile tab shows the signed-in email and lets you edit your
+  display name. Sign up / in / out is handled by Supabase Auth (`lib/auth.tsx`).
+- **Invite friends over WhatsApp** — a one-tap button (`lib/invite.ts`) opens
+  WhatsApp with a prefilled message containing your @username and the app link
+  (falls back to the `wa.me` web link). Set the real store link in
+  `APP_INVITE_URL`.
+- **Friend suggestions** — "people you may know" come from
+  `friend_suggestions()` (`0005_friend_suggestions.sql`), ranked by mutual
+  friends then XP and excluding anyone you're already connected to (falls back to
+  the most active users so the list is never empty).
+
 ## Data model (high level)
 
 | Table | Purpose |

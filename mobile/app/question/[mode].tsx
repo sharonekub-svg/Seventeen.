@@ -19,6 +19,7 @@ import {
   submitAnswer,
   type DailyQuestion,
 } from "@/lib/api";
+import { playCorrect, playWrong } from "@/lib/sound";
 import { colors, spacing, radius } from "@/lib/theme";
 
 function formatClock(totalSeconds: number): string {
@@ -98,7 +99,12 @@ export default function QuestionScreen() {
     try {
       const r = await submitAnswer(selected);
       setResult(r);
-      if (r.isCorrect) setCorrectInLevel((c) => c + 1);
+      if (r.isCorrect) {
+        setCorrectInLevel((c) => c + 1);
+        playCorrect();
+      } else {
+        playWrong();
+      }
     } finally {
       setSubmitting(false);
     }

@@ -9,7 +9,12 @@
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "com.example.aptitude"
+      "bundleIdentifier": "com.example.aptitude",
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "whatsapp"
+        ]
+      }
     },
     "plugins": [
       "expo-router",

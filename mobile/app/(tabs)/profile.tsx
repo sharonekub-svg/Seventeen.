@@ -1,8 +1,8 @@
 import { useCallback, useState } from "react";
-import { View, Text, Pressable, StyleSheet } from "react-native";
+import { View, Text, Pressable, TextInput, StyleSheet } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFocusEffect } from "expo-router";
-import { Flame, Trophy, Snowflake, Target } from "lucide-react-native";
+import { Flame, Trophy, Snowflake, Target, Mail } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth, signOut } from "@/lib/auth";
 import { registerForPush } from "@/lib/push";
@@ -28,6 +28,8 @@ const TRACKS: { key: string; label: string }[] = [
 export default function ProfileScreen() {
   const { session } = useAuth();
   const [profile, setProfile] = useState<Profile | null>(null);
+  const [nameDraft, setNameDraft] = useState("");
+  const [saving, setSaving] = useState(false);
 
   const load = useCallback(async () => {
     if (!session) return;
@@ -39,6 +41,7 @@ export default function ProfileScreen() {
       .eq("id", session.user.id)
       .single();
     setProfile(data as Profile);
+    if (data) setNameDraft((data as Profile).display_name);
   }, [session]);
 
   useFocusEffect(
@@ -52,6 +55,18 @@ export default function ProfileScreen() {
     if (!session) return;
     await supabase.from("profiles").update({ active_track: track }).eq("id", session.user.id);
     load();
+  }
+
+  async function saveName() {
+    const next = nameDraft.trim();
+    if (!session || !next || next === profile?.display_name) return;
+    setSaving(true);
+    try {
+      await supabase.from("profiles").update({ display_name: next }).eq("id", session.user.id);
+      await load();
+    } finally {
+      setSaving(false);
+    }
   }
 
   if (!profile) return <SafeAreaView style={styles.safe} />;
@@ -95,6 +110,36 @@ export default function ProfileScreen() {
             </Text>
           </Pressable>
         ))}
+      </View>
+
+      <Text style={styles.sectionTitle}>חשבון</Text>
+      <View style={styles.accountCard}>
+        <View style={styles.accountRow}>
+          <Mail color={colors.textMuted} size={16} />
+          <Text style={styles.accountEmail}>{session?.user.email}</Text>
+        </View>
+        <View style={styles.nameRow}>
+          <TextInput
+            style={styles.nameInput}
+            value={nameDraft}
+            onChangeText={setNameDraft}
+            placeholder="שם תצוגה"
+            placeholderTextColor={colors.textMuted}
+            maxLength={40}
+          />
+          <Pressable
+            style={[
+              styles.saveBtn,
+              (saving || !nameDraft.trim() || nameDraft.trim() === profile.display_name) && {
+                opacity: 0.5,
+              },
+            ]}
+            onPress={saveName}
+            disabled={saving || !nameDraft.trim() || nameDraft.trim() === profile.display_name}
+          >
+            <Text style={styles.saveBtnText}>שמירה</Text>
+          </Pressable>
+        </View>
       </View>
 
       <Pressable style={styles.signOut} onPress={() => signOut()}>
@@ -165,6 +210,34 @@ const styles = StyleSheet.create({
   trackActive: { backgroundColor: colors.primary, borderColor: colors.primary },
   trackText: { color: colors.text, fontWeight: "600" },
   trackTextActive: { color: colors.primaryText },
+  accountCard: {
+    backgroundColor: colors.surface,
+    borderRadius: radius.md,
+    marginHorizontal: spacing.md,
+    marginTop: spacing.sm,
+    padding: spacing.md,
+    gap: spacing.sm,
+  },
+  accountRow: { flexDirection: "row-reverse", alignItems: "center", gap: spacing.sm },
+  accountEmail: { color: colors.textMuted, fontSize: 14, flex: 1, textAlign: "right" },
+  nameRow: { flexDirection: "row", gap: spacing.sm },
+  nameInput: {
+    flex: 1,
+    backgroundColor: colors.surfaceAlt,
+    borderColor: colors.border,
+    borderWidth: 1,
+    borderRadius: radius.md,
+    color: colors.text,
+    padding: spacing.sm,
+    textAlign: "right",
+  },
+  saveBtn: {
+    backgroundColor: colors.primary,
+    borderRadius: radius.md,
+    paddingHorizontal: spacing.md,
+    justifyContent: "center",
+  },
+  saveBtnText: { color: colors.primaryText, fontWeight: "700" },
   signOut: { margin: spacing.md, padding: spacing.md, alignItems: "center" },
   signOutText: { color: colors.danger, fontWeight: "600" },
 });

@@ -9,12 +9,14 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFocusEffect } from "expo-router";
-import { UserPlus, Check, X } from "lucide-react-native";
+import { UserPlus, Check, X, MessageCircle } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
+import { openWhatsAppInvite } from "@/lib/invite";
 import { colors, spacing, radius } from "@/lib/theme";
 
 type Profile = { id: string; username: string; display_name: string };
+type Suggestion = Profile & { total_xp: number; mutual: number };
 type Request = { id: number; requester: string; profiles: Profile };
 
 export default function Friends() {
@@ -22,6 +24,8 @@ export default function Friends() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<Profile[]>([]);
   const [pending, setPending] = useState<Request[]>([]);
+  const [suggestions, setSuggestions] = useState<Suggestion[]>([]);
+  const [myUsername, setMyUsername] = useState<string | undefined>();
 
   const loadPending = useCallback(async () => {
     if (!session) return;
@@ -33,10 +37,28 @@ export default function Friends() {
     setPending((data as unknown as Request[]) ?? []);
   }, [session]);
 
+  const loadSuggestions = useCallback(async () => {
+    if (!session) return;
+    const { data } = await supabase.rpc("friend_suggestions", { p_limit: 10 });
+    setSuggestions((data as Suggestion[]) ?? []);
+  }, [session]);
+
+  const loadMe = useCallback(async () => {
+    if (!session) return;
+    const { data } = await supabase
+      .from("profiles")
+      .select("username")
+      .eq("id", session.user.id)
+      .single();
+    setMyUsername(data?.username);
+  }, [session]);
+
   useFocusEffect(
     useCallback(() => {
       loadPending();
-    }, [loadPending]),
+      loadSuggestions();
+      loadMe();
+    }, [loadPending, loadSuggestions, loadMe]),
   );
 
   async function search() {
@@ -56,6 +78,7 @@ export default function Friends() {
       .from("friendships")
       .insert({ requester: session.user.id, addressee, status: "pending" });
     setResults((r) => r.filter((p) => p.id !== addressee));
+    setSuggestions((s) => s.filter((p) => p.id !== addressee));
   }
 
   async function respond(id: number, accept: boolean) {
@@ -65,11 +88,20 @@ export default function Friends() {
       await supabase.from("friendships").delete().eq("id", id);
     }
     loadPending();
+    loadSuggestions();
   }
+
+  const showingResults = results.length > 0;
+  const listData: (Profile | Suggestion)[] = showingResults ? results : suggestions;
 
   return (
     <SafeAreaView style={styles.safe} edges={["top"]}>
       <Text style={styles.title}>חברים</Text>
+
+      <Pressable style={styles.inviteBtn} onPress={() => openWhatsAppInvite(myUsername)}>
+        <MessageCircle color="#25D366" size={20} />
+        <Text style={styles.inviteText}>הזמינו חברים ב‑WhatsApp</Text>
+      </Pressable>
 
       <View style={styles.searchRow}>
         <TextInput
@@ -107,23 +139,40 @@ export default function Friends() {
       )}
 
       <FlatList
-        data={results}
+        data={listData}
         keyExtractor={(item) => item.id}
         contentContainerStyle={{ padding: spacing.md }}
         ListHeaderComponent={
-          results.length ? <Text style={styles.sectionTitle}>תוצאות</Text> : null
+          listData.length ? (
+            <Text style={styles.sectionTitle}>
+              {showingResults ? "תוצאות" : "אנשים שאולי תכירו"}
+            </Text>
+          ) : null
         }
-        renderItem={({ item }) => (
-          <View style={styles.row}>
-            <View style={{ flex: 1 }}>
-              <Text style={styles.name}>{item.display_name}</Text>
-              <Text style={styles.handle}>@{item.username}</Text>
+        ListEmptyComponent={
+          showingResults ? null : (
+            <Text style={styles.emptyHint}>
+              חפשו לפי שם משתמש או הזמינו חברים ב‑WhatsApp כדי להתחיל.
+            </Text>
+          )
+        }
+        renderItem={({ item }) => {
+          const mutual = !showingResults ? (item as Suggestion).mutual : 0;
+          return (
+            <View style={styles.row}>
+              <View style={{ flex: 1 }}>
+                <Text style={styles.name}>{item.display_name}</Text>
+                <Text style={styles.handle}>
+                  @{item.username}
+                  {mutual > 0 ? ` · ${mutual} חברים משותפים` : ""}
+                </Text>
+              </View>
+              <Pressable style={styles.iconBtn} onPress={() => sendRequest(item.id)}>
+                <UserPlus color={colors.primary} size={20} />
+              </Pressable>
             </View>
-            <Pressable style={styles.iconBtn} onPress={() => sendRequest(item.id)}>
-              <UserPlus color={colors.primary} size={20} />
-            </Pressable>
-          </View>
-        )}
+          );
+        }}
       />
     </SafeAreaView>
   );
@@ -132,6 +181,20 @@ export default function Friends() {
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.bg },
   title: { color: colors.text, fontSize: 22, fontWeight: "700", padding: spacing.md, textAlign: "right" },
+  inviteBtn: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: spacing.sm,
+    marginHorizontal: spacing.md,
+    marginBottom: spacing.sm,
+    padding: spacing.md,
+    borderRadius: radius.md,
+    borderWidth: 1,
+    borderColor: "#25D366",
+    backgroundColor: colors.surface,
+  },
+  inviteText: { color: colors.text, fontWeight: "700", fontSize: 15 },
   searchRow: { flexDirection: "row", gap: spacing.sm, paddingHorizontal: spacing.md },
   input: {
     flex: 1,
@@ -157,6 +220,14 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     marginBottom: spacing.sm,
     textAlign: "right",
+  },
+  emptyHint: {
+    color: colors.textMuted,
+    fontSize: 13,
+    textAlign: "center",
+    marginTop: spacing.lg,
+    paddingHorizontal: spacing.md,
+    lineHeight: 20,
   },
   row: {
     flexDirection: "row",
