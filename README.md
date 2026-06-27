@@ -143,6 +143,30 @@ questions that ramp up in difficulty**, presented easy → hard:
 To change the mix or the band cut-offs, edit `level_difficulty_plan()` and the
 band `case` in `level_questions()`.
 
+### Subject exam
+
+After its practice levels, every unit (subject) ends with a **timed summary
+exam** — a full test that simulates the real thing but is drawn only from that
+subject's question bank, ramping up in difficulty:
+
+```
+... levels 1..10 ...  →  [ מבחן מסכם ]   ⏱ 20 min
+```
+
+- **20 questions**, composed **4 easy → 6 medium → 10 hard** and presented
+  easy → hard (`exam_questions(level_id)` in `0004_unit_exams.sql`).
+- **Timed**: `levels.time_limit_seconds` (default 1200 = 20 min). The app shows
+  a live countdown; when it hits zero the exam auto-submits with whatever has
+  been answered.
+- Stored as a normal level (`levels.is_exam = true`) so it reuses progress,
+  stars and the sequential unlock — it opens once the last practice level is
+  cleared.
+- Loaded via `getExamQuestions()`; the app routes to it with `exam=1` and the
+  time limit.
+
+To resize the exam or its time budget, edit `exam_difficulty_plan()` and the
+`time_limit_seconds` seeded in `0004_unit_exams.sql`.
+
 ## Data model (high level)
 
 | Table | Purpose |

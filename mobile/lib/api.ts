@@ -26,15 +26,14 @@ export type DailyQuestion = {
   answer_options: AnswerOption[];
 };
 
-// Loads a level's graduated question set (2 easy -> 3 medium -> 5 hard),
-// already ordered easy->hard by the `level_questions` SQL function. Options are
+// Loads an ordered (easy->hard) question set produced by a SQL function that
+// returns `{ id, body, image_url, type, difficulty, slot }` rows. Options are
 // fetched separately so the correct answer is never pulled to the client.
-export async function getLevelQuestions(
+async function loadOrderedQuestions(
+  rpc: "level_questions" | "exam_questions",
   levelId: number,
 ): Promise<DailyQuestion[]> {
-  const { data: rows, error } = await supabase.rpc("level_questions", {
-    p_level_id: levelId,
-  });
+  const { data: rows, error } = await supabase.rpc(rpc, { p_level_id: levelId });
   if (error) throw error;
   const ordered = (rows ?? []) as Array<{
     id: number;
@@ -69,6 +68,17 @@ export async function getLevelQuestions(
       type: r.type,
       answer_options: byQuestion.get(r.id) ?? [],
     }));
+}
+
+// A practice level's graduated set (2 easy -> 3 medium -> 5 hard).
+export function getLevelQuestions(levelId: number): Promise<DailyQuestion[]> {
+  return loadOrderedQuestions("level_questions", levelId);
+}
+
+// A unit's summary exam: a full, timed test over the whole subject
+// (4 easy -> 6 medium -> 10 hard), ordered easy->hard.
+export function getExamQuestions(levelId: number): Promise<DailyQuestion[]> {
+  return loadOrderedQuestions("exam_questions", levelId);
 }
 
 export async function getDailyQuestion(): Promise<{

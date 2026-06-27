@@ -9,13 +9,19 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useFocusEffect, useRouter } from "expo-router";
-import { Flame, Star, Lock, Check } from "lucide-react-native";
+import { Flame, Star, Lock, Check, Trophy, Timer } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
 import { unitIcon } from "@/lib/icons";
 import { colors, spacing, radius } from "@/lib/theme";
 
-type Level = { id: number; position: number; title: string | null };
+type Level = {
+  id: number;
+  position: number;
+  title: string | null;
+  is_exam: boolean;
+  time_limit_seconds: number | null;
+};
 type Unit = {
   id: number;
   name: string;
@@ -48,7 +54,9 @@ export default function PathScreen() {
 
     const { data: u } = await supabase
       .from("units")
-      .select("id, name, description, icon, position, levels(id, position, title)")
+      .select(
+        "id, name, description, icon, position, levels(id, position, title, is_exam, time_limit_seconds)",
+      )
       .eq("track", activeTrack)
       .order("position")
       .order("position", { foreignTable: "levels" });
@@ -102,6 +110,8 @@ export default function PathScreen() {
       >
         {units.map((unit) => {
           const Icon = unitIcon(unit.icon);
+          const practice = unit.levels.filter((l) => !l.is_exam);
+          const exam = unit.levels.find((l) => l.is_exam);
           return (
             <View key={unit.id} style={styles.unitCard}>
               <View style={styles.unitHeader}>
@@ -117,7 +127,7 @@ export default function PathScreen() {
               </View>
 
               <View style={styles.levelRow}>
-                {unit.levels.map((level) => {
+                {practice.map((level) => {
                   const state = levelState(unit, level);
                   const locked = state === "locked";
                   const completed = state === "completed";
@@ -156,6 +166,78 @@ export default function PathScreen() {
                   );
                 })}
               </View>
+
+              {exam &&
+                (() => {
+                  const state = levelState(unit, exam);
+                  const locked = state === "locked";
+                  const completed = state === "completed";
+                  const stars = progress[exam.id]?.stars ?? 0;
+                  return (
+                    <Pressable
+                      disabled={locked}
+                      onPress={() =>
+                        router.push({
+                          pathname: "/question/[mode]",
+                          params: {
+                            mode: "level",
+                            unitId: String(unit.id),
+                            levelId: String(exam.id),
+                            exam: "1",
+                            timeLimit: String(exam.time_limit_seconds ?? 0),
+                          },
+                        })
+                      }
+                      style={[
+                        styles.examBtn,
+                        completed && styles.examBtnDone,
+                        locked && styles.examBtnLocked,
+                      ]}
+                    >
+                      {locked ? (
+                        <Lock color={colors.textMuted} size={18} />
+                      ) : (
+                        <Trophy
+                          color={completed ? colors.primaryText : colors.primary}
+                          size={18}
+                        />
+                      )}
+                      <Text
+                        style={[styles.examText, locked && styles.examTextLocked]}
+                      >
+                        {exam.title ?? "מבחן מסכם"}
+                      </Text>
+                      {!locked && exam.time_limit_seconds ? (
+                        <View style={styles.examTime}>
+                          <Timer
+                            color={completed ? colors.primaryText : colors.textMuted}
+                            size={13}
+                          />
+                          <Text
+                            style={[
+                              styles.examTimeText,
+                              completed && { color: colors.primaryText },
+                            ]}
+                          >
+                            {Math.round(exam.time_limit_seconds / 60)} ד׳
+                          </Text>
+                        </View>
+                      ) : null}
+                      {completed && stars > 0 && (
+                        <View style={styles.examStars}>
+                          {Array.from({ length: stars }).map((_, i) => (
+                            <Star
+                              key={i}
+                              color={colors.streak}
+                              fill={colors.streak}
+                              size={11}
+                            />
+                          ))}
+                        </View>
+                      )}
+                    </Pressable>
+                  );
+                })()}
             </View>
           );
         })}
@@ -222,4 +304,23 @@ const styles = StyleSheet.create({
   levelNum: { color: colors.primaryText, fontWeight: "700", fontSize: 15 },
   levelLockedText: { color: colors.textMuted },
   stars: { flexDirection: "row", position: "absolute", bottom: -2, gap: 1 },
+  examBtn: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    gap: spacing.sm,
+    marginTop: spacing.sm,
+    paddingVertical: spacing.sm,
+    paddingHorizontal: spacing.md,
+    borderRadius: radius.md,
+    borderWidth: 1,
+    borderColor: colors.primary,
+    backgroundColor: colors.surfaceAlt,
+  },
+  examBtnDone: { backgroundColor: colors.success, borderColor: colors.success },
+  examBtnLocked: { backgroundColor: colors.locked, borderColor: colors.border },
+  examText: { color: colors.text, fontSize: 14, fontWeight: "700", flex: 1, textAlign: "right" },
+  examTextLocked: { color: colors.textMuted },
+  examTime: { flexDirection: "row-reverse", alignItems: "center", gap: 4 },
+  examTimeText: { color: colors.textMuted, fontSize: 12, fontWeight: "600" },
+  examStars: { flexDirection: "row", gap: 1 },
 });

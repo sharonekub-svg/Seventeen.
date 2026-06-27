@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   View,
   Text,
@@ -9,16 +9,24 @@ import {
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useLocalSearchParams, useRouter } from "expo-router";
-import { Check, X, Flame, SkipForward } from "lucide-react-native";
+import { Check, X, Flame, SkipForward, Timer } from "lucide-react-native";
 import { supabase } from "@/lib/supabase";
 import { useAuth } from "@/lib/auth";
 import {
   getDailyQuestion,
+  getExamQuestions,
   getLevelQuestions,
   submitAnswer,
   type DailyQuestion,
 } from "@/lib/api";
 import { colors, spacing, radius } from "@/lib/theme";
+
+function formatClock(totalSeconds: number): string {
+  const s = Math.max(0, totalSeconds);
+  const m = Math.floor(s / 60);
+  const sec = s % 60;
+  return `${m}:${String(sec).padStart(2, "0")}`;
+}
 
 type Result = {
   isCorrect: boolean;
@@ -31,8 +39,16 @@ type Result = {
 export default function QuestionScreen() {
   const router = useRouter();
   const { session } = useAuth();
-  const params = useLocalSearchParams<{ mode: string; levelId?: string }>();
+  const params = useLocalSearchParams<{
+    mode: string;
+    levelId?: string;
+    unitId?: string;
+    exam?: string;
+    timeLimit?: string;
+  }>();
   const isLevel = params.mode === "level";
+  const isExam = params.exam === "1";
+  const timeLimitSecs = Number(params.timeLimit) || 0;
 
   // `pending` is the queue of questions still to be answered, in play order.
   // The current question is always pending[0]; answering removes it, while
@@ -44,6 +60,9 @@ export default function QuestionScreen() {
   const [result, setResult] = useState<Result | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [correctInLevel, setCorrectInLevel] = useState(0);
+  // Countdown for timed exam levels (seconds). null = untimed.
+  const [remaining, setRemaining] = useState<number | null>(null);
+  const finishing = useRef(false);
 
   const current = pending[0];
   const answered = total - pending.length;
@@ -52,17 +71,22 @@ export default function QuestionScreen() {
   const load = useCallback(async () => {
     setLoading(true);
     if (isLevel && params.levelId) {
-      // Graduated set: 2 easy -> 3 medium -> 5 hard, already ordered easy->hard.
-      const questions = await getLevelQuestions(Number(params.levelId));
+      // Exam: full timed test over the whole subject (4/6/10, easy->hard).
+      // Practice: graduated set (2 easy -> 3 medium -> 5 hard).
+      const questions = isExam
+        ? await getExamQuestions(Number(params.levelId))
+        : await getLevelQuestions(Number(params.levelId));
       setPending(questions);
       setTotal(questions.length);
+      setRemaining(isExam && timeLimitSecs > 0 ? timeLimitSecs : null);
     } else {
       const { question } = await getDailyQuestion();
       setPending(question ? [question] : []);
       setTotal(question ? 1 : 0);
+      setRemaining(null);
     }
     setLoading(false);
-  }, [isLevel, params.levelId]);
+  }, [isLevel, isExam, timeLimitSecs, params.levelId]);
 
   useEffect(() => {
     load();
@@ -87,16 +111,32 @@ export default function QuestionScreen() {
     setSelected(null);
   }
 
-  async function next() {
-    if (pending.length > 1) {
-      setPending((prev) => prev.slice(1));
-      setSelected(null);
-      setResult(null);
-      return;
+  const unlockNext = useCallback(async (levelId: number, userId: string) => {
+    const { data: cur } = await supabase
+      .from("levels").select("unit_id, position").eq("id", levelId).single();
+    if (!cur) return;
+    const { data: nextLevel } = await supabase
+      .from("levels").select("id")
+      .eq("unit_id", cur.unit_id).eq("position", cur.position + 1).maybeSingle();
+    if (nextLevel) {
+      await supabase.from("user_level_progress").upsert(
+        { user_id: userId, level_id: nextLevel.id, status: "unlocked" },
+        { onConflict: "user_id,level_id" },
+      );
     }
-    // Last question answered — level finished: record progress + unlock next.
+  }, []);
+
+  // Records progress + unlocks the next level, then leaves. Runs at most once
+  // (the timer running out and answering the last question can race).
+  const finishLevel = useCallback(async () => {
+    if (finishing.current) return;
+    finishing.current = true;
     if (isLevel && params.levelId && session) {
-      const stars = correctInLevel === total ? 3 : correctInLevel >= total * 0.8 ? 2 : correctInLevel >= total * 0.5 ? 1 : 0;
+      const stars =
+        correctInLevel === total ? 3
+        : correctInLevel >= total * 0.8 ? 2
+        : correctInLevel >= total * 0.5 ? 1
+        : 0;
       await supabase.from("user_level_progress").upsert(
         {
           user_id: session.user.id,
@@ -111,22 +151,32 @@ export default function QuestionScreen() {
       if (stars >= 1) await unlockNext(Number(params.levelId), session.user.id);
     }
     router.back();
+  }, [isLevel, params.levelId, session, correctInLevel, total, router, unlockNext]);
+
+  async function next() {
+    if (pending.length > 1) {
+      setPending((prev) => prev.slice(1));
+      setSelected(null);
+      setResult(null);
+      return;
+    }
+    // Last question answered — the level is done.
+    await finishLevel();
   }
 
-  async function unlockNext(levelId: number, userId: string) {
-    const { data: cur } = await supabase
-      .from("levels").select("unit_id, position").eq("id", levelId).single();
-    if (!cur) return;
-    const { data: nextLevel } = await supabase
-      .from("levels").select("id")
-      .eq("unit_id", cur.unit_id).eq("position", cur.position + 1).maybeSingle();
-    if (nextLevel) {
-      await supabase.from("user_level_progress").upsert(
-        { user_id: userId, level_id: nextLevel.id, status: "unlocked" },
-        { onConflict: "user_id,level_id" },
-      );
-    }
-  }
+  // Exam countdown: tick every second while the test is open.
+  useEffect(() => {
+    if (loading || !isExam) return;
+    const id = setInterval(() => {
+      setRemaining((r) => (r === null || r <= 0 ? r : r - 1));
+    }, 1000);
+    return () => clearInterval(id);
+  }, [loading, isExam]);
+
+  // Time's up — auto-submit the exam with whatever has been answered.
+  useEffect(() => {
+    if (isExam && remaining === 0 && !loading) finishLevel();
+  }, [isExam, remaining, loading, finishLevel]);
 
   if (loading) {
     return (
@@ -159,9 +209,24 @@ export default function QuestionScreen() {
       </View>
 
       <ScrollView contentContainerStyle={{ padding: spacing.lg }}>
-        <Text style={styles.counter}>
-          שאלה {answered + 1} מתוך {total}
-        </Text>
+        <View style={styles.statusRow}>
+          <Text style={styles.counter}>
+            שאלה {answered + 1} מתוך {total}
+          </Text>
+          {isExam && remaining !== null && (
+            <View style={styles.timer}>
+              <Timer
+                color={remaining <= 30 ? colors.danger : colors.textMuted}
+                size={15}
+              />
+              <Text
+                style={[styles.timerText, remaining <= 30 && { color: colors.danger }]}
+              >
+                {formatClock(remaining)}
+              </Text>
+            </View>
+          )}
+        </View>
         <Text style={styles.body}>{current.body}</Text>
 
         <View style={{ marginTop: spacing.lg, gap: spacing.sm }}>
@@ -255,6 +320,13 @@ const styles = StyleSheet.create({
   progressBar: { height: 6, backgroundColor: colors.surfaceAlt },
   progressFill: { height: 6, backgroundColor: colors.primary },
   counter: { color: colors.textMuted, fontSize: 13, textAlign: "right" },
+  statusRow: {
+    flexDirection: "row-reverse",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  timer: { flexDirection: "row-reverse", alignItems: "center", gap: 4 },
+  timerText: { color: colors.textMuted, fontSize: 14, fontWeight: "700" },
   body: { color: colors.text, fontSize: 19, fontWeight: "600", textAlign: "right", marginTop: spacing.sm, lineHeight: 28 },
   option: {
     flexDirection: "row-reverse",
